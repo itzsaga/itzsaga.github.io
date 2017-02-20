@@ -25,7 +25,7 @@ paginate = 10
 paginatePath = "page"
 
 # Enable Disqus integration
-disqusShortname = "itzsaga"
+disqusShortname = "my-flatiron-journey"
 
 [permalinks]
     post = "/:slug/"
