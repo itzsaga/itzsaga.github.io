@@ -1,8 +1,7 @@
 ---
-date: 2017-02-20T21:56:04Z
-draft: true
+date: 2017-02-20T22:06:47Z
+draft: false
 title: home
 ---
 
-
-This is the home page...
+This is the home page...
