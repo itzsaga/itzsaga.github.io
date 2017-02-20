@@ -14,4 +14,6 @@ Total 53 hours of school per week.
 ~800 hours to graduation = 15 weeks.
 This seemed doable as my former career in restaurant management had me working 55 hours standard.
 
-Secondly, I needed somewhere to do this work. The house we had just built had a closed in office which a
+Secondly, I needed somewhere to do this work. The house we had just built had a closed in office which was not in use. So I skimmed IKEA's website and picked out a desk and chair. Granted IKEA is 3 hours away from my house so it will be a pain to go pick it up but spending $100 on a desk, chair, and that plastic thing you put on carpet so a chair can roll seemed like it was worth it.
+
+Overall the plan was co
