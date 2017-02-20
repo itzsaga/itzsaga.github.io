@@ -1,7 +1,8 @@
 +++
-date = "2017-02-20T20:46:13Z"
+date = "2017-02-20T21:29:52Z"
 title = "home"
-draft = true
+draft = false
 
 +++
-This is the home page...
+
+This is the home page...
