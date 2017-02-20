@@ -1,5 +1,5 @@
 # hostname (and path) to the root eg. http://spf13.com/
-baseurl = "http://www.example.com"
+baseurl = "https://itzsaga.github.io/"
 
 # Site title
 title = "My Flatiron Journey"
@@ -62,7 +62,7 @@ disqusShortname = "itzsaga"
     # Sidebar social links.
     github = "itzsaga" # Your Github profile ID
     bitbucket = "" # Your Bitbucket profile ID
-    linkedin = "" # Your LinkedIn profile ID (from public URL)
+    linkedin = "sethalexander" # Your LinkedIn profile ID (from public URL)
     googleplus = "" # Your Google+ profile ID
     facebook = "" # Your Facebook profile ID
     twitter = "itzsaga" # Your Twitter profile ID
