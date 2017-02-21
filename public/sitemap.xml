@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/%22/%22/before-i-start-flatiron/</loc>
+    <lastmod>2017-02-20T22:07:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/%22/%22/about/</loc>
+    <lastmod>2017-02-20T22:06:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/%22/%22/home/</loc>
+    <lastmod>2017-02-20T22:06:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/%22/%22/</loc>
+    <lastmod>2017-02-20T22:07:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/%22/%22/post/</loc>
+    <lastmod>2017-02-20T22:07:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
