@@ -43,7 +43,7 @@ googleAnalytics = ""
 [params.intro]
     header    = "My Flatiron Journey"
 
-    paragraph = "<i class="fa fa-terminal" aria-hidden="true"></i> How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp"
+    paragraph = "How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp"
 
     about     = "I'm a family man that works hard and is looking to get ahead. I'm smart and love tech. That's all there is to it."
 
