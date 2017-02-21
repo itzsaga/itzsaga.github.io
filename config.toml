@@ -75,6 +75,7 @@ googleAnalytics = ""
 [[menu.main]]
     name = "About"
     url = "/about"
+    identifier = "fa fa-user"
     weight = 2
 
 # [[menu.main]]
