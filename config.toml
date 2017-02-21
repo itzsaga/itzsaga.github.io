@@ -1,17 +1,17 @@
-baseurl = "http://hugo.spf13.com/"
+baseurl = "https://itzsaga.github.io/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "My Flatiron Journey"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = "my-flatiron-journey"
 googleAnalytics = ""
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+    description          = "From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp."
     # This will appear on the top left of the navigation bar
-    navbarTitle          = "Future Imperfect"
+    navbarTitle          = "Seth's Journey"
     # Social media buttons that appear on the sidebar
     socialAppearAtTop    = true
     socialAppearAtBottom = true
@@ -86,7 +86,7 @@ googleAnalytics = ""
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
 # The social media icons will appear on the sidebar
 [social]
-    github          = "jpescador"
+    github          = "itzsaga"
     bitbucket       = ""
     jsfiddle        = ""
     codepen         = ""
@@ -95,15 +95,15 @@ googleAnalytics = ""
     deviantart      = ""
     behance         = ""
     flickr          = ""
-    instagram       = ""
+    instagram       = "sethaalexander"
     youtube         = ""
     vimeo           = ""
     vine            = ""
-    medium          = ""
+    medium          = "@sethalexander"
     wordpress       = ""
     tumblr          = ""
     xing            = ""
-    linkedin        = ""
+    linkedin        = "sethalexander"
     slideshare      = ""
     stackoverflow   = ""
     reddit          = ""
@@ -112,5 +112,5 @@ googleAnalytics = ""
     facebook        = ""
     facebook_admin  = ""
     twitter_domain  = ""
-    twitter         = "julio_pescador"
-    email           = ""
+    twitter         = "itzsaga"
+    email           = "sethalexander@protonmail.com"
