@@ -56,7 +56,7 @@ googleAnalytics = ""
     # future imperfect's hexagonal shape
     circle    = false
     imperfect = true
-    width     = "100"
+    width     = ""
     alt       = "Seth"
 
 # Adjust the amount of recent posts on the sidebar.
