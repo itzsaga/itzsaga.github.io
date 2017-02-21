@@ -41,9 +41,9 @@ googleAnalytics = ""
 # parms.intro will appear on the sidebar
 # This is optional, but it's suggested to use
 [params.intro]
-    header    = "Hugo Future Imperfect"
+    header    = "My Flatiron Journey"
 
-    paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+    paragraph = "How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp"
 
     about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
 
@@ -51,13 +51,13 @@ googleAnalytics = ""
 # A width of less than 100px is recommended
 # This is optional
 [params.intro.pic]
-    src       = "/img/Inside-Out-Portrait.jpg"
+    src       = ""
     # modify your picture in the shape of a circle or
     # future imperfect's hexagonal shape
     circle    = false
     imperfect = true
     width     = ""
-    alt       = "Hugo Future Imperfect"
+    alt       = ""
 
 # Adjust the amount of recent posts on the sidebar.
 # This is optional. The default value 5 will be used
