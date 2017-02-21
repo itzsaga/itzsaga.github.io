@@ -18,8 +18,8 @@ theme = "hugo-minimalist-theme"
     site_description = "My journey to becoming a web developer by means of the Flatiron Online Web Development boot camp."
     location = "Nashville"
     # Link custom assets relative to /static
-    avatar = "img/profile-image.png"
-    header_background = "img/desk.jpg"
+    avatar = "img/Inside-Out-Portrait.jpg"
+    header_background = "img/5ntkpxqt54y-sai-kiran-anagani.jpg"
     header_title = "My Flatiron Journey"
     copyright = "Powered by [Hugo](http://gohugo.io)."
     custom_css = []
