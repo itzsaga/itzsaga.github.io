@@ -68,7 +68,7 @@ googleAnalytics = ""
 # You can use identifier to prepend a font awesome icon to your text
 [[menu.main]]
     name = "Blog"
-    url = "/blog"
+    url = "/"
     identifier = "fa fa-newspaper-o"
     weight = 1
 
