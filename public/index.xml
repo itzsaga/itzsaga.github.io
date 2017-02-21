@@ -5,19 +5,17 @@
     <link>/%22/%22/index.xml</link>
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-EN</language>
-    <managingEditor>seth.a.alexander@gmail.com (Seth)</managingEditor>
-    <webMaster>seth.a.alexander@gmail.com (Seth)</webMaster>
-    <copyright>(c) 2016 Seth Alexander.</copyright>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 20 Feb 2017 22:07:04 +0000</lastBuildDate>
     <atom:link href="/%22/%22/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>before i start flatiron</title>
-      <link>/%22/%22/before-i-start-flatiron/</link>
+      <link>/%22/%22/post/before-i-start-flatiron/</link>
       <pubDate>Mon, 20 Feb 2017 22:07:04 +0000</pubDate>
-      <author>seth.a.alexander@gmail.com (Seth)</author>
-      <guid>/%22/%22/before-i-start-flatiron/</guid>
+      
+      <guid>/%22/%22/post/before-i-start-flatiron/</guid>
       <description>&lt;p&gt;There were a few things I had to get out of the way before I started Flatiron.&lt;/p&gt;
 
 &lt;p&gt;First, I needed a solid schedule I was going to follow. I didn&amp;rsquo;t want to take 8 months to finish the program. In fact, I couldn&amp;rsquo;t take 8 months to finish the program as my expenses were too much to stretch that long. I also wanted to minimize my family&amp;rsquo;s child care expenses so I came up with a solid schedule:&lt;br /&gt;
@@ -37,7 +35,7 @@ This seemed doable as my former career in restaurant management had me working 5
       <title>whodat</title>
       <link>/%22/%22/about/</link>
       <pubDate>Mon, 20 Feb 2017 22:06:57 +0000</pubDate>
-      <author>seth.a.alexander@gmail.com (Seth)</author>
+      
       <guid>/%22/%22/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a former hospitality professional working on a career transition by attending Flatiron&amp;rsquo;s online web development boot camp. Follow along with my journey on this blog.&lt;/p&gt;
 </description>
@@ -47,7 +45,7 @@ This seemed doable as my former career in restaurant management had me working 5
       <title>home</title>
       <link>/%22/%22/home/</link>
       <pubDate>Mon, 20 Feb 2017 22:06:47 +0000</pubDate>
-      <author>seth.a.alexander@gmail.com (Seth)</author>
+      
       <guid>/%22/%22/home/</guid>
       <description>&lt;p&gt;This is the home page&amp;hellip;&lt;/p&gt;
 </description>
