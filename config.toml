@@ -19,7 +19,7 @@ googleAnalytics = ""
     viewMorePostLink     = "/blog/"
 
 # Optional Params
-    categoriesByCount    = true
+    categoriesByCount    = false
     includeReadingTime   = true
     # The set of favicons used are based on the write-up from this link:
     # https://github.com/audreyr/favicon-cheat-sheet
@@ -73,14 +73,14 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.main]]
-    name = "Categories"
-    url = "/categories"
-    weight = 2
-
-[[menu.main]]
     name = "About"
     url = "/about"
-    weight = 3
+    weight = 2
+
+# [[menu.main]]
+#     name = "Categories"
+#     url = "/categories"
+#     weight = 3
 
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
