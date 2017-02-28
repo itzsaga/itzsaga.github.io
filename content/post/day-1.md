@@ -32,8 +32,11 @@ Here's the quick run down on how they work:
     regularFunction() // 'I was called!'    
     arrowFunction() // 'I was called, too!'
 
-I won't go deep into them but this can save typing of the word "function" a lot. Unfortunately, while trying to use this on lessons I ran into it not passing tests. It seems like not all of the Bootcamp Prep lesson plan has been updated to support ES6 just yet. I did talk to a mentor person who said lessons should allow for ES6 though, so that's good. I'd like to build good habit using some of the newer syntax when I can.
+I won't go deep into arrow functions (get more at [MDN][2] and [here][3]) but this can save typing of the word "function" a lot. Unfortunately, while trying to use this on lessons I ran into it not passing tests. It seems like not all of the Bootcamp Prep lesson plan has been updated to support ES6 just yet. I did talk to a mentor person who said lessons should allow for ES6 though, so that's good. I'd like to build good habit using some of the newer syntax when I can.
 
 Now, bedtime.
 
+
   [1]: http://res.cloudinary.com/sethalexander/image/upload/c_scale,w_792/v1488253544/IMG_20170227_080607_s4pqzx.jpg
+  [2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+  [3]: https://github.com/learn-co-students/javascript-arrow-functions-bootcamp-prep-000/blob/master/README.md
