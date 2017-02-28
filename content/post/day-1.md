@@ -1,11 +1,11 @@
 ---
 author: ""
-categories: []
+categories: [daily blog]
 date: 2017-02-28T03:59:33Z
 description: ""
 featured: ""
 featuredalt: ""
-featuredpath: ""
+featuredpath: "http://res.cloudinary.com/sethalexander/image/upload/c_scale,w_792/v1488253544/IMG_20170227_080607_s4pqzx.jpg"
 linktitle: ""
 title: day 1
 ---
