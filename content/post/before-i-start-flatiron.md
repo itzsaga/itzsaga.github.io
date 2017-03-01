@@ -1,6 +1,7 @@
 ---
 date: 2017-02-20T22:07:04Z
 draft: false
+categories: [general]
 title: before i start flatiron
 ---
 
