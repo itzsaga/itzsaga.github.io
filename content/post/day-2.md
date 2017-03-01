@@ -1,6 +1,6 @@
 ---
 author: ""
-categories: []
+categories: [daily blog]
 date: 2017-02-29T03:59:47Z
 description: ""
 featured: ""
