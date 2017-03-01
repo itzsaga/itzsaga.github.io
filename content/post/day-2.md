@@ -29,6 +29,7 @@ Lessons completed today: 25
 
 Until tomorrow.
 
+
   [1]: https://res.cloudinary.com/sethalexander/v1488290498/zpcntksutiursizgshbi
   [2]: http://toggl.com
   [3]: https://medium.freecodecamp.com/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81
