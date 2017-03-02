@@ -1,7 +1,7 @@
 ---
 author: ""
 categories: [daily blog]
-date: 2017-03-01T13:45:30Z
+date: 2017-03-01T03:59:30Z
 description: ""
 featured: ""
 featuredalt: ""
@@ -17,9 +17,25 @@ Only news from my morning coding session is that it got cut short because of thi
 ![tornado_warning][4]
 It seems like I'm linking a lot of tools lol. If you're wondering how I got that notification from my phone on my computer it's an app called [Pushbullet][5].
 
+Got back to it and moving closer and closer to a Tic Tac Toe game built in Ruby. Something that I definitely made sure to add to my notes for reference later is: `In Ruby only false and nil are falsey. Everything else is truthy (yes, even 0 is truthy).` This is a great one liner to remember that there are only two things that return false in Ruby.
+
+I also learned a lot more about Test Driven Development (which I know is BIG in real life).
+> **WHAT IS TEST DRIVEN DEVELOPMENT?**
+> Test Driven Development, is a method for approaching a problem not through the implementation of the solution, but through the expectations of a working solution. Instead of trying to write the code that solves the problem, you first define what the working code will do when it works, and then you write the implementation to make it work.
+
+Can't wait to finish off this section and have my working Tic Tac Toe project to share.
+
+This made me chuckle only because I guess most people do this program part time so hitting the top of this "velocity" meter is a goal.
+![velocity_meter_full_at_53][6]
+
+Time spent today: 3:22
+Time spent total: 9:41
+Lessons completed today: 28
+
 
   [1]: https://www.gymnasticbodies.com/
   [2]: https://www.intelligentchange.com/products/the-five-minute-journal
   [3]: http://www.evernote.com/l/ACLTHi8AYQpNBYxuRLXm_Vp17gMmKMe8uFQ/
   [4]: https://res.cloudinary.com/sethalexander/v1488376710/qzilbczyh7jalznnsaun
   [5]: https://www.pushbullet.com/
+  [6]: https://res.cloudinary.com/sethalexander/image/upload/c_scale,q_100,w_168/v1488427362/mppqy8adfj9bqfszyajf.jpg
