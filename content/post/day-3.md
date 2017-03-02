@@ -1,7 +1,7 @@
 ---
 author: ""
 categories: [daily blog]
-date: 2017-03-01T03:59:30Z
+date: 2017-03-01T04:06:30Z
 description: ""
 featured: ""
 featuredalt: ""
