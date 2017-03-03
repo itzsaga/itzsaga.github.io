@@ -15,7 +15,7 @@ title: day 4
 
 Nothing big happened today in my schooling. The people that wrote the curriculum like to include quotes here and there and I saw one name pop up a few times so I looked him up. Turns out [Edsger W. Dijkstra][1] was a pretty big deal in the world of CS and programming. I didn’t read his entire Wikipedia page but I intend to.
 
-One other thing stuck out today. The fact that #detect and #find do the same exact thing. This is actually one reason that I was so stuck tonight. With the way that Flatiron is setup, every successful lab is public on GitHub. If I’m really stuck I’ll look at how others solved the problems for inspiration. There is rarely one answer so I’ll take the code I have and look at say 5 other people’s solutions and get my brain moving again. I kept seeing WIN_COMBINATIONS.find and I was thinking, “Where did these people learn this #find method? So I went to the ruby docs and realized that it was the same exact thing as #detect when I saw this:
+One other thing stuck out today. The fact that `#detect` and `#find` do the same exact thing. This is actually one reason that I was so stuck tonight. With the way that Flatiron is setup, every successful lab is public on GitHub. If I’m really stuck I’ll look at how others solved the problems for inspiration. There is rarely one answer so I’ll take the code I have and look at say 5 other people’s solutions and get my brain moving again. I kept seeing `WIN_COMBINATIONS.find` and I was thinking, “Where did these people learn this `#find` method? So I went to the ruby docs and realized that it was the same exact thing as `#detect` when I saw this:
 ```ruby
 (1..10).detect   { |i| i % 5 == 0 and i % 7 == 0 }   #=> nil
 (1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35
