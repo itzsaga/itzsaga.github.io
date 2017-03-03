@@ -28,7 +28,15 @@ puts draw?(board) ? "Cats Game!" : "Congratulations #{winner(board)}!"
 ```
 This puts me at 78% of the way through the Intro to Ruby curriculum so I hope to finish that, or be very close to finishing that, today!
 
-Just like that, before 5 pm I just finished the Into to Ruby track by refactoring my Tic Tac Toe code from before. I now have a CLI Tic Tac Toe game that utilizes Object Oriented programming which can be found [here][2]. I've gotten into a good groove and think utilizing the Pomodoro technique is key on these long days. It allows me time to break away for a bit. I'm 42 minutes on and 18 minutes off right now.
+Just like that, before 5 pm I just finished the Into to Ruby track by refactoring my Tic Tac Toe code from before. I now have a CLI Tic Tac Toe game that utilizes Object Oriented programming which can be found [here][2]. I've gotten into a good groove and think utilizing the Pomodoro technique is key on these long days. It allows me time to break away for a bit. I'm 42 minutes on and 18 minutes off right now. A key takeaway from this short intro to OO programming is that "an object in code is a thing with all the data and all the logic required to complete a task." I think this sums up an object well and I've always struggled with figuring this out.
+>I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages. - Alan Kay
+
+Next up are some sections that I think will go quickly:
+ 1. Git and GitHub
+ 2. HTML and CSS
+ 3. Procedural Ruby (only because a bunch of this is done already from this Intro course)
+After that is a large chunk, for good reason, on Object Oriented Ruby. I hope to get through all the lessons and labs for this by the end of the weekend and be working on the "Final Projects" for Ruby starting Monday. I think I can do it! We'll see what reality dictates, though.
+
 
 
   [1]: https://github.com/itzsaga/tic-tac-toe-rb-v-000
