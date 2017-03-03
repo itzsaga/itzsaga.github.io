@@ -28,5 +28,8 @@ puts draw?(board) ? "Cats Game!" : "Congratulations #{winner(board)}!"
 ```
 This puts me at 78% of the way through the Intro to Ruby curriculum so I hope to finish that, or be very close to finishing that, today!
 
+Just like that, before 5 pm I just finished the Into to Ruby track by refactoring my Tic Tac Toe code from before. I now have a CLI Tic Tac Toe game that utilizes Object Oriented programming which can be found [here][2]. I've gotten into a good groove and think utilizing the Pomodoro technique is key on these long days. It allows me time to break away for a bit. I'm 42 minutes on and 18 minutes off right now.
+
 
   [1]: https://github.com/itzsaga/tic-tac-toe-rb-v-000
+  [2]: https://github.com/itzsaga/oo-tic-tac-toe-v-000
