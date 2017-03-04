@@ -7,7 +7,7 @@ featured: ""
 featuredalt: ""
 featuredpath: ""
 linktitle: ""
-title: day 4
+title: Day 4
 ---
 
 
@@ -22,14 +22,14 @@ One other thing stuck out today. The fact that `#detect` and `#find` do the same
 ```
 To make it even worse, I had earlier written down on my pad that these were the same thing so I wouldn’t forget to blog about it tonight.
 
->NOTE: detect and find are two names for the same method. For every example below we’ll use detect, but you can use them interchangeably.
+> NOTE: detect and find are two names for the same method. For every example below we’ll use detect, but you can use them interchangeably.
 
 How does this even happen though? Why would the person or people who wrote a coding language choose to make two words do the exact same thing?
 
 That’s all for now. Still need to walk the dog, setup my coffee for the morning, and throw some stuff in the dryer.
 
-Time spent today: 2:32 
-Time spent total: 12:13 
+Time spent today: 2:32  
+Time spent total: 12:13  
 Lessons completed today: 12
 
 

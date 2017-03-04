@@ -2,7 +2,7 @@
 date: 2017-02-20T22:07:04Z
 draft: false
 categories: [general]
-title: before i start flatiron
+title: Before I Start Flatiron
 ---
 
 There were a few things I had to get out of the way before I started Flatiron.
