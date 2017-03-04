@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My Flatiron Journey</title>
-    <link>https://itzsaga.github.io/post/index.xml</link>
-    <description>Recent content in Posts on My Flatiron Journey</description>
+    <title>Daily blog on My Flatiron Journey</title>
+    <link>https://itzsaga.github.io/categories/daily-blog/index.xml</link>
+    <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Mar 2017 04:57:01 +0000</lastBuildDate>
-    <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>day 5</title>
@@ -174,27 +173,6 @@ arrowFunction() // &#39;I was called, too!&#39;
 &lt;p&gt;I won&amp;rsquo;t go deep into arrow functions (get more at &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;MDN&lt;/a&gt; and &lt;a href=&#34;https://github.com/learn-co-students/javascript-arrow-functions-bootcamp-prep-000/blob/master/README.md&#34;&gt;here&lt;/a&gt;) but this can save typing of the word &amp;ldquo;function&amp;rdquo; a lot. Unfortunately, while trying to use this on lessons I ran into it not passing tests. It seems like not all of the Bootcamp Prep lesson plan has been updated to support ES6 just yet. I did talk to a mentor person who said lessons should allow for ES6 though, so that&amp;rsquo;s good. I&amp;rsquo;d like to build good habit using some of the newer syntax when I can.&lt;/p&gt;
 
 &lt;p&gt;Now, bedtime.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>before i start flatiron</title>
-      <link>https://itzsaga.github.io/post/before-i-start-flatiron/</link>
-      <pubDate>Mon, 20 Feb 2017 22:07:04 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/before-i-start-flatiron/</guid>
-      <description>&lt;p&gt;There were a few things I had to get out of the way before I started Flatiron.&lt;/p&gt;
-
-&lt;p&gt;First, I needed a solid schedule I was going to follow. I didn&amp;rsquo;t want to take 8 months to finish the program. In fact, I couldn&amp;rsquo;t take 8 months to finish the program as my expenses were too much to stretch that long. I also wanted to minimize my family&amp;rsquo;s child care expenses so I came up with a solid schedule:&lt;br /&gt;
-M-Th 6am-7am personal care (shower, breakfast, walk dog, etc&amp;hellip;) 7am-8am (or whenever kids wake up) Flatiron. 8am-8pm family/kids. 8pm-10pm Flatiron. 3 hrs/day.&lt;br /&gt;
-Fri-Sun 8am-10pm Flatiron (1 hour lunch &amp;amp; dinner). 12 hrs/day.&lt;br /&gt;
-Total 53 hours of school per week.&lt;br /&gt;
-~800 hours to graduation = 15 weeks.&lt;br /&gt;
-This seemed doable as my former career in restaurant management had me working 55 hours standard.&lt;/p&gt;
-
-&lt;p&gt;Secondly, I needed somewhere to do this work. The house we had just built had a closed in office which was not in use. So I skimmed IKEA&amp;rsquo;s website and picked out a desk and chair. Granted IKEA is 3 hours away from my house so it will be a pain to go pick it up but spending $100 on a desk, chair, and that plastic thing you put on the carpet so a chair can roll seemed like it was worth it.&lt;/p&gt;
-
-&lt;p&gt;Overall the plan was coming together.&lt;/p&gt;
 </description>
     </item>
     
