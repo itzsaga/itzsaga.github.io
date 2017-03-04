@@ -37,7 +37,18 @@ Next up are some sections that I think will go quickly:
  3. Procedural Ruby (only because a bunch of this is done already from this Intro course)
 After that is a large chunk, for good reason, on Object Oriented Ruby. I hope to get through all the lessons and labs for this by the end of the weekend and be working on the "Final Projects" for Ruby starting Monday. I think I can do it! We'll see what reality dictates, though.
 
+I was right about the Git & GitHub section. Finished that in ~45 mins. Helps that I've been using GitHub for a while. At the end of the sections was this:
+![git_comic][3]
+
+HTML and CSS are taking longer than I expected because there are code along videos and there isn't really a way to run through those too quickly.
+
+It was a productive day.
+
+Time spent today: 7:22
+Time spent total:  19:35
+Lessons completed today: 53
 
 
   [1]: https://github.com/itzsaga/tic-tac-toe-rb-v-000
   [2]: https://github.com/itzsaga/oo-tic-tac-toe-v-000
+  [3]: https://res.cloudinary.com/sethalexander/v1488603381/ieji7xddaoyf6c87zmyg
