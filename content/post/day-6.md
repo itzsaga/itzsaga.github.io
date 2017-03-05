@@ -1,15 +1,13 @@
-+++
-categories = [daily blog]
-author = ""
-featuredalt = ""
-featured = ""
-title = "Day 6"
-description = ""
-date = "2017-03-04T23:00:48-06:00"
-linktitle = ""
-featuredpath = ""
-
-+++
+---
+categories: [daily blog]
+featuredalt: ""
+featured: ""
+title: "Day 6"
+description: ""
+date: "2017-03-04T23:00:48-06:00"
+linktitle: ""
+featuredpath: ""
+---
 
 It was a LONG day of HTML & CSS and I'm still not done with this section. It's okay though. While a lot of it has been review a lot of it has not as well. I've been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type. Desktop Down principles were discussed as well but I think at this point in time there is no reason to utilize that methodology. Too many people are utilizing their phones as their primary was to consume content and the trend is moving in that direction anyway.
 
