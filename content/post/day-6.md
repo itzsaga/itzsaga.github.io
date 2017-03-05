@@ -27,7 +27,9 @@ To set a wrapper using Mobile Up, first set the wrapper to a % then when the scr
 }
 
 @media only screen and (min-width: 980px) {
-  .wrapper { width: 960px; }
+  .wrapper {
+    width: 960px;
+  }
 }
 ```
 Also, to setup multi-column design first utilize a column `width: 100%` and `float: none;` then move to columns being a percentage and floating them. ie:
