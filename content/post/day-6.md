@@ -50,6 +50,6 @@ Finally, my last note on design in general is that experts say the optimum reada
 
 Time spent today: 7:59  
 Time spent total: 27:34  
-Lessons completed today: 22
+Lessons completed today: 40
 
   [1]:https://atom.io/
