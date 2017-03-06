@@ -6,7 +6,6 @@ preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "my-flatiron-journey"
 googleAnalytics = ""
-publishDir = "docs"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
