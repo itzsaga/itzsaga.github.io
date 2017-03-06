@@ -6,8 +6,101 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Mar 2017 23:00:48 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 05 Mar 2017 22:05:48 -0600</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 7</title>
+      <link>https://itzsaga.github.io/post/day-7/</link>
+      <pubDate>Sun, 05 Mar 2017 22:05:48 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-7/</guid>
+      <description>&lt;p&gt;After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours:&lt;br /&gt;
+When it comes to &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; as a framework the &lt;code&gt;.col-xs&lt;/code&gt; class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap. I had used Bootstrap in the past but never really understood how to use it more fully.&lt;/p&gt;
+
+&lt;p&gt;I also spend a chunk of time troubleshooting the custom Learn IDE (built on top of Atom) that Flatiron provides. It has some quirks. Very simple the workflow is this, click a button on the site, the IDE opens, runs a command to fork then clone down a GitHub repo with all the files you need. There were a couple labs that had zero files in them. However, I was building on a previous lab so I had the files I needed. I copied and pasted them into the appropriate place in File Explorer but the IDE wouldn&amp;rsquo;t show them. I had to &amp;ldquo;Import&amp;rdquo; them from within the IDE for it to acknowledge their existence. This was a pain in the ass to say the least.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m finally back into Procedural Ruby. Funny thing is I&amp;rsquo;m coming across labs that directly relate to the ones that I did in the Bootcamp Prep course. They&amp;rsquo;re carbon copies in fact. The only difference is that I chose to do the JavaScript Bootcamp Prep and now I&amp;rsquo;m solving problems in Ruby. It&amp;rsquo;s interesting though to see how different languages solve the same problems.&lt;/p&gt;
+
+&lt;p&gt;Of course I have to give an example. Here&amp;rsquo;s the modified (to make it make more sense for both languages) Deli Counter lab requirements:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Build the method/function that shows everyone their current place in the line. If there is nobody in line, it should say &lt;code&gt;&amp;quot;The line is currently empty.&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Build a method/function that a new customer will use when entering the deli. The method/function should accept two arguments, the array for the current line of people, and a string containing the name of the person wishing to join the line. The method/function should return the person&amp;rsquo;s  name along with their position in line.&lt;/li&gt;
+&lt;li&gt;Build a method/function which should call out the next person in line and then remove them from the front. If there is nobody in line, it should call out that &lt;code&gt;&amp;quot;There is nobody waiting to be served!&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;First is JavaScript:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var katzDeliLine = [];
+
+function currentLine(x) {
+    var line = []
+    if (x.length === 0) {
+      return &amp;quot;The line is currently empty.&amp;quot;
+    } else {
+      for(var i = 0; i &amp;lt; x.length; i++) {
+        line += (i + 1) + &amp;quot;. &amp;quot; + x[i] + &amp;quot;, &amp;quot;
+      }
+      line = line.slice(0, line.length-2)
+      return &amp;quot;The line is currently: &amp;quot; + line
+    }
+}
+function takeANumber(katzDeliLine, name) {
+  katzDeliLine.push(name)
+  return &amp;quot;Welcome, &amp;quot; + name + &amp;quot;. You are number &amp;quot; + katzDeliLine.length + &amp;quot; in line.&amp;quot;
+}
+function nowServing(x) {
+  if (x.length === 0) {
+    return &amp;quot;There is nobody waiting to be served!&amp;quot;
+  } else {
+    var name = x[0];
+    x.splice(0, 1);
+    return &amp;quot;Currently serving &amp;quot; + name + &amp;quot;.&amp;quot;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then in Ruby:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;katz_deli = []
+
+def line(x)
+  line_array = []
+  if x.length == 0
+    puts &amp;quot;The line is currently empty.&amp;quot;
+  else
+    x.each.with_index(1) do |name, index|
+      line_array.push(&amp;quot;#{index}. #{name}&amp;quot;)
+    end
+    puts &amp;quot;The line is currently: #{line_array.join(&amp;quot; &amp;quot;)}&amp;quot;
+  end
+end
+def take_a_number(katz_deli, name)
+  katz_deli.push(name)
+  puts &amp;quot;Welcome, #{name}. You are number #{katz_deli.length} in line.&amp;quot;
+end
+def now_serving(array)
+  if array.empty?
+    puts &amp;quot;There is nobody waiting to be served!&amp;quot;
+  else
+    puts &amp;quot;Currently serving #{array[0]}.&amp;quot;
+    array.shift
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A small thing I noticed is that it took me 3 less lines of code to do it in Ruby. I&amp;rsquo;m sure I&amp;rsquo;m not as eloquent in JS as I could be though so I&amp;rsquo;m sure that could be condensed down as well.&lt;/p&gt;
+
+&lt;p&gt;Finally, I laughed when I read about the &amp;ldquo;spaceship&amp;rdquo; operator &lt;code&gt;&amp;lt;=&amp;gt;&lt;/code&gt; only because it&amp;rsquo;s nicknamed that because it looks like a flying saucer.&lt;/p&gt;
+
+&lt;p&gt;On a personal note. This schedule I set is rough. Not really on me as much as on the family. It&amp;rsquo;s hard to lock yourself in an at home office for 12+ hours a day 3 days a week with a 2 year old and a 2 month old at home. It takes a lot of work watching over them and when both of us are home it&amp;rsquo;s definitely easier for both of us to contribute. I still think next week I can break the 45 hour mark for the amount of time I get to work on coding. I had planned on 52 hours a week which would have me done with the ~800 hours of curriculum in 13 weeks. Since I pay by the month if that gets pushed a couple weeks I&amp;rsquo;ll still be done &amp;lt;16 weeks and not pay for that 5th month.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 5:52&lt;br /&gt;
+Time spent total: 33:26&lt;br /&gt;
+Lessons completed today: 32&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 6</title>
