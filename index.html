@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-05T22:05:48-06:00"/>
+<meta property="og:updated_time" content="2017-03-06T07:40:40-06:00"/>
 
 
 
@@ -175,11 +175,11 @@
 
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-7/"><p>Day 7</p></a>
+                        <a href="https://itzsaga.github.io/post/day-8/"><p>Day 8</p></a>
                     </li>
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-6/"><p>Day 6</p></a>
+                        <a href="https://itzsaga.github.io/post/day-7/"><p>Day 7</p></a>
                     </li>
                 
             </ul>
@@ -196,7 +196,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-7/">Day 7</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h2>
         
         
     </div>
@@ -206,11 +206,11 @@
         
 
         <time class="published"
-            datetime='2017-03-05'>
-            March 5, 2017</time>
+            datetime='2017-03-06'>
+            March 6, 2017</time>
         <span class="author"></span>
         
-            <p>4 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -222,25 +222,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f&text=Day%207&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&text=Day%208&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f&title=Day%207" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&title=Day%208" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -250,90 +250,67 @@
     
 
     <div id="content">
-        <p>After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours:<br />
-When it comes to <a href="https://getbootstrap.com/">Bootstrap</a> as a framework the <code>.col-xs</code> class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap. I had used Bootstrap in the past but never really understood how to use it more fully.</p>
+        <p>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests the refactored and chopped two lines of code out of it. This made me happy.<br />
+Original code:</p>
 
-<p>I also spend a chunk of time troubleshooting the custom Learn IDE (built on top of Atom) that Flatiron provides. It has some quirks. Very simple the workflow is this, click a button on the site, the IDE opens, runs a command to fork then clone down a GitHub repo with all the files you need. There were a couple labs that had zero files in them. However, I was building on a previous lab so I had the files I needed. I copied and pasted them into the appropriate place in File Explorer but the IDE wouldn&rsquo;t show them. I had to &ldquo;Import&rdquo; them from within the IDE for it to acknowledge their existence. This was a pain in the ass to say the least.</p>
-
-<p>I&rsquo;m finally back into Procedural Ruby. Funny thing is I&rsquo;m coming across labs that directly relate to the ones that I did in the Bootcamp Prep course. They&rsquo;re carbon copies in fact. The only difference is that I chose to do the JavaScript Bootcamp Prep and now I&rsquo;m solving problems in Ruby. It&rsquo;s interesting though to see how different languages solve the same problems.</p>
-
-<p>Of course I have to give an example. Here&rsquo;s the modified (to make it make more sense for both languages) Deli Counter lab requirements:</p>
-
-<ol>
-<li>Build the method/function that shows everyone their current place in the line. If there is nobody in line, it should say <code>&quot;The line is currently empty.&quot;</code>.</li>
-<li>Build a method/function that a new customer will use when entering the deli. The method/function should accept two arguments, the array for the current line of people, and a string containing the name of the person wishing to join the line. The method/function should return the person&rsquo;s  name along with their position in line.</li>
-<li>Build a method/function which should call out the next person in line and then remove them from the front. If there is nobody in line, it should call out that <code>&quot;There is nobody waiting to be served!&quot;</code>.</li>
-</ol>
-
-<p>First is JavaScript:</p>
-
-<pre><code class="language-javascript">var katzDeliLine = [];
-
-function currentLine(x) {
-    var line = []
-    if (x.length === 0) {
-      return &quot;The line is currently empty.&quot;
-    } else {
-      for(var i = 0; i &lt; x.length; i++) {
-        line += (i + 1) + &quot;. &quot; + x[i] + &quot;, &quot;
-      }
-      line = line.slice(0, line.length-2)
-      return &quot;The line is currently: &quot; + line
-    }
-}
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name)
-  return &quot;Welcome, &quot; + name + &quot;. You are number &quot; + katzDeliLine.length + &quot; in line.&quot;
-}
-function nowServing(x) {
-  if (x.length === 0) {
-    return &quot;There is nobody waiting to be served!&quot;
-  } else {
-    var name = x[0];
-    x.splice(0, 1);
-    return &quot;Currently serving &quot; + name + &quot;.&quot;;
-  }
-}
-</code></pre>
-
-<p>And then in Ruby:</p>
-
-<pre><code class="language-ruby">katz_deli = []
-
-def line(x)
-  line_array = []
-  if x.length == 0
-    puts &quot;The line is currently empty.&quot;
-  else
-    x.each.with_index(1) do |name, index|
-      line_array.push(&quot;#{index}. #{name}&quot;)
-    end
-    puts &quot;The line is currently: #{line_array.join(&quot; &quot;)}&quot;
-  end
-end
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts &quot;Welcome, #{name}. You are number #{katz_deli.length} in line.&quot;
-end
-def now_serving(array)
-  if array.empty?
-    puts &quot;There is nobody waiting to be served!&quot;
-  else
-    puts &quot;Currently serving #{array[0]}.&quot;
-    array.shift
+<pre><code class="language-ruby">def oxford_comma(array)
+  if array.length == 1
+    return &quot;#{array[0]}&quot;
+  elsif array.length == 2
+    return array.join(&quot; and &quot;)
+  elsif array.length &gt;= 3
+    new_last_array_item = &quot;and #{array[-1]}&quot;
+    array.pop
+    array.push(new_last_array_item)
+    return array.join(&quot;, &quot;)
   end
 end
 </code></pre>
 
-<p>A small thing I noticed is that it took me 3 less lines of code to do it in Ruby. I&rsquo;m sure I&rsquo;m not as eloquent in JS as I could be though so I&rsquo;m sure that could be condensed down as well.</p>
+<p>Refactored code:</p>
 
-<p>Finally, I laughed when I read about the &ldquo;spaceship&rdquo; operator <code>&lt;=&gt;</code> only because it&rsquo;s nicknamed that because it looks like a flying saucer.</p>
+<pre><code class="language-ruby">def oxford_comma(array)
+  if array.length == 1
+    return &quot;#{array[0]}&quot;
+  elsif array.length == 2
+    return array.join(&quot; and &quot;)
+  elsif array.length &gt;= 3
+    array[-1] = &quot;and #{array[-1]}&quot;
+    return array.join(&quot;, &quot;)
+  end
+end
+</code></pre>
 
-<p>On a personal note. This schedule I set is rough. Not really on me as much as on the family. It&rsquo;s hard to lock yourself in an at home office for 12+ hours a day 3 days a week with a 2 year old and a 2 month old at home. It takes a lot of work watching over them and when both of us are home it&rsquo;s definitely easier for both of us to contribute. I still think next week I can break the 45 hour mark for the amount of time I get to work on coding. I had planned on 52 hours a week which would have me done with the ~800 hours of curriculum in 13 weeks. Since I pay by the month if that gets pushed a couple weeks I&rsquo;ll still be done &lt;16 weeks and not pay for that 5th month.</p>
+<p>Another refactoring win today while the kids were napping. I had the following to accomplish: &ldquo;Write a method called <code>reverse_each_word</code> that takes in a string argument of a sentence and returns that same sentence with each word reversed in place.&rdquo;</p>
 
-<p>Time spent today: 5:52<br />
-Time spent total: 33:26<br />
-Lessons completed today: 32</p>
+<pre><code class="language-ruby"># FIRST METHOD THAT PASSED
+def reverse_each_word(array)
+  new_array = array.split(&quot; &quot;)
+  reversed_array = new_array.each {|x| x.reverse!}
+  return reversed_array.join(&quot; &quot;)
+end
+
+# FIRST REFACTORED CODE
+def reverse_each_word(array)
+  new_array = array.split(&quot; &quot;)
+  new_array.collect {|x| x.reverse!}
+  new_array.join(&quot; &quot;)
+end
+
+# FINAL SOLUTION
+def reverse_each_word(array)
+  array.split(&quot; &quot;).collect {|x| x.reverse!}.join(&quot; &quot;)
+end
+</code></pre>
+
+<p>I realized that I could chain the mehods together since I was calling them all on the same element. Then I also realized that it was going to return automatically from the method so I had no need for the return either. <a href="http://ruby-doc.org/">Ruby-Doc</a> is quickly becoming one of my best friends while working on this Procedural Ruby section.</p>
+
+<p>Today was the day of Slack distraction. This can be seen by the number of lessons I completed. However, networking and connecting with other students is important to an extent as well. A few other students and I started down the rabbit hole of health and wellness and biohacking etc&hellip; I was able to share some of the things I do like my morning stretching from <a href="https://www.gymnasticbodies.com/">Gymnastic Bodies</a>, how I drink my coffee cocktail (coffee + grassfed ghee currently), and meditation utilizing <a href="https://www.calm.com/">Calm</a>. Also how I diffuse essential oils in the office I study/code in and listen to <a href="https://www.brain.fm">Brain.fm</a> while I code. How I have some <a href="https://us.foursigmatic.com/collections/all-products/products/instant-lions-mane">Four Sigmatic Lion&rsquo;s Mane Elixir</a> on the way from <a href="http://thrv.me/seth">Thrive Market</a> (because it&rsquo;s &lt;$26 there) and some <a href="http://amzn.to/2mZGVPc">Brain Boost</a> from Amazon.</p>
+
+<p>Time spent today: 3:17<br />
+Time spent total: 36:43<br />
+Lessons completed today: 9<br />
+Lessons completed total: 206</p>
 
     </div>
 
@@ -367,8 +344,8 @@ Lessons completed today: 32</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-6/"
-                class="button big previous">Day 6</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-7/"
+                class="button big previous">Day 7</a></li>
     
 
     
@@ -381,9 +358,9 @@ Lessons completed today: 32</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-7\/';
-    var disqus_title = 'Day 7';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-7\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-8\/';
+    var disqus_title = 'Day 8';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-8\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -407,25 +384,25 @@ Lessons completed today: 32</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f&text=Day%207&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&text=Day%208&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f&title=Day%207" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&title=Day%208" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-7%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -545,13 +522,13 @@ Lessons completed today: 32</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-7/">Day 7</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-05'>
-                                    March 5, 2017</time>
+                                    '2017-03-06'>
+                                    March 6, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -559,13 +536,13 @@ Lessons completed today: 32</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-6/">Day 6</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-7/">Day 7</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-04'>
-                                    March 4, 2017</time>
+                                    '2017-03-05'>
+                                    March 5, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -604,7 +581,7 @@ Lessons completed today: 32</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">7</span>
+                                <span style="float:right;">8</span>
                             </header>
                         </article>
                     </li>
