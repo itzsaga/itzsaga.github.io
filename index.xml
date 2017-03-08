@@ -6,8 +6,49 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2017 07:40:40 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 07 Mar 2017 22:15:38 -0600</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 9</title>
+      <link>https://itzsaga.github.io/post/day-9/</link>
+      <pubDate>Tue, 07 Mar 2017 22:15:38 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-9/</guid>
+      <description>&lt;p&gt;Today was a slow day. The kids didn&amp;rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&amp;rsquo;s fine though. I didn&amp;rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.&lt;/p&gt;
+
+&lt;p&gt;I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about &lt;a href=&#34;https://en.wikipedia.org/wiki/Primality_test&#34;&gt;primality algorithms&lt;/a&gt; when I had the challenge of coding a test to see if a number is prime without using the &lt;code&gt;Math&lt;/code&gt; library.&lt;/p&gt;
+
+&lt;p&gt;My code works but definitely is not something that would ever get put into production. It is not efficient, at all.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def prime?(n)
+  if n &amp;lt;= 1
+    return false
+  elsif n &amp;lt;= 3
+    return true
+  else (2..n/2).none? do |x|
+    n % x == 0
+  end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I could make it even more efficient by changing that &lt;code&gt;n/2&lt;/code&gt; to the square root of &lt;code&gt;n&lt;/code&gt; but I couldn&amp;rsquo;t get that helper method working. In the end I would want to implement something like what I found online that states:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So a more efficient method is to test if &lt;code&gt;n&lt;/code&gt; is divisible by 2 or 3, then to check through all the numbers of form &lt;img src=&#34;images/prime6k.svg&#34; alt=&#34;math_formula&#34; /&gt;. This is 3 times as fast as testing all &lt;code&gt;m&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;m&lt;/code&gt; is what&amp;rsquo;s happening right now in my solution.&lt;/p&gt;
+
+&lt;p&gt;Luckily, I won&amp;rsquo;t ever have to do that because &lt;code&gt;Math&lt;/code&gt; is a library that I&amp;rsquo;ll be using in real life. I kind of felt like I did in my college Finance class when the professor told us we had to memorize all the formulas even though she had zero memorized herself because her computer did everything for her at her day job.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 1:44&lt;br /&gt;
+Time spent total: 38:28&lt;br /&gt;
+Lessons completed today: 3&lt;br /&gt;
+Lessons completed total: 209&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 8</title>
@@ -15,7 +56,7 @@
       <pubDate>Mon, 06 Mar 2017 07:40:40 -0600</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-8/</guid>
-      <description>&lt;p&gt;Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests the refactored and chopped two lines of code out of it. This made me happy.&lt;br /&gt;
+      <description>&lt;p&gt;Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy.&lt;br /&gt;
 Original code:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def oxford_comma(array)

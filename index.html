@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-06T07:40:40-06:00"/>
+<meta property="og:updated_time" content="2017-03-07T22:15:38-06:00"/>
 
 
 
@@ -175,11 +175,11 @@
 
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-8/"><p>Day 8</p></a>
+                        <a href="https://itzsaga.github.io/post/day-9/"><p>Day 9</p></a>
                     </li>
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-7/"><p>Day 7</p></a>
+                        <a href="https://itzsaga.github.io/post/day-8/"><p>Day 8</p></a>
                     </li>
                 
             </ul>
@@ -196,7 +196,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-9/">Day 9</a></h2>
         
         
     </div>
@@ -206,8 +206,8 @@
         
 
         <time class="published"
-            datetime='2017-03-06'>
-            March 6, 2017</time>
+            datetime='2017-03-07'>
+            March 7, 2017</time>
         <span class="author"></span>
         
             <p>2 minute read</p>
@@ -222,25 +222,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&text=Day%208&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&text=Day%209&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&title=Day%208" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&title=Day%209" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -250,67 +250,38 @@
     
 
     <div id="content">
-        <p>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests the refactored and chopped two lines of code out of it. This made me happy.<br />
-Original code:</p>
+        <p>Today was a slow day. The kids didn&rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&rsquo;s fine though. I didn&rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.</p>
 
-<pre><code class="language-ruby">def oxford_comma(array)
-  if array.length == 1
-    return &quot;#{array[0]}&quot;
-  elsif array.length == 2
-    return array.join(&quot; and &quot;)
-  elsif array.length &gt;= 3
-    new_last_array_item = &quot;and #{array[-1]}&quot;
-    array.pop
-    array.push(new_last_array_item)
-    return array.join(&quot;, &quot;)
+<p>I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about <a href="https://en.wikipedia.org/wiki/Primality_test">primality algorithms</a> when I had the challenge of coding a test to see if a number is prime without using the <code>Math</code> library.</p>
+
+<p>My code works but definitely is not something that would ever get put into production. It is not efficient, at all.</p>
+
+<pre><code class="language-ruby">def prime?(n)
+  if n &lt;= 1
+    return false
+  elsif n &lt;= 3
+    return true
+  else (2..n/2).none? do |x|
+    n % x == 0
+  end
   end
 end
 </code></pre>
 
-<p>Refactored code:</p>
+<p>I could make it even more efficient by changing that <code>n/2</code> to the square root of <code>n</code> but I couldn&rsquo;t get that helper method working. In the end I would want to implement something like what I found online that states:</p>
 
-<pre><code class="language-ruby">def oxford_comma(array)
-  if array.length == 1
-    return &quot;#{array[0]}&quot;
-  elsif array.length == 2
-    return array.join(&quot; and &quot;)
-  elsif array.length &gt;= 3
-    array[-1] = &quot;and #{array[-1]}&quot;
-    return array.join(&quot;, &quot;)
-  end
-end
-</code></pre>
+<blockquote>
+<p>So a more efficient method is to test if <code>n</code> is divisible by 2 or 3, then to check through all the numbers of form <img src="images/prime6k.svg" alt="math_formula" />. This is 3 times as fast as testing all <code>m</code>.</p>
+</blockquote>
 
-<p>Another refactoring win today while the kids were napping. I had the following to accomplish: &ldquo;Write a method called <code>reverse_each_word</code> that takes in a string argument of a sentence and returns that same sentence with each word reversed in place.&rdquo;</p>
+<p><code>m</code> is what&rsquo;s happening right now in my solution.</p>
 
-<pre><code class="language-ruby"># FIRST METHOD THAT PASSED
-def reverse_each_word(array)
-  new_array = array.split(&quot; &quot;)
-  reversed_array = new_array.each {|x| x.reverse!}
-  return reversed_array.join(&quot; &quot;)
-end
+<p>Luckily, I won&rsquo;t ever have to do that because <code>Math</code> is a library that I&rsquo;ll be using in real life. I kind of felt like I did in my college Finance class when the professor told us we had to memorize all the formulas even though she had zero memorized herself because her computer did everything for her at her day job.</p>
 
-# FIRST REFACTORED CODE
-def reverse_each_word(array)
-  new_array = array.split(&quot; &quot;)
-  new_array.collect {|x| x.reverse!}
-  new_array.join(&quot; &quot;)
-end
-
-# FINAL SOLUTION
-def reverse_each_word(array)
-  array.split(&quot; &quot;).collect {|x| x.reverse!}.join(&quot; &quot;)
-end
-</code></pre>
-
-<p>I realized that I could chain the mehods together since I was calling them all on the same element. Then I also realized that it was going to return automatically from the method so I had no need for the return either. <a href="http://ruby-doc.org/">Ruby-Doc</a> is quickly becoming one of my best friends while working on this Procedural Ruby section.</p>
-
-<p>Today was the day of Slack distraction. This can be seen by the number of lessons I completed. However, networking and connecting with other students is important to an extent as well. A few other students and I started down the rabbit hole of health and wellness and biohacking etc&hellip; I was able to share some of the things I do like my morning stretching from <a href="https://www.gymnasticbodies.com/">Gymnastic Bodies</a>, how I drink my coffee cocktail (coffee + grassfed ghee currently), and meditation utilizing <a href="https://www.calm.com/">Calm</a>. Also how I diffuse essential oils in the office I study/code in and listen to <a href="https://www.brain.fm">Brain.fm</a> while I code. How I have some <a href="https://us.foursigmatic.com/collections/all-products/products/instant-lions-mane">Four Sigmatic Lion&rsquo;s Mane Elixir</a> on the way from <a href="http://thrv.me/seth">Thrive Market</a> (because it&rsquo;s &lt;$26 there) and some <a href="http://amzn.to/2mZGVPc">Brain Boost</a> from Amazon.</p>
-
-<p>Time spent today: 3:17<br />
-Time spent total: 36:43<br />
-Lessons completed today: 9<br />
-Lessons completed total: 206</p>
+<p>Time spent today: 1:44<br />
+Time spent total: 38:28<br />
+Lessons completed today: 3<br />
+Lessons completed total: 209</p>
 
     </div>
 
@@ -344,8 +315,8 @@ Lessons completed total: 206</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-7/"
-                class="button big previous">Day 7</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-8/"
+                class="button big previous">Day 8</a></li>
     
 
     
@@ -358,9 +329,9 @@ Lessons completed total: 206</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-8\/';
-    var disqus_title = 'Day 8';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-8\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-9\/';
+    var disqus_title = 'Day 9';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-9\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -384,25 +355,25 @@ Lessons completed total: 206</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&text=Day%208&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&text=Day%209&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f&title=Day%208" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&title=Day%209" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-8%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -522,13 +493,13 @@ Lessons completed total: 206</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-9/">Day 9</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-06'>
-                                    March 6, 2017</time>
+                                    '2017-03-07'>
+                                    March 7, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -536,13 +507,13 @@ Lessons completed total: 206</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-7/">Day 7</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-05'>
-                                    March 5, 2017</time>
+                                    '2017-03-06'>
+                                    March 6, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -581,7 +552,7 @@ Lessons completed total: 206</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">8</span>
+                                <span style="float:right;">9</span>
                             </header>
                         </article>
                     </li>
