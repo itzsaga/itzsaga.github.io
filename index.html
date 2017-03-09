@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-07T22:15:38-06:00"/>
+<meta property="og:updated_time" content="2017-03-08T07:31:22-06:00"/>
 
 
 
@@ -175,11 +175,11 @@
 
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-9/"><p>Day 9</p></a>
+                        <a href="https://itzsaga.github.io/post/day-010/"><p>Day 10</p></a>
                     </li>
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-8/"><p>Day 8</p></a>
+                        <a href="https://itzsaga.github.io/post/day-009/"><p>Day 9</p></a>
                     </li>
                 
             </ul>
@@ -196,7 +196,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-9/">Day 9</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-010/">Day 10</a></h2>
         
         
     </div>
@@ -206,8 +206,8 @@
         
 
         <time class="published"
-            datetime='2017-03-07'>
-            March 7, 2017</time>
+            datetime='2017-03-08'>
+            March 8, 2017</time>
         <span class="author"></span>
         
             <p>2 minute read</p>
@@ -222,25 +222,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&text=Day%209&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f&text=Day%2010&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&title=Day%209" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f&title=Day%2010" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -250,38 +250,47 @@
     
 
     <div id="content">
-        <p>Today was a slow day. The kids didn&rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&rsquo;s fine though. I didn&rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.</p>
+        <p>I got a lot done this morning. Especially after the coffee kicked in. When I started I was definitely not 100% awake. I even did some extra credit on a lab which I typically do not do. I&rsquo;ve never been the type to want to score 105 on a test because I aced it <strong>AND</strong> the extra credit. I did this one specifically because I knew it wouldn&rsquo;t take much time as I was writing a generic method for a specific method I had just completed. Basically inserting place holders where the original problem had specific items.</p>
 
-<p>I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about <a href="https://en.wikipedia.org/wiki/Primality_test">primality algorithms</a> when I had the challenge of coding a test to see if a number is prime without using the <code>Math</code> library.</p>
+<p>So first I solved this:<br />
+Advanced: Try building a method <code>swap_elements_from_to</code> that takes in three arguments, <code>array, index, destination_index</code>, that will allow you to specify the index of the element you would like to move to a new index.<br />
+Like this:</p>
 
-<p>My code works but definitely is not something that would ever get put into production. It is not efficient, at all.</p>
+<pre><code class="language-ruby">def swap_elements_from_to(array, index, new_index)
+  array[index], array[new_index] = array[new_index], array[index]
+  return array
+end
+</code></pre>
 
-<pre><code class="language-ruby">def prime?(n)
-  if n &lt;= 1
-    return false
-  elsif n &lt;= 3
-    return true
-  else (2..n/2).none? do |x|
-    n % x == 0
-  end
+<p>Then I did this:<br />
+Advanced #2: Try writing test coverage for it!
+Like this:</p>
+
+<pre><code class="language-ruby"># Question 4 Bonus
+describe 'swap_elements_from_to' do
+  it 'swaps elements and allows you to specify the index of the element you would like to move to a new index' do
+    expect(swap_elements_from_to([&quot;one&quot;, &quot;two&quot;, &quot;three&quot;], 2, 1)).to eq([&quot;one&quot;, &quot;three&quot;, &quot;two&quot;])
   end
 end
 </code></pre>
 
-<p>I could make it even more efficient by changing that <code>n/2</code> to the square root of <code>n</code> but I couldn&rsquo;t get that helper method working. In the end I would want to implement something like what I found online that states:</p>
+<p>And it worked!
+<img src="images/first_test.jpg" alt="results_of_first_test" title="I was psyched when I saw this!" />
+I successfully wrote my first test! I was stoked! I know that I&rsquo;ll have to write my own tests in the future so this small win was nice.</p>
 
-<blockquote>
-<p>So a more efficient method is to test if <code>n</code> is divisible by 2 or 3, then to check through all the numbers of form <img src="images/prime6k.svg" alt="math_formula" />. This is 3 times as fast as testing all <code>m</code>.</p>
-</blockquote>
+<p>As I kept on working, I must say, the fact that I got this as an error is awesome:</p>
 
-<p><code>m</code> is what&rsquo;s happening right now in my solution.</p>
+<pre><code>NoMethodError:
+undefined method `starts_with?' for &quot;apple&quot;:String
+Did you mean?  start_with?
+</code></pre>
 
-<p>Luckily, I won&rsquo;t ever have to do that because <code>Math</code> is a library that I&rsquo;ll be using in real life. I kind of felt like I did in my college Finance class when the professor told us we had to memorize all the formulas even though she had zero memorized herself because her computer did everything for her at her day job.</p>
+<p>I can definitely see why test driven development (TDD) makes so much sense. I had been thinking it was almost like doing double the work but I could&rsquo;ve been stuck there forever because of one letter.</p>
 
-<p>Time spent today: 1:44<br />
-Time spent total: 38:28<br />
-Lessons completed today: 3<br />
-Lessons completed total: 209</p>
+<p>Time spent today: 2:39<br />
+Time spent total: 41:07<br />
+Lessons completed today: 9<br />
+Lessons completed total: 218</p>
 
     </div>
 
@@ -315,8 +324,8 @@ Lessons completed total: 209</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-8/"
-                class="button big previous">Day 8</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-009/"
+                class="button big previous">Day 9</a></li>
     
 
     
@@ -329,9 +338,9 @@ Lessons completed total: 209</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-9\/';
-    var disqus_title = 'Day 9';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-9\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-010\/';
+    var disqus_title = 'Day 10';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-010\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -355,25 +364,25 @@ Lessons completed total: 209</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&text=Day%209&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f&text=Day%2010&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f&title=Day%209" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f&title=Day%2010" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-9%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-010%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -493,13 +502,13 @@ Lessons completed total: 209</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-9/">Day 9</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-010/">Day 10</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-07'>
-                                    March 7, 2017</time>
+                                    '2017-03-08'>
+                                    March 8, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -507,13 +516,13 @@ Lessons completed total: 209</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-8/">Day 8</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-009/">Day 9</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-06'>
-                                    March 6, 2017</time>
+                                    '2017-03-07'>
+                                    March 7, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -552,7 +561,7 @@ Lessons completed total: 209</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">9</span>
+                                <span style="float:right;">10</span>
                             </header>
                         </article>
                     </li>

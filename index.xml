@@ -6,15 +6,65 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Mar 2017 22:15:38 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2017 07:31:22 -0600</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 10</title>
+      <link>https://itzsaga.github.io/post/day-010/</link>
+      <pubDate>Wed, 08 Mar 2017 07:31:22 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-010/</guid>
+      <description>&lt;p&gt;I got a lot done this morning. Especially after the coffee kicked in. When I started I was definitely not 100% awake. I even did some extra credit on a lab which I typically do not do. I&amp;rsquo;ve never been the type to want to score 105 on a test because I aced it &lt;strong&gt;AND&lt;/strong&gt; the extra credit. I did this one specifically because I knew it wouldn&amp;rsquo;t take much time as I was writing a generic method for a specific method I had just completed. Basically inserting place holders where the original problem had specific items.&lt;/p&gt;
+
+&lt;p&gt;So first I solved this:&lt;br /&gt;
+Advanced: Try building a method &lt;code&gt;swap_elements_from_to&lt;/code&gt; that takes in three arguments, &lt;code&gt;array, index, destination_index&lt;/code&gt;, that will allow you to specify the index of the element you would like to move to a new index.&lt;br /&gt;
+Like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def swap_elements_from_to(array, index, new_index)
+  array[index], array[new_index] = array[new_index], array[index]
+  return array
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I did this:&lt;br /&gt;
+Advanced #2: Try writing test coverage for it!
+Like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Question 4 Bonus
+describe &#39;swap_elements_from_to&#39; do
+  it &#39;swaps elements and allows you to specify the index of the element you would like to move to a new index&#39; do
+    expect(swap_elements_from_to([&amp;quot;one&amp;quot;, &amp;quot;two&amp;quot;, &amp;quot;three&amp;quot;], 2, 1)).to eq([&amp;quot;one&amp;quot;, &amp;quot;three&amp;quot;, &amp;quot;two&amp;quot;])
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And it worked!
+&lt;img src=&#34;images/first_test.jpg&#34; alt=&#34;results_of_first_test&#34; title=&#34;I was psyched when I saw this!&#34; /&gt;
+I successfully wrote my first test! I was stoked! I know that I&amp;rsquo;ll have to write my own tests in the future so this small win was nice.&lt;/p&gt;
+
+&lt;p&gt;As I kept on working, I must say, the fact that I got this as an error is awesome:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NoMethodError:
+undefined method `starts_with?&#39; for &amp;quot;apple&amp;quot;:String
+Did you mean?  start_with?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I can definitely see why test driven development (TDD) makes so much sense. I had been thinking it was almost like doing double the work but I could&amp;rsquo;ve been stuck there forever because of one letter.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:39&lt;br /&gt;
+Time spent total: 41:07&lt;br /&gt;
+Lessons completed today: 9&lt;br /&gt;
+Lessons completed total: 218&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 9</title>
-      <link>https://itzsaga.github.io/post/day-9/</link>
+      <link>https://itzsaga.github.io/post/day-009/</link>
       <pubDate>Tue, 07 Mar 2017 22:15:38 -0600</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-9/</guid>
+      <guid>https://itzsaga.github.io/post/day-009/</guid>
       <description>&lt;p&gt;Today was a slow day. The kids didn&amp;rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&amp;rsquo;s fine though. I didn&amp;rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.&lt;/p&gt;
 
 &lt;p&gt;I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about &lt;a href=&#34;https://en.wikipedia.org/wiki/Primality_test&#34;&gt;primality algorithms&lt;/a&gt; when I had the challenge of coding a test to see if a number is prime without using the &lt;code&gt;Math&lt;/code&gt; library.&lt;/p&gt;
@@ -52,10 +102,10 @@ Lessons completed total: 209&lt;/p&gt;
     
     <item>
       <title>Day 8</title>
-      <link>https://itzsaga.github.io/post/day-8/</link>
+      <link>https://itzsaga.github.io/post/day-008/</link>
       <pubDate>Mon, 06 Mar 2017 07:40:40 -0600</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-8/</guid>
+      <guid>https://itzsaga.github.io/post/day-008/</guid>
       <description>&lt;p&gt;Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy.&lt;br /&gt;
 Original code:&lt;/p&gt;
 
@@ -122,10 +172,10 @@ Lessons completed total: 206&lt;/p&gt;
     
     <item>
       <title>Day 7</title>
-      <link>https://itzsaga.github.io/post/day-7/</link>
+      <link>https://itzsaga.github.io/post/day-007/</link>
       <pubDate>Sun, 05 Mar 2017 22:05:48 -0600</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-7/</guid>
+      <guid>https://itzsaga.github.io/post/day-007/</guid>
       <description>&lt;p&gt;After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours:&lt;br /&gt;
 When it comes to &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; as a framework the &lt;code&gt;.col-xs&lt;/code&gt; class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap. I had used Bootstrap in the past but never really understood how to use it more fully.&lt;/p&gt;
 
@@ -215,10 +265,10 @@ Lessons completed today: 32&lt;/p&gt;
     
     <item>
       <title>Day 6</title>
-      <link>https://itzsaga.github.io/post/day-6/</link>
+      <link>https://itzsaga.github.io/post/day-006/</link>
       <pubDate>Sat, 04 Mar 2017 23:00:48 -0600</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-6/</guid>
+      <guid>https://itzsaga.github.io/post/day-006/</guid>
       <description>&lt;p&gt;It was a LONG day of HTML &amp;amp; CSS and I&amp;rsquo;m still not done with this section. It&amp;rsquo;s okay though. While a lot of it has been review a lot of it has not as well. I&amp;rsquo;ve been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type. Desktop Down principles were discussed as well but I think at this point in time there is no reason to utilize that methodology. Too many people are utilizing their phones as their primary was to consume content and the trend is moving in that direction anyway.&lt;/p&gt;
 
 &lt;p&gt;I think this section feels really long and boring because so much of it is being explained in videos and less with actually coding. Maybe 5-10 lessons to each coding exercise. In addition, most of the coding is codealong so there is much less thinking involved. At least I can set the videos to 1.5x speed. I&amp;rsquo;m 87% of the way done with this HTML and CSS section so I&amp;rsquo;ll finish it off tomorrow for sure.&lt;/p&gt;
@@ -270,10 +320,10 @@ Lessons completed today: 40&lt;/p&gt;
     
     <item>
       <title>Day 5</title>
-      <link>https://itzsaga.github.io/post/day-5/</link>
+      <link>https://itzsaga.github.io/post/day-005/</link>
       <pubDate>Sat, 04 Mar 2017 04:57:01 +0000</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-5/</guid>
+      <guid>https://itzsaga.github.io/post/day-005/</guid>
       <description>&lt;p&gt;Today had a rough start. We decided to start potty training today and my wife and I were not on the same page about what that would look like in terms of the amount of coding I would get done today. Thankfully we got things moving pretty smoothly about noon. I then proceeded to complete my first part of the Intro to Ruby curriculum! I now have a functioning CLI Tic Tac Toe game built in Ruby. It can be found &lt;a href=&#34;https://github.com/itzsaga/tic-tac-toe-rb-v-000&#34;&gt;here&lt;/a&gt;. Pretty proud of myself for this one. I got stuck on one part and had to do a screen share with what is called a &amp;ldquo;Learn Expert&amp;rdquo; but it was actually a quick fix. I was stuck on utilizing a ternary. I had the following problem:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# This is passing tests
@@ -323,10 +373,10 @@ Lessons completed today: 53&lt;/p&gt;
     
     <item>
       <title>Day 4</title>
-      <link>https://itzsaga.github.io/post/day-4/</link>
+      <link>https://itzsaga.github.io/post/day-004/</link>
       <pubDate>Fri, 03 Mar 2017 04:27:10 +0000</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-4/</guid>
+      <guid>https://itzsaga.github.io/post/day-004/</guid>
       <description>&lt;p&gt;Today was no longer than the first few but definitely felt like it was. I learned the hard lesson that with this schedule I actually have to go to sleep when I schedule it. I stayed up late last night but still stuck to my 6 am wake-up call. Needless to say my last 30 minutes of coding tonight was not good and I couldn’t make progress like I know I can. I’m just foggy in the head and tired. My prime nap time in the middle of the day was taken away by my grumpy 2.5-month-old who 3 minutes after I set a 30-minute alarm for my nap decided she would cry for 90 minutes. I finally got her calm and &lt;strong&gt;boom&lt;/strong&gt; my 2-year-old is awake from her nap. I love them both, I just really would have enjoyed that nap today.&lt;/p&gt;
 
 &lt;p&gt;Nothing big happened today in my schooling. The people that wrote the curriculum like to include quotes here and there and I saw one name pop up a few times so I looked him up. Turns out &lt;a href=&#34;https://en.wikipedia.org/wiki/Edsger_W._Dijkstra&#34;&gt;Edsger W. Dijkstra&lt;/a&gt; was a pretty big deal in the world of CS and programming. I didn’t read his entire Wikipedia page but I intend to.&lt;/p&gt;
@@ -355,10 +405,10 @@ Lessons completed today: 12&lt;/p&gt;
     
     <item>
       <title>Day 3</title>
-      <link>https://itzsaga.github.io/post/day-3/</link>
+      <link>https://itzsaga.github.io/post/day-003/</link>
       <pubDate>Wed, 01 Mar 2017 04:06:30 +0000</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-3/</guid>
+      <guid>https://itzsaga.github.io/post/day-003/</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t think I need to announce what day it is anymore, lol. I think I&amp;rsquo;ve got my morning routine down now. Alarms go off at 6 am and I&amp;rsquo;m out of bed by 6:15 am typically. Coffee is done brewing by the time I get downstairs. Feed the dog and make my coffee (ghee is my only additive right now but I&amp;rsquo;ll get back to Bulletproof Coffee at some point using Brain Octane™ Oil). I then do my Daily Limber from &lt;a href=&#34;https://www.gymnasticbodies.com/&#34;&gt;Gymnastic Bodies&lt;/a&gt;. Follow that up with some journaling which right now is a version of the &lt;a href=&#34;https://www.intelligentchange.com/products/the-five-minute-journal&#34;&gt;The Five Minute Journal&lt;/a&gt; that I have copied into Evernote and added to. I created a template note then duplicate that note every morning and change the title to the date. You can find the template &lt;a href=&#34;http://www.evernote.com/l/ACLTHi8AYQpNBYxuRLXm_Vp17gMmKMe8uFQ/&#34;&gt;here&lt;/a&gt; if you want to use it. After that I meditate for about 5 minutes. Depending on the day I may walk the dog now or later (I did today because thunderstorms were approaching). This gets me to about 7 am when I start coding until the kids wake up. I think I&amp;rsquo;ll keep this format for now.&lt;/p&gt;
 
 &lt;p&gt;Only news from my morning coding session is that it got cut short because of this:
@@ -389,10 +439,10 @@ Lessons completed today: 28&lt;/p&gt;
     
     <item>
       <title>Day 2</title>
-      <link>https://itzsaga.github.io/post/day-2/</link>
+      <link>https://itzsaga.github.io/post/day-002/</link>
       <pubDate>Wed, 01 Mar 2017 03:59:51 +0000</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-2/</guid>
+      <guid>https://itzsaga.github.io/post/day-002/</guid>
       <description>&lt;p&gt;Another day, more code. However, now I have the full bootcamp track! This is what I was waiting for:
 &lt;img src=&#34;https://res.cloudinary.com/sethalexander/v1488290498/zpcntksutiursizgshbi&#34; alt=&#34;full_stack_web_dev._with_react&#34; /&gt;
 I also started tracking my time using &lt;a href=&#34;http://toggl.com&#34;&gt;Toggl&lt;/a&gt; solely because I was interested in exactly how long this bootcamp is going to take. Well, that and yesterday my wife asked me how much time I got to spend on school so now I&amp;rsquo;ll know. Started on some Ruby this morning and also learned that career placement starts when 75% of the curriculum is done (after Rails is complete). This makes sense as the Flatiron path takes me through a bunch in the Ruby ecosystem then on the back end teaches React and Node.js. I had been thinking to myself, once I was done with all the Ruby learning and started working on the JS portion of the curriculum I could start searching for Ruby jobs.&lt;/p&gt;
@@ -418,10 +468,10 @@ Lessons completed today: 25&lt;/p&gt;
     
     <item>
       <title>Day 1</title>
-      <link>https://itzsaga.github.io/post/day-1/</link>
+      <link>https://itzsaga.github.io/post/day-001/</link>
       <pubDate>Tue, 28 Feb 2017 04:06:33 +0000</pubDate>
       
-      <guid>https://itzsaga.github.io/post/day-1/</guid>
+      <guid>https://itzsaga.github.io/post/day-001/</guid>
       <description>&lt;p&gt;Day 1 is finally upon me! I&amp;rsquo;ve got my setup ready as of last night after making a road trip to IKEA in Memphis, TN. After the price of gas I probably could have gotten a desk, chair, and that plastic thing you put on the floor for the same price here in Nashville but why not go to IKEA? I also know people are crazy for IKEA stuff so if we end up getting rid of this stuff someone will buy it quick!
 &lt;img src=&#34;http://res.cloudinary.com/sethalexander/image/upload/c_scale,w_792/v1488253544/IMG_20170227_080607_s4pqzx.jpg&#34; alt=&#34;deskAndChair&#34; /&gt;&lt;br /&gt;
 Yes that&amp;rsquo;s a stack of high school year books propping up laptop to almost eye level. As I&amp;rsquo;m not working right now a few niceties had to be skipped. Like, I would&amp;rsquo;ve loved a 27&amp;rdquo; monitor on an articulating arm, but, in the future. This setup worked surprisingly well. Although, the $50 IKEA chair isn&amp;rsquo;t as comfortable as pretty much any other desk chair I&amp;rsquo;ve ever used. It gets the job done though and it&amp;rsquo;ll force me to stand up every once and a while.&lt;/p&gt;
