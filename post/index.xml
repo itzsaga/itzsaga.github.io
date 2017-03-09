@@ -40,7 +40,7 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And it worked!
-&lt;img src=&#34;images/first_test.jpg&#34; alt=&#34;results_of_first_test&#34; title=&#34;I was psyched when I saw this!&#34; /&gt;
+&lt;img src=&#34;../images/first_test.jpg&#34; alt=&#34;results_of_first_test&#34; title=&#34;I was psyched when I saw this!&#34; /&gt;
 I successfully wrote my first test! I was stoked! I know that I&amp;rsquo;ll have to write my own tests in the future so this small win was nice.&lt;/p&gt;
 
 &lt;p&gt;As I kept on working, I must say, the fact that I got this as an error is awesome:&lt;/p&gt;
