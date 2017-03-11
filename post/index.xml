@@ -6,16 +6,44 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Mar 2017 22:12:10 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 10 Mar 2017 21:43:53 -0600</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>day 011</title>
+      <title>Day 12</title>
+      <link>https://itzsaga.github.io/post/day-012/</link>
+      <pubDate>Fri, 10 Mar 2017 21:43:53 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-012/</guid>
+      <description>&lt;p&gt;Today didn&amp;rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.&lt;/p&gt;
+
+&lt;p&gt;Notes which of course I&amp;rsquo;ll share:
+&amp;gt; &lt;code&gt;self&lt;/code&gt; is the implicit receiver of all non-explicit method calls.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;local variable is variable  
+instance varialbe is @variable  
+class variable is @@variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;attr_reader macro creates getter method  
+attr_writer macro creates setter method  
+attr_accessor macro creats both setter and getter method&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Avi also talked about how he personally only used the &lt;code&gt;attr_accessor&lt;/code&gt; macro when he&amp;rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The &lt;code&gt;attr_accessor&lt;/code&gt; macro is the most flexible so it makes sense to use that by default.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:05&lt;br /&gt;
+Time spent total: 47:20&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 234&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 11</title>
       <link>https://itzsaga.github.io/post/day-011/</link>
       <pubDate>Thu, 09 Mar 2017 22:12:10 -0600</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-011/</guid>
-      <description>&lt;p&gt;Today was strong work. I finished Procdural Ruby! Now I have Object Oriented Ruby which has final projects and I&amp;rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&amp;rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.&lt;/p&gt;
+      <description>&lt;p&gt;Today was strong work. I finished Procedural Ruby! Now I have Object Oriented Ruby which has final projects and I&amp;rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&amp;rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.&lt;/p&gt;
 
 &lt;p&gt;I spend a good amount of time on the second to last lab of Procedural Ruby (there is a small RegEx section that is last). One specific part was hard but I was stoked with the elegant (so I think) answer I was able to come up with. My original plan was NOT this.&lt;/p&gt;
 

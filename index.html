@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-09T22:12:10-06:00"/>
+<meta property="og:updated_time" content="2017-03-10T21:43:53-06:00"/>
 
 
 
@@ -175,7 +175,11 @@
 
                 
                     <li>
-                        <a href="https://itzsaga.github.io/post/day-011/"><p>day 011</p></a>
+                        <a href="https://itzsaga.github.io/post/day-012/"><p>Day 12</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-011/"><p>Day 11</p></a>
                     </li>
                 
                     <li>
@@ -196,7 +200,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-011/">day 011</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-012/">Day 12</a></h2>
         
         
     </div>
@@ -206,11 +210,11 @@
         
 
         <time class="published"
-            datetime='2017-03-09'>
-            March 9, 2017</time>
+            datetime='2017-03-10'>
+            March 10, 2017</time>
         <span class="author"></span>
         
-            <p>2 minute read</p>
+            <p>1 minute read</p>
         
         
     </div>
@@ -222,25 +226,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f&text=day%20011&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f&text=Day%2012&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f&title=day%20011" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f&title=Day%2012" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -250,52 +254,25 @@
     
 
     <div id="content">
-        <p>Today was strong work. I finished Procdural Ruby! Now I have Object Oriented Ruby which has final projects and I&rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.</p>
+        <p>Today didn&rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.</p>
 
-<p>I spend a good amount of time on the second to last lab of Procedural Ruby (there is a small RegEx section that is last). One specific part was hard but I was stoked with the elegant (so I think) answer I was able to come up with. My original plan was NOT this.</p>
+<p>Notes which of course I&rsquo;ll share:
+&gt; <code>self</code> is the implicit receiver of all non-explicit method calls.</p>
 
-<pre><code class="language-ruby"># given that holiday_hash looks like this:
-# {
-#   :winter =&gt; {
-#     :christmas =&gt; [&quot;Lights&quot;, &quot;Wreath&quot;],
-#     :new_years =&gt; [&quot;Party Hats&quot;]
-#   },
-#   :summer =&gt; {
-#     :fourth_of_july =&gt; [&quot;Fireworks&quot;, &quot;BBQ&quot;]
-#   },
-#   :fall =&gt; {
-#     :thanksgiving =&gt; [&quot;Turkey&quot;]
-#   },
-#   :spring =&gt; {
-#     :memorial_day =&gt; [&quot;BBQ&quot;]
-#   }
-# }
+<p><code>local variable is variable  
+instance varialbe is @variable  
+class variable is @@variable</code></p>
 
-def all_supplies_in_holidays(holiday_hash)
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
-  holiday_hash.each do |season, holiday|
-    puts &quot;#{season.to_s.capitalize}:&quot;
-    holiday.each do |holiday_name, supplies|
-      puts &quot;  #{holiday_name.to_s.split(&quot;_&quot;).collect {|split_holiday_name| split_holiday_name.capitalize}.join(&quot; &quot;)}: #{supplies.join(&quot;, &quot;)}&quot;
-    end
-  end
-end
-</code></pre>
+<p><code>attr_reader macro creates getter method  
+attr_writer macro creates setter method  
+attr_accessor macro creats both setter and getter method</code></p>
 
-<p>:-)</p>
+<p>Avi also talked about how he personally only used the <code>attr_accessor</code> macro when he&rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The <code>attr_accessor</code> macro is the most flexible so it makes sense to use that by default.</p>
 
-<p>I wish I could have done a few more lessons tonight but my next lesson has me watching a 1:10:00 long video. It was still a good productive weekday.</p>
-
-<p>Time spent today: 4:08<br />
-Time spent total: 45:15<br />
-Lessons completed today: 12<br />
-Lessons completed total: 230</p>
+<p>Time spent today: 2:05<br />
+Time spent total: 47:20<br />
+Lessons completed today: 4<br />
+Lessons completed total: 234</p>
 
     </div>
 
@@ -306,9 +283,22 @@ Lessons completed total: 230</p>
 
         
         
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
     
 
     
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
     
 </ul>
 
@@ -316,8 +306,8 @@ Lessons completed total: 230</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-010/"
-                class="button big previous">Day 10</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-011/"
+                class="button big previous">Day 11</a></li>
     
 
     
@@ -330,9 +320,9 @@ Lessons completed total: 230</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-011\/';
-    var disqus_title = 'day 011';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-011\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-012\/';
+    var disqus_title = 'Day 12';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-012\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -356,25 +346,25 @@ Lessons completed total: 230</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f&text=day%20011&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f&text=Day%2012&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f&title=day%20011" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f&title=Day%2012" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-011%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-012%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -494,7 +484,21 @@ Lessons completed total: 230</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-011/">day 011</a></h3>
+                                <h3><a href="https://itzsaga.github.io/post/day-012/">Day 12</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-10'>
+                                    March 10, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-011/">Day 11</a></h3>
                                 
                                     
                                 
@@ -553,7 +557,7 @@ Lessons completed total: 230</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">10</span>
+                                <span style="float:right;">12</span>
                             </header>
                         </article>
                     </li>

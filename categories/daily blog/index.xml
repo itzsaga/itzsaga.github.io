@@ -9,6 +9,89 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 12</title>
+      <link>https://itzsaga.github.io/post/day-012/</link>
+      <pubDate>Fri, 10 Mar 2017 21:43:53 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-012/</guid>
+      <description>&lt;p&gt;Today didn&amp;rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.&lt;/p&gt;
+
+&lt;p&gt;Notes which of course I&amp;rsquo;ll share:
+&amp;gt; &lt;code&gt;self&lt;/code&gt; is the implicit receiver of all non-explicit method calls.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;local variable is variable  
+instance varialbe is @variable  
+class variable is @@variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;attr_reader macro creates getter method  
+attr_writer macro creates setter method  
+attr_accessor macro creats both setter and getter method&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Avi also talked about how he personally only used the &lt;code&gt;attr_accessor&lt;/code&gt; macro when he&amp;rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The &lt;code&gt;attr_accessor&lt;/code&gt; macro is the most flexible so it makes sense to use that by default.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:05&lt;br /&gt;
+Time spent total: 47:20&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 234&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 11</title>
+      <link>https://itzsaga.github.io/post/day-011/</link>
+      <pubDate>Thu, 09 Mar 2017 22:12:10 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-011/</guid>
+      <description>&lt;p&gt;Today was strong work. I finished Procedural Ruby! Now I have Object Oriented Ruby which has final projects and I&amp;rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&amp;rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.&lt;/p&gt;
+
+&lt;p&gt;I spend a good amount of time on the second to last lab of Procedural Ruby (there is a small RegEx section that is last). One specific part was hard but I was stoked with the elegant (so I think) answer I was able to come up with. My original plan was NOT this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# given that holiday_hash looks like this:
+# {
+#   :winter =&amp;gt; {
+#     :christmas =&amp;gt; [&amp;quot;Lights&amp;quot;, &amp;quot;Wreath&amp;quot;],
+#     :new_years =&amp;gt; [&amp;quot;Party Hats&amp;quot;]
+#   },
+#   :summer =&amp;gt; {
+#     :fourth_of_july =&amp;gt; [&amp;quot;Fireworks&amp;quot;, &amp;quot;BBQ&amp;quot;]
+#   },
+#   :fall =&amp;gt; {
+#     :thanksgiving =&amp;gt; [&amp;quot;Turkey&amp;quot;]
+#   },
+#   :spring =&amp;gt; {
+#     :memorial_day =&amp;gt; [&amp;quot;BBQ&amp;quot;]
+#   }
+# }
+
+def all_supplies_in_holidays(holiday_hash)
+  # iterate through holiday_hash and print items such that your readout resembles:
+  # Winter:
+  #   Christmas: Lights, Wreath
+  #   New Years: Party Hats
+  # Summer:
+  #   Fourth Of July: Fireworks, BBQ
+  # etc.
+  holiday_hash.each do |season, holiday|
+    puts &amp;quot;#{season.to_s.capitalize}:&amp;quot;
+    holiday.each do |holiday_name, supplies|
+      puts &amp;quot;  #{holiday_name.to_s.split(&amp;quot;_&amp;quot;).collect {|split_holiday_name| split_holiday_name.capitalize}.join(&amp;quot; &amp;quot;)}: #{supplies.join(&amp;quot;, &amp;quot;)}&amp;quot;
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;:-)&lt;/p&gt;
+
+&lt;p&gt;I wish I could have done a few more lessons tonight but my next lesson has me watching a 1:10:00 long video. It was still a good productive weekday.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 4:08&lt;br /&gt;
+Time spent total: 45:15&lt;br /&gt;
+Lessons completed today: 12&lt;br /&gt;
+Lessons completed total: 230&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 10</title>
       <link>https://itzsaga.github.io/post/day-010/</link>
       <pubDate>Wed, 08 Mar 2017 07:31:22 -0600</pubDate>
