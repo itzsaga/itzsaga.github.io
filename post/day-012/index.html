@@ -30,12 +30,12 @@
 <meta name="twitter:text:title" content="Day 12"/>
 <meta name="twitter:title" content="Day 12"/>
 <meta name="twitter:description" content="Today didn&rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.
-Notes which of course I&rsquo;ll share: &gt; self is the implicit receiver of all non-explicit method calls."/>
+Notes which of course I&rsquo;ll share:"/>
 <meta name="twitter:site" content="@itzsaga"/>
 
         <meta property="og:title" content="Day 12" />
 <meta property="og:description" content="Today didn&rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.
-Notes which of course I&rsquo;ll share: &gt; self is the implicit receiver of all non-explicit method calls." />
+Notes which of course I&rsquo;ll share:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://itzsaga.github.io/post/day-012/" />
 
@@ -57,11 +57,11 @@ Notes which of course I&rsquo;ll share: &gt; self is the implicit receiver of al
         
 <meta itemprop="name" content="Day 12">
 <meta itemprop="description" content="Today didn&rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.
-Notes which of course I&rsquo;ll share: &gt; self is the implicit receiver of all non-explicit method calls.">
+Notes which of course I&rsquo;ll share:">
 
 
 <meta itemprop="dateModified" content="2017-03-10T21:43:53-06:00" />
-<meta itemprop="wordCount" content="177">
+<meta itemprop="wordCount" content="178">
 
 
 
@@ -316,16 +316,27 @@ Notes which of course I&rsquo;ll share: &gt; self is the implicit receiver of al
     <div id="content">
         <p>Today didn&rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.</p>
 
-<p>Notes which of course I&rsquo;ll share:
-&gt; <code>self</code> is the implicit receiver of all non-explicit method calls.</p>
+<p>Notes which of course I&rsquo;ll share:</p>
 
-<p><code>local variable is variable  
-instance varialbe is @variable  
-class variable is @@variable</code></p>
+<blockquote>
+<p><code>self</code> is the implicit receiver of all non-explicit method calls.</p>
+</blockquote>
 
-<p><code>attr_reader macro creates getter method  
-attr_writer macro creates setter method  
-attr_accessor macro creats both setter and getter method</code></p>
+<p>also</p>
+
+<blockquote>
+<p>local variable is variable<br />
+instance variable is @variable<br />
+class variable is @@variable</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+<p>attr_reader macro creates getter method<br />
+attr_writer macro creates setter method<br />
+attr_accessor macro creats both setter and getter method</p>
+</blockquote>
 
 <p>Avi also talked about how he personally only used the <code>attr_accessor</code> macro when he&rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The <code>attr_accessor</code> macro is the most flexible so it makes sense to use that by default.</p>
 

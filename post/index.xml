@@ -17,16 +17,27 @@
       <guid>https://itzsaga.github.io/post/day-012/</guid>
       <description>&lt;p&gt;Today didn&amp;rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.&lt;/p&gt;
 
-&lt;p&gt;Notes which of course I&amp;rsquo;ll share:
-&amp;gt; &lt;code&gt;self&lt;/code&gt; is the implicit receiver of all non-explicit method calls.&lt;/p&gt;
+&lt;p&gt;Notes which of course I&amp;rsquo;ll share:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;local variable is variable  
-instance varialbe is @variable  
-class variable is @@variable&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;self&lt;/code&gt; is the implicit receiver of all non-explicit method calls.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code&gt;attr_reader macro creates getter method  
-attr_writer macro creates setter method  
-attr_accessor macro creats both setter and getter method&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;also&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;local variable is variable&lt;br /&gt;
+instance variable is @variable&lt;br /&gt;
+class variable is @@variable&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;attr_reader macro creates getter method&lt;br /&gt;
+attr_writer macro creates setter method&lt;br /&gt;
+attr_accessor macro creats both setter and getter method&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Avi also talked about how he personally only used the &lt;code&gt;attr_accessor&lt;/code&gt; macro when he&amp;rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The &lt;code&gt;attr_accessor&lt;/code&gt; macro is the most flexible so it makes sense to use that by default.&lt;/p&gt;
 
