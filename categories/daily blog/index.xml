@@ -9,6 +9,23 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 14</title>
+      <link>https://itzsaga.github.io/post/day-014/</link>
+      <pubDate>Mon, 13 Mar 2017 00:42:32 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-014/</guid>
+      <description>&lt;p&gt;I promise a good blog post soon. It&amp;rsquo;s almost 1am after a LONG pair programming session, thanks &lt;a href=&#34;https://github.com/mk-etlinger&#34;&gt;Mike&lt;/a&gt;! We did however figure out a hard lab. I would&amp;rsquo;ve been struggling with it for sure. It&amp;rsquo;s not as ambiguous as it could be and we didn&amp;rsquo;t break down our methods as much as we could. However, we got all 15 tests passing and learned some new methods along the way. Specifically, the &lt;code&gt;Dir&lt;/code&gt; class methods. Mike also showed me that there&amp;rsquo;s a solution branch to all of the labs on GitHub which I never knew about. I guess it says something that I&amp;rsquo;ve made it so far so quickly and never looked at a solution. However, there can be knowledge gained from refactoring with new knowledge based on what the school thinks is the best code for the problem.&lt;/p&gt;
+
+&lt;p&gt;I do have &amp;ldquo;homework&amp;rdquo; from Mike too (some things he has learned recently that I&amp;rsquo;m not knowledgable on). Specifically, &lt;code&gt;||=&lt;/code&gt; &lt;code&gt;&amp;amp;.&lt;/code&gt; and &lt;code&gt;.tap&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 11:09&lt;br /&gt;
+Time spent total: 67:43&lt;br /&gt;
+Lessons completed today: 11&lt;br /&gt;
+Lessons completed total: 258&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 13</title>
       <link>https://itzsaga.github.io/post/day-013/</link>
       <pubDate>Sat, 11 Mar 2017 21:15:51 -0600</pubDate>

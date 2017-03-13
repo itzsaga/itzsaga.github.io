@@ -6,8 +6,25 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2017 21:15:51 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 13 Mar 2017 00:42:32 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 14</title>
+      <link>https://itzsaga.github.io/post/day-014/</link>
+      <pubDate>Mon, 13 Mar 2017 00:42:32 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-014/</guid>
+      <description>&lt;p&gt;I promise a good blog post soon. It&amp;rsquo;s almost 1am after a LONG pair programming session, thanks &lt;a href=&#34;https://github.com/mk-etlinger&#34;&gt;Mike&lt;/a&gt;! We did however figure out a hard lab. I would&amp;rsquo;ve been struggling with it for sure. It&amp;rsquo;s not as ambiguous as it could be and we didn&amp;rsquo;t break down our methods as much as we could. However, we got all 15 tests passing and learned some new methods along the way. Specifically, the &lt;code&gt;Dir&lt;/code&gt; class methods. Mike also showed me that there&amp;rsquo;s a solution branch to all of the labs on GitHub which I never knew about. I guess it says something that I&amp;rsquo;ve made it so far so quickly and never looked at a solution. However, there can be knowledge gained from refactoring with new knowledge based on what the school thinks is the best code for the problem.&lt;/p&gt;
+
+&lt;p&gt;I do have &amp;ldquo;homework&amp;rdquo; from Mike too (some things he has learned recently that I&amp;rsquo;m not knowledgable on). Specifically, &lt;code&gt;||=&lt;/code&gt; &lt;code&gt;&amp;amp;.&lt;/code&gt; and &lt;code&gt;.tap&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 11:09&lt;br /&gt;
+Time spent total: 67:43&lt;br /&gt;
+Lessons completed today: 11&lt;br /&gt;
+Lessons completed total: 258&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 13</title>
@@ -627,20 +644,6 @@ This seemed doable as my former career in restaurant management had me working 5
 &lt;p&gt;Secondly, I needed somewhere to do this work. The house we had just built had a closed in office which was not in use. So I skimmed IKEA&amp;rsquo;s website and picked out a desk and chair. Granted IKEA is 3 hours away from my house so it will be a pain to go pick it up but spending $100 on a desk, chair, and that plastic thing you put on the carpet so a chair can roll seemed like it was worth it.&lt;/p&gt;
 
 &lt;p&gt;Overall the plan was coming together.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Who am I? Why this blog?</title>
-      <link>https://itzsaga.github.io/about/</link>
-      <pubDate>Mon, 20 Feb 2017 22:06:57 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/about/</guid>
-      <description>&lt;p&gt;&lt;img style=&#34;float: left;&#34; src=&#34;https://res.cloudinary.com/sethalexander/v1487650912/mfrywmsjpeoa8gaf2bkc&#34; width=&#34;160&#34; height=&#34;160&#34;/&gt; I&amp;rsquo;m a former hospitality professional working on a career transition by attending Flatiron&amp;rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55+ hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly &lt;a href=&#34;https://freecodecamp.com&#34;&gt;&lt;i class=&#34;fa fa-free-code-camp&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Free Code Camp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Follow along with my journey on this blog. Ask questions and interact. If you find something you like please share. I&amp;rsquo;ll be writing every day that I code, and probably on days I don&amp;rsquo;t as well. In the end, I want to have a true picture of what it will take someone to get through approximately 800 hours of curriculum.&lt;/p&gt;
-
-&lt;p&gt;Thanks for coming on this ride with me.&lt;/p&gt;
 </description>
     </item>
     
