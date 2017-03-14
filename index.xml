@@ -6,8 +6,53 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2017 19:40:42 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 13 Mar 2017 22:22:36 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 15</title>
+      <link>https://itzsaga.github.io/post/day-015/</link>
+      <pubDate>Mon, 13 Mar 2017 22:22:36 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-015/</guid>
+      <description>&lt;p&gt;Day 15 and I&amp;rsquo;m still here. If you didn&amp;rsquo;t see it I wrote a &lt;a href=&#34;../post/why-software-development&#34;&gt;rather long blog post&lt;/a&gt; today as one of my requirements for Flatiron. Since that took up over an hour and I had a 1:10.00+ video as a lesson I didn&amp;rsquo;t get much done. However, I &lt;strong&gt;DO&lt;/strong&gt; have notes from the past couple of days that I never took the time to share.&lt;/p&gt;
+
+&lt;p&gt;So on Saturday morning I did a study group with some people and learned a lot. We went through one of the more challenging Procedural Ruby labs. One thing that I had never though to do was put my &lt;code&gt;pry&lt;/code&gt; in the &lt;code&gt;rspec&lt;/code&gt; test file. So I could look at what was going on when everything had already been passed in. I had been putting the &lt;code&gt;pry&lt;/code&gt; in my code and then needing to call the methods above it before I could work on the current problem. I&amp;rsquo;m still not 100% on utilizing &lt;code&gt;pry&lt;/code&gt; but I&amp;rsquo;m getting there. It&amp;rsquo;s definitely easier and more useful than IRB.&lt;/p&gt;
+
+&lt;p&gt;Another nifty thing I learned from the study group, which I&amp;rsquo;m still not completely comfortable with but makes sense, is calling methods on &lt;code&gt;end&lt;/code&gt;. For example we did this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def all_holidays_with_bbq(holiday_hash)
+  holiday_hash.map do |season, holidays|
+    holidays.map do |holiday_name, supplies
+      supplies.include?(&amp;quot;BBQ&amp;quot;) ? holiday_name : nil
+    end
+  end.flatten.compact
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The way this works is the &lt;code&gt;.flatten.compact&lt;/code&gt; is being called on the return value of &lt;code&gt;holiday_hash.map&lt;/code&gt;. It&amp;rsquo;s still settling in my mind and I haven&amp;rsquo;t used it since but I can see where this is useful.&lt;/p&gt;
+
+&lt;p&gt;Mike who I pair programmed with last night informed me to get a solid understanding of &lt;code&gt;self&lt;/code&gt; so I&amp;rsquo;ve been taking details notes on things I think are of value. I have:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We can define methods in which we tell objects to operate on themselves. We do so using the &lt;code&gt;self&lt;/code&gt; keyword, inside the body of an instance method, to refer to the very same object the method is being called on.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I like that deifinition and it&amp;rsquo;s not too abstract for me to understand what it&amp;rsquo;s saying.&lt;/p&gt;
+
+&lt;p&gt;Lastly, in one of the lectures Avi stated to try not to use the &lt;code&gt;return&lt;/code&gt; method. He said if you have to use &lt;code&gt;return&lt;/code&gt; you&amp;rsquo;re probably doing something wrong and utilizing &lt;code&gt;return&lt;/code&gt; can cause problems. This is because every method has a return. We should be able to get what we need utilizing higher level methods that will return to us what we&amp;rsquo;re looking for. This makes a lot of sense to me. If I have to use the &lt;code&gt;return&lt;/code&gt; method then I&amp;rsquo;m probably missing something in the code I&amp;rsquo;m returning. While this isn&amp;rsquo;t a hard and fast rule it&amp;rsquo;s something I&amp;rsquo;m going to try and stick to.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re keeping up, I didn&amp;rsquo;t look into &lt;code&gt;||=&lt;/code&gt; &lt;code&gt;&amp;amp;.&lt;/code&gt; or &lt;code&gt;.tap&lt;/code&gt; today.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m 55% through Object Oriented Ruby. I just realized this because I took a glance at my Dashboard which I haven&amp;rsquo;t really been doing lately. It&amp;rsquo;s moving along but I know it&amp;rsquo;ll take a while once I get to the end. I have some projects to look forward to!
+&lt;img src=&#34;../images/oo_ruby_project_dropdown.jpg&#34; alt=&#34;object oriented ruby projects list&#34; title=&#34;Object Oriented Ruby Projects&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:17&lt;br /&gt;
+Time spent total: 71:00&lt;br /&gt;
+Lessons completed today: 2&lt;br /&gt;
+Lessons completed total: 260&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Why Software Development?</title>
@@ -622,40 +667,6 @@ Time spent total: 6:18&lt;br /&gt;
 Lessons completed today: 25&lt;/p&gt;
 
 &lt;p&gt;Until tomorrow.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 1</title>
-      <link>https://itzsaga.github.io/post/day-001/</link>
-      <pubDate>Tue, 28 Feb 2017 04:06:33 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-001/</guid>
-      <description>&lt;p&gt;Day 1 is finally upon me! I&amp;rsquo;ve got my setup ready as of last night after making a road trip to IKEA in Memphis, TN. After the price of gas I probably could have gotten a desk, chair, and that plastic thing you put on the floor for the same price here in Nashville but why not go to IKEA? I also know people are crazy for IKEA stuff so if we end up getting rid of this stuff someone will buy it quick!
-&lt;img src=&#34;http://res.cloudinary.com/sethalexander/image/upload/c_scale,w_792/v1488253544/IMG_20170227_080607_s4pqzx.jpg&#34; alt=&#34;deskAndChair&#34; /&gt;&lt;br /&gt;
-Yes that&amp;rsquo;s a stack of high school year books propping up laptop to almost eye level. As I&amp;rsquo;m not working right now a few niceties had to be skipped. Like, I would&amp;rsquo;ve loved a 27&amp;rdquo; monitor on an articulating arm, but, in the future. This setup worked surprisingly well. Although, the $50 IKEA chair isn&amp;rsquo;t as comfortable as pretty much any other desk chair I&amp;rsquo;ve ever used. It gets the job done though and it&amp;rsquo;ll force me to stand up every once and a while.&lt;/p&gt;
-
-&lt;p&gt;Coding wise it was a good day. I&amp;rsquo;m still in the Bootcamp Prep track but I chatted with someone much further along and they said it rolls right into it so it&amp;rsquo;s not a waste of time. I was also informed the full track should open up for me tomorrow as it might take a day for my payment to clear. I completed 24 JavaScript lessons today and worked for probably &amp;lt;4 hours. Up at 6am and coding by about 7am. Then stopping at 8am when the kids got up. About an hour during nap time. Then back at it after dinner but before the kiddos bedtime and right until now (shy of 10pm). I should be in bed by 10pm getting me my 8 hours. This is my schedule for almost all weekdays now.&lt;/p&gt;
-
-&lt;p&gt;While a most of the work I did today was review or reinforcing things I did learn some stuff. The biggest thing is arrow functions in ES6. I didn&amp;rsquo;t dive into it but saw a comment on Facebook regarding using Babel so ES6 things are supported across most web browsers. Oh yeah, back to arrow functions. They take the word function out of the function. I thought this was &lt;strong&gt;awesome&lt;/strong&gt; since I know I&amp;rsquo;m going to be doing &lt;strong&gt;a lot&lt;/strong&gt; of typing.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the quick run down on how they work:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var regularFunction = function() {
-  console.log(&#39;I was called!&#39;)
-}
-
-var arrowFunction = () =&amp;gt; {
-console.log(&#39;I was called, too!&#39;)
-}
-
-regularFunction() // &#39;I was called!&#39;    
-arrowFunction() // &#39;I was called, too!&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I won&amp;rsquo;t go deep into arrow functions (get more at &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;MDN&lt;/a&gt; and &lt;a href=&#34;https://github.com/learn-co-students/javascript-arrow-functions-bootcamp-prep-000/blob/master/README.md&#34;&gt;here&lt;/a&gt;) but this can save typing of the word &amp;ldquo;function&amp;rdquo; a lot. Unfortunately, while trying to use this on lessons I ran into it not passing tests. It seems like not all of the Bootcamp Prep lesson plan has been updated to support ES6 just yet. I did talk to a mentor person who said lessons should allow for ES6 though, so that&amp;rsquo;s good. I&amp;rsquo;d like to build good habit using some of the newer syntax when I can.&lt;/p&gt;
-
-&lt;p&gt;Now, bedtime.&lt;/p&gt;
 </description>
     </item>
     
