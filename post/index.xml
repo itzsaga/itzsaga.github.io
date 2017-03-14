@@ -6,8 +6,41 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2017 00:42:32 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 13 Mar 2017 19:40:42 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why Software Development?</title>
+      <link>https://itzsaga.github.io/post/why-software-development/</link>
+      <pubDate>Mon, 13 Mar 2017 19:40:42 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/why-software-development/</guid>
+      <description>&lt;p&gt;So as part of my bootcamp experience Flatiron School requires me to write blog posts. This is a feature that I don&amp;rsquo;t think all bootcamps have but is smart. If I can write about coding then I show a deeper understanding about why I am a job ready developer. We all know that our online presence is part of our &amp;ldquo;resume&amp;rdquo; now as more and more hiring managers are looking at social profiles when making job decisions (even if it&amp;rsquo;s a &lt;a href=&#34;http://hiring.monster.com/hr/hr-best-practices/recruiting-hiring-advice/acquiring-job-candidates/social-media-recruiting-guidelines.aspx&#34;&gt;legal slippery slope&amp;hellip;&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;So I have assigned topic of, &amp;ldquo;Why did you decide to learn software development?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;There are many reasons I decided to learn software development. Initially, it was because it is the &amp;ldquo;cool&amp;rdquo; thing to do these days. Demand is &amp;gt; Supply when it comes to people in the tech industry and overall everything we do now is being run by a computer. The Internet of Things (IoT) needs to be programmed. I truly believe that we are moving to a knowledge economy and very soon (on the grand timeline) most repetetive jobs will be replaced by robots, including driving. See a great post on &lt;a href=&#34;https://medium.freecodecamp.com/bill-gates-and-elon-musk-just-warned-us-about-the-one-thing-politicians-are-too-scared-to-talk-8db9815fd398&#34;&gt;automation&lt;/a&gt; here. However, people will need to program these things.&lt;/p&gt;
+
+&lt;p&gt;Things like bootcamps are popping up like crazy as people are making the jump to be developers. The potential pay and benefits are attractive too. We&amp;rsquo;ve all seen images of massive tech companies and their offices where you can take a break from your bean bag workstation and get a massage from the in house masseuse while listening to a private live Billy Joel concert streamed to your company provided bluetooth Beats headphones. Okay, maybe not that extravagent but you get the idea. Or the person who travels the world making 6 figures and all they need is a laptop and internet. Having that remote work freedom at some point is also attractive. Who wouldn&amp;rsquo;t want this life?&lt;/p&gt;
+
+&lt;p&gt;Another driving force is that I was in hospitality. An industry that is &lt;strong&gt;NOT&lt;/strong&gt; family friendly. 55+ hour weeks are required for salary managers in most instances and nights, weekends, holidays are the busy time. I kept with it by saying I would &lt;em&gt;eventually&lt;/em&gt; be in a high enough job title where I would be doing more strategic planning and thus work a more typical 9-5 schedule. I still believe that to be true. Once a person gets to District Manager or F&amp;amp;B Director you check in on early morning and closing operations occaisonally but you could care less &lt;em&gt;how&lt;/em&gt; the money is counted at close, just that it&amp;rsquo;s counted correctly. If it isn&amp;rsquo;t counted correctly there&amp;rsquo;s always a manager below you to push that to anyways. Something I rarely speak about but through my 10 years in the restaurant business I was laid off 4 times. I was paid severace a couple times and a couple times just collected unemployment but the lack of job stability paired with seeing people 2 years into a tech career making 2x what I was making cemented my interest.&lt;/p&gt;
+
+&lt;p&gt;So I dabbled while still working my restaurant job. I learned from &lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;freeCodeCamp&lt;/a&gt; the most among many other places. Knowing that I could work on a project for hours without taking a break, then stop for the day, then pick it up two days later, then stop, then get stuck the next day and make zero progress, then two days later finish it off, and LOVING that process cemented in me this is something I wanted to do.&lt;/p&gt;
+
+&lt;p&gt;I also realized that on the intellectual front I would always be challenged and have something to learn when it came to software development. I&amp;rsquo;ll never know it all and that is a bonus.&lt;/p&gt;
+
+&lt;p&gt;So how could I make this career transition with a mortgage and 3 kids? In person bootcamps were out of the question. There are two in Nashville (that I know of) and I know people who have graduated from each. First, &lt;a href=&#34;http://nashvillesoftwareschool.com/&#34;&gt;Nashville Software School&lt;/a&gt; is an awesome program. However, it takes 6 months and we didn&amp;rsquo;t have 6 months of me not working to spare. The other is &lt;a href=&#34;https://www.theironyard.com/&#34;&gt;The Iron Yard&lt;/a&gt; and while they have a solid reputation the approximately $1000/week tuition was not going to work. In addition, I knew I couldn&amp;rsquo;t be out of pocket completely for 12 weeks, my family life would fall apart. So I came across the &lt;a href=&#34;https://flatironschool.com/programs/online-web-developer-career-course/&#34;&gt;Flatiron School Online Web Developer Program&lt;/a&gt;. Work at your own pace when you have time, job guarantee, a solid curriculum, and high praise from people in the industry I spoke with. The work at your own pace is what sold me the most. I could code before the kids got up and after they went to bed and all weekend long when my wife was home. I could still take care of my kids all day M-F and we wouldn&amp;rsquo;t have to pay for a nanny. I could potentially finish in 12-15 weeks (they say the curriculum takes ~800 hours) just like a more traditional bootcamp but spend $6000 instead of $10k+. Boom, now to get in. I applied, did some coding, and got accepted (acceptance rate is ~8% so it&amp;rsquo;s competitive).&lt;/p&gt;
+
+&lt;p&gt;So ultimately I decided on software development for a few reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It genuinely interests me outside of doing it as a career.&lt;/li&gt;
+&lt;li&gt;The pay ain&amp;rsquo;t bad.&lt;/li&gt;
+&lt;li&gt;More &amp;ldquo;normal&amp;rdquo; schedule so I&amp;rsquo;ll be home for dinner, off on weekends and holidays.&lt;/li&gt;
+&lt;li&gt;The possibility of working remotely.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 14</title>
@@ -623,27 +656,6 @@ arrowFunction() // &#39;I was called, too!&#39;
 &lt;p&gt;I won&amp;rsquo;t go deep into arrow functions (get more at &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;MDN&lt;/a&gt; and &lt;a href=&#34;https://github.com/learn-co-students/javascript-arrow-functions-bootcamp-prep-000/blob/master/README.md&#34;&gt;here&lt;/a&gt;) but this can save typing of the word &amp;ldquo;function&amp;rdquo; a lot. Unfortunately, while trying to use this on lessons I ran into it not passing tests. It seems like not all of the Bootcamp Prep lesson plan has been updated to support ES6 just yet. I did talk to a mentor person who said lessons should allow for ES6 though, so that&amp;rsquo;s good. I&amp;rsquo;d like to build good habit using some of the newer syntax when I can.&lt;/p&gt;
 
 &lt;p&gt;Now, bedtime.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Before I Start Flatiron</title>
-      <link>https://itzsaga.github.io/post/before-i-start-flatiron/</link>
-      <pubDate>Mon, 20 Feb 2017 22:07:04 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/before-i-start-flatiron/</guid>
-      <description>&lt;p&gt;There were a few things I had to get out of the way before I started Flatiron.&lt;/p&gt;
-
-&lt;p&gt;First, I needed a solid schedule I was going to follow. I didn&amp;rsquo;t want to take 8 months to finish the program. In fact, I couldn&amp;rsquo;t take 8 months to finish the program as my expenses were too much to stretch that long. I also wanted to minimize my family&amp;rsquo;s child care expenses so I came up with a solid schedule:&lt;br /&gt;
-M-Th 6am-7am personal care (shower, breakfast, walk dog, etc&amp;hellip;) 7am-8am (or whenever kids wake up) Flatiron. 8am-8pm family/kids. 8pm-10pm Flatiron. 3 hrs/day.&lt;br /&gt;
-Fri-Sun 8am-10pm Flatiron (1 hour lunch &amp;amp; dinner). 12 hrs/day.&lt;br /&gt;
-Total 53 hours of school per week.&lt;br /&gt;
-~800 hours to graduation = 15 weeks.&lt;br /&gt;
-This seemed doable as my former career in restaurant management had me working 55 hours standard.&lt;/p&gt;
-
-&lt;p&gt;Secondly, I needed somewhere to do this work. The house we had just built had a closed in office which was not in use. So I skimmed IKEA&amp;rsquo;s website and picked out a desk and chair. Granted IKEA is 3 hours away from my house so it will be a pain to go pick it up but spending $100 on a desk, chair, and that plastic thing you put on the carpet so a chair can roll seemed like it was worth it.&lt;/p&gt;
-
-&lt;p&gt;Overall the plan was coming together.&lt;/p&gt;
 </description>
     </item>
     

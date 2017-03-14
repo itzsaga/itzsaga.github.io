@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://itzsaga.github.io/post/why-software-development/</loc>
+    <lastmod>2017-03-13T19:40:42-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://itzsaga.github.io/post/day-014/</loc>
     <lastmod>2017-03-13T00:42:32-05:00</lastmod>
   </url>
@@ -98,6 +103,12 @@
   </url>
   
   <url>
+    <loc>https://itzsaga.github.io/categories/flatiron-blog/</loc>
+    <lastmod>2017-03-13T19:40:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://itzsaga.github.io/categories/general/</loc>
     <lastmod>2017-02-20T22:07:04+00:00</lastmod>
     <priority>0</priority>
@@ -105,13 +116,13 @@
   
   <url>
     <loc>https://itzsaga.github.io/</loc>
-    <lastmod>2017-03-13T00:42:32-05:00</lastmod>
+    <lastmod>2017-03-13T19:40:42-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://itzsaga.github.io/post/</loc>
-    <lastmod>2017-03-13T00:42:32-05:00</lastmod>
+    <lastmod>2017-03-13T19:40:42-05:00</lastmod>
     <priority>0</priority>
   </url>
   
