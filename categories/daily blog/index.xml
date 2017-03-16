@@ -9,6 +9,38 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 17</title>
+      <link>https://itzsaga.github.io/post/day-017/</link>
+      <pubDate>Wed, 15 Mar 2017 23:16:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-017/</guid>
+      <description>&lt;p&gt;Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize &lt;code&gt;self&lt;/code&gt; on pretty much all instance variable references after they have been initialized (created). This is because when we reference the instance variables directly we&amp;rsquo;re cutting out using the macros that &lt;code&gt;attr_accessor&lt;/code&gt; &lt;code&gt;attr_reader&lt;/code&gt; &lt;code&gt;attr_writer&lt;/code&gt; provide. It is true though that writing code that uses &lt;code&gt;@variable&lt;/code&gt; instead of &lt;code&gt;self.variable&lt;/code&gt; will still pass the tests I&amp;rsquo;m working with. I know this because I&amp;rsquo;ve been doing it haha.&lt;/p&gt;
+
+&lt;p&gt;I got through some module lessons and labs once the study group was over. Something to always remember is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you have a module whose methods you would like to be used in another class as &lt;strong&gt;instance methods&lt;/strong&gt;, then you must &lt;strong&gt;include&lt;/strong&gt; the module.&lt;br /&gt;
+If you want a module&amp;rsquo;s methods to be used in another class as &lt;strong&gt;class methods&lt;/strong&gt;, you must &lt;strong&gt;extend&lt;/strong&gt; the module.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Modules are sweet and I&amp;rsquo;m happy I&amp;rsquo;m going to start using them. Things are getting simpler while they&amp;rsquo;re getting more complex at the same time. There are so many things that have already been figured out in the world of development and slowly they&amp;rsquo;re being introduced.&lt;/p&gt;
+
+&lt;p&gt;I also learned tonight that there is a term for the work flow that most people follow when they write code. The work flow being, you have tests that are failing, you write whatever code is needed to pass your tests, you break that ugly code and write cleaner code to pass your tests again.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is called the &lt;strong&gt;red, green, refactor&lt;/strong&gt; pattern. First tests fail, then you write bad code to get them to pass, then you refactor that bad code into good code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I guess it makes sense that these things have been defined. I&amp;rsquo;m not inventing web development. Just learning it.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:37&lt;br /&gt;
+Time spent total: 76:04&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 268&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 16</title>
       <link>https://itzsaga.github.io/post/day-016/</link>
       <pubDate>Tue, 14 Mar 2017 23:13:10 -0500</pubDate>
@@ -623,35 +655,6 @@ Test Driven Development, is a method for approaching a problem not through the i
 &lt;p&gt;Time spent today: 3:22&lt;br /&gt;
 Time spent total: 9:41&lt;br /&gt;
 Lessons completed today: 28&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 2</title>
-      <link>https://itzsaga.github.io/post/day-002/</link>
-      <pubDate>Wed, 01 Mar 2017 03:59:51 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-002/</guid>
-      <description>&lt;p&gt;Another day, more code. However, now I have the full bootcamp track! This is what I was waiting for:
-&lt;img src=&#34;https://res.cloudinary.com/sethalexander/v1488290498/zpcntksutiursizgshbi&#34; alt=&#34;full_stack_web_dev._with_react&#34; /&gt;
-I also started tracking my time using &lt;a href=&#34;http://toggl.com&#34;&gt;Toggl&lt;/a&gt; solely because I was interested in exactly how long this bootcamp is going to take. Well, that and yesterday my wife asked me how much time I got to spend on school so now I&amp;rsquo;ll know. Started on some Ruby this morning and also learned that career placement starts when 75% of the curriculum is done (after Rails is complete). This makes sense as the Flatiron path takes me through a bunch in the Ruby ecosystem then on the back end teaches React and Node.js. I had been thinking to myself, once I was done with all the Ruby learning and started working on the JS portion of the curriculum I could start searching for Ruby jobs.&lt;/p&gt;
-
-&lt;p&gt;Quote from this morning that stuck with me:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is one of the best parts of programming: debugging and fixing errors. It&amp;rsquo;s like you&amp;rsquo;re a detective solving a crime. The only bad thing is that more often than not, you&amp;rsquo;re also the criminal that caused the error in the first place.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now the end of the day and lots more Ruby is in my brain. The thing that is sticking the most (besides the code) is how similar JS &amp;amp; Ruby are. I now understand more why most seasoned developers say it doesn&amp;rsquo;t matter what language you learn first, just stick with one and learn it. Lots of the concepts are exactly the same across languages the syntax is the only difference. If you can learn a development language then you can learn where to put a semicolon or parenthesis.&lt;/p&gt;
-
-&lt;p&gt;Today Flatiron also started migrating their chat feature back to Slack. Apparently they tried to build their own chat into their learning platform but decided that Slack was a better option. Makes sense as Slack does it well. It&amp;rsquo;ll be a long time before they get anywhere near the user limit that Free Code Camp hit back in the day. Yes, there is a limit to the number of users a Slack channel can have and you can read about it &lt;a href=&#34;https://medium.freecodecamp.com/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81&#34;&gt;here&lt;/a&gt;. I actually don&amp;rsquo;t know if this is still true and honestly don&amp;rsquo;t care enough to find out.&lt;/p&gt;
-
-&lt;p&gt;Something new I&amp;rsquo;m going to add every day is a short update at the end of the post (I&amp;rsquo;m guessing 4 hours of work done yesterday):&lt;br /&gt;
-Time spent today: 2:18&lt;br /&gt;
-Time spent total: 6:18&lt;br /&gt;
-Lessons completed today: 25&lt;/p&gt;
-
-&lt;p&gt;Until tomorrow.&lt;/p&gt;
 </description>
     </item>
     

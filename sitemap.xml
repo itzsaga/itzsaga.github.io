@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://itzsaga.github.io/post/day-017/</loc>
+    <lastmod>2017-03-15T23:16:44-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://itzsaga.github.io/post/day-016/</loc>
     <lastmod>2017-03-14T23:13:10-05:00</lastmod>
   </url>
@@ -108,7 +113,7 @@
   
   <url>
     <loc>https://itzsaga.github.io/categories/daily-blog/</loc>
-    <lastmod>2017-03-14T23:13:10-05:00</lastmod>
+    <lastmod>2017-03-15T23:16:44-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -126,13 +131,13 @@
   
   <url>
     <loc>https://itzsaga.github.io/</loc>
-    <lastmod>2017-03-14T23:13:10-05:00</lastmod>
+    <lastmod>2017-03-15T23:16:44-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://itzsaga.github.io/post/</loc>
-    <lastmod>2017-03-14T23:13:10-05:00</lastmod>
+    <lastmod>2017-03-15T23:16:44-05:00</lastmod>
     <priority>0</priority>
   </url>
   
