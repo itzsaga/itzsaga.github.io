@@ -6,8 +6,65 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Mar 2017 23:21:28 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 18 Mar 2017 23:07:23 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>One Way To Pair Program</title>
+      <link>https://itzsaga.github.io/post/one-way-to-pair-program/</link>
+      <pubDate>Sat, 18 Mar 2017 23:07:23 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/one-way-to-pair-program/</guid>
+      <description>&lt;p&gt;Tonight a couple people were wanting to know the best way to pair program together. They had both done the beginning parts of the Tic-Tac-Toe with AI project (the one I&amp;rsquo;m getting ready to start) and wanted to work on the AI part together. The exact question was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hey @******* and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste. She is on IDE, I&amp;rsquo;m on local. Any help muchly appreciated!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The always awesome and helpful instructor &lt;a href=&#34;https://github.com/cernanb&#34;&gt;Cernan Bernardo&lt;/a&gt; quickly gave a how-to that I knew others could use. I&amp;rsquo;m just going to abbreviate what he said and turn it into a numbered list.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Grab each other&amp;rsquo;s SSH URL for your respective GitHub repos.&lt;/li&gt;
+&lt;li&gt;In your respective terminals (local or IDE) you would each run the command &lt;code&gt;git remote add upstream *copy_ssh_url_here*&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;After running those commands when you run &lt;code&gt;git remote -v&lt;/code&gt; you will see two remotes&amp;hellip;one for your origin which is your respective GitHub repo and one for upstream which is your partner&amp;rsquo;s repo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now the setup is done, here is the work flow to be done &lt;em&gt;before&lt;/em&gt; either starts working on the app:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run &lt;code&gt;git pull upstream master&lt;/code&gt;&amp;hellip;this will pull down any code your partner has added to the app and pushed up to their GitHub.&lt;/li&gt;
+&lt;li&gt;Work on your part of the app.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;git push&lt;/code&gt; or &lt;code&gt;git push origin master&lt;/code&gt;&amp;hellip;this will push your new code to YOUR repo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;With that work flow you will each have your code in sync. Just remember to &lt;em&gt;pull before you push&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So there you have it. Questions feel free to ask and I&amp;rsquo;ll ask Cernan ;-)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 20</title>
+      <link>https://itzsaga.github.io/post/day020/</link>
+      <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day020/</guid>
+      <description>&lt;p&gt;Sorry I didn&amp;rsquo;t get a blog in yesterday. I was struggling with setting up a dual boot of Ubuntu on my Windows 10 laptop. I ran into the problem of not having a large enough partition created and hit a snag. That said everything was installing fine once I got going. I had hoped to just run a persistent USB key and be able to take my dev environment wherever I want but I couldn&amp;rsquo;t figure that out. Needless to say I didn&amp;rsquo;t feel like writing. In addition, all I did was watch a few lectures last night so there was little to report on. I decided to setup the dual boot because after my intake conversation with &lt;a href=&#34;https://github.com/tracypholmes&#34;&gt;Tracy&lt;/a&gt; I was convinced that I should take the time and get my environment setup. It took some time as I had less than 10GB free but by being creative, and using &lt;a href=&#34;https://windirstat.net/&#34;&gt;WinDirStat&lt;/a&gt; combined with &lt;a href=&#34;http://www.revouninstaller.com/index.html&#34;&gt;Revo Uninstaller&lt;/a&gt;, I changed that to ~25GB. I decided to make a 15GB partition for Ubuntu 16.04.2 LTS but ended up running out of space. I freed up another 5GB today and add ed that to my Linux partition. Overall it was probably about an 8 hour process. I have yet to code in it but I&amp;rsquo;m writing this post in Atom on Ubuntu and I&amp;rsquo;ve cloned down my static site from GitHub using the terminal and I plan to push it as well. One of the biggest changes is that everything just works, in the &lt;code&gt;sudo apt-get install&lt;/code&gt; kind of way. It&amp;rsquo;s nice. Also, Windows doesn&amp;rsquo;t want to go past a 1920x1080 resolution and Ubuntu will go 3200x1800 no problem. My eyes are still adjusting but I know I&amp;rsquo;ll be fine. Ubuntu was being a b*tch last night trying to install packages and stuff (programs hanging, etc&amp;hellip;) but today it has worked great. I&amp;rsquo;m not sure if having some disk space has helped the OS out but my frustrations have disappeared today.&lt;/p&gt;
+
+&lt;p&gt;Today I started my Music Library CLI Project for Object Oriented Ruby! This thing was a beast with 71 tests that I needed to get passing. Luckily I could piece meal it together all based on code I already had written. There was a good amount that had to be written from scratch or completely changed to make the tests pass. However, I had a very strong base of knowledge to work with. I rarely had to Google or hit up Ruby Docs for answers today/tonight. I only hit one MAJOR snag. I couldn&amp;rsquo;t get a test to pass but everything looked right. I ran the CLI in my terminal and the output was perfect. After 90 minutes of trying different things I finally reached out to what is called a Learn Expert for help. 30 minutes later she was remoted in on my computer and ended up commenting out the test because her and a colleague had both agreed my code worked for the requirements even if it didn&amp;rsquo;t pass the tests. After that I was done in &amp;lt;25 minutes. It took me 7:57 to finish the project from start to finish and I probably could&amp;rsquo;ve shaved over an hour off of that. I haven&amp;rsquo;t refactored at all but the project is &lt;a href=&#34;https://github.com/itzsaga/ruby-music-library-cli-v-000&#34;&gt;here&lt;/a&gt; if you&amp;rsquo;d like to see it.&lt;/p&gt;
+
+&lt;p&gt;Today was the kind of coding day I&amp;rsquo;d like to have every Saturday and Sunday. Maybe 1 more productive hour in there though. Tomorrow I&amp;rsquo;ll start a CLI Tic-Tac-Toe with AI project. I&amp;rsquo;m interested to see how AI is going to be tested and required. Mostly because I read &lt;a href=&#34;https://medium.freecodecamp.com/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37&#34;&gt;this&lt;/a&gt; post on Medium about building an unbeatable Tic-Tac-Toe game not too long ago. I thought it would be fun to implement so I&amp;rsquo;ll see if it&amp;rsquo;s possible, maybe on the refactor.&lt;/p&gt;
+
+&lt;p&gt;Not much new to post about. Just been doing a lot of lecture watching and coding projects currently. Oh, I did learn about the &lt;code&gt;unless&lt;/code&gt; method today from a Learn Expert when a piece of my code wouldn&amp;rsquo;t pass. I&amp;rsquo;m realizing sometimes nobody can explain why we need to use &lt;code&gt;unless&lt;/code&gt; or &lt;code&gt;if&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; to make something work but that&amp;rsquo;s part of it. Some things are just at such a high level of knowing the language that the majority of people won&amp;rsquo;t know why.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 9:52&lt;br /&gt;
+Time spent total: 92:48&lt;br /&gt;
+Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
+Lessons completed total: 283&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 18</title>
@@ -543,114 +600,6 @@ end
 &lt;p&gt;Time spent today: 5:52&lt;br /&gt;
 Time spent total: 33:26&lt;br /&gt;
 Lessons completed today: 32&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 6</title>
-      <link>https://itzsaga.github.io/post/day-006/</link>
-      <pubDate>Sat, 04 Mar 2017 23:00:48 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-006/</guid>
-      <description>&lt;p&gt;It was a LONG day of HTML &amp;amp; CSS and I&amp;rsquo;m still not done with this section. It&amp;rsquo;s okay though. While a lot of it has been review a lot of it has not as well. I&amp;rsquo;ve been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type. Desktop Down principles were discussed as well but I think at this point in time there is no reason to utilize that methodology. Too many people are utilizing their phones as their primary was to consume content and the trend is moving in that direction anyway.&lt;/p&gt;
-
-&lt;p&gt;I think this section feels really long and boring because so much of it is being explained in videos and less with actually coding. Maybe 5-10 lessons to each coding exercise. In addition, most of the coding is codealong so there is much less thinking involved. At least I can set the videos to 1.5x speed. I&amp;rsquo;m 87% of the way done with this HTML and CSS section so I&amp;rsquo;ll finish it off tomorrow for sure.&lt;/p&gt;
-
-&lt;p&gt;I did finally learn why people would use &lt;code&gt;em&lt;/code&gt; for &lt;code&gt;font-size&lt;/code&gt; as opposed to pixels &lt;code&gt;px&lt;/code&gt; or points &lt;code&gt;pt&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It is to our advantage to set all typography within our site to ems and then in media queries adjust the body font-size as a percent to adjust all type in proportion to each other. This greatly simplifies our media queries on typography.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;When all the type sizes are relative there is only one thing that needs to change (&lt;code&gt;body { font-size }&lt;/code&gt;) and all the type on the page will adjust relative to each other. Keeping everything in perfect proportions. Pretty nifty and definitely something that should be done these days as more and more people are utilizing their cell phones for EVERYTHING.&lt;/p&gt;
-
-&lt;p&gt;A couple notes I took on Mobile Up:&lt;br /&gt;
-To set a wrapper using Mobile Up, first set the wrapper to a % then when the screen gets large enough utilize a fixed width. ie:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.wrapper {
-  width: 90%;
-}
-
-@media only screen and (min-width: 980px) {
-  .wrapper {
-    width: 960px;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Also, to setup multi-column design first utilize a column &lt;code&gt;width: 100%&lt;/code&gt; and &lt;code&gt;float: none;&lt;/code&gt; then move to columns being a percentage and floating them. ie:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.column {
-  width: 100%;
-  float: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .column {
-    width: 33.333%;
-    float: left;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, my last note on design in general is that experts say the optimum readability is 40-80 characters per text line. I guess that&amp;rsquo;s why the break for soft wrapping in &lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; (the editor I&amp;rsquo;ve been using as of late) is set to 80 by default.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:59&lt;br /&gt;
-Time spent total: 27:34&lt;br /&gt;
-Lessons completed today: 40&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 5</title>
-      <link>https://itzsaga.github.io/post/day-005/</link>
-      <pubDate>Sat, 04 Mar 2017 04:57:01 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-005/</guid>
-      <description>&lt;p&gt;Today had a rough start. We decided to start potty training today and my wife and I were not on the same page about what that would look like in terms of the amount of coding I would get done today. Thankfully we got things moving pretty smoothly about noon. I then proceeded to complete my first part of the Intro to Ruby curriculum! I now have a functioning CLI Tic Tac Toe game built in Ruby. It can be found &lt;a href=&#34;https://github.com/itzsaga/tic-tac-toe-rb-v-000&#34;&gt;here&lt;/a&gt;. Pretty proud of myself for this one. I got stuck on one part and had to do a screen share with what is called a &amp;ldquo;Learn Expert&amp;rdquo; but it was actually a quick fix. I was stuck on utilizing a ternary. I had the following problem:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# This is passing tests
-if draw?(board)
-  puts &amp;quot;Cats Game!&amp;quot;
-else
-  puts &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-end
-# This is not passing tests
-draw?(board) ? puts &amp;quot;Cats Game!&amp;quot; : puts &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I couldn&amp;rsquo;t figure out why. Turns out I needed to just put &lt;code&gt;puts&lt;/code&gt; in front of the ternary because it was going to do that action to either result of the code. This quick fix had my one line solution passing the rspec tests.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;puts draw?(board) ? &amp;quot;Cats Game!&amp;quot; : &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This puts me at 78% of the way through the Intro to Ruby curriculum so I hope to finish that, or be very close to finishing that, today!&lt;/p&gt;
-
-&lt;p&gt;Just like that, before 5 pm I just finished the Into to Ruby track by refactoring my Tic Tac Toe code from before. I now have a CLI Tic Tac Toe game that utilizes Object Oriented programming which can be found &lt;a href=&#34;https://github.com/itzsaga/oo-tic-tac-toe-v-000&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;ve gotten into a good groove and think utilizing the Pomodoro technique is key on these long days. It allows me time to break away for a bit. I&amp;rsquo;m 42 minutes on and 18 minutes off right now. A key takeaway from this short intro to OO programming is that &amp;ldquo;an object in code is a thing with all the data and all the logic required to complete a task.&amp;rdquo; I think this sums up an object well and I&amp;rsquo;ve always struggled with figuring this out.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages. - Alan Kay&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Next up are some sections that I think will go quickly:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Git and GitHub&lt;/li&gt;
-&lt;li&gt;HTML and CSS&lt;/li&gt;
-&lt;li&gt;Procedural Ruby (only because a bunch of this is done already from this Intro course)
-After that is a large chunk, for good reason, on Object Oriented Ruby. I hope to get through all the lessons and labs for this by the end of the weekend and be working on the &amp;ldquo;Final Projects&amp;rdquo; for Ruby starting Monday. I think I can do it! We&amp;rsquo;ll see what reality dictates, though.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I was right about the Git &amp;amp; GitHub section. Finished that in ~45 mins. Helps that I&amp;rsquo;ve been using GitHub for a while. At the end of the section was this:
-&lt;img src=&#34;https://res.cloudinary.com/sethalexander/v1488603381/ieji7xddaoyf6c87zmyg&#34; alt=&#34;git_comic&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;HTML and CSS are taking longer than I expected because there are code along videos and there isn&amp;rsquo;t really a way to run through those too quickly.&lt;/p&gt;
-
-&lt;p&gt;It was a productive day.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:22&lt;br /&gt;
-Time spent total:  19:35&lt;br /&gt;
-Lessons completed today: 53&lt;/p&gt;
 </description>
     </item>
     

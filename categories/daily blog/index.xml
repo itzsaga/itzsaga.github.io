@@ -9,6 +9,27 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 20</title>
+      <link>https://itzsaga.github.io/post/day020/</link>
+      <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day020/</guid>
+      <description>&lt;p&gt;Sorry I didn&amp;rsquo;t get a blog in yesterday. I was struggling with setting up a dual boot of Ubuntu on my Windows 10 laptop. I ran into the problem of not having a large enough partition created and hit a snag. That said everything was installing fine once I got going. I had hoped to just run a persistent USB key and be able to take my dev environment wherever I want but I couldn&amp;rsquo;t figure that out. Needless to say I didn&amp;rsquo;t feel like writing. In addition, all I did was watch a few lectures last night so there was little to report on. I decided to setup the dual boot because after my intake conversation with &lt;a href=&#34;https://github.com/tracypholmes&#34;&gt;Tracy&lt;/a&gt; I was convinced that I should take the time and get my environment setup. It took some time as I had less than 10GB free but by being creative, and using &lt;a href=&#34;https://windirstat.net/&#34;&gt;WinDirStat&lt;/a&gt; combined with &lt;a href=&#34;http://www.revouninstaller.com/index.html&#34;&gt;Revo Uninstaller&lt;/a&gt;, I changed that to ~25GB. I decided to make a 15GB partition for Ubuntu 16.04.2 LTS but ended up running out of space. I freed up another 5GB today and add ed that to my Linux partition. Overall it was probably about an 8 hour process. I have yet to code in it but I&amp;rsquo;m writing this post in Atom on Ubuntu and I&amp;rsquo;ve cloned down my static site from GitHub using the terminal and I plan to push it as well. One of the biggest changes is that everything just works, in the &lt;code&gt;sudo apt-get install&lt;/code&gt; kind of way. It&amp;rsquo;s nice. Also, Windows doesn&amp;rsquo;t want to go past a 1920x1080 resolution and Ubuntu will go 3200x1800 no problem. My eyes are still adjusting but I know I&amp;rsquo;ll be fine. Ubuntu was being a b*tch last night trying to install packages and stuff (programs hanging, etc&amp;hellip;) but today it has worked great. I&amp;rsquo;m not sure if having some disk space has helped the OS out but my frustrations have disappeared today.&lt;/p&gt;
+
+&lt;p&gt;Today I started my Music Library CLI Project for Object Oriented Ruby! This thing was a beast with 71 tests that I needed to get passing. Luckily I could piece meal it together all based on code I already had written. There was a good amount that had to be written from scratch or completely changed to make the tests pass. However, I had a very strong base of knowledge to work with. I rarely had to Google or hit up Ruby Docs for answers today/tonight. I only hit one MAJOR snag. I couldn&amp;rsquo;t get a test to pass but everything looked right. I ran the CLI in my terminal and the output was perfect. After 90 minutes of trying different things I finally reached out to what is called a Learn Expert for help. 30 minutes later she was remoted in on my computer and ended up commenting out the test because her and a colleague had both agreed my code worked for the requirements even if it didn&amp;rsquo;t pass the tests. After that I was done in &amp;lt;25 minutes. It took me 7:57 to finish the project from start to finish and I probably could&amp;rsquo;ve shaved over an hour off of that. I haven&amp;rsquo;t refactored at all but the project is &lt;a href=&#34;https://github.com/itzsaga/ruby-music-library-cli-v-000&#34;&gt;here&lt;/a&gt; if you&amp;rsquo;d like to see it.&lt;/p&gt;
+
+&lt;p&gt;Today was the kind of coding day I&amp;rsquo;d like to have every Saturday and Sunday. Maybe 1 more productive hour in there though. Tomorrow I&amp;rsquo;ll start a CLI Tic-Tac-Toe with AI project. I&amp;rsquo;m interested to see how AI is going to be tested and required. Mostly because I read &lt;a href=&#34;https://medium.freecodecamp.com/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37&#34;&gt;this&lt;/a&gt; post on Medium about building an unbeatable Tic-Tac-Toe game not too long ago. I thought it would be fun to implement so I&amp;rsquo;ll see if it&amp;rsquo;s possible, maybe on the refactor.&lt;/p&gt;
+
+&lt;p&gt;Not much new to post about. Just been doing a lot of lecture watching and coding projects currently. Oh, I did learn about the &lt;code&gt;unless&lt;/code&gt; method today from a Learn Expert when a piece of my code wouldn&amp;rsquo;t pass. I&amp;rsquo;m realizing sometimes nobody can explain why we need to use &lt;code&gt;unless&lt;/code&gt; or &lt;code&gt;if&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; to make something work but that&amp;rsquo;s part of it. Some things are just at such a high level of knowing the language that the majority of people won&amp;rsquo;t know why.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 9:52&lt;br /&gt;
+Time spent total: 92:48&lt;br /&gt;
+Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
+Lessons completed total: 283&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 18</title>
       <link>https://itzsaga.github.io/post/day-018/</link>
       <pubDate>Thu, 16 Mar 2017 23:21:28 -0500</pubDate>
@@ -617,38 +638,6 @@ After that is a large chunk, for good reason, on Object Oriented Ruby. I hope to
 &lt;p&gt;Time spent today: 7:22&lt;br /&gt;
 Time spent total:  19:35&lt;br /&gt;
 Lessons completed today: 53&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 4</title>
-      <link>https://itzsaga.github.io/post/day-004/</link>
-      <pubDate>Fri, 03 Mar 2017 04:27:10 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-004/</guid>
-      <description>&lt;p&gt;Today was no longer than the first few but definitely felt like it was. I learned the hard lesson that with this schedule I actually have to go to sleep when I schedule it. I stayed up late last night but still stuck to my 6 am wake-up call. Needless to say my last 30 minutes of coding tonight was not good and I couldn’t make progress like I know I can. I’m just foggy in the head and tired. My prime nap time in the middle of the day was taken away by my grumpy 2.5-month-old who 3 minutes after I set a 30-minute alarm for my nap decided she would cry for 90 minutes. I finally got her calm and &lt;strong&gt;boom&lt;/strong&gt; my 2-year-old is awake from her nap. I love them both, I just really would have enjoyed that nap today.&lt;/p&gt;
-
-&lt;p&gt;Nothing big happened today in my schooling. The people that wrote the curriculum like to include quotes here and there and I saw one name pop up a few times so I looked him up. Turns out &lt;a href=&#34;https://en.wikipedia.org/wiki/Edsger_W._Dijkstra&#34;&gt;Edsger W. Dijkstra&lt;/a&gt; was a pretty big deal in the world of CS and programming. I didn’t read his entire Wikipedia page but I intend to.&lt;/p&gt;
-
-&lt;p&gt;One other thing stuck out today. The fact that &lt;code&gt;#detect&lt;/code&gt; and &lt;code&gt;#find&lt;/code&gt; do the same exact thing. This is actually one reason that I was so stuck tonight. With the way that Flatiron is setup, every successful lab is public on GitHub. If I’m really stuck I’ll look at how others solved the problems for inspiration. There is rarely one answer so I’ll take the code I have and look at say 5 other people’s solutions and get my brain moving again. I kept seeing &lt;code&gt;WIN_COMBINATIONS.find&lt;/code&gt; and I was thinking, “Where did these people learn this &lt;code&gt;#find&lt;/code&gt; method? So I went to the ruby docs and realized that it was the same exact thing as &lt;code&gt;#detect&lt;/code&gt; when I saw this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;(1..10).detect   { |i| i % 5 == 0 and i % 7 == 0 }   #=&amp;gt; nil
-(1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=&amp;gt; 35
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To make it even worse, I had earlier written down on my pad that these were the same thing so I wouldn’t forget to blog about it tonight.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: detect and find are two names for the same method. For every example below we’ll use detect, but you can use them interchangeably.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How does this even happen though? Why would the person or people who wrote a coding language choose to make two words do the exact same thing?&lt;/p&gt;
-
-&lt;p&gt;That’s all for now. Still need to walk the dog, setup my coffee for the morning, and throw some stuff in the dryer.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:32&lt;br /&gt;
-Time spent total: 12:13&lt;br /&gt;
-Lessons completed today: 12&lt;/p&gt;
 </description>
     </item>
     

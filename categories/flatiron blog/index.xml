@@ -9,6 +9,42 @@
     <atom:link href="https://itzsaga.github.io/categories/flatiron-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>One Way To Pair Program</title>
+      <link>https://itzsaga.github.io/post/one-way-to-pair-program/</link>
+      <pubDate>Sat, 18 Mar 2017 23:07:23 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/one-way-to-pair-program/</guid>
+      <description>&lt;p&gt;Tonight a couple people were wanting to know the best way to pair program together. They had both done the beginning parts of the Tic-Tac-Toe with AI project (the one I&amp;rsquo;m getting ready to start) and wanted to work on the AI part together. The exact question was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hey @******* and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste. She is on IDE, I&amp;rsquo;m on local. Any help muchly appreciated!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The always awesome and helpful instructor &lt;a href=&#34;https://github.com/cernanb&#34;&gt;Cernan Bernardo&lt;/a&gt; quickly gave a how-to that I knew others could use. I&amp;rsquo;m just going to abbreviate what he said and turn it into a numbered list.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Grab each other&amp;rsquo;s SSH URL for your respective GitHub repos.&lt;/li&gt;
+&lt;li&gt;In your respective terminals (local or IDE) you would each run the command &lt;code&gt;git remote add upstream *copy_ssh_url_here*&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;After running those commands when you run &lt;code&gt;git remote -v&lt;/code&gt; you will see two remotes&amp;hellip;one for your origin which is your respective GitHub repo and one for upstream which is your partner&amp;rsquo;s repo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now the setup is done, here is the work flow to be done &lt;em&gt;before&lt;/em&gt; either starts working on the app:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run &lt;code&gt;git pull upstream master&lt;/code&gt;&amp;hellip;this will pull down any code your partner has added to the app and pushed up to their GitHub.&lt;/li&gt;
+&lt;li&gt;Work on your part of the app.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;git push&lt;/code&gt; or &lt;code&gt;git push origin master&lt;/code&gt;&amp;hellip;this will push your new code to YOUR repo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;With that work flow you will each have your code in sync. Just remember to &lt;em&gt;pull before you push&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So there you have it. Questions feel free to ask and I&amp;rsquo;ll ask Cernan ;-)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Why Software Development?</title>
       <link>https://itzsaga.github.io/post/why-software-development/</link>
       <pubDate>Mon, 13 Mar 2017 19:40:42 -0500</pubDate>

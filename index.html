@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-16T23:21:28-05:00"/>
+<meta property="og:updated_time" content="2017-03-18T23:07:23-05:00"/>
 
 
 
@@ -175,15 +175,15 @@
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/one-way-to-pair-program/"><p>One Way To Pair Program</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day020/"><p>Day 20</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-018/"><p>Day 18</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-017/"><p>Day 17</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-016/"><p>Day 16</p></a>
                     </li>
                 
             </ul>
@@ -200,7 +200,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-018/">Day 18</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/one-way-to-pair-program/">One Way To Pair Program</a></h2>
         
         
     </div>
@@ -210,11 +210,11 @@
         
 
         <time class="published"
-            datetime='2017-03-16'>
-            March 16, 2017</time>
+            datetime='2017-03-18'>
+            March 18, 2017</time>
         <span class="author"></span>
         
-            <p>3 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -226,25 +226,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f&text=Day%2018&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f&text=One%20Way%20To%20Pair%20Program&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f&title=Day%2018" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f&title=One%20Way%20To%20Pair%20Program" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -254,25 +254,33 @@
     
 
     <div id="content">
-        <p>Today saw <strong>a lot</strong> of new stuff. I feel like a ton of stuff was introduced and not gone over very deeply but deep enough for me to understand and implement it. In 11 lessons and labs I was exposed to <code>super</code> and how to use it, mass assignments, creating and implementing custom errors, gems, <a href="https://bundler.io/">bundler</a>, and basic scraping with <a href="http://www.nokogiri.org/">Nokogiri</a>. I can tell I was exposed to many things in preparation for the first projects, which can&rsquo;t get here fast enough! At least I say that now, we&rsquo;ll see how I feel when I&rsquo;m at a complete stand still and stuck on one of them lol.</p>
-
-<p>Today I got stuck for a little while utilizing <code>super</code>. I had a lab with a parent class with a method that simply <code>puts &quot;I can't remember what it was exactly.&quot;</code> and in the child class I was suppose to use <code>super</code> to have that phrase repeated 10 times. So my initial attempt, inside the method was: <code>super.10.times</code> as I figured I could just call this method but I got <code>NoMethodError: undefined method `super' for #&lt;Enumerator: 10:times&gt;</code>. Hmmm. I did some searching and even called <code>super.class</code> in pry but couldn&rsquo;t get anymore info. BTW, <code>super.class</code> literally gave me nothing but a new line in pry to look at, or was that actually something??? So I posed the quesiton in the Slack channel for those who are enrolled in the bootcamp. After a side chain of responses with back and forth I got what I needed for my understanding</p>
+        <p>Tonight a couple people were wanting to know the best way to pair program together. They had both done the beginning parts of the Tic-Tac-Toe with AI project (the one I&rsquo;m getting ready to start) and wanted to work on the AI part together. The exact question was:</p>
 
 <blockquote>
-<p>super yields the implementation from the method it’s overriding and returns the last return value or it just returns the last return value.<br />
-- <a href="https://github.com/genericlady">Yianna</a> (thanks!)</p>
+<p>Hey @******* and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste. She is on IDE, I&rsquo;m on local. Any help muchly appreciated!</p>
 </blockquote>
 
-<p>This is what I needed. Since it&rsquo;s returning the last value and <code>super</code> was just a simple <code>puts</code> method the return value was <code>nil</code>. No wonder I couldn&rsquo;t make method calls on it. I also got some way more in depth info that I haven&rsquo;t had a chance to digest yet. I didn&rsquo;t want to get stuck on it when I knew just typing out <code>super</code> ten times would pass the lab. In fact, that&rsquo;s how Flatiron&rsquo;s solution was coded. This lab was more about understanding how <code>super</code> works than how to call methods on it.</p>
+<p>The always awesome and helpful instructor <a href="https://github.com/cernanb">Cernan Bernardo</a> quickly gave a how-to that I knew others could use. I&rsquo;m just going to abbreviate what he said and turn it into a numbered list.</p>
 
-<p>Other than that it was just A LOT of information as I stated at the beginning. Also a chuckle when I found out that <code>~&gt;</code> is affectionately called a &ldquo;twiddle-wakka&rdquo; for whatever reason. I can figure out the twiddle part but the wakka is stumping me right now. If you know please comment and inform me.</p>
+<ol>
+<li>Grab each other&rsquo;s SSH URL for your respective GitHub repos.</li>
+<li>In your respective terminals (local or IDE) you would each run the command <code>git remote add upstream *copy_ssh_url_here*</code>.</li>
+<li>After running those commands when you run <code>git remote -v</code> you will see two remotes&hellip;one for your origin which is your respective GitHub repo and one for upstream which is your partner&rsquo;s repo.</li>
+</ol>
 
-<p>I have a few video reviews and then I start projects!!!</p>
+<p>Now the setup is done, here is the work flow to be done <em>before</em> either starts working on the app:</p>
 
-<p>Time spent today: 3:16<br />
-Time spent total: 79:20<br />
-Lessons completed today: 11<br />
-Lessons completed total: 279</p>
+<ol>
+<li>Run <code>git pull upstream master</code>&hellip;this will pull down any code your partner has added to the app and pushed up to their GitHub.</li>
+<li>Work on your part of the app.</li>
+<li>Run <code>git push</code> or <code>git push origin master</code>&hellip;this will push your new code to YOUR repo.</li>
+</ol>
+
+<blockquote>
+<p>With that work flow you will each have your code in sync. Just remember to <em>pull before you push</em>.</p>
+</blockquote>
+
+<p>So there you have it. Questions feel free to ask and I&rsquo;ll ask Cernan ;-)</p>
 
     </div>
 
@@ -298,7 +306,7 @@ Lessons completed total: 279</p>
 
     
     
-        <li><a href='/categories/daily-blog'>daily blog</a></li>
+        <li><a href='/categories/flatiron-blog'>flatiron blog</a></li>
     
 </ul>
 
@@ -306,8 +314,8 @@ Lessons completed total: 279</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-017/"
-                class="button big previous">Day 17</a></li>
+        <li><a href="https://itzsaga.github.io/post/day020/"
+                class="button big previous">Day 20</a></li>
     
 
     
@@ -320,9 +328,9 @@ Lessons completed total: 279</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-018\/';
-    var disqus_title = 'Day 18';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-018\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/one-way-to-pair-program\/';
+    var disqus_title = 'One Way To Pair Program';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/one-way-to-pair-program\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -346,25 +354,25 @@ Lessons completed total: 279</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f&text=Day%2018&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f&text=One%20Way%20To%20Pair%20Program&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f&title=Day%2018" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f&title=One%20Way%20To%20Pair%20Program" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-018%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fone-way-to-pair-program%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -484,6 +492,34 @@ Lessons completed total: 279</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/one-way-to-pair-program/">One Way To Pair Program</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-18'>
+                                    March 18, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day020/">Day 20</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-18'>
+                                    March 18, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-018/">Day 18</a></h3>
                                 
                                     
@@ -491,34 +527,6 @@ Lessons completed total: 279</p>
                                 <time class="published" datetime=
                                     '2017-03-16'>
                                     March 16, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-017/">Day 17</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-15'>
-                                    March 15, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-016/">Day 16</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-14'>
-                                    March 14, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -557,7 +565,7 @@ Lessons completed total: 279</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">18</span>
+                                <span style="float:right;">19</span>
                             </header>
                         </article>
                     </li>
@@ -566,7 +574,7 @@ Lessons completed total: 279</p>
                         <article>
                             <header>
                                 <a href="/categories/flatiron-blog/">flatiron blog</a>
-                                <span style="float:right;">1</span>
+                                <span style="float:right;">2</span>
                             </header>
                         </article>
                     </li>
