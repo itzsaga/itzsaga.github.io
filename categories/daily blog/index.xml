@@ -9,6 +9,59 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 21</title>
+      <link>https://itzsaga.github.io/post/day-021/</link>
+      <pubDate>Sun, 19 Mar 2017 22:32:36 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-021/</guid>
+      <description>&lt;p&gt;Another productive project day means, not much to talk about! I got through all the tests that I needed to for my Tic-Tac-Toe with AI project. I started trying to build out my &amp;ldquo;AI&amp;rdquo; but didn&amp;rsquo;t get very far. I know I need to start simple so I decided to just attempt the computer making random moves. I tried to implement the following work flow:
+1. Get the current board array (although this should be passed in by default).
+2. Set an array equal to all the possible moves as strings, 1-9.
+3. Set a new empty array to collect open squares.
+4. Loop over the current board array and if a square is empty &lt;code&gt;= &amp;quot; &amp;quot;&lt;/code&gt; shovel to the array collecting open squares. I will do this by utilizing the possible moves array as the index numbers. I&amp;rsquo;ll just turn each array value into an integer and subtract one.
+5. If the board square is empty shovel the possible move string to the empty array collecting open squares.
+6. Return a random string from the possible moves array.&lt;/p&gt;
+
+&lt;p&gt;This &lt;em&gt;should&lt;/em&gt; get my computer playing only random open squares. However, my code created an infinite loop and I decided I could call it a day after that. I&amp;rsquo;m hoping I can pair with someone just for the AI part and get it done. If you&amp;rsquo;re interested in the project you can find it on my GitHub &lt;a href=&#34;https://github.com/itzsaga/ttt-with-ai-project-v-000&#34;&gt;here&lt;/a&gt;. My current computer logic (although it might be hard to understand without looking at all the files) is this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;
+module Players
+  class Computer &amp;lt; Player
+    def move(board)
+      possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
+      valid_moves = []
+      possible_moves.each do |move|
+        valid_moves &amp;lt;&amp;lt; move if board.cells[move.to_i-1] = &amp;quot; &amp;quot;
+      end
+      valid_moves.sample
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ll get at least this little bit of logic working tomorrow even if on my own. Other than that the game works for 2 humans to play!&lt;/p&gt;
+
+&lt;p&gt;So day by day I&amp;rsquo;m enjoying my new OS even more. Today I setup workspaces which just made all of life easier.&lt;/p&gt;
+
+&lt;p&gt;My workspaces overview:&lt;br /&gt;
+&lt;img src=&#34;../../images/workspace.png&#34; alt=&#34;Ubuntu Desktop Workspaces&#34; title=&#34;Ubuntu Desktop workspaces overview&#34; /&gt;&lt;br /&gt;
+I have one with Atom and the Terminal (I&amp;rsquo;ve since changed to &amp;ldquo;Solarized Light&amp;rdquo; themes on both because I was getting glare during the day):&lt;br /&gt;
+&lt;img src=&#34;../../images/workspace-code.png&#34; alt=&#34;Coding Workspace&#34; title=&#34;My coding workspace&#34; /&gt;&lt;br /&gt;
+One with Slack:&lt;br /&gt;
+&lt;img src=&#34;../../images/workspace-slack.png&#34; alt=&#34;Slack Workspace&#34; title=&#34;My Slack workspace&#34; /&gt;&lt;br /&gt;
+Finally, one with Chrome:&lt;br /&gt;
+&lt;img src=&#34;../../images/workspace-web.png&#34; alt=&#34;Web Workspace&#34; title=&#34;My web workspace&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I also got &lt;a href=&#34;https://justgetflux.com/&#34;&gt;f.lux&lt;/a&gt; installed today which is one the things on my &lt;strong&gt;must have&lt;/strong&gt; list when it comes to apps on my computers. I even have installed it at shared work computers in the past and freaked some coworkers out the first time they use the computer afterwards. I&amp;rsquo;ll write a post about my biohacks here sometime soon. Maybe when I&amp;rsquo;m done with this set of projects and before I move to the next section. I have more than a few things that I do to keep my mind running in top form. From nootropics to meditation.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 7:02&lt;br /&gt;
+Time spent total: 99:50&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 283&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 20</title>
       <link>https://itzsaga.github.io/post/day-020/</link>
       <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
@@ -585,59 +638,6 @@ To set a wrapper using Mobile Up, first set the wrapper to a % then when the scr
 &lt;p&gt;Time spent today: 7:59&lt;br /&gt;
 Time spent total: 27:34&lt;br /&gt;
 Lessons completed today: 40&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 5</title>
-      <link>https://itzsaga.github.io/post/day-005/</link>
-      <pubDate>Sat, 04 Mar 2017 04:57:01 +0000</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-005/</guid>
-      <description>&lt;p&gt;Today had a rough start. We decided to start potty training today and my wife and I were not on the same page about what that would look like in terms of the amount of coding I would get done today. Thankfully we got things moving pretty smoothly about noon. I then proceeded to complete my first part of the Intro to Ruby curriculum! I now have a functioning CLI Tic Tac Toe game built in Ruby. It can be found &lt;a href=&#34;https://github.com/itzsaga/tic-tac-toe-rb-v-000&#34;&gt;here&lt;/a&gt;. Pretty proud of myself for this one. I got stuck on one part and had to do a screen share with what is called a &amp;ldquo;Learn Expert&amp;rdquo; but it was actually a quick fix. I was stuck on utilizing a ternary. I had the following problem:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# This is passing tests
-if draw?(board)
-  puts &amp;quot;Cats Game!&amp;quot;
-else
-  puts &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-end
-# This is not passing tests
-draw?(board) ? puts &amp;quot;Cats Game!&amp;quot; : puts &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I couldn&amp;rsquo;t figure out why. Turns out I needed to just put &lt;code&gt;puts&lt;/code&gt; in front of the ternary because it was going to do that action to either result of the code. This quick fix had my one line solution passing the rspec tests.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;puts draw?(board) ? &amp;quot;Cats Game!&amp;quot; : &amp;quot;Congratulations #{winner(board)}!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This puts me at 78% of the way through the Intro to Ruby curriculum so I hope to finish that, or be very close to finishing that, today!&lt;/p&gt;
-
-&lt;p&gt;Just like that, before 5 pm I just finished the Into to Ruby track by refactoring my Tic Tac Toe code from before. I now have a CLI Tic Tac Toe game that utilizes Object Oriented programming which can be found &lt;a href=&#34;https://github.com/itzsaga/oo-tic-tac-toe-v-000&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;ve gotten into a good groove and think utilizing the Pomodoro technique is key on these long days. It allows me time to break away for a bit. I&amp;rsquo;m 42 minutes on and 18 minutes off right now. A key takeaway from this short intro to OO programming is that &amp;ldquo;an object in code is a thing with all the data and all the logic required to complete a task.&amp;rdquo; I think this sums up an object well and I&amp;rsquo;ve always struggled with figuring this out.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages. - Alan Kay&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Next up are some sections that I think will go quickly:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Git and GitHub&lt;/li&gt;
-&lt;li&gt;HTML and CSS&lt;/li&gt;
-&lt;li&gt;Procedural Ruby (only because a bunch of this is done already from this Intro course)
-After that is a large chunk, for good reason, on Object Oriented Ruby. I hope to get through all the lessons and labs for this by the end of the weekend and be working on the &amp;ldquo;Final Projects&amp;rdquo; for Ruby starting Monday. I think I can do it! We&amp;rsquo;ll see what reality dictates, though.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I was right about the Git &amp;amp; GitHub section. Finished that in ~45 mins. Helps that I&amp;rsquo;ve been using GitHub for a while. At the end of the section was this:
-&lt;img src=&#34;https://res.cloudinary.com/sethalexander/v1488603381/ieji7xddaoyf6c87zmyg&#34; alt=&#34;git_comic&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;HTML and CSS are taking longer than I expected because there are code along videos and there isn&amp;rsquo;t really a way to run through those too quickly.&lt;/p&gt;
-
-&lt;p&gt;It was a productive day.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:22&lt;br /&gt;
-Time spent total:  19:35&lt;br /&gt;
-Lessons completed today: 53&lt;/p&gt;
 </description>
     </item>
     
