@@ -9,6 +9,45 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 22</title>
+      <link>https://itzsaga.github.io/post/day-022/</link>
+      <pubDate>Mon, 20 Mar 2017 22:51:58 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-022/</guid>
+      <description>&lt;p&gt;About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was &lt;strong&gt;DARK&lt;/strong&gt;. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was. While I was downstairs the power came back on and my daughter yelled out, &amp;ldquo;Thanks Daddy!&amp;rdquo; I&amp;rsquo;ll take credit, yes I will. This put me behind. I then found out that I hadn&amp;rsquo;t installed &lt;a href=&#34;https://zoom.us/&#34;&gt;Zoom&lt;/a&gt; and couldn&amp;rsquo;t get into the Study Group I was planning on attending. I had already decided to &amp;ldquo;take the night off&amp;rdquo; and just do the study group and work on my Tic-Tac-Toe AI some. Needless to say 30 minutes later I confirmed Zoom was working.&lt;/p&gt;
+
+&lt;p&gt;Tonight I realized it&amp;rsquo;s amazing what coming at a project fresh can do. I figured out why my random move in Tic-Tac-Toe wasn&amp;rsquo;t working in less than 3 minutes tonight. I had an &lt;code&gt;=&lt;/code&gt; instead of an &lt;code&gt;==&lt;/code&gt;. However, after that I couldn&amp;rsquo;t get into the groove. I wrote out a couple more methods to decide on the first and second move for the computer but then just left it as random moves after that. I did some TTT strategy ready and came up with the best first move is a corner and the best second move is the center. If the center is taken the best second move is a corner. So I built that logic into the game. From move 3 on the computer plays random. The computer never beat me, it did however, tie a few times with this little bit of knowledge. I have an idea though and want to see if I can pair with someone to implement it. Here&amp;rsquo;s my &lt;em&gt;final&lt;/em&gt; code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
+  class Computer &amp;lt; Player
+    def move(board)
+      if board.cells.count{|square| square != &amp;quot; &amp;quot; } == 0
+        &amp;quot;1&amp;quot;
+      elsif board.cells.count{|square| square != &amp;quot; &amp;quot; } == 1
+        board.cells.find_index(&amp;quot;X&amp;quot;) == 4 ? &amp;quot;1&amp;quot; : &amp;quot;5&amp;quot;
+      else
+        possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
+        valid_moves = []
+        possible_moves.each do |move|
+          valid_moves &amp;lt;&amp;lt; move if board.cells[move.to_i-1] == &amp;quot; &amp;quot;
+        end
+        valid_moves.sample
+      end
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I started on the next project which is a scraping project. I don&amp;rsquo;t have much practice with Nokogiri but on my first attempt I was pulling the data I needed. I can see this project might go quicker than the last two. I&amp;rsquo;m going to hit it hard tomorrow night and get it done.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 1:33&lt;br /&gt;
+Time spent total: 101:24&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 284&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 21</title>
       <link>https://itzsaga.github.io/post/day-021/</link>
       <pubDate>Sun, 19 Mar 2017 22:32:36 -0500</pubDate>
@@ -583,61 +622,6 @@ end
 &lt;p&gt;Time spent today: 5:52&lt;br /&gt;
 Time spent total: 33:26&lt;br /&gt;
 Lessons completed today: 32&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 6</title>
-      <link>https://itzsaga.github.io/post/day-006/</link>
-      <pubDate>Sat, 04 Mar 2017 23:00:48 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-006/</guid>
-      <description>&lt;p&gt;It was a LONG day of HTML &amp;amp; CSS and I&amp;rsquo;m still not done with this section. It&amp;rsquo;s okay though. While a lot of it has been review a lot of it has not as well. I&amp;rsquo;ve been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type. Desktop Down principles were discussed as well but I think at this point in time there is no reason to utilize that methodology. Too many people are utilizing their phones as their primary was to consume content and the trend is moving in that direction anyway.&lt;/p&gt;
-
-&lt;p&gt;I think this section feels really long and boring because so much of it is being explained in videos and less with actually coding. Maybe 5-10 lessons to each coding exercise. In addition, most of the coding is codealong so there is much less thinking involved. At least I can set the videos to 1.5x speed. I&amp;rsquo;m 87% of the way done with this HTML and CSS section so I&amp;rsquo;ll finish it off tomorrow for sure.&lt;/p&gt;
-
-&lt;p&gt;I did finally learn why people would use &lt;code&gt;em&lt;/code&gt; for &lt;code&gt;font-size&lt;/code&gt; as opposed to pixels &lt;code&gt;px&lt;/code&gt; or points &lt;code&gt;pt&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It is to our advantage to set all typography within our site to ems and then in media queries adjust the body font-size as a percent to adjust all type in proportion to each other. This greatly simplifies our media queries on typography.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;When all the type sizes are relative there is only one thing that needs to change (&lt;code&gt;body { font-size }&lt;/code&gt;) and all the type on the page will adjust relative to each other. Keeping everything in perfect proportions. Pretty nifty and definitely something that should be done these days as more and more people are utilizing their cell phones for EVERYTHING.&lt;/p&gt;
-
-&lt;p&gt;A couple notes I took on Mobile Up:&lt;br /&gt;
-To set a wrapper using Mobile Up, first set the wrapper to a % then when the screen gets large enough utilize a fixed width. ie:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.wrapper {
-  width: 90%;
-}
-
-@media only screen and (min-width: 980px) {
-  .wrapper {
-    width: 960px;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Also, to setup multi-column design first utilize a column &lt;code&gt;width: 100%&lt;/code&gt; and &lt;code&gt;float: none;&lt;/code&gt; then move to columns being a percentage and floating them. ie:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.column {
-  width: 100%;
-  float: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .column {
-    width: 33.333%;
-    float: left;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, my last note on design in general is that experts say the optimum readability is 40-80 characters per text line. I guess that&amp;rsquo;s why the break for soft wrapping in &lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; (the editor I&amp;rsquo;ve been using as of late) is set to 80 by default.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:59&lt;br /&gt;
-Time spent total: 27:34&lt;br /&gt;
-Lessons completed today: 40&lt;/p&gt;
 </description>
     </item>
     

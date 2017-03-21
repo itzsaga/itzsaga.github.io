@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-19T22:32:36-05:00"/>
+<meta property="og:updated_time" content="2017-03-20T22:51:58-05:00"/>
 
 
 
@@ -175,15 +175,15 @@
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-022/"><p>Day 22</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-021/"><p>Day 21</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/one-way-to-pair-program/"><p>One Way To Pair Program</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-020/"><p>Day 20</p></a>
                     </li>
                 
             </ul>
@@ -200,7 +200,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-021/">Day 21</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-022/">Day 22</a></h2>
         
         
     </div>
@@ -210,8 +210,8 @@
         
 
         <time class="published"
-            datetime='2017-03-19'>
-            March 19, 2017</time>
+            datetime='2017-03-20'>
+            March 20, 2017</time>
         <span class="author"></span>
         
             <p>3 minute read</p>
@@ -226,25 +226,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f&text=Day%2021&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&text=Day%2022&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f&title=Day%2021" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&title=Day%2022" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -254,50 +254,36 @@
     
 
     <div id="content">
-        <p>Another productive project day means, not much to talk about! I got through all the tests that I needed to for my Tic-Tac-Toe with AI project. I started trying to build out my &ldquo;AI&rdquo; but didn&rsquo;t get very far. I know I need to start simple so I decided to just attempt the computer making random moves. I tried to implement the following work flow:
-1. Get the current board array (although this should be passed in by default).
-2. Set an array equal to all the possible moves as strings, 1-9.
-3. Set a new empty array to collect open squares.
-4. Loop over the current board array and if a square is empty <code>= &quot; &quot;</code> shovel to the array collecting open squares. I will do this by utilizing the possible moves array as the index numbers. I&rsquo;ll just turn each array value into an integer and subtract one.
-5. If the board square is empty shovel the possible move string to the empty array collecting open squares.
-6. Return a random string from the possible moves array.</p>
+        <p>About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was <strong>DARK</strong>. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was. While I was downstairs the power came back on and my daughter yelled out, &ldquo;Thanks Daddy!&rdquo; I&rsquo;ll take credit, yes I will. This put me behind. I then found out that I hadn&rsquo;t installed <a href="https://zoom.us/">Zoom</a> and couldn&rsquo;t get into the Study Group I was planning on attending. I had already decided to &ldquo;take the night off&rdquo; and just do the study group and work on my Tic-Tac-Toe AI some. Needless to say 30 minutes later I confirmed Zoom was working.</p>
 
-<p>This <em>should</em> get my computer playing only random open squares. However, my code created an infinite loop and I decided I could call it a day after that. I&rsquo;m hoping I can pair with someone just for the AI part and get it done. If you&rsquo;re interested in the project you can find it on my GitHub <a href="https://github.com/itzsaga/ttt-with-ai-project-v-000">here</a>. My current computer logic (although it might be hard to understand without looking at all the files) is this:</p>
+<p>Tonight I realized it&rsquo;s amazing what coming at a project fresh can do. I figured out why my random move in Tic-Tac-Toe wasn&rsquo;t working in less than 3 minutes tonight. I had an <code>=</code> instead of an <code>==</code>. However, after that I couldn&rsquo;t get into the groove. I wrote out a couple more methods to decide on the first and second move for the computer but then just left it as random moves after that. I did some TTT strategy ready and came up with the best first move is a corner and the best second move is the center. If the center is taken the best second move is a corner. So I built that logic into the game. From move 3 on the computer plays random. The computer never beat me, it did however, tie a few times with this little bit of knowledge. I have an idea though and want to see if I can pair with someone to implement it. Here&rsquo;s my <em>final</em> code:</p>
 
-<pre><code class="language-ruby">
-module Players
+<pre><code class="language-ruby">module Players
   class Computer &lt; Player
     def move(board)
-      possible_moves = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;]
-      valid_moves = []
-      possible_moves.each do |move|
-        valid_moves &lt;&lt; move if board.cells[move.to_i-1] = &quot; &quot;
+      if board.cells.count{|square| square != &quot; &quot; } == 0
+        &quot;1&quot;
+      elsif board.cells.count{|square| square != &quot; &quot; } == 1
+        board.cells.find_index(&quot;X&quot;) == 4 ? &quot;1&quot; : &quot;5&quot;
+      else
+        possible_moves = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;]
+        valid_moves = []
+        possible_moves.each do |move|
+          valid_moves &lt;&lt; move if board.cells[move.to_i-1] == &quot; &quot;
+        end
+        valid_moves.sample
       end
-      valid_moves.sample
     end
   end
 end
 </code></pre>
 
-<p>I&rsquo;m sure I&rsquo;ll get at least this little bit of logic working tomorrow even if on my own. Other than that the game works for 2 humans to play!</p>
+<p>I started on the next project which is a scraping project. I don&rsquo;t have much practice with Nokogiri but on my first attempt I was pulling the data I needed. I can see this project might go quicker than the last two. I&rsquo;m going to hit it hard tomorrow night and get it done.</p>
 
-<p>So day by day I&rsquo;m enjoying my new OS even more. Today I setup workspaces which just made all of life easier.</p>
-
-<p>My workspaces overview:<br />
-<img src="../../images/workspace.png" alt="Ubuntu Desktop Workspaces" title="Ubuntu Desktop workspaces overview" /><br />
-I have one with Atom and the Terminal (I&rsquo;ve since changed to &ldquo;Solarized Light&rdquo; themes on both because I was getting glare during the day):<br />
-<img src="../../images/workspace-code.png" alt="Coding Workspace" title="My coding workspace" /><br />
-One with Slack:<br />
-<img src="../../images/workspace-slack.png" alt="Slack Workspace" title="My Slack workspace" /><br />
-Finally, one with Chrome:<br />
-<img src="../../images/workspace-web.png" alt="Web Workspace" title="My web workspace" /></p>
-
-<p>I also got <a href="https://justgetflux.com/">f.lux</a> installed today which is one the things on my <strong>must have</strong> list when it comes to apps on my computers. I even have installed it at shared work computers in the past and freaked some coworkers out the first time they use the computer afterwards. I&rsquo;ll write a post about my biohacks here sometime soon. Maybe when I&rsquo;m done with this set of projects and before I move to the next section. I have more than a few things that I do to keep my mind running in top form. From nootropics to meditation.</p>
-
-<p>Time spent today: 7:02<br />
-Time spent total: 99:50<br />
-Lessons completed today: 0<br />
-Lessons completed total: 283</p>
+<p>Time spent today: 1:33<br />
+Time spent total: 101:24<br />
+Lessons completed today: 1<br />
+Lessons completed total: 284</p>
 
     </div>
 
@@ -331,8 +317,8 @@ Lessons completed total: 283</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/one-way-to-pair-program/"
-                class="button big previous">One Way To Pair Program</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-021/"
+                class="button big previous">Day 21</a></li>
     
 
     
@@ -345,9 +331,9 @@ Lessons completed total: 283</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-021\/';
-    var disqus_title = 'Day 21';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-021\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-022\/';
+    var disqus_title = 'Day 22';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-022\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -371,25 +357,25 @@ Lessons completed total: 283</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f&text=Day%2021&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&text=Day%2022&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f&title=Day%2021" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&title=Day%2022" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-021%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -509,6 +495,20 @@ Lessons completed total: 283</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-022/">Day 22</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-20'>
+                                    March 20, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-021/">Day 21</a></h3>
                                 
                                     
@@ -524,20 +524,6 @@ Lessons completed total: 283</p>
                         <article>
                             <header>
                                 <h3><a href="https://itzsaga.github.io/post/one-way-to-pair-program/">One Way To Pair Program</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-18'>
-                                    March 18, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-020/">Day 20</a></h3>
                                 
                                     
                                 
@@ -582,7 +568,7 @@ Lessons completed total: 283</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">20</span>
+                                <span style="float:right;">21</span>
                             </header>
                         </article>
                     </li>
