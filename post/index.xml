@@ -6,8 +6,39 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Mar 2017 22:51:58 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 21 Mar 2017 23:15:17 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 23</title>
+      <link>https://itzsaga.github.io/post/day-023/</link>
+      <pubDate>Tue, 21 Mar 2017 23:15:17 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-023/</guid>
+      <description>&lt;p&gt;So working on my scraping project. It&amp;rsquo;s hurting my head. Scraping is no fun to figure out. What I&amp;rsquo;m stuck on right now is iterating. When I have some time tomorrow I&amp;rsquo;m going to work on completely understanding iterating when scraping. Here&amp;rsquo;s what I&amp;rsquo;m looking at currently:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;social-icon-container&amp;quot;&amp;gt;
+  &amp;lt;a href=&amp;quot;https://twitter.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/twitter-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;a href=&amp;quot;https://www.linkedin.com/in/ryan-johnson-321629ab&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/linkedin-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;a href=&amp;quot;https://github.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/github-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;a href=&amp;quot;https://www.youtube.com/watch?v=C22ufOqDyaE&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/rss-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I&amp;rsquo;m doing (among other things above it):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;social = doc.css(&amp;quot;.social-icon-container a&amp;quot;)
+social.each do |link|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m struggling to understand what |link| is inside the loop. I&amp;rsquo;m thinking it&amp;rsquo;s each instance of &lt;code&gt;a&lt;/code&gt; because there are 4 of those and I&amp;rsquo;m setting &lt;code&gt;social&lt;/code&gt; equal to the &lt;code&gt;a&lt;/code&gt;. However, I&amp;rsquo;m not sure. I know when I call &lt;code&gt;doc.css(&amp;quot;.social-icon-container a&amp;quot;)&lt;/code&gt; in pry I end up with Nokogiri&amp;rsquo;s version of everything inside the div. I&amp;rsquo;m sure I&amp;rsquo;ll crush it tomorrow. I know my logic of looping over each &lt;code&gt;a&lt;/code&gt; and using an &lt;code&gt;if&lt;/code&gt; or even &lt;code&gt;case&lt;/code&gt; to check if the &lt;code&gt;img src=&lt;/code&gt; is &lt;code&gt;==&lt;/code&gt; to one of the social networks, then setting the &lt;code&gt;href&lt;/code&gt; value to equal a variable I&amp;rsquo;ll use later is the way to go and solid.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:08&lt;br /&gt;
+Time spent total: 103:32&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 284&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 22</title>
@@ -488,47 +519,6 @@ Did you mean?  start_with?
 Time spent total: 41:07&lt;br /&gt;
 Lessons completed today: 9&lt;br /&gt;
 Lessons completed total: 218&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 9</title>
-      <link>https://itzsaga.github.io/post/day-009/</link>
-      <pubDate>Tue, 07 Mar 2017 22:15:38 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-009/</guid>
-      <description>&lt;p&gt;Today was a slow day. The kids didn&amp;rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&amp;rsquo;s fine though. I didn&amp;rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.&lt;/p&gt;
-
-&lt;p&gt;I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about &lt;a href=&#34;https://en.wikipedia.org/wiki/Primality_test&#34;&gt;primality algorithms&lt;/a&gt; when I had the challenge of coding a test to see if a number is prime without using the &lt;code&gt;Math&lt;/code&gt; library.&lt;/p&gt;
-
-&lt;p&gt;My code works but definitely is not something that would ever get put into production. It is not efficient, at all.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def prime?(n)
-  if n &amp;lt;= 1
-    return false
-  elsif n &amp;lt;= 3
-    return true
-  else (2..n/2).none? do |x|
-    n % x == 0
-  end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I could make it even more efficient by changing that &lt;code&gt;n/2&lt;/code&gt; to the square root of &lt;code&gt;n&lt;/code&gt; but I couldn&amp;rsquo;t get that helper method working. In the end I would want to implement something like what I found online that states:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;So a more efficient method is to test if &lt;code&gt;n&lt;/code&gt; is divisible by 2 or 3, then to check through all the numbers of form &lt;img src=&#34;images/prime6k.svg&#34; alt=&#34;math_formula&#34; /&gt;. This is 3 times as fast as testing all &lt;code&gt;m&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code&gt;m&lt;/code&gt; is what&amp;rsquo;s happening right now in my solution.&lt;/p&gt;
-
-&lt;p&gt;Luckily, I won&amp;rsquo;t ever have to do that because &lt;code&gt;Math&lt;/code&gt; is a library that I&amp;rsquo;ll be using in real life. I kind of felt like I did in my college Finance class when the professor told us we had to memorize all the formulas even though she had zero memorized herself because her computer did everything for her at her day job.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:44&lt;br /&gt;
-Time spent total: 38:28&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 209&lt;/p&gt;
 </description>
     </item>
     

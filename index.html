@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-20T22:51:58-05:00"/>
+<meta property="og:updated_time" content="2017-03-21T23:15:17-05:00"/>
 
 
 
@@ -175,15 +175,15 @@
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-023/"><p>Day 23</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-022/"><p>Day 22</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-021/"><p>Day 21</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/one-way-to-pair-program/"><p>One Way To Pair Program</p></a>
                     </li>
                 
             </ul>
@@ -200,7 +200,7 @@
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-022/">Day 22</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-023/">Day 23</a></h2>
         
         
     </div>
@@ -210,11 +210,11 @@
         
 
         <time class="published"
-            datetime='2017-03-20'>
-            March 20, 2017</time>
+            datetime='2017-03-21'>
+            March 21, 2017</time>
         <span class="author"></span>
         
-            <p>3 minute read</p>
+            <p>1 minute read</p>
         
         
     </div>
@@ -226,25 +226,25 @@
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&text=Day%2022&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f&text=Day%2023&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&title=Day%2022" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f&title=Day%2023" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -254,35 +254,27 @@
     
 
     <div id="content">
-        <p>About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was <strong>DARK</strong>. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was. While I was downstairs the power came back on and my daughter yelled out, &ldquo;Thanks Daddy!&rdquo; I&rsquo;ll take credit, yes I will. This put me behind. I then found out that I hadn&rsquo;t installed <a href="https://zoom.us/">Zoom</a> and couldn&rsquo;t get into the Study Group I was planning on attending. I had already decided to &ldquo;take the night off&rdquo; and just do the study group and work on my Tic-Tac-Toe AI some. Needless to say 30 minutes later I confirmed Zoom was working.</p>
+        <p>So working on my scraping project. It&rsquo;s hurting my head. Scraping is no fun to figure out. What I&rsquo;m stuck on right now is iterating. When I have some time tomorrow I&rsquo;m going to work on completely understanding iterating when scraping. Here&rsquo;s what I&rsquo;m looking at currently:</p>
 
-<p>Tonight I realized it&rsquo;s amazing what coming at a project fresh can do. I figured out why my random move in Tic-Tac-Toe wasn&rsquo;t working in less than 3 minutes tonight. I had an <code>=</code> instead of an <code>==</code>. However, after that I couldn&rsquo;t get into the groove. I wrote out a couple more methods to decide on the first and second move for the computer but then just left it as random moves after that. I did some TTT strategy ready and came up with the best first move is a corner and the best second move is the center. If the center is taken the best second move is a corner. So I built that logic into the game. From move 3 on the computer plays random. The computer never beat me, it did however, tie a few times with this little bit of knowledge. I have an idea though and want to see if I can pair with someone to implement it. Here&rsquo;s my <em>final</em> code:</p>
-
-<pre><code class="language-ruby">module Players
-  class Computer &lt; Player
-    def move(board)
-      if board.cells.count{|square| square != &quot; &quot; } == 0
-        &quot;1&quot;
-      elsif board.cells.count{|square| square != &quot; &quot; } == 1
-        board.cells.find_index(&quot;X&quot;) == 4 ? &quot;1&quot; : &quot;5&quot;
-      else
-        possible_moves = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;]
-        valid_moves = []
-        possible_moves.each do |move|
-          valid_moves &lt;&lt; move if board.cells[move.to_i-1] == &quot; &quot;
-        end
-        valid_moves.sample
-      end
-    end
-  end
-end
+<pre><code class="language-html">&lt;div class=&quot;social-icon-container&quot;&gt;
+  &lt;a href=&quot;https://twitter.com/empireofryan&quot;&gt;&lt;img class=&quot;social-icon&quot; src=&quot;../assets/img/twitter-icon.png&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;https://www.linkedin.com/in/ryan-johnson-321629ab&quot;&gt;&lt;img class=&quot;social-icon&quot; src=&quot;../assets/img/linkedin-icon.png&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;https://github.com/empireofryan&quot;&gt;&lt;img class=&quot;social-icon&quot; src=&quot;../assets/img/github-icon.png&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;https://www.youtube.com/watch?v=C22ufOqDyaE&quot;&gt;&lt;img class=&quot;social-icon&quot; src=&quot;../assets/img/rss-icon.png&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
 </code></pre>
 
-<p>I started on the next project which is a scraping project. I don&rsquo;t have much practice with Nokogiri but on my first attempt I was pulling the data I needed. I can see this project might go quicker than the last two. I&rsquo;m going to hit it hard tomorrow night and get it done.</p>
+<p>Then I&rsquo;m doing (among other things above it):</p>
 
-<p>Time spent today: 1:33<br />
-Time spent total: 101:24<br />
-Lessons completed today: 1<br />
+<pre><code class="language-ruby">social = doc.css(&quot;.social-icon-container a&quot;)
+social.each do |link|
+</code></pre>
+
+<p>I&rsquo;m struggling to understand what |link| is inside the loop. I&rsquo;m thinking it&rsquo;s each instance of <code>a</code> because there are 4 of those and I&rsquo;m setting <code>social</code> equal to the <code>a</code>. However, I&rsquo;m not sure. I know when I call <code>doc.css(&quot;.social-icon-container a&quot;)</code> in pry I end up with Nokogiri&rsquo;s version of everything inside the div. I&rsquo;m sure I&rsquo;ll crush it tomorrow. I know my logic of looping over each <code>a</code> and using an <code>if</code> or even <code>case</code> to check if the <code>img src=</code> is <code>==</code> to one of the social networks, then setting the <code>href</code> value to equal a variable I&rsquo;ll use later is the way to go and solid.</p>
+
+<p>Time spent today: 2:08<br />
+Time spent total: 103:32<br />
+Lessons completed today: 0<br />
 Lessons completed total: 284</p>
 
     </div>
@@ -317,8 +309,8 @@ Lessons completed total: 284</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-021/"
-                class="button big previous">Day 21</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-022/"
+                class="button big previous">Day 22</a></li>
     
 
     
@@ -331,9 +323,9 @@ Lessons completed total: 284</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-022\/';
-    var disqus_title = 'Day 22';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-022\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-023\/';
+    var disqus_title = 'Day 23';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-023\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -357,25 +349,25 @@ Lessons completed total: 284</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&text=Day%2022&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f&text=Day%2023&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f&title=Day%2022" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f&title=Day%2023" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-022%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-023%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -495,6 +487,20 @@ Lessons completed total: 284</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-023/">Day 23</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-21'>
+                                    March 21, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-022/">Day 22</a></h3>
                                 
                                     
@@ -516,20 +522,6 @@ Lessons completed total: 284</p>
                                 <time class="published" datetime=
                                     '2017-03-19'>
                                     March 19, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/one-way-to-pair-program/">One Way To Pair Program</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-18'>
-                                    March 18, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -568,7 +560,7 @@ Lessons completed total: 284</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">21</span>
+                                <span style="float:right;">22</span>
                             </header>
                         </article>
                     </li>
