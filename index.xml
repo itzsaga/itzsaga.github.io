@@ -6,8 +6,27 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2017 23:15:17 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 22 Mar 2017 23:01:17 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 24</title>
+      <link>https://itzsaga.github.io/post/day-024/</link>
+      <pubDate>Wed, 22 Mar 2017 23:01:17 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;yawn&lt;/em&gt; it&amp;rsquo;s been a long day. My 3 month old was up early today. Either way, I got my scraping project done tonight. Nokogiri can be quite particular about the things you use to select content. Turned out I was pretty much there and just needed to change how I was accessing the info I needed.&lt;/p&gt;
+
+&lt;p&gt;Attended a Study Group tonight which taught me something very important. When using &lt;code&gt;pry&lt;/code&gt; inside a loop when you enter &lt;code&gt;exit&lt;/code&gt; into the pry prompt it runs the next loop. This way you can see what is being passed in each time. I was struggling trying to see what was being passed in each time in my scraping project. So now I know and that key piece of info is what helped me finish my scraping project which can be found in full &lt;a href=&#34;https://github.com/itzsaga/oo-student-scraper-v-000&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m calling it a night. I start my first portfolio project tomorrow building a CLI Ruby Gem.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
+Time spent total: 106:07&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 285&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 23</title>
@@ -469,56 +488,6 @@ end
 Time spent total: 45:15&lt;br /&gt;
 Lessons completed today: 12&lt;br /&gt;
 Lessons completed total: 230&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 10</title>
-      <link>https://itzsaga.github.io/post/day-010/</link>
-      <pubDate>Wed, 08 Mar 2017 07:31:22 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-010/</guid>
-      <description>&lt;p&gt;I got a lot done this morning. Especially after the coffee kicked in. When I started I was definitely not 100% awake. I even did some extra credit on a lab which I typically do not do. I&amp;rsquo;ve never been the type to want to score 105 on a test because I aced it &lt;strong&gt;AND&lt;/strong&gt; the extra credit. I did this one specifically because I knew it wouldn&amp;rsquo;t take much time as I was writing a generic method for a specific method I had just completed. Basically inserting place holders where the original problem had specific items.&lt;/p&gt;
-
-&lt;p&gt;So first I solved this:&lt;br /&gt;
-Advanced: Try building a method &lt;code&gt;swap_elements_from_to&lt;/code&gt; that takes in three arguments, &lt;code&gt;array, index, destination_index&lt;/code&gt;, that will allow you to specify the index of the element you would like to move to a new index.&lt;br /&gt;
-Like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def swap_elements_from_to(array, index, new_index)
-  array[index], array[new_index] = array[new_index], array[index]
-  return array
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then I did this:&lt;br /&gt;
-Advanced #2: Try writing test coverage for it!
-Like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Question 4 Bonus
-describe &#39;swap_elements_from_to&#39; do
-  it &#39;swaps elements and allows you to specify the index of the element you would like to move to a new index&#39; do
-    expect(swap_elements_from_to([&amp;quot;one&amp;quot;, &amp;quot;two&amp;quot;, &amp;quot;three&amp;quot;], 2, 1)).to eq([&amp;quot;one&amp;quot;, &amp;quot;three&amp;quot;, &amp;quot;two&amp;quot;])
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And it worked!
-&lt;img src=&#34;../../images/first_test.jpg&#34; alt=&#34;results_of_first_test&#34; title=&#34;I was psyched when I saw this!&#34; /&gt;
-I successfully wrote my first test! I was stoked! I know that I&amp;rsquo;ll have to write my own tests in the future so this small win was nice.&lt;/p&gt;
-
-&lt;p&gt;As I kept on working, I must say, the fact that I got this as an error is awesome:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NoMethodError:
-undefined method `starts_with?&#39; for &amp;quot;apple&amp;quot;:String
-Did you mean?  start_with?
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I can definitely see why test driven development (TDD) makes so much sense. I had been thinking it was almost like doing double the work but I could&amp;rsquo;ve been stuck there forever because of one letter.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:39&lt;br /&gt;
-Time spent total: 41:07&lt;br /&gt;
-Lessons completed today: 9&lt;br /&gt;
-Lessons completed total: 218&lt;/p&gt;
 </description>
     </item>
     
