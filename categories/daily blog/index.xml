@@ -9,6 +9,35 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 25</title>
+      <link>https://itzsaga.github.io/post/day-025/</link>
+      <pubDate>Thu, 23 Mar 2017 23:11:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-025/</guid>
+      <description>&lt;p&gt;So tonight I started my CLI Gem project. This one is going to be in my portfolio and has &lt;strong&gt;A LOT&lt;/strong&gt; more to it. Okay, well maybe not a lot more but it&amp;rsquo;s the first time I&amp;rsquo;m starting from scratch to build something. Luckily, I&amp;rsquo;m not left out to dry and there is a how-to that&amp;rsquo;s over an hour long that Avi did. Of course it&amp;rsquo;s not exactly what I&amp;rsquo;ll need to do and I&amp;rsquo;ll run into problems along the way but it&amp;rsquo;s nice to have a good resource to start with. I&amp;rsquo;m sure I could find a nice video around but having one provided definitely saves some time.&lt;/p&gt;
+
+&lt;p&gt;I decided to build a CLI Gem that will return the meetups in a specified radius from a specific zip code for the current day from &lt;a href=&#34;https://www.meetup.com/&#34;&gt;Meetup.com&lt;/a&gt;. The first big time saver was &lt;code&gt;bundle gem new_gem_name&lt;/code&gt; which basically scaffolded a new gem with the name provided and even initialized it as a git repo. Avi provided a great set of steps to build a Gem:
+1. Plan your gem, imagine your interface.
+2. Start with the project structure - google.
+3. Start with the entry point - the file run.
+4. Force that to build the CLI interface.
+5. Stub out the interface.
+6. Start making things real.
+7. Discover objects.
+8. Program.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve completed 1-4 in a very basic way now. Next is to stub out my interface with fake data. That will allow me to ensure my flow is working correctly and then basically code to the exact info I need. This work flow is also allowing me to make progress quickly and see the iterations that I&amp;rsquo;m going through to get to the end result. Not much else to share as I didn&amp;rsquo;t do anything too &amp;ldquo;deep&amp;rdquo; today. Just getting started on this project. If you&amp;rsquo;re interested in building your own gem using bundler check out &lt;a href=&#34;http://railscasts.com/episodes/245-new-gem-with-bundler&#34;&gt;RailsCasts #245 New Gem With Bundler&lt;/a&gt;. If you want the walk through that Avi does you&amp;rsquo;ll have to join Flatiron. I&amp;rsquo;m hopefully going to be able to finish this project on Saturday. However, I have a meetup to attend and I have my son this weekend. This will be the first weekend I have my son since I&amp;rsquo;ve started the program. I only have my son one weekend a month so I&amp;rsquo;ll have to see how much time I truly can sacrifice when the kids are awake.&lt;/p&gt;
+
+&lt;p&gt;You can follow along with my progress on project on GitHub &lt;a href=&#34;https://github.com/itzsaga/meetups-around&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
+Time spent total: 106:07&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 285&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 24</title>
       <link>https://itzsaga.github.io/post/day-024/</link>
       <pubDate>Wed, 22 Mar 2017 23:01:17 -0500</pubDate>
@@ -468,47 +497,6 @@ Did you mean?  start_with?
 Time spent total: 41:07&lt;br /&gt;
 Lessons completed today: 9&lt;br /&gt;
 Lessons completed total: 218&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 9</title>
-      <link>https://itzsaga.github.io/post/day-009/</link>
-      <pubDate>Tue, 07 Mar 2017 22:15:38 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-009/</guid>
-      <description>&lt;p&gt;Today was a slow day. The kids didn&amp;rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&amp;rsquo;s fine though. I didn&amp;rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.&lt;/p&gt;
-
-&lt;p&gt;I did get in my night time session (minus a few minutes for good night kisses). I had some more in depth labs today and learned a lot about &lt;a href=&#34;https://en.wikipedia.org/wiki/Primality_test&#34;&gt;primality algorithms&lt;/a&gt; when I had the challenge of coding a test to see if a number is prime without using the &lt;code&gt;Math&lt;/code&gt; library.&lt;/p&gt;
-
-&lt;p&gt;My code works but definitely is not something that would ever get put into production. It is not efficient, at all.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def prime?(n)
-  if n &amp;lt;= 1
-    return false
-  elsif n &amp;lt;= 3
-    return true
-  else (2..n/2).none? do |x|
-    n % x == 0
-  end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I could make it even more efficient by changing that &lt;code&gt;n/2&lt;/code&gt; to the square root of &lt;code&gt;n&lt;/code&gt; but I couldn&amp;rsquo;t get that helper method working. In the end I would want to implement something like what I found online that states:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;So a more efficient method is to test if &lt;code&gt;n&lt;/code&gt; is divisible by 2 or 3, then to check through all the numbers of form &lt;img src=&#34;images/prime6k.svg&#34; alt=&#34;math_formula&#34; /&gt;. This is 3 times as fast as testing all &lt;code&gt;m&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code&gt;m&lt;/code&gt; is what&amp;rsquo;s happening right now in my solution.&lt;/p&gt;
-
-&lt;p&gt;Luckily, I won&amp;rsquo;t ever have to do that because &lt;code&gt;Math&lt;/code&gt; is a library that I&amp;rsquo;ll be using in real life. I kind of felt like I did in my college Finance class when the professor told us we had to memorize all the formulas even though she had zero memorized herself because her computer did everything for her at her day job.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:44&lt;br /&gt;
-Time spent total: 38:28&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 209&lt;/p&gt;
 </description>
     </item>
     

@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-22T23:01:17-05:00"/>
+<meta property="og:updated_time" content="2017-03-23T23:11:22-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-025/"><p>Day 25</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-024/"><p>Day 24</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-023/"><p>Day 23</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-022/"><p>Day 22</p></a>
                     </li>
                 
             </ul>
@@ -210,7 +210,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-024/">Day 24</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-025/">Day 25</a></h2>
         
         
     </div>
@@ -220,11 +220,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-03-22'>
-            March 22, 2017</time>
+            datetime='2017-03-23'>
+            March 23, 2017</time>
         <span class="author"></span>
         
-            <p>1 minute read</p>
+            <p>3 minute read</p>
         
         
     </div>
@@ -236,25 +236,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f&text=Day%2024&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f&text=Day%2025&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f&title=Day%2024" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f&title=Day%2025" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -264,11 +264,21 @@ ga('send', 'pageview');
     
 
     <div id="content">
-        <p><em>yawn</em> it&rsquo;s been a long day. My 3 month old was up early today. Either way, I got my scraping project done tonight. Nokogiri can be quite particular about the things you use to select content. Turned out I was pretty much there and just needed to change how I was accessing the info I needed.</p>
+        <p>So tonight I started my CLI Gem project. This one is going to be in my portfolio and has <strong>A LOT</strong> more to it. Okay, well maybe not a lot more but it&rsquo;s the first time I&rsquo;m starting from scratch to build something. Luckily, I&rsquo;m not left out to dry and there is a how-to that&rsquo;s over an hour long that Avi did. Of course it&rsquo;s not exactly what I&rsquo;ll need to do and I&rsquo;ll run into problems along the way but it&rsquo;s nice to have a good resource to start with. I&rsquo;m sure I could find a nice video around but having one provided definitely saves some time.</p>
 
-<p>Attended a Study Group tonight which taught me something very important. When using <code>pry</code> inside a loop when you enter <code>exit</code> into the pry prompt it runs the next loop. This way you can see what is being passed in each time. I was struggling trying to see what was being passed in each time in my scraping project. So now I know and that key piece of info is what helped me finish my scraping project which can be found in full <a href="https://github.com/itzsaga/oo-student-scraper-v-000">here</a>.</p>
+<p>I decided to build a CLI Gem that will return the meetups in a specified radius from a specific zip code for the current day from <a href="https://www.meetup.com/">Meetup.com</a>. The first big time saver was <code>bundle gem new_gem_name</code> which basically scaffolded a new gem with the name provided and even initialized it as a git repo. Avi provided a great set of steps to build a Gem:
+1. Plan your gem, imagine your interface.
+2. Start with the project structure - google.
+3. Start with the entry point - the file run.
+4. Force that to build the CLI interface.
+5. Stub out the interface.
+6. Start making things real.
+7. Discover objects.
+8. Program.</p>
 
-<p>I&rsquo;m calling it a night. I start my first portfolio project tomorrow building a CLI Ruby Gem.</p>
+<p>I&rsquo;ve completed 1-4 in a very basic way now. Next is to stub out my interface with fake data. That will allow me to ensure my flow is working correctly and then basically code to the exact info I need. This work flow is also allowing me to make progress quickly and see the iterations that I&rsquo;m going through to get to the end result. Not much else to share as I didn&rsquo;t do anything too &ldquo;deep&rdquo; today. Just getting started on this project. If you&rsquo;re interested in building your own gem using bundler check out <a href="http://railscasts.com/episodes/245-new-gem-with-bundler">RailsCasts #245 New Gem With Bundler</a>. If you want the walk through that Avi does you&rsquo;ll have to join Flatiron. I&rsquo;m hopefully going to be able to finish this project on Saturday. However, I have a meetup to attend and I have my son this weekend. This will be the first weekend I have my son since I&rsquo;ve started the program. I only have my son one weekend a month so I&rsquo;ll have to see how much time I truly can sacrifice when the kids are awake.</p>
+
+<p>You can follow along with my progress on project on GitHub <a href="https://github.com/itzsaga/meetups-around">here</a>.</p>
 
 <p>Time spent today: 2:35<br />
 Time spent total: 106:07<br />
@@ -307,8 +317,8 @@ Lessons completed total: 285</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-023/"
-                class="button big previous">Day 23</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-024/"
+                class="button big previous">Day 24</a></li>
     
 
     
@@ -321,9 +331,9 @@ Lessons completed total: 285</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-024\/';
-    var disqus_title = 'Day 24';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-024\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-025\/';
+    var disqus_title = 'Day 25';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-025\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -347,25 +357,25 @@ Lessons completed total: 285</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f&text=Day%2024&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f&text=Day%2025&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f&title=Day%2024" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f&title=Day%2025" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-024%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-025%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -485,6 +495,20 @@ Lessons completed total: 285</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-025/">Day 25</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-23'>
+                                    March 23, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-024/">Day 24</a></h3>
                                 
                                     
@@ -506,20 +530,6 @@ Lessons completed total: 285</p>
                                 <time class="published" datetime=
                                     '2017-03-21'>
                                     March 21, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-022/">Day 22</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-20'>
-                                    March 20, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -558,7 +568,7 @@ Lessons completed total: 285</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">23</span>
+                                <span style="float:right;">24</span>
                             </header>
                         </article>
                     </li>
