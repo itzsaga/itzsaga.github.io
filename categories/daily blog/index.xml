@@ -9,6 +9,85 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 26</title>
+      <link>https://itzsaga.github.io/post/day-026/</link>
+      <pubDate>Fri, 24 Mar 2017 22:46:48 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-026/</guid>
+      <description>&lt;p&gt;Tonight I made some good progress on my CLI project. I finished watching Avi&amp;rsquo;s video on the project and it helped &lt;strong&gt;A LOT&lt;/strong&gt;.  It was long so I decided to just complete the basic stub of my project and leave it at that for tonight. I really like working with fake placeholder data for as long as possible. This way it&amp;rsquo;ll all &lt;em&gt;hopefully&lt;/em&gt; just work when real data is passed in. So taking the stub I&amp;rsquo;m sharing below and abstracting that out to have objects holding the data for each meetup. Then building the methods to create those objects in another class.&lt;/p&gt;
+
+&lt;p&gt;What I have so far:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class MeetupsAround::CLI
+  attr_reader :todays_date
+
+  def call
+    @todays_date = &amp;quot;Saturday, March 25&amp;quot;
+    input_zipcode
+    input_radius
+    list_meetups
+    again?
+  end
+
+  def input_zipcode
+    puts &amp;quot;What zip code would you like to see meetups for?&amp;quot;
+    zip_code = gets.strip
+    if /\b\d{5}\b/.match?(zip_code)
+      nil
+    else
+      puts &amp;quot;Please enter a five digit zip code.&amp;quot;
+      self.input_zipcode
+    end
+  end
+
+  def input_radius
+    puts &amp;quot;What radius around that zip code would you like to see meetups for?&amp;quot;
+    radius = gets.strip
+    if /\b\d{1,2}\b/.match?(radius)
+      nil
+    else
+      puts &amp;quot;Please enter a radius less than 100.&amp;quot;
+      self.input_radius
+    end
+  end
+
+  def list_meetups
+    puts &amp;quot;Today #{todays_date} are the following meetups:&amp;quot;
+    puts &amp;lt;&amp;lt;~HEREDOC
+    1. 2:30PM - Developer Launchpad Nashville - Coding Jam - 19 Developers going
+    2. 9:00AM - Score Nashville Events, Networking and Workshops - Join us for a &amp;quot;Start your Business&amp;quot; workshop! - 2 Members going
+    3. 10:00AM - Paid to Speak Entrepreneurs - How To Get Your Speaking Career Started - 18 Members Going
+    HEREDOC
+  end
+
+  def again?
+    puts &amp;quot;Would you like to search again? [Y/N]&amp;quot;
+    input = gets.strip.downcase
+    puts input == &amp;quot;y&amp;quot; || input == &amp;quot;yes&amp;quot; ? call : &amp;quot;Goodbye =)&amp;quot;
+  end
+
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next up I&amp;rsquo;ll change the &lt;code&gt;HEREDOC&lt;/code&gt; block and utilize an object iteration to list each object. Something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;meetups.each.with_index(1) do |meetup, i|
+  puts &amp;quot;#{i}. #{meetup.time} - #{meetup.group} - #{meetup.event} - #{meetup.attendees}&amp;quot;
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now I don&amp;rsquo;t know if this is exactly what I&amp;rsquo;ll end up with but it&amp;rsquo;s what I&amp;rsquo;m thinking at this point in time. I&amp;rsquo;ll also need to have an array with the meetup objects called &lt;code&gt;meetups&lt;/code&gt; in this scenario. For this project I&amp;rsquo;m suppose to record myself coding for 30 minutes so I think when I go to tackle this I&amp;rsquo;ll do that recording. I&amp;rsquo;ll watch the video Avi made another time and get a solid plan of action down and then go for it. Pretty sure they don&amp;rsquo;t want a video of me watching videos hehe.&lt;/p&gt;
+
+&lt;p&gt;Tonight I also installed a couple more packages into Atom. Specifically &lt;a href=&#34;https://atom.io/packages/minimap&#34;&gt;minimap&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/seti-icons&#34;&gt;seti-icons&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/atom-beautify&#34;&gt;atom-beautify&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/highlight-selected&#34;&gt;highlight-selected&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/pigments&#34;&gt;pigments&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/minimap-highlight-selected&#34;&gt;minimap-highlight-selected&lt;/a&gt;, and &lt;a href=&#34;https://atom.io/packages/minimap-pigments&#34;&gt;minimap-pigments&lt;/a&gt;. I highly recommend them all so check them out.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:22&lt;br /&gt;
+Time spent total: 110:57&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 285&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 25</title>
       <link>https://itzsaga.github.io/post/day-025/</link>
       <pubDate>Thu, 23 Mar 2017 23:11:22 -0500</pubDate>
@@ -30,9 +109,9 @@
 
 &lt;p&gt;You can follow along with my progress on project on GitHub &lt;a href=&#34;https://github.com/itzsaga/meetups-around&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
-Time spent total: 106:07&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
+&lt;p&gt;Time spent today: 2:29&lt;br /&gt;
+Time spent total: 108:35&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
 </description>
     </item>
@@ -142,8 +221,7 @@ Lessons completed total: 284&lt;/p&gt;
 
 &lt;p&gt;This &lt;em&gt;should&lt;/em&gt; get my computer playing only random open squares. However, my code created an infinite loop and I decided I could call it a day after that. I&amp;rsquo;m hoping I can pair with someone just for the AI part and get it done. If you&amp;rsquo;re interested in the project you can find it on my GitHub &lt;a href=&#34;https://github.com/itzsaga/ttt-with-ai-project-v-000&#34;&gt;here&lt;/a&gt;. My current computer logic (although it might be hard to understand without looking at all the files) is this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;
-module Players
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
   class Computer &amp;lt; Player
     def move(board)
       possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
@@ -447,56 +525,6 @@ end
 Time spent total: 45:15&lt;br /&gt;
 Lessons completed today: 12&lt;br /&gt;
 Lessons completed total: 230&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 10</title>
-      <link>https://itzsaga.github.io/post/day-010/</link>
-      <pubDate>Wed, 08 Mar 2017 07:31:22 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-010/</guid>
-      <description>&lt;p&gt;I got a lot done this morning. Especially after the coffee kicked in. When I started I was definitely not 100% awake. I even did some extra credit on a lab which I typically do not do. I&amp;rsquo;ve never been the type to want to score 105 on a test because I aced it &lt;strong&gt;AND&lt;/strong&gt; the extra credit. I did this one specifically because I knew it wouldn&amp;rsquo;t take much time as I was writing a generic method for a specific method I had just completed. Basically inserting place holders where the original problem had specific items.&lt;/p&gt;
-
-&lt;p&gt;So first I solved this:&lt;br /&gt;
-Advanced: Try building a method &lt;code&gt;swap_elements_from_to&lt;/code&gt; that takes in three arguments, &lt;code&gt;array, index, destination_index&lt;/code&gt;, that will allow you to specify the index of the element you would like to move to a new index.&lt;br /&gt;
-Like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def swap_elements_from_to(array, index, new_index)
-  array[index], array[new_index] = array[new_index], array[index]
-  return array
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then I did this:&lt;br /&gt;
-Advanced #2: Try writing test coverage for it!
-Like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Question 4 Bonus
-describe &#39;swap_elements_from_to&#39; do
-  it &#39;swaps elements and allows you to specify the index of the element you would like to move to a new index&#39; do
-    expect(swap_elements_from_to([&amp;quot;one&amp;quot;, &amp;quot;two&amp;quot;, &amp;quot;three&amp;quot;], 2, 1)).to eq([&amp;quot;one&amp;quot;, &amp;quot;three&amp;quot;, &amp;quot;two&amp;quot;])
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And it worked!
-&lt;img src=&#34;../../images/first_test.jpg&#34; alt=&#34;results_of_first_test&#34; title=&#34;I was psyched when I saw this!&#34; /&gt;
-I successfully wrote my first test! I was stoked! I know that I&amp;rsquo;ll have to write my own tests in the future so this small win was nice.&lt;/p&gt;
-
-&lt;p&gt;As I kept on working, I must say, the fact that I got this as an error is awesome:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NoMethodError:
-undefined method `starts_with?&#39; for &amp;quot;apple&amp;quot;:String
-Did you mean?  start_with?
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I can definitely see why test driven development (TDD) makes so much sense. I had been thinking it was almost like doing double the work but I could&amp;rsquo;ve been stuck there forever because of one letter.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:39&lt;br /&gt;
-Time spent total: 41:07&lt;br /&gt;
-Lessons completed today: 9&lt;br /&gt;
-Lessons completed total: 218&lt;/p&gt;
 </description>
     </item>
     

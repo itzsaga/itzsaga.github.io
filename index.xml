@@ -6,8 +6,87 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2017 23:11:22 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 24 Mar 2017 22:46:48 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 26</title>
+      <link>https://itzsaga.github.io/post/day-026/</link>
+      <pubDate>Fri, 24 Mar 2017 22:46:48 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-026/</guid>
+      <description>&lt;p&gt;Tonight I made some good progress on my CLI project. I finished watching Avi&amp;rsquo;s video on the project and it helped &lt;strong&gt;A LOT&lt;/strong&gt;.  It was long so I decided to just complete the basic stub of my project and leave it at that for tonight. I really like working with fake placeholder data for as long as possible. This way it&amp;rsquo;ll all &lt;em&gt;hopefully&lt;/em&gt; just work when real data is passed in. So taking the stub I&amp;rsquo;m sharing below and abstracting that out to have objects holding the data for each meetup. Then building the methods to create those objects in another class.&lt;/p&gt;
+
+&lt;p&gt;What I have so far:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class MeetupsAround::CLI
+  attr_reader :todays_date
+
+  def call
+    @todays_date = &amp;quot;Saturday, March 25&amp;quot;
+    input_zipcode
+    input_radius
+    list_meetups
+    again?
+  end
+
+  def input_zipcode
+    puts &amp;quot;What zip code would you like to see meetups for?&amp;quot;
+    zip_code = gets.strip
+    if /\b\d{5}\b/.match?(zip_code)
+      nil
+    else
+      puts &amp;quot;Please enter a five digit zip code.&amp;quot;
+      self.input_zipcode
+    end
+  end
+
+  def input_radius
+    puts &amp;quot;What radius around that zip code would you like to see meetups for?&amp;quot;
+    radius = gets.strip
+    if /\b\d{1,2}\b/.match?(radius)
+      nil
+    else
+      puts &amp;quot;Please enter a radius less than 100.&amp;quot;
+      self.input_radius
+    end
+  end
+
+  def list_meetups
+    puts &amp;quot;Today #{todays_date} are the following meetups:&amp;quot;
+    puts &amp;lt;&amp;lt;~HEREDOC
+    1. 2:30PM - Developer Launchpad Nashville - Coding Jam - 19 Developers going
+    2. 9:00AM - Score Nashville Events, Networking and Workshops - Join us for a &amp;quot;Start your Business&amp;quot; workshop! - 2 Members going
+    3. 10:00AM - Paid to Speak Entrepreneurs - How To Get Your Speaking Career Started - 18 Members Going
+    HEREDOC
+  end
+
+  def again?
+    puts &amp;quot;Would you like to search again? [Y/N]&amp;quot;
+    input = gets.strip.downcase
+    puts input == &amp;quot;y&amp;quot; || input == &amp;quot;yes&amp;quot; ? call : &amp;quot;Goodbye =)&amp;quot;
+  end
+
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next up I&amp;rsquo;ll change the &lt;code&gt;HEREDOC&lt;/code&gt; block and utilize an object iteration to list each object. Something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;meetups.each.with_index(1) do |meetup, i|
+  puts &amp;quot;#{i}. #{meetup.time} - #{meetup.group} - #{meetup.event} - #{meetup.attendees}&amp;quot;
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now I don&amp;rsquo;t know if this is exactly what I&amp;rsquo;ll end up with but it&amp;rsquo;s what I&amp;rsquo;m thinking at this point in time. I&amp;rsquo;ll also need to have an array with the meetup objects called &lt;code&gt;meetups&lt;/code&gt; in this scenario. For this project I&amp;rsquo;m suppose to record myself coding for 30 minutes so I think when I go to tackle this I&amp;rsquo;ll do that recording. I&amp;rsquo;ll watch the video Avi made another time and get a solid plan of action down and then go for it. Pretty sure they don&amp;rsquo;t want a video of me watching videos hehe.&lt;/p&gt;
+
+&lt;p&gt;Tonight I also installed a couple more packages into Atom. Specifically &lt;a href=&#34;https://atom.io/packages/minimap&#34;&gt;minimap&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/seti-icons&#34;&gt;seti-icons&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/atom-beautify&#34;&gt;atom-beautify&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/highlight-selected&#34;&gt;highlight-selected&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/pigments&#34;&gt;pigments&lt;/a&gt;, &lt;a href=&#34;https://atom.io/packages/minimap-highlight-selected&#34;&gt;minimap-highlight-selected&lt;/a&gt;, and &lt;a href=&#34;https://atom.io/packages/minimap-pigments&#34;&gt;minimap-pigments&lt;/a&gt;. I highly recommend them all so check them out.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:22&lt;br /&gt;
+Time spent total: 110:57&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 285&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 25</title>
@@ -31,9 +110,9 @@
 
 &lt;p&gt;You can follow along with my progress on project on GitHub &lt;a href=&#34;https://github.com/itzsaga/meetups-around&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
-Time spent total: 106:07&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
+&lt;p&gt;Time spent today: 2:29&lt;br /&gt;
+Time spent total: 108:35&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
 </description>
     </item>
@@ -143,8 +222,7 @@ Lessons completed total: 284&lt;/p&gt;
 
 &lt;p&gt;This &lt;em&gt;should&lt;/em&gt; get my computer playing only random open squares. However, my code created an infinite loop and I decided I could call it a day after that. I&amp;rsquo;m hoping I can pair with someone just for the AI part and get it done. If you&amp;rsquo;re interested in the project you can find it on my GitHub &lt;a href=&#34;https://github.com/itzsaga/ttt-with-ai-project-v-000&#34;&gt;here&lt;/a&gt;. My current computer logic (although it might be hard to understand without looking at all the files) is this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;
-module Players
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
   class Computer &amp;lt; Player
     def move(board)
       possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
@@ -189,7 +267,7 @@ Lessons completed total: 283&lt;/p&gt;
       <description>&lt;p&gt;Tonight a couple people were wanting to know the best way to pair program together. They had both done the beginning parts of the Tic-Tac-Toe with AI project (the one I&amp;rsquo;m getting ready to start) and wanted to work on the AI part together. The exact question was:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Hey @******* and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste. She is on IDE, I&amp;rsquo;m on local. Any help muchly appreciated!&lt;/p&gt;
+&lt;p&gt;Hey @&lt;strong&gt;***&lt;/strong&gt; and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste. She is on IDE, I&amp;rsquo;m on local. Any help muchly appreciated!&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The always awesome and helpful instructor &lt;a href=&#34;https://github.com/cernanb&#34;&gt;Cernan Bernardo&lt;/a&gt; quickly gave a how-to that I knew others could use. I&amp;rsquo;m just going to abbreviate what he said and turn it into a numbered list.&lt;/p&gt;
@@ -367,21 +445,21 @@ Lessons completed total: 260&lt;/p&gt;
       <pubDate>Mon, 13 Mar 2017 19:40:42 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/why-software-development/</guid>
-      <description>&lt;p&gt;So as part of my bootcamp experience Flatiron School requires me to write blog posts. This is a feature that I don&amp;rsquo;t think all bootcamps have but is smart. If I can write about coding then I show a deeper understanding about why I am a job ready developer. We all know that our online presence is part of our &amp;ldquo;resume&amp;rdquo; now as more and more hiring managers are looking at social profiles when making job decisions (even if it&amp;rsquo;s a &lt;a href=&#34;http://hiring.monster.com/hr/hr-best-practices/recruiting-hiring-advice/acquiring-job-candidates/social-media-recruiting-guidelines.aspx&#34;&gt;legal slippery slope&amp;hellip;&lt;/a&gt;).&lt;/p&gt;
+      <description>&lt;p&gt;So as part of my bootcamp experience Flatiron School requires me to write blog posts. This is a feature that I don&amp;rsquo;t think all bootcamps have but is smart. If I can write about coding then I show a deeper understanding about why I am a job ready developer. We all know that our online presence is part of our &amp;ldquo;resume&amp;rdquo; now as more and more hiring managers are looking at social profiles when making job decisions (even if it&amp;rsquo;s a [legal slippery slope&amp;hellip;][1]).&lt;/p&gt;
 
 &lt;p&gt;So I have assigned topic of, &amp;ldquo;Why did you decide to learn software development?&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;There are many reasons I decided to learn software development. Initially, it was because it is the &amp;ldquo;cool&amp;rdquo; thing to do these days. Demand is &amp;gt; Supply when it comes to people in the tech industry and overall everything we do now is being run by a computer. The Internet of Things (IoT) needs to be programmed. I truly believe that we are moving to a knowledge economy and very soon (on the grand timeline) most repetetive jobs will be replaced by robots, including driving. See a great post on &lt;a href=&#34;https://medium.freecodecamp.com/bill-gates-and-elon-musk-just-warned-us-about-the-one-thing-politicians-are-too-scared-to-talk-8db9815fd398&#34;&gt;automation&lt;/a&gt; here. However, people will need to program these things.&lt;/p&gt;
+&lt;p&gt;There are many reasons I decided to learn software development. Initially, it was because it is the &amp;ldquo;cool&amp;rdquo; thing to do these days. Demand is &amp;gt; Supply when it comes to people in the tech industry and overall everything we do now is being run by a computer. The Internet of Things (IoT) needs to be programmed. I truly believe that we are moving to a knowledge economy and very soon (on the grand timeline) most repetetive jobs will be replaced by robots, including driving. See a great post on [automation][2] here. However, people will need to program these things.&lt;/p&gt;
 
 &lt;p&gt;Things like bootcamps are popping up like crazy as people are making the jump to be developers. The potential pay and benefits are attractive too. We&amp;rsquo;ve all seen images of massive tech companies and their offices where you can take a break from your bean bag workstation and get a massage from the in house masseuse while listening to a private live Billy Joel concert streamed to your company provided bluetooth Beats headphones. Okay, maybe not that extravagent but you get the idea. Or the person who travels the world making 6 figures and all they need is a laptop and internet. Having that remote work freedom at some point is also attractive. Who wouldn&amp;rsquo;t want this life?&lt;/p&gt;
 
 &lt;p&gt;Another driving force is that I was in hospitality. An industry that is &lt;strong&gt;NOT&lt;/strong&gt; family friendly. 55+ hour weeks are required for salary managers in most instances and nights, weekends, holidays are the busy time. I kept with it by saying I would &lt;em&gt;eventually&lt;/em&gt; be in a high enough job title where I would be doing more strategic planning and thus work a more typical 9-5 schedule. I still believe that to be true. Once a person gets to District Manager or F&amp;amp;B Director you check in on early morning and closing operations occaisonally but you could care less &lt;em&gt;how&lt;/em&gt; the money is counted at close, just that it&amp;rsquo;s counted correctly. If it isn&amp;rsquo;t counted correctly there&amp;rsquo;s always a manager below you to push that to anyways. Something I rarely speak about but through my 10 years in the restaurant business I was laid off 4 times. I was paid severace a couple times and a couple times just collected unemployment but the lack of job stability paired with seeing people 2 years into a tech career making 2x what I was making cemented my interest.&lt;/p&gt;
 
-&lt;p&gt;So I dabbled while still working my restaurant job. I learned from &lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;freeCodeCamp&lt;/a&gt; the most among many other places. Knowing that I could work on a project for hours without taking a break, then stop for the day, then pick it up two days later, then stop, then get stuck the next day and make zero progress, then two days later finish it off, and LOVING that process cemented in me this is something I wanted to do.&lt;/p&gt;
+&lt;p&gt;So I dabbled while still working my restaurant job. I learned from [freeCodeCamp][3] the most among many other places. Knowing that I could work on a project for hours without taking a break, then stop for the day, then pick it up two days later, then stop, then get stuck the next day and make zero progress, then two days later finish it off, and LOVING that process cemented in me this is something I wanted to do.&lt;/p&gt;
 
 &lt;p&gt;I also realized that on the intellectual front I would always be challenged and have something to learn when it came to software development. I&amp;rsquo;ll never know it all and that is a bonus.&lt;/p&gt;
 
-&lt;p&gt;So how could I make this career transition with a mortgage and 3 kids? In person bootcamps were out of the question. There are two in Nashville (that I know of) and I know people who have graduated from each. First, &lt;a href=&#34;http://nashvillesoftwareschool.com/&#34;&gt;Nashville Software School&lt;/a&gt; is an awesome program. However, it takes 6 months and we didn&amp;rsquo;t have 6 months of me not working to spare. The other is &lt;a href=&#34;https://www.theironyard.com/&#34;&gt;The Iron Yard&lt;/a&gt; and while they have a solid reputation the approximately $1000/week tuition was not going to work. In addition, I knew I couldn&amp;rsquo;t be out of pocket completely for 12 weeks, my family life would fall apart. So I came across the &lt;a href=&#34;https://flatironschool.com/programs/online-web-developer-career-course/&#34;&gt;Flatiron School Online Web Developer Program&lt;/a&gt;. Work at your own pace when you have time, job guarantee, a solid curriculum, and high praise from people in the industry I spoke with. The work at your own pace is what sold me the most. I could code before the kids got up and after they went to bed and all weekend long when my wife was home. I could still take care of my kids all day M-F and we wouldn&amp;rsquo;t have to pay for a nanny. I could potentially finish in 12-15 weeks (they say the curriculum takes ~800 hours) just like a more traditional bootcamp but spend $6000 instead of $10k+. Boom, now to get in. I applied, did some coding, and got accepted (acceptance rate is ~8% so it&amp;rsquo;s competitive).&lt;/p&gt;
+&lt;p&gt;So how could I make this career transition with a mortgage and 3 kids? In person bootcamps were out of the question. There are two in Nashville (that I know of) and I know people who have graduated from each. First, [Nashville Software School][4] is an awesome program. However, it takes 6 months and we didn&amp;rsquo;t have 6 months of me not working to spare. The other is [The Iron Yard][5] and while they have a solid reputation the approximately $1000/week tuition was not going to work. In addition, I knew I couldn&amp;rsquo;t be out of pocket completely for 12 weeks, my family life would fall apart. So I came across the [Flatiron School Online Web Developer Program][6]. Work at your own pace when you have time, job guarantee, a solid curriculum, and high praise from people in the industry I spoke with. The work at your own pace is what sold me the most. I could code before the kids got up and after they went to bed and all weekend long when my wife was home. I could still take care of my kids all day M-F and we wouldn&amp;rsquo;t have to pay for a nanny. I could potentially finish in 12-15 weeks (they say the curriculum takes ~800 hours) just like a more traditional bootcamp but spend $6000 instead of $10k+. Boom, now to get in. I applied, did some coding, and got accepted (acceptance rate is ~8% so it&amp;rsquo;s competitive).&lt;/p&gt;
 
 &lt;p&gt;So ultimately I decided on software development for a few reasons:&lt;/p&gt;
 
@@ -389,7 +467,20 @@ Lessons completed total: 260&lt;/p&gt;
 &lt;li&gt;It genuinely interests me outside of doing it as a career.&lt;/li&gt;
 &lt;li&gt;The pay ain&amp;rsquo;t bad.&lt;/li&gt;
 &lt;li&gt;More &amp;ldquo;normal&amp;rdquo; schedule so I&amp;rsquo;ll be home for dinner, off on weekends and holidays.&lt;/li&gt;
-&lt;li&gt;The possibility of working remotely.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The possibility of working remotely.&lt;/p&gt;
+
+&lt;p&gt;[1]&amp;#x3A;&lt;a href=&#34;http://hiring.monster.com/hr/hr-best-practices/recruiting-hiring-advice/acquiring-job-candidates/social-media-recruiting-guidelines.aspx&#34;&gt;http://hiring.monster.com/hr/hr-best-practices/recruiting-hiring-advice/acquiring-job-candidates/social-media-recruiting-guidelines.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[2]&amp;#x3A;&lt;a href=&#34;https://medium.freecodecamp.com/bill-gates-and-elon-musk-just-warned-us-about-the-one-thing-politicians-are-too-scared-to-talk-8db9815fd398&#34;&gt;https://medium.freecodecamp.com/bill-gates-and-elon-musk-just-warned-us-about-the-one-thing-politicians-are-too-scared-to-talk-8db9815fd398&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[3]&amp;#x3A;&lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;https://www.freecodecamp.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[4]&amp;#x3A;&lt;a href=&#34;http://nashvillesoftwareschool.com/&#34;&gt;http://nashvillesoftwareschool.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[5]&amp;#x3A;&lt;a href=&#34;https://www.theironyard.com/&#34;&gt;https://www.theironyard.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[6]&amp;#x3A;&lt;a href=&#34;https://flatironschool.com/programs/online-web-developer-career-course/&#34;&gt;https://flatironschool.com/programs/online-web-developer-career-course/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -423,45 +514,6 @@ Lessons completed total: 258&lt;/p&gt;
 Time spent total: 56:35&lt;br /&gt;
 Lessons completed today: 13&lt;br /&gt;
 Lessons completed total: 247&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 12</title>
-      <link>https://itzsaga.github.io/post/day-012/</link>
-      <pubDate>Fri, 10 Mar 2017 21:43:53 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-012/</guid>
-      <description>&lt;p&gt;Today didn&amp;rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.&lt;/p&gt;
-
-&lt;p&gt;Notes which of course I&amp;rsquo;ll share:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;self&lt;/code&gt; is the implicit receiver of all non-explicit method calls.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;also&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;local variable is variable&lt;br /&gt;
-instance variable is @variable&lt;br /&gt;
-class variable is @@variable&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;attr_reader macro creates getter method&lt;br /&gt;
-attr_writer macro creates setter method&lt;br /&gt;
-attr_accessor macro creats both setter and getter method&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Avi also talked about how he personally only used the &lt;code&gt;attr_accessor&lt;/code&gt; macro when he&amp;rsquo;s building stuff. Then after everything is working he takes away abilities depending on what the methods actually are doing. The &lt;code&gt;attr_accessor&lt;/code&gt; macro is the most flexible so it makes sense to use that by default.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:05&lt;br /&gt;
-Time spent total: 47:20&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 234&lt;/p&gt;
 </description>
     </item>
     
