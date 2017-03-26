@@ -9,6 +9,29 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 27</title>
+      <link>https://itzsaga.github.io/post/day-027/</link>
+      <pubDate>Sat, 25 Mar 2017 23:57:30 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-027/</guid>
+      <description>&lt;p&gt;So I went later than I wanted to tonight, but I was on a roll. I would have finished much earlier but I spent 2.5 hours today at a developer meetup. It was interesting as I&amp;rsquo;ve only been to one other so far. It was good to meet some people and start putting real people to the dev community in Nashville. I did find out that basically nobody is learning/using Ruby (at least at this meetup). The largest language according to the people today is .NET because of all the health care companies. I showed a lab to a guy who&amp;rsquo;s 4 months in at &lt;a href=&#34;http://nashvillesoftwareschool.com/&#34;&gt;Nashville Software School&lt;/a&gt; and he was impressed with the TDD and seeing how it worked. He said he never sees tests like that and doesn&amp;rsquo;t know anything about writing them. I assured him I didn&amp;rsquo;t know much a bout writing tests either but I did read them all day long.&lt;/p&gt;
+
+&lt;p&gt;The big announcement is &amp;hellip; &lt;strong&gt;I FINISHED MY CLI GEM PROJECT!&lt;/strong&gt; Now, I haven&amp;rsquo;t done my review with my instructor and &lt;em&gt;passed&lt;/em&gt; yet but it&amp;rsquo;s done. I&amp;rsquo;m currently working through my &lt;a href=&#34;https://travis-ci.org/itzsaga/meetups-around&#34;&gt;Travis CI&lt;/a&gt; tests and getting those to pass. I expect that to be passing soon and then I&amp;rsquo;ll update my gem. It&amp;rsquo;s already live on &lt;a href=&#34;https://rubygems.org/gems/meetups_around&#34;&gt;RubyGems.org&lt;/a&gt;! I&amp;rsquo;ll have a new version pushed up when I get my Travis passing.&lt;/p&gt;
+
+&lt;p&gt;So I had a few hang ups along the way but most of it had to do with scraping. I figured it out though by trial and error. From what I understand scraping is mostly trial and error so there isn&amp;rsquo;t much to pass along knowledge wise. I did run into the problem of trying to turn this: &lt;code&gt;&amp;quot;7\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;Paddlers\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;going&amp;quot;&lt;/code&gt; into this: &lt;code&gt;&amp;quot;7 Paddlers going&amp;quot;&lt;/code&gt;. When I did &lt;code&gt;gsub(&amp;quot;\n&amp;quot;, &amp;quot;&amp;quot;)&lt;/code&gt; it returned &lt;code&gt;7Paddlersgoing&lt;/code&gt; and &lt;code&gt;gsub(&amp;quot;\n&amp;quot;, &amp;quot; &amp;quot;)&lt;/code&gt; returned &lt;code&gt;&amp;quot;7   Paddlers  going&amp;quot;&lt;/code&gt; with too many spaces. I was thinking I was going to have to split the string into an array, filter out the &lt;code&gt;\n&lt;/code&gt; and then join the array. Then I thought, &amp;ldquo;Why not Google turning multiple spaces into a single space.&amp;rdquo; That seems like a problem someone would have solved already. Guess what? They have. So I ended up with &lt;code&gt;row.css(&amp;quot;div.attendee-count&amp;quot;).text.strip.gsub(&amp;quot;\n&amp;quot;, &amp;quot; &amp;quot;).gsub(/\s+/, &#39; &#39;)&lt;/code&gt;. Called &lt;code&gt;gsub&lt;/code&gt; on a string that had already been changed.&lt;/p&gt;
+
+&lt;p&gt;I just realized that Travis is never going to pass because I don&amp;rsquo;t have any tests in my gem. Whoops! So I&amp;rsquo;ll remove that integration for now. It&amp;rsquo;ll be a nice future project to write tests for the gem.&lt;/p&gt;
+
+&lt;p&gt;To explain my project in brief, you run the program from the command line, it asks you to input a zip code to see meetups from, if you enter less or more than 5 digits or not 5 digits, say 5 letter, it tell you to input 5 numbers. Then it asks for a radius to search in, I limited the radius to &amp;lt;100 miles. Then it returns a list of all the meetups scheduled for today. If there are none it tells you such. It then asks you if you&amp;rsquo;d like to search again. I&amp;rsquo;m proud as well as ready to move on to SQL.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 7:24&lt;br /&gt;
+Time spent total: 118:21&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 286&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 26</title>
       <link>https://itzsaga.github.io/post/day-026/</link>
       <pubDate>Fri, 24 Mar 2017 22:46:48 -0500</pubDate>
@@ -470,61 +493,6 @@ attr_accessor macro creats both setter and getter method&lt;/p&gt;
 Time spent total: 47:20&lt;br /&gt;
 Lessons completed today: 4&lt;br /&gt;
 Lessons completed total: 234&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 11</title>
-      <link>https://itzsaga.github.io/post/day-011/</link>
-      <pubDate>Thu, 09 Mar 2017 22:12:10 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-011/</guid>
-      <description>&lt;p&gt;Today was strong work. I finished Procedural Ruby! Now I have Object Oriented Ruby which has final projects and I&amp;rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&amp;rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.&lt;/p&gt;
-
-&lt;p&gt;I spend a good amount of time on the second to last lab of Procedural Ruby (there is a small RegEx section that is last). One specific part was hard but I was stoked with the elegant (so I think) answer I was able to come up with. My original plan was NOT this.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# given that holiday_hash looks like this:
-# {
-#   :winter =&amp;gt; {
-#     :christmas =&amp;gt; [&amp;quot;Lights&amp;quot;, &amp;quot;Wreath&amp;quot;],
-#     :new_years =&amp;gt; [&amp;quot;Party Hats&amp;quot;]
-#   },
-#   :summer =&amp;gt; {
-#     :fourth_of_july =&amp;gt; [&amp;quot;Fireworks&amp;quot;, &amp;quot;BBQ&amp;quot;]
-#   },
-#   :fall =&amp;gt; {
-#     :thanksgiving =&amp;gt; [&amp;quot;Turkey&amp;quot;]
-#   },
-#   :spring =&amp;gt; {
-#     :memorial_day =&amp;gt; [&amp;quot;BBQ&amp;quot;]
-#   }
-# }
-
-def all_supplies_in_holidays(holiday_hash)
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
-  holiday_hash.each do |season, holiday|
-    puts &amp;quot;#{season.to_s.capitalize}:&amp;quot;
-    holiday.each do |holiday_name, supplies|
-      puts &amp;quot;  #{holiday_name.to_s.split(&amp;quot;_&amp;quot;).collect {|split_holiday_name| split_holiday_name.capitalize}.join(&amp;quot; &amp;quot;)}: #{supplies.join(&amp;quot;, &amp;quot;)}&amp;quot;
-    end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;:-)&lt;/p&gt;
-
-&lt;p&gt;I wish I could have done a few more lessons tonight but my next lesson has me watching a 1:10:00 long video. It was still a good productive weekday.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 4:08&lt;br /&gt;
-Time spent total: 45:15&lt;br /&gt;
-Lessons completed today: 12&lt;br /&gt;
-Lessons completed total: 230&lt;/p&gt;
 </description>
     </item>
     
