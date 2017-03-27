@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-25T23:57:30-05:00"/>
+<meta property="og:updated_time" content="2017-03-26T23:41:22-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-028/"><p>Day 28</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-027/"><p>Day 27</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-026/"><p>Day 26</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-025/"><p>Day 25</p></a>
                     </li>
                 
             </ul>
@@ -210,7 +210,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-027/">Day 27</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-028/">Day 28</a></h2>
         
         
     </div>
@@ -220,8 +220,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-03-25'>
-            March 25, 2017</time>
+            datetime='2017-03-26'>
+            March 26, 2017</time>
         <span class="author"></span>
         
             <p>3 minute read</p>
@@ -236,25 +236,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f&text=Day%2027&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f&text=Day%2028&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f&title=Day%2027" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f&title=Day%2028" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -264,20 +264,35 @@ ga('send', 'pageview');
     
 
     <div id="content">
-        <p>So I went later than I wanted to tonight, but I was on a roll. I would have finished much earlier but I spent 2.5 hours today at a developer meetup. It was interesting as I&rsquo;ve only been to one other so far. It was good to meet some people and start putting real people to the dev community in Nashville. I did find out that basically nobody is learning/using Ruby (at least at this meetup). The largest language according to the people today is .NET because of all the health care companies. I showed a lab to a guy who&rsquo;s 4 months in at <a href="http://nashvillesoftwareschool.com/">Nashville Software School</a> and he was impressed with the TDD and seeing how it worked. He said he never sees tests like that and doesn&rsquo;t know anything about writing them. I assured him I didn&rsquo;t know much a bout writing tests either but I did read them all day long.</p>
+        <p>Today started with multiple review videos on the CLI Gem Project. I also was able to schedule my project review for Wednesday night. I&rsquo;m looking forward to some one-on-one time with an instructor talking through my code. The project states:</p>
 
-<p>The big announcement is &hellip; <strong>I FINISHED MY CLI GEM PROJECT!</strong> Now, I haven&rsquo;t done my review with my instructor and <em>passed</em> yet but it&rsquo;s done. I&rsquo;m currently working through my <a href="https://travis-ci.org/itzsaga/meetups-around">Travis CI</a> tests and getting those to pass. I expect that to be passing soon and then I&rsquo;ll update my gem. It&rsquo;s already live on <a href="https://rubygems.org/gems/meetups_around">RubyGems.org</a>! I&rsquo;ll have a new version pushed up when I get my Travis passing.</p>
+<blockquote>
+<p><strong>BE PREPARED TO:</strong><br />
+1. Explain your code from execution point to exit point. We&rsquo;re making sure you wrote it and understand how it works, nothing else. 10-20 minutes
+2. Refactor code. 10-20 minutes</p>
 
-<p>So I had a few hang ups along the way but most of it had to do with scraping. I figured it out though by trial and error. From what I understand scraping is mostly trial and error so there isn&rsquo;t much to pass along knowledge wise. I did run into the problem of trying to turn this: <code>&quot;7\n&quot; + &quot;\n&quot; + &quot;\n&quot; + &quot;Paddlers\n&quot; + &quot;\n&quot; + &quot;going&quot;</code> into this: <code>&quot;7 Paddlers going&quot;</code>. When I did <code>gsub(&quot;\n&quot;, &quot;&quot;)</code> it returned <code>7Paddlersgoing</code> and <code>gsub(&quot;\n&quot;, &quot; &quot;)</code> returned <code>&quot;7   Paddlers  going&quot;</code> with too many spaces. I was thinking I was going to have to split the string into an array, filter out the <code>\n</code> and then join the array. Then I thought, &ldquo;Why not Google turning multiple spaces into a single space.&rdquo; That seems like a problem someone would have solved already. Guess what? They have. So I ended up with <code>row.css(&quot;div.attendee-count&quot;).text.strip.gsub(&quot;\n&quot;, &quot; &quot;).gsub(/\s+/, ' ')</code>. Called <code>gsub</code> on a string that had already been changed.</p>
+<p>If necessary, after the assessment, be prepared to:<br />
+1. Extend the application with a new feature, more data, a different domain etc. 20-30 minutes
+2. Submit an improved version.</p>
+</blockquote>
 
-<p>I just realized that Travis is never going to pass because I don&rsquo;t have any tests in my gem. Whoops! So I&rsquo;ll remove that integration for now. It&rsquo;ll be a nice future project to write tests for the gem.</p>
+<p>However, until then I&rsquo;m pushing on.</p>
 
-<p>To explain my project in brief, you run the program from the command line, it asks you to input a zip code to see meetups from, if you enter less or more than 5 digits or not 5 digits, say 5 letter, it tell you to input 5 numbers. Then it asks for a radius to search in, I limited the radius to &lt;100 miles. Then it returns a list of all the meetups scheduled for today. If there are none it tells you such. It then asks you if you&rsquo;d like to search again. I&rsquo;m proud as well as ready to move on to SQL.</p>
+<p>Today I got through most of the SQL (Structured Query Language) section of the curriculum, 89% to be exact and I&rsquo;m committed to finishing it up tomorrow. In this section I&rsquo;m learning:
+-   How to create <a href="https://sqlite.org/">SQLite3</a> databases.
+-   How to create, update, select, and delete data from database tables.
+-   How to relate data within a given database.
+-   How to write SQL code in both my command line and my text editor and execute the code against a database.
+-   How to write Ruby programs that talk to and save data to my databases.</p>
 
-<p>Time spent today: 7:24<br />
-Time spent total: 118:21<br />
-Lessons completed today: 1<br />
-Lessons completed total: 286</p>
+<p>I have to say it&rsquo;s more interesting that I thought it would be. In addition, I can see perfectly how databases fit into the whole web app ecosystem. It&rsquo;s also fairly easy to pickup the SQL DSL (domain specific language) because it&rsquo;s pretty much just procedural coding. I also have done a couple intro SQL Server courses in the <a href="https://mva.microsoft.com/">Microsoft Virtual Academy</a> so the vocabulary wasn&rsquo;t new to me and I understand the 30,000 ft view of databases and relational databases.</p>
+
+<p>I feel good about progress again after today. I had felt stalled (I know I was making progress though just couldn&rsquo;t see it as much in the &ldquo;numbers&rdquo;) for a bit. Coming after SQL is Object Relational Mapping (ORM) and ActiveRecord, then Rack, then Sinatra where I&rsquo;ll build my next portfolio project. After that comes Rails and when I&rsquo;m done with Rails the job hunt can commence, although, I&rsquo;ll still have more learning to do to graduate. After Rails is a bunch of Javascript, Rails and Javacript, React and finally Redux. It&rsquo;s a lot but I know will move by at a good pace. My ambitious goal is to be done with or working on the Sinatra projects by 4/9/17. Two weeks to complete 40 lessons and 55 labs&hellip; that&rsquo;s 7 per day. I think I like that. Instead of setting an amount of time to get things done completing a set amount of the curriculum. As long as I pull out projects which take much more time I think this could be doable in the long run. I wonder what my pace has been so far&hellip; 10.96/day is the pace I&rsquo;m sitting at. Hmmm&hellip; maybe I&rsquo;ll stick with the time format as I seem to be getting more done that way. Either way I&rsquo;m going to benchmark and see if I&rsquo;m at 48 more lessons complete by next week and on pace. This is good.</p>
+
+<p>Time spent today: 6:00<br />
+Time spent total: 124:21<br />
+Lessons completed today: 17<br />
+Lessons completed total: 307</p>
 
     </div>
 
@@ -311,8 +326,8 @@ Lessons completed total: 286</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-026/"
-                class="button big previous">Day 26</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-027/"
+                class="button big previous">Day 27</a></li>
     
 
     
@@ -325,9 +340,9 @@ Lessons completed total: 286</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-027\/';
-    var disqus_title = 'Day 27';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-027\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-028\/';
+    var disqus_title = 'Day 28';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-028\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -351,25 +366,25 @@ Lessons completed total: 286</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f&text=Day%2027&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f&text=Day%2028&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f&title=Day%2027" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f&title=Day%2028" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-027%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-028%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -489,6 +504,20 @@ Lessons completed total: 286</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-028/">Day 28</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-26'>
+                                    March 26, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-027/">Day 27</a></h3>
                                 
                                     
@@ -510,20 +539,6 @@ Lessons completed total: 286</p>
                                 <time class="published" datetime=
                                     '2017-03-24'>
                                     March 24, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-025/">Day 25</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-23'>
-                                    March 23, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -562,7 +577,7 @@ Lessons completed total: 286</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">26</span>
+                                <span style="float:right;">27</span>
                             </header>
                         </article>
                     </li>
