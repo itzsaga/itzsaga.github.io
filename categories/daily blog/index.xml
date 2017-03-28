@@ -9,6 +9,33 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 29</title>
+      <link>https://itzsaga.github.io/post/day-029/</link>
+      <pubDate>Mon, 27 Mar 2017 23:14:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-029/</guid>
+      <description>&lt;p&gt;Polished off the SQL tonight and I have to say it was more in depth than I thought it would be. It&amp;rsquo;s one of those things that is hard to visualize being new to it. When the tables are laid out in a grid it all makes sense but just trying to do it all in your head is confusing, even for me. I&amp;rsquo;m sure if I was doing it every day it would be much more intuitive but right now I&amp;rsquo;m still a little fuzzy on keeping track of the data I&amp;rsquo;m looking for through multiple &lt;code&gt;JOINS&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I started on ORM (Object Relational Mapping) tonight but only got through the first lesson and lab before calling it. I&amp;rsquo;m seeing how it all connects though to store data persistently. The main thing being this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;An ORM is really just a concept. It is a design pattern, a conventional way for us to organize our programs when we want those programs to connect to a database. The convention is this:&lt;/p&gt;
+
+&lt;p&gt;When &amp;ldquo;mapping&amp;rdquo; our program to a database, we equate classes with database tables and instances of those classes with table rows.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This overview really makes it simple to think about the objects I&amp;rsquo;ve been working with and how they&amp;rsquo;ll be stored and retrieved.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve realized my 7 lessons/labs per day is pretty ambitious. Especially on these days when I work for ~3 hours. I think I can make up the rest on my LONG weekend coding sessions if I actually get 10+ hours in on Saturday and Sunday. We&amp;rsquo;ll see.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:20&lt;br /&gt;
+Time spent total: 127:41&lt;br /&gt;
+Lessons completed today: 3&lt;br /&gt;
+Lessons completed total: 310&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 28</title>
       <link>https://itzsaga.github.io/post/day-028/</link>
       <pubDate>Sun, 26 Mar 2017 23:41:22 -0500</pubDate>
@@ -477,21 +504,6 @@ Lessons completed total: 260&lt;/p&gt;
 Time spent total: 67:43&lt;br /&gt;
 Lessons completed today: 11&lt;br /&gt;
 Lessons completed total: 258&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 13</title>
-      <link>https://itzsaga.github.io/post/day-013/</link>
-      <pubDate>Sat, 11 Mar 2017 21:15:51 -0600</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-013/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m keeping the update short and sweet tonight. I got &lt;strong&gt;A LOT&lt;/strong&gt; done today. However, my amazing wife has let me code all day and into the night on her birthday. Anything important I took notes on today I&amp;rsquo;ll throw in tomorrow&amp;rsquo;s post. It&amp;rsquo;s time to spend some time with her.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 9:15&lt;br /&gt;
-Time spent total: 56:35&lt;br /&gt;
-Lessons completed today: 13&lt;br /&gt;
-Lessons completed total: 247&lt;/p&gt;
 </description>
     </item>
     
