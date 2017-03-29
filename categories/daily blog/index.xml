@@ -9,6 +9,34 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 30</title>
+      <link>https://itzsaga.github.io/post/day-030/</link>
+      <pubDate>Tue, 28 Mar 2017 23:15:53 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-030/</guid>
+      <description>&lt;p&gt;Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them. I&amp;rsquo;m on a lab entitled &amp;ldquo;Bringing It All Together&amp;rdquo; and it looks like there is a small section on Dynamic ORMs before I move into learning about ActiveRecord.&lt;/p&gt;
+
+&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here itis:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def initialize(h)
+  h.each {|k,v| public_send(&amp;quot;#{k}=&amp;quot;,v)}
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I still had to make sure I had my &lt;code&gt;attr_accessor&lt;/code&gt;&amp;rsquo;s in place to pass my tests but that&amp;rsquo;s a pretty nifty piece of code I&amp;rsquo;ll be sure to save for later.&lt;/p&gt;
+
+&lt;p&gt;The same music library examples are being used and I&amp;rsquo;m having flashbacks to my Music Library CLI project that I completed with Mike. I can only imagine building that again utilizing a database. Hopefully by the end of this DB section I won&amp;rsquo;t feel as intimidated by such a task.&lt;/p&gt;
+
+&lt;p&gt;On a non-coding note. My youngest daughter hasn&amp;rsquo;t been getting up in the middle of the night to eat so now I&amp;rsquo;m being tasked with her first meal of the day because mommy is almost out the door at that time for work and doesn&amp;rsquo;t have time. This means I&amp;rsquo;m getting up at 6am pretty regularly right now. It&amp;rsquo;ll be nice if she starts sleeping until 7 or 8. If she keeps this up though I&amp;rsquo;m going to go back to a split coding day with some time in the morning and night.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
+Time spent total: 130:22&lt;br /&gt;
+Lessons completed today: 8&lt;br /&gt;
+Lessons completed total: 318&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 29</title>
       <link>https://itzsaga.github.io/post/day-029/</link>
       <pubDate>Mon, 27 Mar 2017 23:14:44 -0500</pubDate>
@@ -487,23 +515,6 @@ end
 Time spent total: 71:00&lt;br /&gt;
 Lessons completed today: 2&lt;br /&gt;
 Lessons completed total: 260&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 14</title>
-      <link>https://itzsaga.github.io/post/day-014/</link>
-      <pubDate>Mon, 13 Mar 2017 00:42:32 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-014/</guid>
-      <description>&lt;p&gt;I promise a good blog post soon. It&amp;rsquo;s almost 1am after a LONG pair programming session, thanks &lt;a href=&#34;https://github.com/mk-etlinger&#34;&gt;Mike&lt;/a&gt;! We did however figure out a hard lab. I would&amp;rsquo;ve been struggling with it for sure. It&amp;rsquo;s not as ambiguous as it could be and we didn&amp;rsquo;t break down our methods as much as we could. However, we got all 15 tests passing and learned some new methods along the way. Specifically, the &lt;code&gt;Dir&lt;/code&gt; class methods. Mike also showed me that there&amp;rsquo;s a solution branch to all of the labs on GitHub which I never knew about. I guess it says something that I&amp;rsquo;ve made it so far so quickly and never looked at a solution. However, there can be knowledge gained from refactoring with new knowledge based on what the school thinks is the best code for the problem.&lt;/p&gt;
-
-&lt;p&gt;I do have &amp;ldquo;homework&amp;rdquo; from Mike too (some things he has learned recently that I&amp;rsquo;m not knowledgable on). Specifically, &lt;code&gt;||=&lt;/code&gt; &lt;code&gt;&amp;amp;.&lt;/code&gt; and &lt;code&gt;.tap&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 11:09&lt;br /&gt;
-Time spent total: 67:43&lt;br /&gt;
-Lessons completed today: 11&lt;br /&gt;
-Lessons completed total: 258&lt;/p&gt;
 </description>
     </item>
     
