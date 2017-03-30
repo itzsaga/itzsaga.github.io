@@ -6,8 +6,32 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Mar 2017 23:15:53 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 Mar 2017 23:18:22 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 31</title>
+      <link>https://itzsaga.github.io/post/day-031/</link>
+      <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-031/</guid>
+      <description>&lt;p&gt;Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&amp;rsquo;re not official tasks I set a couple new features I want to add to the gem.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Allow users to pick the date that they want meetups for instead of only returning current day meetups.&lt;/li&gt;
+&lt;li&gt;If a person sees a meetup they want more info on they can enter it&amp;rsquo;s number and open the page for that event in their default browser.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I think these are two useful and good additions. I&amp;rsquo;m not sure when I&amp;rsquo;ll find the time to get them done but I&amp;rsquo;ll get them done. Cernan who did my review also informed me that he has seen students get hired just from having a solid CLI Gem so I definitely want to make this portfolio project stronger than it currently is. I think adding those two features I will be able to call it v1.0.0 and release it into the wild.&lt;/p&gt;
+
+&lt;p&gt;I finished up ORM except for some review videos which I&amp;rsquo;ll watch tomorrow. I could have finished the first video but my wife took our eldest daughter to get ice cream and my infant decided she didn&amp;rsquo;t want to be happy unless she was being held. However, there are worse things than not being able to code because your daughter wants to be held. Eventually she&amp;rsquo;ll be too big to fit in my arms so I&amp;rsquo;ll enjoy it now. Hopefully I can put an extra hour in tomorrow and catch back up to where I want to be this week.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:10&lt;br /&gt;
+Time spent total: 132:32&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 322&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 30</title>
@@ -17,7 +41,7 @@
       <guid>https://itzsaga.github.io/post/day-030/</guid>
       <description>&lt;p&gt;Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them. I&amp;rsquo;m on a lab entitled &amp;ldquo;Bringing It All Together&amp;rdquo; and it looks like there is a small section on Dynamic ORMs before I move into learning about ActiveRecord.&lt;/p&gt;
 
-&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here itis:&lt;/p&gt;
+&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here it is:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def initialize(h)
   h.each {|k,v| public_send(&amp;quot;#{k}=&amp;quot;,v)}
@@ -488,25 +512,6 @@ If you want a module&amp;rsquo;s methods to be used in another class as &lt;stro
 Time spent total: 76:04&lt;br /&gt;
 Lessons completed today: 4&lt;br /&gt;
 Lessons completed total: 268&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 16</title>
-      <link>https://itzsaga.github.io/post/day-016/</link>
-      <pubDate>Tue, 14 Mar 2017 23:13:10 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-016/</guid>
-      <description>&lt;p&gt;I completely missed my 6am wake up this morning. I realized I didn&amp;rsquo;t reset my alarm from Sunday night. Since I was up until 1am Sunday night I changed my alarm so I could get more sleep. However, thinking about it now having finished tonight at 11pm instead of 10pm I think I&amp;rsquo;ll keep it this way. No matter what I know after 8pm I can be productive. My wife is home and the kids are suppose to be in bed. Whereas in the morning if the baby isn&amp;rsquo;t happy or one of the toddlers decides that 7am is a good time to wake up I&amp;rsquo;m stuck and just lose that coding time. I also think this will be more effective as the labs and projects get more in depth. A longer time will allow me to get in and tackle a problem that only an hour might not.&lt;/p&gt;
-
-&lt;p&gt;Not much to report today except I&amp;rsquo;m done with Object Relationship and will be startin Object Architecture tomorrow. I have noticed that things are getting repeated to let them sink and and produce some muscle memory. Even if that muscle is the brain. So there will be a video lecture that will be something being built and being explained as it&amp;rsquo;s built (or be a Q&amp;amp;A while it was happening), then a lesson showing step by step how the same thing is built, then a lab where you do what was just taught verbatim, and do it one more time non-verbatim but the exact same thing.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m 17 lessons/labs away from my first projects! That gets me so invigorated to just crush these next few labs and to start building. I can&amp;rsquo;t wait to have some stuff to show off and add to my portfolio.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:26&lt;br /&gt;
-Time spent total: 73:26&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 264&lt;/p&gt;
 </description>
     </item>
     

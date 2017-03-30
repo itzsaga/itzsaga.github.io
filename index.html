@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-28T23:15:53-05:00"/>
+<meta property="og:updated_time" content="2017-03-29T23:18:22-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-031/"><p>Day 31</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-030/"><p>Day 30</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-029/"><p>Day 29</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-028/"><p>Day 28</p></a>
                     </li>
                 
             </ul>
@@ -210,7 +210,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-030/">Day 30</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-031/">Day 31</a></h2>
         
         
     </div>
@@ -220,8 +220,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-03-28'>
-            March 28, 2017</time>
+            datetime='2017-03-29'>
+            March 29, 2017</time>
         <span class="author"></span>
         
             <p>2 minute read</p>
@@ -236,25 +236,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f&text=Day%2030&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f&text=Day%2031&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f&title=Day%2030" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f&title=Day%2031" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -264,25 +264,21 @@ ga('send', 'pageview');
     
 
     <div id="content">
-        <p>Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them. I&rsquo;m on a lab entitled &ldquo;Bringing It All Together&rdquo; and it looks like there is a small section on Dynamic ORMs before I move into learning about ActiveRecord.</p>
+        <p>Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&rsquo;re not official tasks I set a couple new features I want to add to the gem.</p>
 
-<p>A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via <a href="https://duckduckgo.com/">DuckDuckGo</a> (yes my default search engine <strong><em>is not</em></strong> Google). So I ended up throwing some code I found into my file and it passed the test! Here itis:</p>
+<ol>
+<li>Allow users to pick the date that they want meetups for instead of only returning current day meetups.</li>
+<li>If a person sees a meetup they want more info on they can enter it&rsquo;s number and open the page for that event in their default browser.</li>
+</ol>
 
-<pre><code class="language-ruby">def initialize(h)
-  h.each {|k,v| public_send(&quot;#{k}=&quot;,v)}
-end
-</code></pre>
+<p>I think these are two useful and good additions. I&rsquo;m not sure when I&rsquo;ll find the time to get them done but I&rsquo;ll get them done. Cernan who did my review also informed me that he has seen students get hired just from having a solid CLI Gem so I definitely want to make this portfolio project stronger than it currently is. I think adding those two features I will be able to call it v1.0.0 and release it into the wild.</p>
 
-<p>I still had to make sure I had my <code>attr_accessor</code>&rsquo;s in place to pass my tests but that&rsquo;s a pretty nifty piece of code I&rsquo;ll be sure to save for later.</p>
+<p>I finished up ORM except for some review videos which I&rsquo;ll watch tomorrow. I could have finished the first video but my wife took our eldest daughter to get ice cream and my infant decided she didn&rsquo;t want to be happy unless she was being held. However, there are worse things than not being able to code because your daughter wants to be held. Eventually she&rsquo;ll be too big to fit in my arms so I&rsquo;ll enjoy it now. Hopefully I can put an extra hour in tomorrow and catch back up to where I want to be this week.</p>
 
-<p>The same music library examples are being used and I&rsquo;m having flashbacks to my Music Library CLI project that I completed with Mike. I can only imagine building that again utilizing a database. Hopefully by the end of this DB section I won&rsquo;t feel as intimidated by such a task.</p>
-
-<p>On a non-coding note. My youngest daughter hasn&rsquo;t been getting up in the middle of the night to eat so now I&rsquo;m being tasked with her first meal of the day because mommy is almost out the door at that time for work and doesn&rsquo;t have time. This means I&rsquo;m getting up at 6am pretty regularly right now. It&rsquo;ll be nice if she starts sleeping until 7 or 8. If she keeps this up though I&rsquo;m going to go back to a split coding day with some time in the morning and night.</p>
-
-<p>Time spent today: 2:41<br />
-Time spent total: 130:22<br />
-Lessons completed today: 8<br />
-Lessons completed total: 318</p>
+<p>Time spent today: 2:10<br />
+Time spent total: 132:32<br />
+Lessons completed today: 4<br />
+Lessons completed total: 322</p>
 
     </div>
 
@@ -316,8 +312,8 @@ Lessons completed total: 318</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-029/"
-                class="button big previous">Day 29</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-030/"
+                class="button big previous">Day 30</a></li>
     
 
     
@@ -330,9 +326,9 @@ Lessons completed total: 318</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-030\/';
-    var disqus_title = 'Day 30';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-030\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-031\/';
+    var disqus_title = 'Day 31';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-031\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -356,25 +352,25 @@ Lessons completed total: 318</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f&text=Day%2030&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f&text=Day%2031&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f&title=Day%2030" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f&title=Day%2031" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-030%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-031%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -494,6 +490,20 @@ Lessons completed total: 318</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-031/">Day 31</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-29'>
+                                    March 29, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-030/">Day 30</a></h3>
                                 
                                     
@@ -515,20 +525,6 @@ Lessons completed total: 318</p>
                                 <time class="published" datetime=
                                     '2017-03-27'>
                                     March 27, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-028/">Day 28</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-03-26'>
-                                    March 26, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -567,7 +563,7 @@ Lessons completed total: 318</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">29</span>
+                                <span style="float:right;">30</span>
                             </header>
                         </article>
                     </li>

@@ -9,6 +9,30 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 31</title>
+      <link>https://itzsaga.github.io/post/day-031/</link>
+      <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-031/</guid>
+      <description>&lt;p&gt;Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&amp;rsquo;re not official tasks I set a couple new features I want to add to the gem.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Allow users to pick the date that they want meetups for instead of only returning current day meetups.&lt;/li&gt;
+&lt;li&gt;If a person sees a meetup they want more info on they can enter it&amp;rsquo;s number and open the page for that event in their default browser.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I think these are two useful and good additions. I&amp;rsquo;m not sure when I&amp;rsquo;ll find the time to get them done but I&amp;rsquo;ll get them done. Cernan who did my review also informed me that he has seen students get hired just from having a solid CLI Gem so I definitely want to make this portfolio project stronger than it currently is. I think adding those two features I will be able to call it v1.0.0 and release it into the wild.&lt;/p&gt;
+
+&lt;p&gt;I finished up ORM except for some review videos which I&amp;rsquo;ll watch tomorrow. I could have finished the first video but my wife took our eldest daughter to get ice cream and my infant decided she didn&amp;rsquo;t want to be happy unless she was being held. However, there are worse things than not being able to code because your daughter wants to be held. Eventually she&amp;rsquo;ll be too big to fit in my arms so I&amp;rsquo;ll enjoy it now. Hopefully I can put an extra hour in tomorrow and catch back up to where I want to be this week.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:10&lt;br /&gt;
+Time spent total: 132:32&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 322&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 30</title>
       <link>https://itzsaga.github.io/post/day-030/</link>
       <pubDate>Tue, 28 Mar 2017 23:15:53 -0500</pubDate>
@@ -16,7 +40,7 @@
       <guid>https://itzsaga.github.io/post/day-030/</guid>
       <description>&lt;p&gt;Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them. I&amp;rsquo;m on a lab entitled &amp;ldquo;Bringing It All Together&amp;rdquo; and it looks like there is a small section on Dynamic ORMs before I move into learning about ActiveRecord.&lt;/p&gt;
 
-&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here itis:&lt;/p&gt;
+&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here it is:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def initialize(h)
   h.each {|k,v| public_send(&amp;quot;#{k}=&amp;quot;,v)}
@@ -470,51 +494,6 @@ Lessons completed total: 268&lt;/p&gt;
 Time spent total: 73:26&lt;br /&gt;
 Lessons completed today: 4&lt;br /&gt;
 Lessons completed total: 264&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 15</title>
-      <link>https://itzsaga.github.io/post/day-015/</link>
-      <pubDate>Mon, 13 Mar 2017 22:22:36 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-015/</guid>
-      <description>&lt;p&gt;Day 15 and I&amp;rsquo;m still here. If you didn&amp;rsquo;t see it I wrote a &lt;a href=&#34;../post/why-software-development&#34;&gt;rather long blog post&lt;/a&gt; today as one of my requirements for Flatiron. Since that took up over an hour and I had a 1:10.00+ video as a lesson I didn&amp;rsquo;t get much done. However, I &lt;strong&gt;DO&lt;/strong&gt; have notes from the past couple of days that I never took the time to share.&lt;/p&gt;
-
-&lt;p&gt;So on Saturday morning I did a study group with some people and learned a lot. We went through one of the more challenging Procedural Ruby labs. One thing that I had never though to do was put my &lt;code&gt;pry&lt;/code&gt; in the &lt;code&gt;rspec&lt;/code&gt; test file. So I could look at what was going on when everything had already been passed in. I had been putting the &lt;code&gt;pry&lt;/code&gt; in my code and then needing to call the methods above it before I could work on the current problem. I&amp;rsquo;m still not 100% on utilizing &lt;code&gt;pry&lt;/code&gt; but I&amp;rsquo;m getting there. It&amp;rsquo;s definitely easier and more useful than IRB.&lt;/p&gt;
-
-&lt;p&gt;Another nifty thing I learned from the study group, which I&amp;rsquo;m still not completely comfortable with but makes sense, is calling methods on &lt;code&gt;end&lt;/code&gt;. For example we did this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.map do |season, holidays|
-    holidays.map do |holiday_name, supplies
-      supplies.include?(&amp;quot;BBQ&amp;quot;) ? holiday_name : nil
-    end
-  end.flatten.compact
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The way this works is the &lt;code&gt;.flatten.compact&lt;/code&gt; is being called on the return value of &lt;code&gt;holiday_hash.map&lt;/code&gt;. It&amp;rsquo;s still settling in my mind and I haven&amp;rsquo;t used it since but I can see where this is useful.&lt;/p&gt;
-
-&lt;p&gt;Mike who I pair programmed with last night informed me to get a solid understanding of &lt;code&gt;self&lt;/code&gt; so I&amp;rsquo;ve been taking details notes on things I think are of value. I have:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;We can define methods in which we tell objects to operate on themselves. We do so using the &lt;code&gt;self&lt;/code&gt; keyword, inside the body of an instance method, to refer to the very same object the method is being called on.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I like that definition and it&amp;rsquo;s not too abstract for me to understand what it&amp;rsquo;s saying.&lt;/p&gt;
-
-&lt;p&gt;Lastly, in one of the lectures Avi stated to try not to use the &lt;code&gt;return&lt;/code&gt; method. He said if you have to use &lt;code&gt;return&lt;/code&gt; you&amp;rsquo;re probably doing something wrong and utilizing &lt;code&gt;return&lt;/code&gt; can cause problems. This is because every method has a return. We should be able to get what we need utilizing higher level methods that will return to us what we&amp;rsquo;re looking for. This makes a lot of sense to me. If I have to use the &lt;code&gt;return&lt;/code&gt; method then I&amp;rsquo;m probably missing something in the code I&amp;rsquo;m returning. While this isn&amp;rsquo;t a hard and fast rule it&amp;rsquo;s something I&amp;rsquo;m going to try and stick to.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re keeping up, I didn&amp;rsquo;t look into &lt;code&gt;||=&lt;/code&gt; &lt;code&gt;&amp;amp;.&lt;/code&gt; or &lt;code&gt;.tap&lt;/code&gt; today.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m 55% through Object Oriented Ruby. I just realized this because I took a glance at my Dashboard which I haven&amp;rsquo;t really been doing lately. It&amp;rsquo;s moving along but I know it&amp;rsquo;ll take a while once I get to the end. I have some projects to look forward to!
-&lt;img src=&#34;../images/oo_ruby_project_dropdown.jpg&#34; alt=&#34;object oriented ruby projects list&#34; title=&#34;Object Oriented Ruby Projects&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:17&lt;br /&gt;
-Time spent total: 71:00&lt;br /&gt;
-Lessons completed today: 2&lt;br /&gt;
-Lessons completed total: 260&lt;/p&gt;
 </description>
     </item>
     
