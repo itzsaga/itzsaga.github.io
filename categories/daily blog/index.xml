@@ -9,6 +9,32 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 32</title>
+      <link>https://itzsaga.github.io/post/day-032/</link>
+      <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-032/</guid>
+      <description>&lt;p&gt;Almost 3 hours of review vidoes watched tonight. On thing that I think can be very useful to all. A double bang &lt;code&gt;!!&lt;/code&gt; converts an object to it&amp;rsquo;s truthy value. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;seth@seth-u:~$ irb
+2.4.0 :001 &amp;gt; 1
+ =&amp;gt; 1
+2.4.0 :002 &amp;gt; !1
+ =&amp;gt; false
+2.4.0 :003 &amp;gt; !!1
+ =&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So the return value of &lt;code&gt;1&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt; we know &lt;code&gt;1&lt;/code&gt; has a boolean value of &lt;code&gt;true&lt;/code&gt;. So &lt;code&gt;!1&lt;/code&gt; is &lt;code&gt;false&lt;/code&gt; and thus &lt;code&gt;!!1&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;. This can be useful for obvious reasons.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
+Time spent total: 135:13&lt;br /&gt;
+Lessons completed today: 3&lt;br /&gt;
+Lessons completed total: 325&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 31</title>
       <link>https://itzsaga.github.io/post/day-031/</link>
       <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
@@ -475,25 +501,6 @@ If you want a module&amp;rsquo;s methods to be used in another class as &lt;stro
 Time spent total: 76:04&lt;br /&gt;
 Lessons completed today: 4&lt;br /&gt;
 Lessons completed total: 268&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 16</title>
-      <link>https://itzsaga.github.io/post/day-016/</link>
-      <pubDate>Tue, 14 Mar 2017 23:13:10 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-016/</guid>
-      <description>&lt;p&gt;I completely missed my 6am wake up this morning. I realized I didn&amp;rsquo;t reset my alarm from Sunday night. Since I was up until 1am Sunday night I changed my alarm so I could get more sleep. However, thinking about it now having finished tonight at 11pm instead of 10pm I think I&amp;rsquo;ll keep it this way. No matter what I know after 8pm I can be productive. My wife is home and the kids are suppose to be in bed. Whereas in the morning if the baby isn&amp;rsquo;t happy or one of the toddlers decides that 7am is a good time to wake up I&amp;rsquo;m stuck and just lose that coding time. I also think this will be more effective as the labs and projects get more in depth. A longer time will allow me to get in and tackle a problem that only an hour might not.&lt;/p&gt;
-
-&lt;p&gt;Not much to report today except I&amp;rsquo;m done with Object Relationship and will be startin Object Architecture tomorrow. I have noticed that things are getting repeated to let them sink and and produce some muscle memory. Even if that muscle is the brain. So there will be a video lecture that will be something being built and being explained as it&amp;rsquo;s built (or be a Q&amp;amp;A while it was happening), then a lesson showing step by step how the same thing is built, then a lab where you do what was just taught verbatim, and do it one more time non-verbatim but the exact same thing.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m 17 lessons/labs away from my first projects! That gets me so invigorated to just crush these next few labs and to start building. I can&amp;rsquo;t wait to have some stuff to show off and add to my portfolio.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:26&lt;br /&gt;
-Time spent total: 73:26&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 264&lt;/p&gt;
 </description>
     </item>
     

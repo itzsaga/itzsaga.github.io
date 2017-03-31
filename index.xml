@@ -6,8 +6,52 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Mar 2017 23:18:22 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2017 23:28:06 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Learning Hacks</title>
+      <link>https://itzsaga.github.io/post/my-learning-hacks/</link>
+      <pubDate>Thu, 30 Mar 2017 23:28:06 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/my-learning-hacks/</guid>
+      <description>&lt;p&gt;So I wanted to share the hacks that I&amp;rsquo;m using to upgrade my life some and increase my mental aptitude to crushing this curriculum. There is a certain amount of mental stamina that has to be maintained on a day to day basis to keep up this pace. So&amp;hellip; here&amp;rsquo;s my brain upgrades/biohacks/etc&amp;hellip; that keep my moving tip top while doing this bootcamp full time and taking care of kids full time. All with links to the best place to buy them.&lt;/p&gt;
+
+&lt;p&gt;First thing is my coffee. I start my day off with my take on, Bulletproof Coffee. I currently use Central American Single Origin Organic whole bean coffee from Aldi. The most important thing for me is my coffee being light to medium roast. Nothing dark. I also like whole bean because coffee really does taste &lt;strong&gt;way&lt;/strong&gt; better if it&amp;rsquo;s fresh ground. I add to that 1 tbsp of &lt;a href=&#34;http://thrv.me/GWQK6N&#34;&gt;Thrive Market Ghee&lt;/a&gt; and 1 tbsp of whatever I have around to up ketones. I prefer &lt;a href=&#34;http://amzn.to/2nQOZoe&#34;&gt;Brain Octane Oil&lt;/a&gt; because it definitely is nicer on the insides but also use &lt;a href=&#34;http://thrv.me/pP3hDQ&#34;&gt;Now Foods MCT Oil&lt;/a&gt; or just &lt;a href=&#34;http://thrv.me/c4sQTU&#34;&gt;Coconut Oil&lt;/a&gt; if I have neither of the aforementioned. I blend this all up together. This gets me going and curbs hunger for hours. I also pop a couple &lt;a href=&#34;http://amzn.to/2ohk6dG&#34;&gt;BioScience Brain Boost&lt;/a&gt; and wash them down with my coffee.&lt;/p&gt;
+
+&lt;p&gt;I then hopefully do my &lt;a href=&#34;https://www.gymnasticbodies.com/&#34;&gt;Gymnastic Bodies&lt;/a&gt; Daily Limber routine to get the blood flowing some. I follow that up with some meditation utilizing &lt;a href=&#34;https://www.calm.com/&#34;&gt;Calm&lt;/a&gt;. I try (but usually fail) to write my daily journal entry utilizing &lt;a href=&#34;https://www.evernote.com/shard/s34/sh/d31e2f00-610a-4d05-8c6e-44b5e6fd5a75/ee032628c7bcb8547e2bfb7f4bdb681e&#34;&gt;this template&lt;/a&gt; I built in Evernote. I very rarely get all of these things done. However, I try to.&lt;/p&gt;
+
+&lt;p&gt;When I&amp;rsquo;m on long coding sessions I supplement in the middle of the day with &lt;a href=&#34;http://thrv.me/WBcGBK&#34;&gt;Four Sigmatic Lion&amp;rsquo;s Mane&lt;/a&gt; which I&amp;rsquo;ve found can really get me going. I have to ensure I&amp;rsquo;m stimulated enough mentally or I start getting distracted trying to keep my brain working hard enough. I also diffuse essential oils in my workspace. Specifically &lt;a href=&#34;http://thrv.me/7YEQ7F&#34;&gt;Lemon&lt;/a&gt;, &lt;a href=&#34;http://thrv.me/RwiYBf&#34;&gt;Rosemary&lt;/a&gt;, and &lt;a href=&#34;http://thrv.me/evMTdr&#34;&gt;Eucalyptus&lt;/a&gt;. All three of those are supposed to help with concentration and mental performance. I find the scents definitely keep me alert if not anything else. Something that I recently ran across is &lt;a href=&#34;https://nootrobox.com/sprint&#34;&gt;Nootrobox Sprint&lt;/a&gt; and I&amp;rsquo;m interested to try it out. I might just order the mini bottle for $15.&lt;/p&gt;
+
+&lt;p&gt;That should be it if I remember correctly. If I realize I missed something I&amp;rsquo;ll update this post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 32</title>
+      <link>https://itzsaga.github.io/post/day-032/</link>
+      <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-032/</guid>
+      <description>&lt;p&gt;Almost 3 hours of review vidoes watched tonight. On thing that I think can be very useful to all. A double bang &lt;code&gt;!!&lt;/code&gt; converts an object to it&amp;rsquo;s truthy value. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;seth@seth-u:~$ irb
+2.4.0 :001 &amp;gt; 1
+ =&amp;gt; 1
+2.4.0 :002 &amp;gt; !1
+ =&amp;gt; false
+2.4.0 :003 &amp;gt; !!1
+ =&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So the return value of &lt;code&gt;1&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt; we know &lt;code&gt;1&lt;/code&gt; has a boolean value of &lt;code&gt;true&lt;/code&gt;. So &lt;code&gt;!1&lt;/code&gt; is &lt;code&gt;false&lt;/code&gt; and thus &lt;code&gt;!!1&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;. This can be useful for obvious reasons.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
+Time spent total: 135:13&lt;br /&gt;
+Lessons completed today: 3&lt;br /&gt;
+Lessons completed total: 325&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 31</title>
@@ -452,66 +496,6 @@ Lessons completed total: 283&lt;/p&gt;
 Time spent total: 92:48&lt;br /&gt;
 Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
 Lessons completed total: 283&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 18</title>
-      <link>https://itzsaga.github.io/post/day-018/</link>
-      <pubDate>Thu, 16 Mar 2017 23:21:28 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-018/</guid>
-      <description>&lt;p&gt;Today saw &lt;strong&gt;a lot&lt;/strong&gt; of new stuff. I feel like a ton of stuff was introduced and not gone over very deeply but deep enough for me to understand and implement it. In 11 lessons and labs I was exposed to &lt;code&gt;super&lt;/code&gt; and how to use it, mass assignments, creating and implementing custom errors, gems, &lt;a href=&#34;https://bundler.io/&#34;&gt;bundler&lt;/a&gt;, and basic scraping with &lt;a href=&#34;http://www.nokogiri.org/&#34;&gt;Nokogiri&lt;/a&gt;. I can tell I was exposed to many things in preparation for the first projects, which can&amp;rsquo;t get here fast enough! At least I say that now, we&amp;rsquo;ll see how I feel when I&amp;rsquo;m at a complete stand still and stuck on one of them lol.&lt;/p&gt;
-
-&lt;p&gt;Today I got stuck for a little while utilizing &lt;code&gt;super&lt;/code&gt;. I had a lab with a parent class with a method that simply &lt;code&gt;puts &amp;quot;I can&#39;t remember what it was exactly.&amp;quot;&lt;/code&gt; and in the child class I was suppose to use &lt;code&gt;super&lt;/code&gt; to have that phrase repeated 10 times. So my initial attempt, inside the method was: &lt;code&gt;super.10.times&lt;/code&gt; as I figured I could just call this method but I got &lt;code&gt;NoMethodError: undefined method `super&#39; for #&amp;lt;Enumerator: 10:times&amp;gt;&lt;/code&gt;. Hmmm. I did some searching and even called &lt;code&gt;super.class&lt;/code&gt; in pry but couldn&amp;rsquo;t get anymore info. BTW, &lt;code&gt;super.class&lt;/code&gt; literally gave me nothing but a new line in pry to look at, or was that actually something??? So I posed the quesiton in the Slack channel for those who are enrolled in the bootcamp. After a side chain of responses with back and forth I got what I needed for my understanding&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;super yields the implementation from the method it’s overriding and returns the last return value or it just returns the last return value.&lt;br /&gt;
-- &lt;a href=&#34;https://github.com/genericlady&#34;&gt;Yianna&lt;/a&gt; (thanks!)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is what I needed. Since it&amp;rsquo;s returning the last value and &lt;code&gt;super&lt;/code&gt; was just a simple &lt;code&gt;puts&lt;/code&gt; method the return value was &lt;code&gt;nil&lt;/code&gt;. No wonder I couldn&amp;rsquo;t make method calls on it. I also got some way more in depth info that I haven&amp;rsquo;t had a chance to digest yet. I didn&amp;rsquo;t want to get stuck on it when I knew just typing out &lt;code&gt;super&lt;/code&gt; ten times would pass the lab. In fact, that&amp;rsquo;s how Flatiron&amp;rsquo;s solution was coded. This lab was more about understanding how &lt;code&gt;super&lt;/code&gt; works than how to call methods on it.&lt;/p&gt;
-
-&lt;p&gt;Other than that it was just A LOT of information as I stated at the beginning. Also a chuckle when I found out that &lt;code&gt;~&amp;gt;&lt;/code&gt; is affectionately called a &amp;ldquo;twiddle-wakka&amp;rdquo; for whatever reason. I can figure out the twiddle part but the wakka is stumping me right now. If you know please comment and inform me.&lt;/p&gt;
-
-&lt;p&gt;I have a few video reviews and then I start projects!!!&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:16&lt;br /&gt;
-Time spent total: 79:20&lt;br /&gt;
-Lessons completed today: 11&lt;br /&gt;
-Lessons completed total: 279&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 17</title>
-      <link>https://itzsaga.github.io/post/day-017/</link>
-      <pubDate>Wed, 15 Mar 2017 23:16:44 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-017/</guid>
-      <description>&lt;p&gt;Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize &lt;code&gt;self&lt;/code&gt; on pretty much all instance variable references after they have been initialized (created). This is because when we reference the instance variables directly we&amp;rsquo;re cutting out using the macros that &lt;code&gt;attr_accessor&lt;/code&gt; &lt;code&gt;attr_reader&lt;/code&gt; &lt;code&gt;attr_writer&lt;/code&gt; provide. It is true though that writing code that uses &lt;code&gt;@variable&lt;/code&gt; instead of &lt;code&gt;self.variable&lt;/code&gt; will still pass the tests I&amp;rsquo;m working with. I know this because I&amp;rsquo;ve been doing it haha.&lt;/p&gt;
-
-&lt;p&gt;I got through some module lessons and labs once the study group was over. Something to always remember is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;If you have a module whose methods you would like to be used in another class as &lt;strong&gt;instance methods&lt;/strong&gt;, then you must &lt;strong&gt;include&lt;/strong&gt; the module.&lt;br /&gt;
-If you want a module&amp;rsquo;s methods to be used in another class as &lt;strong&gt;class methods&lt;/strong&gt;, you must &lt;strong&gt;extend&lt;/strong&gt; the module.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Modules are sweet and I&amp;rsquo;m happy I&amp;rsquo;m going to start using them. Things are getting simpler while they&amp;rsquo;re getting more complex at the same time. There are so many things that have already been figured out in the world of development and slowly they&amp;rsquo;re being introduced.&lt;/p&gt;
-
-&lt;p&gt;I also learned tonight that there is a term for the work flow that most people follow when they write code. The work flow being, you have tests that are failing, you write whatever code is needed to pass your tests, you break that ugly code and write cleaner code to pass your tests again.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is called the &lt;strong&gt;red, green, refactor&lt;/strong&gt; pattern. First tests fail, then you write bad code to get them to pass, then you refactor that bad code into good code.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I guess it makes sense that these things have been defined. I&amp;rsquo;m not inventing web development. Just learning it.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:37&lt;br /&gt;
-Time spent total: 76:04&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 268&lt;/p&gt;
 </description>
     </item>
     
