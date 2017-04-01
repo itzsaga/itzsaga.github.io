@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Day 33</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.19" />
+        
+
+
+        
+            <meta name="author" content="Seth">
+        
+        
+            <meta name="description" content="Active Record is awesome, Gemfile.lock files are not so awesome, and I plan to play some catch up and still hit my goals...">
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Day 33"/>
+<meta name="twitter:title" content="Day 33"/>
+<meta name="twitter:description" content="Active Record is awesome, Gemfile.lock files are not so awesome, and I plan to play some catch up and still hit my goals..."/>
+<meta name="twitter:site" content="@itzsaga"/>
+
+        <meta property="og:title" content="Day 33" />
+<meta property="og:description" content="Active Record is awesome, Gemfile.lock files are not so awesome, and I plan to play some catch up and still hit my goals..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://itzsaga.github.io/post/day-033/" />
+
+
+
+<meta property="article:published_time" content="2017-03-31T23:26:51-05:00"/>
+<meta property="article:modified_time" content="2017-03-31T23:26:51-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Day 33">
+<meta itemprop="description" content="Active Record is awesome, Gemfile.lock files are not so awesome, and I plan to play some catch up and still hit my goals...">
+
+
+<meta itemprop="dateModified" content="2017-03-31T23:26:51-05:00" />
+<meta itemprop="wordCount" content="498">
+
+
+
+<meta itemprop="keywords" content="daily blog,flatiron blog,general," />
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-96008952-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+        <h2><a href="/">Seth&#39;s Journey</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about">
+                        
+                            <i class="fa fa-user">&nbsp;</i>About
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            <h3>
+                                
+                                    <i class="fa fa-user">&nbsp;</i>
+                                
+                                About
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-033/"><p>Day 33</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/my-learning-hacks/"><p>My Learning Hacks</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-032/"><p>Day 32</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f&text=Day%2033&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f&title=Day%2033" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="https://itzsaga.github.io/post/day-033/">Day 33</a></h1>
+            
+        
+        
+            <p>Active Record is awesome, Gemfile.lock files are not so awesome, and I plan to play some catch up and still hit my goals...</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-31'>
+            March 31, 2017</time>
+        <span class="author">Seth</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f&text=Day%2033&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f&title=Day%2033" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-033%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://itzsaga.github.io/post/day-033/" class="image featured">
+            <img src="../../images//SW_Chelsea&#43;Francis-2.jpg" alt="magic comes from work" />
+        </a>
+    
+
+
+    <div id="content">
+        <p>I started Active Record tonight and I&rsquo;m stoked. Mostly because a lot of the work has already been done and now I can just use the magic that is provided to me. I think I have always had the basic understanding that there are libraries that will be doing a lot of the things I have been learning for me. That is why when I get stuck on things but can still complete projects and labs I just push through. I definitely save bookmarks to go back to if need be but ultimately I want to see how granularly I really need to know some of these concepts before I spend hours learning them deeper. While I know having the deeper understanding is a good thing I also have a timeline I&rsquo;m working with and can dive deeper into topics once I&rsquo;ve graduated or have landed a job.</p>
+
+<p>Database migrations are a nice thing to have.</p>
+
+<p>I got sutck for a while tonight because my environment was throwing an error in relation to the JSON gem. Specifically version <code>1.8.3</code> which was inthe <code>Gemfile.lock</code> of afew of the labs I&rsquo;ve worked on tonight. I learned with the help of a Learn Expert (someone who&rsquo;s around to help out studnets) that the <code>Gemfile.lock</code> is pretty much a set of dependencies that were used when the files were written and are statically set to keep things consistent. So we deleted that file and ran <code>bundle</code> again and everything worked fine. Luckily I asked why we did what we did so I would know enough to repeat the process tonight. Every time I run into this problem I do raise an issue on GitHub so hopefully it&rsquo;ll be taken care of for those following behind me.</p>
+
+<p>I feel like I&rsquo;m behind on the target I set for myself and I have the <a href="https://www.facebook.com/groups/free.code.camp.nashville">Free Code Camp Nashville</a> meetup to go to tomorrow. Plus a wedding shower on Sunday. I still plan to be done with Rack this weekend. That&rsquo;s 22 lessons/labs. I also am considering adding an extra full day into next week by having my nanny come and watch my girls on Friday. So instead of 3 hours next Friday night, I can hit it hard all day and have a 10 hour day. We&rsquo;ll see how I feel after Monday&rsquo;s progress.</p>
+
+<p>Something I did to save some time is now when I generate my static blog files they automatically are put into my proper local file location to be uploaded to the seperate repo. That&rsquo;s a complicated sentence to say, I keep my content in one folder and repo, and my public facing files in another folder and repo. I had been generating the public file then copying and pasting in my file manager. Now the files are generated directly into the proper folder saving me a few steps and speeding up my publishing time.</p>
+
+<p>Time spent today: 2:43<br />
+Time spent total: 137:55<br />
+Lessons completed today: 5<br />
+Lessons completed total: 330</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="https://itzsaga.github.io/post/my-learning-hacks/"
+                class="button big previous">My Learning Hacks</a></li>
+    
+
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'my-flatiron-journey';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-033\/';
+    var disqus_title = 'Day 33';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-033\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="https://res.cloudinary.com/sethalexander/image/upload/v1487653136/seth_iign80.jpg" alt="Seth" /></a>
+                
+            
+            
+                <header>
+                    <h2>My Flatiron Journey</h2>
+                    <p>How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-033/">Day 33</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-31'>
+                                    March 31, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/my-learning-hacks/">My Learning Hacks</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-30'>
+                                    March 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-032/">Day 32</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-03-30'>
+                                    March 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                "/post/"
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/daily-blog/">daily blog</a>
+                                <span style="float:right;">32</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/flatiron-blog/">flatiron blog</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/general/">general</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>I&#39;m a family man that works hard and is looking to get ahead. I&#39;m smart and love tech. That&#39;s all there is to it.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; My Flatiron Journey. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+

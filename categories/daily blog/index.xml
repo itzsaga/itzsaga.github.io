@@ -9,6 +9,29 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 33</title>
+      <link>https://itzsaga.github.io/post/day-033/</link>
+      <pubDate>Fri, 31 Mar 2017 23:26:51 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-033/</guid>
+      <description>&lt;p&gt;I started Active Record tonight and I&amp;rsquo;m stoked. Mostly because a lot of the work has already been done and now I can just use the magic that is provided to me. I think I have always had the basic understanding that there are libraries that will be doing a lot of the things I have been learning for me. That is why when I get stuck on things but can still complete projects and labs I just push through. I definitely save bookmarks to go back to if need be but ultimately I want to see how granularly I really need to know some of these concepts before I spend hours learning them deeper. While I know having the deeper understanding is a good thing I also have a timeline I&amp;rsquo;m working with and can dive deeper into topics once I&amp;rsquo;ve graduated or have landed a job.&lt;/p&gt;
+
+&lt;p&gt;Database migrations are a nice thing to have.&lt;/p&gt;
+
+&lt;p&gt;I got sutck for a while tonight because my environment was throwing an error in relation to the JSON gem. Specifically version &lt;code&gt;1.8.3&lt;/code&gt; which was inthe &lt;code&gt;Gemfile.lock&lt;/code&gt; of afew of the labs I&amp;rsquo;ve worked on tonight. I learned with the help of a Learn Expert (someone who&amp;rsquo;s around to help out studnets) that the &lt;code&gt;Gemfile.lock&lt;/code&gt; is pretty much a set of dependencies that were used when the files were written and are statically set to keep things consistent. So we deleted that file and ran &lt;code&gt;bundle&lt;/code&gt; again and everything worked fine. Luckily I asked why we did what we did so I would know enough to repeat the process tonight. Every time I run into this problem I do raise an issue on GitHub so hopefully it&amp;rsquo;ll be taken care of for those following behind me.&lt;/p&gt;
+
+&lt;p&gt;I feel like I&amp;rsquo;m behind on the target I set for myself and I have the &lt;a href=&#34;https://www.facebook.com/groups/free.code.camp.nashville&#34;&gt;Free Code Camp Nashville&lt;/a&gt; meetup to go to tomorrow. Plus a wedding shower on Sunday. I still plan to be done with Rack this weekend. That&amp;rsquo;s 22 lessons/labs. I also am considering adding an extra full day into next week by having my nanny come and watch my girls on Friday. So instead of 3 hours next Friday night, I can hit it hard all day and have a 10 hour day. We&amp;rsquo;ll see how I feel after Monday&amp;rsquo;s progress.&lt;/p&gt;
+
+&lt;p&gt;Something I did to save some time is now when I generate my static blog files they automatically are put into my proper local file location to be uploaded to the seperate repo. That&amp;rsquo;s a complicated sentence to say, I keep my content in one folder and repo, and my public facing files in another folder and repo. I had been generating the public file then copying and pasting in my file manager. Now the files are generated directly into the proper folder saving me a few steps and speeding up my publishing time.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:43&lt;br /&gt;
+Time spent total: 137:55&lt;br /&gt;
+Lessons completed today: 5&lt;br /&gt;
+Lessons completed total: 330&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 32</title>
       <link>https://itzsaga.github.io/post/day-032/</link>
       <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
@@ -469,38 +492,6 @@ Lessons completed total: 283&lt;/p&gt;
 Time spent total: 79:20&lt;br /&gt;
 Lessons completed today: 11&lt;br /&gt;
 Lessons completed total: 279&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 17</title>
-      <link>https://itzsaga.github.io/post/day-017/</link>
-      <pubDate>Wed, 15 Mar 2017 23:16:44 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-017/</guid>
-      <description>&lt;p&gt;Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize &lt;code&gt;self&lt;/code&gt; on pretty much all instance variable references after they have been initialized (created). This is because when we reference the instance variables directly we&amp;rsquo;re cutting out using the macros that &lt;code&gt;attr_accessor&lt;/code&gt; &lt;code&gt;attr_reader&lt;/code&gt; &lt;code&gt;attr_writer&lt;/code&gt; provide. It is true though that writing code that uses &lt;code&gt;@variable&lt;/code&gt; instead of &lt;code&gt;self.variable&lt;/code&gt; will still pass the tests I&amp;rsquo;m working with. I know this because I&amp;rsquo;ve been doing it haha.&lt;/p&gt;
-
-&lt;p&gt;I got through some module lessons and labs once the study group was over. Something to always remember is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;If you have a module whose methods you would like to be used in another class as &lt;strong&gt;instance methods&lt;/strong&gt;, then you must &lt;strong&gt;include&lt;/strong&gt; the module.&lt;br /&gt;
-If you want a module&amp;rsquo;s methods to be used in another class as &lt;strong&gt;class methods&lt;/strong&gt;, you must &lt;strong&gt;extend&lt;/strong&gt; the module.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Modules are sweet and I&amp;rsquo;m happy I&amp;rsquo;m going to start using them. Things are getting simpler while they&amp;rsquo;re getting more complex at the same time. There are so many things that have already been figured out in the world of development and slowly they&amp;rsquo;re being introduced.&lt;/p&gt;
-
-&lt;p&gt;I also learned tonight that there is a term for the work flow that most people follow when they write code. The work flow being, you have tests that are failing, you write whatever code is needed to pass your tests, you break that ugly code and write cleaner code to pass your tests again.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is called the &lt;strong&gt;red, green, refactor&lt;/strong&gt; pattern. First tests fail, then you write bad code to get them to pass, then you refactor that bad code into good code.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I guess it makes sense that these things have been defined. I&amp;rsquo;m not inventing web development. Just learning it.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:37&lt;br /&gt;
-Time spent total: 76:04&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 268&lt;/p&gt;
 </description>
     </item>
     

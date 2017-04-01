@@ -6,8 +6,31 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2017 23:28:06 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 31 Mar 2017 23:26:51 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 33</title>
+      <link>https://itzsaga.github.io/post/day-033/</link>
+      <pubDate>Fri, 31 Mar 2017 23:26:51 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-033/</guid>
+      <description>&lt;p&gt;I started Active Record tonight and I&amp;rsquo;m stoked. Mostly because a lot of the work has already been done and now I can just use the magic that is provided to me. I think I have always had the basic understanding that there are libraries that will be doing a lot of the things I have been learning for me. That is why when I get stuck on things but can still complete projects and labs I just push through. I definitely save bookmarks to go back to if need be but ultimately I want to see how granularly I really need to know some of these concepts before I spend hours learning them deeper. While I know having the deeper understanding is a good thing I also have a timeline I&amp;rsquo;m working with and can dive deeper into topics once I&amp;rsquo;ve graduated or have landed a job.&lt;/p&gt;
+
+&lt;p&gt;Database migrations are a nice thing to have.&lt;/p&gt;
+
+&lt;p&gt;I got sutck for a while tonight because my environment was throwing an error in relation to the JSON gem. Specifically version &lt;code&gt;1.8.3&lt;/code&gt; which was inthe &lt;code&gt;Gemfile.lock&lt;/code&gt; of afew of the labs I&amp;rsquo;ve worked on tonight. I learned with the help of a Learn Expert (someone who&amp;rsquo;s around to help out studnets) that the &lt;code&gt;Gemfile.lock&lt;/code&gt; is pretty much a set of dependencies that were used when the files were written and are statically set to keep things consistent. So we deleted that file and ran &lt;code&gt;bundle&lt;/code&gt; again and everything worked fine. Luckily I asked why we did what we did so I would know enough to repeat the process tonight. Every time I run into this problem I do raise an issue on GitHub so hopefully it&amp;rsquo;ll be taken care of for those following behind me.&lt;/p&gt;
+
+&lt;p&gt;I feel like I&amp;rsquo;m behind on the target I set for myself and I have the &lt;a href=&#34;https://www.facebook.com/groups/free.code.camp.nashville&#34;&gt;Free Code Camp Nashville&lt;/a&gt; meetup to go to tomorrow. Plus a wedding shower on Sunday. I still plan to be done with Rack this weekend. That&amp;rsquo;s 22 lessons/labs. I also am considering adding an extra full day into next week by having my nanny come and watch my girls on Friday. So instead of 3 hours next Friday night, I can hit it hard all day and have a 10 hour day. We&amp;rsquo;ll see how I feel after Monday&amp;rsquo;s progress.&lt;/p&gt;
+
+&lt;p&gt;Something I did to save some time is now when I generate my static blog files they automatically are put into my proper local file location to be uploaded to the seperate repo. That&amp;rsquo;s a complicated sentence to say, I keep my content in one folder and repo, and my public facing files in another folder and repo. I had been generating the public file then copying and pasting in my file manager. Now the files are generated directly into the proper folder saving me a few steps and speeding up my publishing time.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:43&lt;br /&gt;
+Time spent total: 137:55&lt;br /&gt;
+Lessons completed today: 5&lt;br /&gt;
+Lessons completed total: 330&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My Learning Hacks</title>
@@ -24,6 +47,9 @@
 &lt;p&gt;When I&amp;rsquo;m on long coding sessions I supplement in the middle of the day with &lt;a href=&#34;http://thrv.me/WBcGBK&#34;&gt;Four Sigmatic Lion&amp;rsquo;s Mane&lt;/a&gt; which I&amp;rsquo;ve found can really get me going. I have to ensure I&amp;rsquo;m stimulated enough mentally or I start getting distracted trying to keep my brain working hard enough. I also diffuse essential oils in my workspace. Specifically &lt;a href=&#34;http://thrv.me/7YEQ7F&#34;&gt;Lemon&lt;/a&gt;, &lt;a href=&#34;http://thrv.me/RwiYBf&#34;&gt;Rosemary&lt;/a&gt;, and &lt;a href=&#34;http://thrv.me/evMTdr&#34;&gt;Eucalyptus&lt;/a&gt;. All three of those are supposed to help with concentration and mental performance. I find the scents definitely keep me alert if not anything else. Something that I recently ran across is &lt;a href=&#34;https://nootrobox.com/sprint&#34;&gt;Nootrobox Sprint&lt;/a&gt; and I&amp;rsquo;m interested to try it out. I might just order the mini bottle for $15.&lt;/p&gt;
 
 &lt;p&gt;That should be it if I remember correctly. If I realize I missed something I&amp;rsquo;ll update this post.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 3/31/17&lt;/strong&gt;&lt;br /&gt;
+I completely forgot about how I listen to &lt;a href=&#34;https://www.brain.fm&#34;&gt;Brain.fm&lt;/a&gt; whenever I&amp;rsquo;m doing work. It really zones me in more than anything I&amp;rsquo;ve ever listened to. I used to use Spotify playlists but now this is the ONLY thing I&amp;rsquo;ll listen to when I need to concentrate.&lt;/p&gt;
 </description>
     </item>
     
@@ -475,27 +501,6 @@ Lessons completed total: 283&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;So there you have it. Questions feel free to ask and I&amp;rsquo;ll ask Cernan ;-)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 20</title>
-      <link>https://itzsaga.github.io/post/day-020/</link>
-      <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-020/</guid>
-      <description>&lt;p&gt;Sorry I didn&amp;rsquo;t get a blog in yesterday. I was struggling with setting up a dual boot of Ubuntu on my Windows 10 laptop. I ran into the problem of not having a large enough partition created and hit a snag. That said everything was installing fine once I got going. I had hoped to just run a persistent USB key and be able to take my dev environment wherever I want but I couldn&amp;rsquo;t figure that out. Needless to say I didn&amp;rsquo;t feel like writing. In addition, all I did was watch a few lectures last night so there was little to report on. I decided to setup the dual boot because after my intake conversation with &lt;a href=&#34;https://github.com/tracypholmes&#34;&gt;Tracy&lt;/a&gt; I was convinced that I should take the time and get my environment setup. It took some time as I had less than 10GB free but by being creative, and using &lt;a href=&#34;https://windirstat.net/&#34;&gt;WinDirStat&lt;/a&gt; combined with &lt;a href=&#34;http://www.revouninstaller.com/index.html&#34;&gt;Revo Uninstaller&lt;/a&gt;, I changed that to ~25GB. I decided to make a 15GB partition for Ubuntu 16.04.2 LTS but ended up running out of space. I freed up another 5GB today and add ed that to my Linux partition. Overall it was probably about an 8 hour process. I have yet to code in it but I&amp;rsquo;m writing this post in Atom on Ubuntu and I&amp;rsquo;ve cloned down my static site from GitHub using the terminal and I plan to push it as well. One of the biggest changes is that everything just works, in the &lt;code&gt;sudo apt-get install&lt;/code&gt; kind of way. It&amp;rsquo;s nice. Also, Windows doesn&amp;rsquo;t want to go past a 1920x1080 resolution and Ubuntu will go 3200x1800 no problem. My eyes are still adjusting but I know I&amp;rsquo;ll be fine. Ubuntu was being a b*tch last night trying to install packages and stuff (programs hanging, etc&amp;hellip;) but today it has worked great. I&amp;rsquo;m not sure if having some disk space has helped the OS out but my frustrations have disappeared today.&lt;/p&gt;
-
-&lt;p&gt;Today I started my Music Library CLI Project for Object Oriented Ruby! This thing was a beast with 71 tests that I needed to get passing. Luckily I could piece meal it together all based on code I already had written. There was a good amount that had to be written from scratch or completely changed to make the tests pass. However, I had a very strong base of knowledge to work with. I rarely had to Google or hit up Ruby Docs for answers today/tonight. I only hit one MAJOR snag. I couldn&amp;rsquo;t get a test to pass but everything looked right. I ran the CLI in my terminal and the output was perfect. After 90 minutes of trying different things I finally reached out to what is called a Learn Expert for help. 30 minutes later she was remoted in on my computer and ended up commenting out the test because her and a colleague had both agreed my code worked for the requirements even if it didn&amp;rsquo;t pass the tests. After that I was done in &amp;lt;25 minutes. It took me 7:57 to finish the project from start to finish and I probably could&amp;rsquo;ve shaved over an hour off of that. I haven&amp;rsquo;t refactored at all but the project is &lt;a href=&#34;https://github.com/itzsaga/ruby-music-library-cli-v-000&#34;&gt;here&lt;/a&gt; if you&amp;rsquo;d like to see it.&lt;/p&gt;
-
-&lt;p&gt;Today was the kind of coding day I&amp;rsquo;d like to have every Saturday and Sunday. Maybe 1 more productive hour in there though. Tomorrow I&amp;rsquo;ll start a CLI Tic-Tac-Toe with AI project. I&amp;rsquo;m interested to see how AI is going to be tested and required. Mostly because I read &lt;a href=&#34;https://medium.freecodecamp.com/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37&#34;&gt;this&lt;/a&gt; post on Medium about building an unbeatable Tic-Tac-Toe game not too long ago. I thought it would be fun to implement so I&amp;rsquo;ll see if it&amp;rsquo;s possible, maybe on the refactor.&lt;/p&gt;
-
-&lt;p&gt;Not much new to post about. Just been doing a lot of lecture watching and coding projects currently. Oh, I did learn about the &lt;code&gt;unless&lt;/code&gt; method today from a Learn Expert when a piece of my code wouldn&amp;rsquo;t pass. I&amp;rsquo;m realizing sometimes nobody can explain why we need to use &lt;code&gt;unless&lt;/code&gt; or &lt;code&gt;if&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; to make something work but that&amp;rsquo;s part of it. Some things are just at such a high level of knowing the language that the majority of people won&amp;rsquo;t know why.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 9:52&lt;br /&gt;
-Time spent total: 92:48&lt;br /&gt;
-Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
-Lessons completed total: 283&lt;/p&gt;
 </description>
     </item>
     
