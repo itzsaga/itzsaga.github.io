@@ -9,6 +9,46 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 34</title>
+      <link>https://itzsaga.github.io/post/day-034/</link>
+      <pubDate>Sat, 01 Apr 2017 23:00:52 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-034/</guid>
+      <description>&lt;p&gt;It was a good day in the coding world of Seth. I started out completing a decent size lab in the ActiveRecord section. Then headed off to the &lt;a href=&#34;https://www.facebook.com/groups/free.code.camp.nashville&#34;&gt;Free Code Camp Nashville&lt;/a&gt; meetup. It was a great meetup where &lt;a href=&#34;https://github.com/jgresalfi&#34;&gt;Jason Gresalfi&lt;/a&gt; presented on how he had created a Chrome extension. The repo for his extentsion can be found &lt;a href=&#34;https://github.com/jgresalfi/paletteable&#34;&gt;here&lt;/a&gt; and you can find it in the Chrome webstore &lt;a href=&#34;https://chrome.google.com/webstore/detail/paletteable/ncggjbjnlddfacehhidbhnhcnjiengmk&#34;&gt;here&lt;/a&gt;. It&amp;rsquo;s amazing how &amp;ldquo;simple&amp;rdquo; chrome extensions can be. They&amp;rsquo;re just HTML, CSS, and JavaScript. Of course, you can build a back end to persist data in a database but you don&amp;rsquo;t have to. I think I&amp;rsquo;ll start looking for an itch I can scratch in that world so I have another project in the pipeline down the road. I think our group and meetup is starting to take more shape and we can make it something special in the Nashville community. Hopefully we can organize and get some things we&amp;rsquo;re thinking about in motion here soon.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;almost&lt;/em&gt; finished ORMs and ActiveRecord tonight but I have one more video lecture to watch. There were 4 tonight which totaled over 4 hours so even on 2.0x it took a lot of time. I&amp;rsquo;m deciding to be in bed before midnight rather than finish the review. Maybe I&amp;rsquo;ll just fall asleep to the sound of Avi&amp;rsquo;s voice playing the video cast to my TV&amp;hellip;? Actually, nope, not doing that.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m still struggling with understanding databases and how they relate without seeing a visual. However, ActiveRecord is making it A LOT easier to piece together. It&amp;rsquo;s bringing the database back into Ruby. From my notes tonight:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The model that &lt;code&gt;has_many&lt;/code&gt; is considered the parent. The model that &lt;code&gt;belongs_to&lt;/code&gt; is considered the child. If you tell the child that it belongs to the parent, &lt;em&gt;the parent won&amp;rsquo;t know about that relationship&lt;/em&gt;. If you tell the parent that a certain child object has been added to its collection, &lt;em&gt;both the parent and the child will know about the association&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is just good to know. It&amp;rsquo;s pretty self explanatory I think. A really cool thing that Avi utilized in one of his lectures is &lt;a href=&#34;https://github.com/voormedia/rails-erd&#34;&gt;Rails Erd&lt;/a&gt;. It takes the database tables and graphically shows how they are connected in a Rails app. I couldn&amp;rsquo;t get it to work as I&amp;rsquo;m not using Rails yet and I didn&amp;rsquo;t want to spend too much time messing with it but I&amp;rsquo;m definitely going to use it. If you&amp;rsquo;re interested it&amp;rsquo;s a pretty quick install and usage process:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install graphviz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;gem &amp;quot;rails-erd&amp;quot;&lt;/code&gt; to your Gemfile.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;bundle install
+rake erd
+open erd.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example pulled directly from the repo:
+&lt;img src=&#34;https://camo.githubusercontent.com/f705fefa37f808758adbfa8e53d7ba2d8d9a59d7/68747470733a2f2f766f6f726d656469612e6769746875622e696f2f7261696c732d6572642f696d616765732f656e746974792d72656c6174696f6e736869702d6469616772616d2e706e67&#34; alt=&#34;example entity-relationship diagram&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;According to my dashboard I&amp;rsquo;m at 53 lessons for the week so I hit my goal of 49 with a day to spare! I&amp;rsquo;m super happy about this (although, sometimes I don&amp;rsquo;t trust the numbers on my dashboard&amp;hellip;) and don&amp;rsquo;t plan on stopping now. We have an engagement (marriage, wedding, I can&amp;rsquo;t remember) part tomorrow at a winery so hopefully I can still get a decent amount of coding in. Although, my shaggy mop is going to get a trim in the morning before we go so I might lost most of the day/afternoon/evening. I guess a social event a couple times a month helps to keep the sanity.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 7:08&lt;br /&gt;
+Time spent total: 145:03&lt;br /&gt;
+Lessons completed today: 9&lt;br /&gt;
+Lessons completed total: 339&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 33</title>
       <link>https://itzsaga.github.io/post/day-033/</link>
       <pubDate>Fri, 31 Mar 2017 23:26:51 -0500</pubDate>
@@ -464,34 +504,6 @@ Lessons completed total: 283&lt;/p&gt;
 Time spent total: 92:48&lt;br /&gt;
 Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
 Lessons completed total: 283&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 18</title>
-      <link>https://itzsaga.github.io/post/day-018/</link>
-      <pubDate>Thu, 16 Mar 2017 23:21:28 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-018/</guid>
-      <description>&lt;p&gt;Today saw &lt;strong&gt;a lot&lt;/strong&gt; of new stuff. I feel like a ton of stuff was introduced and not gone over very deeply but deep enough for me to understand and implement it. In 11 lessons and labs I was exposed to &lt;code&gt;super&lt;/code&gt; and how to use it, mass assignments, creating and implementing custom errors, gems, &lt;a href=&#34;https://bundler.io/&#34;&gt;bundler&lt;/a&gt;, and basic scraping with &lt;a href=&#34;http://www.nokogiri.org/&#34;&gt;Nokogiri&lt;/a&gt;. I can tell I was exposed to many things in preparation for the first projects, which can&amp;rsquo;t get here fast enough! At least I say that now, we&amp;rsquo;ll see how I feel when I&amp;rsquo;m at a complete stand still and stuck on one of them lol.&lt;/p&gt;
-
-&lt;p&gt;Today I got stuck for a little while utilizing &lt;code&gt;super&lt;/code&gt;. I had a lab with a parent class with a method that simply &lt;code&gt;puts &amp;quot;I can&#39;t remember what it was exactly.&amp;quot;&lt;/code&gt; and in the child class I was suppose to use &lt;code&gt;super&lt;/code&gt; to have that phrase repeated 10 times. So my initial attempt, inside the method was: &lt;code&gt;super.10.times&lt;/code&gt; as I figured I could just call this method but I got &lt;code&gt;NoMethodError: undefined method `super&#39; for #&amp;lt;Enumerator: 10:times&amp;gt;&lt;/code&gt;. Hmmm. I did some searching and even called &lt;code&gt;super.class&lt;/code&gt; in pry but couldn&amp;rsquo;t get anymore info. BTW, &lt;code&gt;super.class&lt;/code&gt; literally gave me nothing but a new line in pry to look at, or was that actually something??? So I posed the quesiton in the Slack channel for those who are enrolled in the bootcamp. After a side chain of responses with back and forth I got what I needed for my understanding&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;super yields the implementation from the method it’s overriding and returns the last return value or it just returns the last return value.&lt;br /&gt;
-- &lt;a href=&#34;https://github.com/genericlady&#34;&gt;Yianna&lt;/a&gt; (thanks!)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is what I needed. Since it&amp;rsquo;s returning the last value and &lt;code&gt;super&lt;/code&gt; was just a simple &lt;code&gt;puts&lt;/code&gt; method the return value was &lt;code&gt;nil&lt;/code&gt;. No wonder I couldn&amp;rsquo;t make method calls on it. I also got some way more in depth info that I haven&amp;rsquo;t had a chance to digest yet. I didn&amp;rsquo;t want to get stuck on it when I knew just typing out &lt;code&gt;super&lt;/code&gt; ten times would pass the lab. In fact, that&amp;rsquo;s how Flatiron&amp;rsquo;s solution was coded. This lab was more about understanding how &lt;code&gt;super&lt;/code&gt; works than how to call methods on it.&lt;/p&gt;
-
-&lt;p&gt;Other than that it was just A LOT of information as I stated at the beginning. Also a chuckle when I found out that &lt;code&gt;~&amp;gt;&lt;/code&gt; is affectionately called a &amp;ldquo;twiddle-wakka&amp;rdquo; for whatever reason. I can figure out the twiddle part but the wakka is stumping me right now. If you know please comment and inform me.&lt;/p&gt;
-
-&lt;p&gt;I have a few video reviews and then I start projects!!!&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:16&lt;br /&gt;
-Time spent total: 79:20&lt;br /&gt;
-Lessons completed today: 11&lt;br /&gt;
-Lessons completed total: 279&lt;/p&gt;
 </description>
     </item>
     
