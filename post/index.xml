@@ -6,8 +6,52 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Apr 2017 23:00:52 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 02 Apr 2017 21:45:14 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 35</title>
+      <link>https://itzsaga.github.io/post/day-035/</link>
+      <pubDate>Sun, 02 Apr 2017 21:45:14 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-035/</guid>
+      <description>&lt;p&gt;Progress progress progress. I&amp;rsquo;m moving along. I watched the last ActiveRecord video then finished up the Rack section. Learning the lowest level of how Rails runs a webserver.  There is a granular procedure that&amp;rsquo;s happening and it was explained. First we learn basic Rack, then Sinatra abstracts a little bit more, then Rails abstracts even more. So when things do break, because they will, there is an understanding of what&amp;rsquo;s actually going on to fix it. This is the exact thing that I hear a lot of people complain about. They buy courses on Udemy or wherever and at the end of the course they have a working app that they can show off, &lt;strong&gt;BUT&lt;/strong&gt;, they can&amp;rsquo;t explain &lt;em&gt;why&lt;/em&gt; or &lt;em&gt;how&lt;/em&gt; it works. I&amp;rsquo;ve fallen into that category in the past. It makes a lot of sense too. If you want to market something you have your students make fast progress and put the impetuous on them to do deeper learning. Like, do people &lt;em&gt;really&lt;/em&gt; want to know how rack works? No. They just want it to work and use Rails because that&amp;rsquo;s easier. I guess that&amp;rsquo;s what seperates those who end up being successful and those who fall to the side self teaching.&lt;/p&gt;
+
+&lt;p&gt;I started this post before finishing my learning for the day. I think this sums it up well:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;WHY SINATRA BEFORE RAILS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve all heard of &amp;ldquo;Ruby on Rails&amp;rdquo; and how powerful it is. You can build impressive web applications in mere hours! How amazing. Most people, when they learn Rails for the first time, literally say &amp;ldquo;It&amp;rsquo;s like magic!&amp;rdquo;. But we&amp;rsquo;re developers, and we know that magic isn&amp;rsquo;t real and that other smart developers just built an impressive framework.&lt;/p&gt;
+
+&lt;p&gt;That means it&amp;rsquo;s important to understand the basic concepts of Rails before diving into Rails itself. &lt;strong&gt;Enter Sinatra.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sinatra is considered a &lt;em&gt;light weight&lt;/em&gt; framework where the responsibility of app structure and communication falls solely on the developer. Sinatra doesn&amp;rsquo;t give you a lot to get started with. There is no way to auto-generate files and directories, no way for the app to make assumptions about routes, or &amp;ldquo;Sinatra magic&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, working with Sinatra allows you to dive in deep with the major concepts of MVC, a system for building web applications that governs 90% of the worlds&amp;rsquo; apps. You are required to manually set up routes and connect them to other pieces of your application. Without this manual setup, your application does not automatically know how to communicate with your database or what HTML files to load in the browser. And even more importantly, without a manual setup, you lose connection to the major components of a web application, and in particular, all the moving pieces of MVC.&lt;/p&gt;
+
+&lt;p&gt;So introduce yourself to Sinatra. Get to know it, and know it well. The better your foundation, the more you&amp;rsquo;ll be able to know (and like) Rails.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A few other things that I picked up today. First, is that there are a bunch of other lorem ipsum word blocks out there and they&amp;rsquo;re typically pretty funny. There are some good ones in this &lt;a href=&#34;https://www.sitepoint.com/10-lorem-ipsum-alternatives/&#34;&gt;SitePoint article&lt;/a&gt;. The one that Avi used is called &lt;a href=&#34;https://hipsum.co/&#34;&gt;Hipster Ipsum&lt;/a&gt; and made the people watching the lecture at the time ask about it.&lt;/p&gt;
+
+&lt;p&gt;Avi went on a tangent about how he thinks about how his life actually impacts others. How the web is this amazing thing that connects people and not just computers. How the time we&amp;rsquo;re in right now is crazy exciting because we are now as humans more connected and thus are able to do greater things as a species. I honestly don&amp;rsquo;t remember word for word but that&amp;rsquo;s the gist of it. A quote that stuck out to me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Web does not connect machines, it connects people.&lt;br /&gt;
+- &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Berners-Lee&#34;&gt;Tim Berners-Lee&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It&amp;rsquo;s so true when we think about the impact that web apps have on real people. While my code might ultimately be interpreted by machines we don&amp;rsquo;t build things for machines to use. We are building things to connect and solve real problems for people. When I built the Meetup CLI Gem that has the potential to solve someones problem and connect them to other people at a meetup group. It may seem like technology on the surface but in the end it&amp;rsquo;s all about people.&lt;/p&gt;
+
+&lt;p&gt;Even doing minimal work today (time wise) due to a much needed haircut and the wedding shower I went to with my wife at &lt;a href=&#34;http://www.arringtonvineyards.com/&#34;&gt;Arrington Vineyards&lt;/a&gt;, I&amp;rsquo;m right on track with my pace and have finished 48 lessons/labs since last week. :-)&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:33&lt;br /&gt;
+Time spent total: 148:36&lt;br /&gt;
+Lessons completed today: 16&lt;br /&gt;
+Lessons completed total: 355&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 34</title>
@@ -453,58 +497,6 @@ end
 Time spent total: 101:24&lt;br /&gt;
 Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 284&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 21</title>
-      <link>https://itzsaga.github.io/post/day-021/</link>
-      <pubDate>Sun, 19 Mar 2017 22:32:36 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-021/</guid>
-      <description>&lt;p&gt;Another productive project day means, not much to talk about! I got through all the tests that I needed to for my Tic-Tac-Toe with AI project. I started trying to build out my &amp;ldquo;AI&amp;rdquo; but didn&amp;rsquo;t get very far. I know I need to start simple so I decided to just attempt the computer making random moves. I tried to implement the following work flow:
-1. Get the current board array (although this should be passed in by default).
-2. Set an array equal to all the possible moves as strings, 1-9.
-3. Set a new empty array to collect open squares.
-4. Loop over the current board array and if a square is empty &lt;code&gt;= &amp;quot; &amp;quot;&lt;/code&gt; shovel to the array collecting open squares. I will do this by utilizing the possible moves array as the index numbers. I&amp;rsquo;ll just turn each array value into an integer and subtract one.
-5. If the board square is empty shovel the possible move string to the empty array collecting open squares.
-6. Return a random string from the possible moves array.&lt;/p&gt;
-
-&lt;p&gt;This &lt;em&gt;should&lt;/em&gt; get my computer playing only random open squares. However, my code created an infinite loop and I decided I could call it a day after that. I&amp;rsquo;m hoping I can pair with someone just for the AI part and get it done. If you&amp;rsquo;re interested in the project you can find it on my GitHub &lt;a href=&#34;https://github.com/itzsaga/ttt-with-ai-project-v-000&#34;&gt;here&lt;/a&gt;. My current computer logic (although it might be hard to understand without looking at all the files) is this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
-  class Computer &amp;lt; Player
-    def move(board)
-      possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
-      valid_moves = []
-      possible_moves.each do |move|
-        valid_moves &amp;lt;&amp;lt; move if board.cells[move.to_i-1] = &amp;quot; &amp;quot;
-      end
-      valid_moves.sample
-    end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ll get at least this little bit of logic working tomorrow even if on my own. Other than that the game works for 2 humans to play!&lt;/p&gt;
-
-&lt;p&gt;So day by day I&amp;rsquo;m enjoying my new OS even more. Today I setup workspaces which just made all of life easier.&lt;/p&gt;
-
-&lt;p&gt;My workspaces overview:&lt;br /&gt;
-&lt;img src=&#34;../../images/workspace.png&#34; alt=&#34;Ubuntu Desktop Workspaces&#34; title=&#34;Ubuntu Desktop workspaces overview&#34; /&gt;&lt;br /&gt;
-I have one with Atom and the Terminal (I&amp;rsquo;ve since changed to &amp;ldquo;Solarized Light&amp;rdquo; themes on both because I was getting glare during the day):&lt;br /&gt;
-&lt;img src=&#34;../../images/workspace-code.png&#34; alt=&#34;Coding Workspace&#34; title=&#34;My coding workspace&#34; /&gt;&lt;br /&gt;
-One with Slack:&lt;br /&gt;
-&lt;img src=&#34;../../images/workspace-slack.png&#34; alt=&#34;Slack Workspace&#34; title=&#34;My Slack workspace&#34; /&gt;&lt;br /&gt;
-Finally, one with Chrome:&lt;br /&gt;
-&lt;img src=&#34;../../images/workspace-web.png&#34; alt=&#34;Web Workspace&#34; title=&#34;My web workspace&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I also got &lt;a href=&#34;https://justgetflux.com/&#34;&gt;f.lux&lt;/a&gt; installed today which is one the things on my &lt;strong&gt;must have&lt;/strong&gt; list when it comes to apps on my computers. I even have installed it at shared work computers in the past and freaked some coworkers out the first time they use the computer afterwards. I&amp;rsquo;ll write a post about my biohacks here sometime soon. Maybe when I&amp;rsquo;m done with this set of projects and before I move to the next section. I have more than a few things that I do to keep my mind running in top form. From nootropics to meditation.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:02&lt;br /&gt;
-Time spent total: 99:50&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 283&lt;/p&gt;
 </description>
     </item>
     

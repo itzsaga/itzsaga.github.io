@@ -9,6 +9,50 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 35</title>
+      <link>https://itzsaga.github.io/post/day-035/</link>
+      <pubDate>Sun, 02 Apr 2017 21:45:14 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-035/</guid>
+      <description>&lt;p&gt;Progress progress progress. I&amp;rsquo;m moving along. I watched the last ActiveRecord video then finished up the Rack section. Learning the lowest level of how Rails runs a webserver.  There is a granular procedure that&amp;rsquo;s happening and it was explained. First we learn basic Rack, then Sinatra abstracts a little bit more, then Rails abstracts even more. So when things do break, because they will, there is an understanding of what&amp;rsquo;s actually going on to fix it. This is the exact thing that I hear a lot of people complain about. They buy courses on Udemy or wherever and at the end of the course they have a working app that they can show off, &lt;strong&gt;BUT&lt;/strong&gt;, they can&amp;rsquo;t explain &lt;em&gt;why&lt;/em&gt; or &lt;em&gt;how&lt;/em&gt; it works. I&amp;rsquo;ve fallen into that category in the past. It makes a lot of sense too. If you want to market something you have your students make fast progress and put the impetuous on them to do deeper learning. Like, do people &lt;em&gt;really&lt;/em&gt; want to know how rack works? No. They just want it to work and use Rails because that&amp;rsquo;s easier. I guess that&amp;rsquo;s what seperates those who end up being successful and those who fall to the side self teaching.&lt;/p&gt;
+
+&lt;p&gt;I started this post before finishing my learning for the day. I think this sums it up well:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;WHY SINATRA BEFORE RAILS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve all heard of &amp;ldquo;Ruby on Rails&amp;rdquo; and how powerful it is. You can build impressive web applications in mere hours! How amazing. Most people, when they learn Rails for the first time, literally say &amp;ldquo;It&amp;rsquo;s like magic!&amp;rdquo;. But we&amp;rsquo;re developers, and we know that magic isn&amp;rsquo;t real and that other smart developers just built an impressive framework.&lt;/p&gt;
+
+&lt;p&gt;That means it&amp;rsquo;s important to understand the basic concepts of Rails before diving into Rails itself. &lt;strong&gt;Enter Sinatra.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sinatra is considered a &lt;em&gt;light weight&lt;/em&gt; framework where the responsibility of app structure and communication falls solely on the developer. Sinatra doesn&amp;rsquo;t give you a lot to get started with. There is no way to auto-generate files and directories, no way for the app to make assumptions about routes, or &amp;ldquo;Sinatra magic&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, working with Sinatra allows you to dive in deep with the major concepts of MVC, a system for building web applications that governs 90% of the worlds&amp;rsquo; apps. You are required to manually set up routes and connect them to other pieces of your application. Without this manual setup, your application does not automatically know how to communicate with your database or what HTML files to load in the browser. And even more importantly, without a manual setup, you lose connection to the major components of a web application, and in particular, all the moving pieces of MVC.&lt;/p&gt;
+
+&lt;p&gt;So introduce yourself to Sinatra. Get to know it, and know it well. The better your foundation, the more you&amp;rsquo;ll be able to know (and like) Rails.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A few other things that I picked up today. First, is that there are a bunch of other lorem ipsum word blocks out there and they&amp;rsquo;re typically pretty funny. There are some good ones in this &lt;a href=&#34;https://www.sitepoint.com/10-lorem-ipsum-alternatives/&#34;&gt;SitePoint article&lt;/a&gt;. The one that Avi used is called &lt;a href=&#34;https://hipsum.co/&#34;&gt;Hipster Ipsum&lt;/a&gt; and made the people watching the lecture at the time ask about it.&lt;/p&gt;
+
+&lt;p&gt;Avi went on a tangent about how he thinks about how his life actually impacts others. How the web is this amazing thing that connects people and not just computers. How the time we&amp;rsquo;re in right now is crazy exciting because we are now as humans more connected and thus are able to do greater things as a species. I honestly don&amp;rsquo;t remember word for word but that&amp;rsquo;s the gist of it. A quote that stuck out to me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Web does not connect machines, it connects people.&lt;br /&gt;
+- &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Berners-Lee&#34;&gt;Tim Berners-Lee&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It&amp;rsquo;s so true when we think about the impact that web apps have on real people. While my code might ultimately be interpreted by machines we don&amp;rsquo;t build things for machines to use. We are building things to connect and solve real problems for people. When I built the Meetup CLI Gem that has the potential to solve someones problem and connect them to other people at a meetup group. It may seem like technology on the surface but in the end it&amp;rsquo;s all about people.&lt;/p&gt;
+
+&lt;p&gt;Even doing minimal work today (time wise) due to a much needed haircut and the wedding shower I went to with my wife at &lt;a href=&#34;http://www.arringtonvineyards.com/&#34;&gt;Arrington Vineyards&lt;/a&gt;, I&amp;rsquo;m right on track with my pace and have finished 48 lessons/labs since last week. :-)&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:33&lt;br /&gt;
+Time spent total: 148:36&lt;br /&gt;
+Lessons completed today: 16&lt;br /&gt;
+Lessons completed total: 355&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 34</title>
       <link>https://itzsaga.github.io/post/day-034/</link>
       <pubDate>Sat, 01 Apr 2017 23:00:52 -0500</pubDate>
@@ -482,27 +526,6 @@ Finally, one with Chrome:&lt;br /&gt;
 &lt;p&gt;Time spent today: 7:02&lt;br /&gt;
 Time spent total: 99:50&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 283&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 20</title>
-      <link>https://itzsaga.github.io/post/day-020/</link>
-      <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-020/</guid>
-      <description>&lt;p&gt;Sorry I didn&amp;rsquo;t get a blog in yesterday. I was struggling with setting up a dual boot of Ubuntu on my Windows 10 laptop. I ran into the problem of not having a large enough partition created and hit a snag. That said everything was installing fine once I got going. I had hoped to just run a persistent USB key and be able to take my dev environment wherever I want but I couldn&amp;rsquo;t figure that out. Needless to say I didn&amp;rsquo;t feel like writing. In addition, all I did was watch a few lectures last night so there was little to report on. I decided to setup the dual boot because after my intake conversation with &lt;a href=&#34;https://github.com/tracypholmes&#34;&gt;Tracy&lt;/a&gt; I was convinced that I should take the time and get my environment setup. It took some time as I had less than 10GB free but by being creative, and using &lt;a href=&#34;https://windirstat.net/&#34;&gt;WinDirStat&lt;/a&gt; combined with &lt;a href=&#34;http://www.revouninstaller.com/index.html&#34;&gt;Revo Uninstaller&lt;/a&gt;, I changed that to ~25GB. I decided to make a 15GB partition for Ubuntu 16.04.2 LTS but ended up running out of space. I freed up another 5GB today and add ed that to my Linux partition. Overall it was probably about an 8 hour process. I have yet to code in it but I&amp;rsquo;m writing this post in Atom on Ubuntu and I&amp;rsquo;ve cloned down my static site from GitHub using the terminal and I plan to push it as well. One of the biggest changes is that everything just works, in the &lt;code&gt;sudo apt-get install&lt;/code&gt; kind of way. It&amp;rsquo;s nice. Also, Windows doesn&amp;rsquo;t want to go past a 1920x1080 resolution and Ubuntu will go 3200x1800 no problem. My eyes are still adjusting but I know I&amp;rsquo;ll be fine. Ubuntu was being a b*tch last night trying to install packages and stuff (programs hanging, etc&amp;hellip;) but today it has worked great. I&amp;rsquo;m not sure if having some disk space has helped the OS out but my frustrations have disappeared today.&lt;/p&gt;
-
-&lt;p&gt;Today I started my Music Library CLI Project for Object Oriented Ruby! This thing was a beast with 71 tests that I needed to get passing. Luckily I could piece meal it together all based on code I already had written. There was a good amount that had to be written from scratch or completely changed to make the tests pass. However, I had a very strong base of knowledge to work with. I rarely had to Google or hit up Ruby Docs for answers today/tonight. I only hit one MAJOR snag. I couldn&amp;rsquo;t get a test to pass but everything looked right. I ran the CLI in my terminal and the output was perfect. After 90 minutes of trying different things I finally reached out to what is called a Learn Expert for help. 30 minutes later she was remoted in on my computer and ended up commenting out the test because her and a colleague had both agreed my code worked for the requirements even if it didn&amp;rsquo;t pass the tests. After that I was done in &amp;lt;25 minutes. It took me 7:57 to finish the project from start to finish and I probably could&amp;rsquo;ve shaved over an hour off of that. I haven&amp;rsquo;t refactored at all but the project is &lt;a href=&#34;https://github.com/itzsaga/ruby-music-library-cli-v-000&#34;&gt;here&lt;/a&gt; if you&amp;rsquo;d like to see it.&lt;/p&gt;
-
-&lt;p&gt;Today was the kind of coding day I&amp;rsquo;d like to have every Saturday and Sunday. Maybe 1 more productive hour in there though. Tomorrow I&amp;rsquo;ll start a CLI Tic-Tac-Toe with AI project. I&amp;rsquo;m interested to see how AI is going to be tested and required. Mostly because I read &lt;a href=&#34;https://medium.freecodecamp.com/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37&#34;&gt;this&lt;/a&gt; post on Medium about building an unbeatable Tic-Tac-Toe game not too long ago. I thought it would be fun to implement so I&amp;rsquo;ll see if it&amp;rsquo;s possible, maybe on the refactor.&lt;/p&gt;
-
-&lt;p&gt;Not much new to post about. Just been doing a lot of lecture watching and coding projects currently. Oh, I did learn about the &lt;code&gt;unless&lt;/code&gt; method today from a Learn Expert when a piece of my code wouldn&amp;rsquo;t pass. I&amp;rsquo;m realizing sometimes nobody can explain why we need to use &lt;code&gt;unless&lt;/code&gt; or &lt;code&gt;if&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; to make something work but that&amp;rsquo;s part of it. Some things are just at such a high level of knowing the language that the majority of people won&amp;rsquo;t know why.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 9:52&lt;br /&gt;
-Time spent total: 92:48&lt;br /&gt;
-Lessons completed today: 2 (and 2 yesterday)&lt;br /&gt;
 Lessons completed total: 283&lt;/p&gt;
 </description>
     </item>
