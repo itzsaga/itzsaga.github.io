@@ -6,8 +6,85 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Apr 2017 21:45:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Apr 2017 22:59:43 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 36</title>
+      <link>https://itzsaga.github.io/post/day-036/</link>
+      <pubDate>Mon, 03 Apr 2017 22:59:43 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-036/</guid>
+      <description>&lt;p&gt;I got a late start tonight :-( so I didn&amp;rsquo;t spend as much time as I would&amp;rsquo;ve liked. However, I did learn that my wife &lt;strong&gt;did not&lt;/strong&gt; know that it was not a good idea to try and peel a cantaloupe with a chef&amp;rsquo;s knife. Yeah, so after helping her wrap a sliced finger in a paper towel cantaloupe slicing duty fell on me. Then I spilled my tea all over my desk because one of my children (I&amp;rsquo;m guessing the 2 year old) had wedged my chair under my desk. When I pulled it out it shook the desk and *splash* everything went. My scroll wheel on my mouse is just now starting to work properly again.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m working through &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt; now and nothing has been too confusing. It all seems pretty straight forward so far. Obviously the more complex a web app gets the more confusing things will be. I&amp;rsquo;m interested to see if we&amp;rsquo;ll be building anything that integrates a database or not. I&amp;rsquo;ll find out in time. I&amp;rsquo;m going to attempt to build out a table with the notes I took on the Model View Controller (MVC) architecture a lot of apps are built on.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;View&lt;/th&gt;
+&lt;th&gt;Controller&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Logic&lt;/td&gt;
+&lt;td&gt;Front-End&lt;/td&gt;
+&lt;td&gt;Middleman&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Brains&lt;/td&gt;
+&lt;td&gt;HTML&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;CSS&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Forms&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ERB*&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Chef&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Guest&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Waiter&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;*ERB stands for Embedded Ruby&lt;/p&gt;
+
+&lt;p&gt;I think the thing that helped my grasping of the MVC the most was the restaurant analogy. The user interacts with the View which in turn interacts with the Controller which talks to the Model and returns back to the View with what the Model sends. So the Guest orders something and the Waiter takes that info to the Chef who then makes the food and sends the waiter back to the Guest with ti.&lt;/p&gt;
+
+&lt;p&gt;Two random things to mention:
+1. Check out &lt;a href=&#34;https://informeddelivery.usps.com/box/pages/intro/start.action&#34;&gt;Informed Delivery&lt;/a&gt; from the USPS. I thought it was super cool then I realized you couldn&amp;rsquo;t tell the USPS to not deliver junk so the service seems literally useless.
+2. Read &lt;a href=&#34;https://sivers.org/kimo&#34;&gt;There’s no speed limit. (The lessons that changed my life.)&lt;/a&gt; by Derek Sivers. If you have time listen to him on &lt;a href=&#34;http://tim.blog/2015/12/14/derek-sivers-on-developing-confidence-finding-happiness-and-saying-no-to-millions/&#34;&gt;The Tim Ferriss Show&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;The line &lt;strong&gt;“the standard pace is for chumps”&lt;/strong&gt; (from the Sivers article) has always resonated. While I don&amp;rsquo;t think I&amp;rsquo;ve always worked hard enough to prove that true I know I&amp;rsquo;ve seen it. I think about my expectations going into this bootcamp and how long I want it to take. Oh 800+ hours you say? It&amp;rsquo;ll take months you say? Gimme 16 weeks from first day to hired. You obviously don&amp;rsquo;t know me or that I&amp;rsquo;ve already completed a Masters degree 100% online or that I have a near-genius IQ or that I have a bunch of biohacks I&amp;rsquo;m using to crush it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to be very interested to see how many hours I&amp;rsquo;ve put in when I complete Rails as that is approximately 75% of the way through the curriculum. Accordingly it should be about 600 hours of work done at that point.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:01&lt;br /&gt;
+Time spent total: 150:37&lt;br /&gt;
+Lessons completed today: 10&lt;br /&gt;
+Lessons completed total: 365&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 35</title>
@@ -457,45 +534,6 @@ social.each do |link|
 &lt;p&gt;Time spent today: 2:08&lt;br /&gt;
 Time spent total: 103:32&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 284&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 22</title>
-      <link>https://itzsaga.github.io/post/day-022/</link>
-      <pubDate>Mon, 20 Mar 2017 22:51:58 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-022/</guid>
-      <description>&lt;p&gt;About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was &lt;strong&gt;DARK&lt;/strong&gt;. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was. While I was downstairs the power came back on and my daughter yelled out, &amp;ldquo;Thanks Daddy!&amp;rdquo; I&amp;rsquo;ll take credit, yes I will. This put me behind. I then found out that I hadn&amp;rsquo;t installed &lt;a href=&#34;https://zoom.us/&#34;&gt;Zoom&lt;/a&gt; and couldn&amp;rsquo;t get into the Study Group I was planning on attending. I had already decided to &amp;ldquo;take the night off&amp;rdquo; and just do the study group and work on my Tic-Tac-Toe AI some. Needless to say 30 minutes later I confirmed Zoom was working.&lt;/p&gt;
-
-&lt;p&gt;Tonight I realized it&amp;rsquo;s amazing what coming at a project fresh can do. I figured out why my random move in Tic-Tac-Toe wasn&amp;rsquo;t working in less than 3 minutes tonight. I had an &lt;code&gt;=&lt;/code&gt; instead of an &lt;code&gt;==&lt;/code&gt;. However, after that I couldn&amp;rsquo;t get into the groove. I wrote out a couple more methods to decide on the first and second move for the computer but then just left it as random moves after that. I did some TTT strategy ready and came up with the best first move is a corner and the best second move is the center. If the center is taken the best second move is a corner. So I built that logic into the game. From move 3 on the computer plays random. The computer never beat me, it did however, tie a few times with this little bit of knowledge. I have an idea though and want to see if I can pair with someone to implement it. Here&amp;rsquo;s my &lt;em&gt;final&lt;/em&gt; code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
-  class Computer &amp;lt; Player
-    def move(board)
-      if board.cells.count{|square| square != &amp;quot; &amp;quot; } == 0
-        &amp;quot;1&amp;quot;
-      elsif board.cells.count{|square| square != &amp;quot; &amp;quot; } == 1
-        board.cells.find_index(&amp;quot;X&amp;quot;) == 4 ? &amp;quot;1&amp;quot; : &amp;quot;5&amp;quot;
-      else
-        possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
-        valid_moves = []
-        possible_moves.each do |move|
-          valid_moves &amp;lt;&amp;lt; move if board.cells[move.to_i-1] == &amp;quot; &amp;quot;
-        end
-        valid_moves.sample
-      end
-    end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I started on the next project which is a scraping project. I don&amp;rsquo;t have much practice with Nokogiri but on my first attempt I was pulling the data I needed. I can see this project might go quicker than the last two. I&amp;rsquo;m going to hit it hard tomorrow night and get it done.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:33&lt;br /&gt;
-Time spent total: 101:24&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 284&lt;/p&gt;
 </description>
     </item>
