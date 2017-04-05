@@ -9,6 +9,31 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 37</title>
+      <link>https://itzsaga.github.io/post/day-037/</link>
+      <pubDate>Tue, 04 Apr 2017 23:11:04 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-037/</guid>
+      <description>&lt;p&gt;Sinatra is moving along and clicking well. I have this fear after being somewhat cocky in last night&amp;rsquo;s post that the spirits of those Senior Devs before me are going to jump into my learning and humble me some. If so, not today. It&amp;rsquo;s all making sense the first time through. I think this is because there&amp;rsquo;s very little new logic. It&amp;rsquo;s just where to put that login in regards to models, views and controllers. Like, if I&amp;rsquo;m going to use ruby in a webpage the page with be &lt;code&gt;index.erb&lt;/code&gt; so it can be interpretted and I&amp;rsquo;ll have to wrap code in &lt;code&gt;&amp;lt;% %&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;%= %&amp;gt;&lt;/code&gt; depending on what I&amp;rsquo;m going to do with it.&lt;/p&gt;
+
+&lt;p&gt;The largest piece of info I learned outside of more of the Sinatra DSL is how &lt;code&gt;params&lt;/code&gt; work.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you are unfamiliar with the &lt;code&gt;params&lt;/code&gt; object and how it relates to form and inputs, that&amp;rsquo;s totally fine. The TL;DR is that all the information the user submitted in the form is available to your code within a hash named &lt;code&gt;params&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So for form data for example, let&amp;rsquo;s say we have &lt;code&gt;&amp;lt;input name=&amp;quot;username&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;&lt;/code&gt; and the form has an input box and in that box is &lt;code&gt;withloudhands&lt;/code&gt; (I don&amp;rsquo;t know why the curriculum chose this as an example lol). &lt;code&gt;withloudhands&lt;/code&gt; is now the &amp;ldquo;current value&amp;rdquo;. Let&amp;rsquo;s say there&amp;rsquo;s also an email input which I won&amp;rsquo;t paint the picture of. The &lt;code&gt;params&lt;/code&gt; hash after this is submitted would be &lt;code&gt;{username:&amp;quot;withloudhands&amp;quot;, email:&amp;quot;yourcoolemail@gmizzle.com&amp;quot;}&lt;/code&gt; and this hash can be used just like any other hash. So &lt;code&gt;params[:username]&lt;/code&gt; would return &lt;code&gt;&amp;quot;withloudhands&amp;quot;&lt;/code&gt;. I did notice that the hash stores everything as strings so when performing math operations I had to utilize the &lt;code&gt;.to_i&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;I also learned that controller actions never care about their return values. This came up when a student suggested using &lt;code&gt;#tap&lt;/code&gt; in a lecture and Avi said that while it would work he didn&amp;rsquo;t think it was the best option. I still haven&amp;rsquo;t dove into what &lt;code&gt;#tap&lt;/code&gt; actually does even though I&amp;rsquo;ve discussed it with Mike in the past. I did come across a great, and quick read, blog post &lt;a href=&#34;https://walwoodr.github.io/2017/03/24/block_yield_tap/&#34;&gt;&amp;ldquo;Block, yield, tap&amp;rdquo;&lt;/a&gt; by the more studious &lt;a href=&#34;https://github.com/walwoodr&#34;&gt;Rachel Walwood&lt;/a&gt; who&amp;rsquo;s also going through Flatiron right now. She goes through exactly what it is in a solid and concise manner.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:19&lt;br /&gt;
+Time spent total: 152:56&lt;br /&gt;
+Lessons completed today: 7&lt;br /&gt;
+Lessons completed total: 372&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 36</title>
       <link>https://itzsaga.github.io/post/day-036/</link>
       <pubDate>Mon, 03 Apr 2017 22:59:43 -0500</pubDate>
@@ -512,45 +537,6 @@ social.each do |link|
 &lt;p&gt;Time spent today: 2:08&lt;br /&gt;
 Time spent total: 103:32&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 284&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 22</title>
-      <link>https://itzsaga.github.io/post/day-022/</link>
-      <pubDate>Mon, 20 Mar 2017 22:51:58 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-022/</guid>
-      <description>&lt;p&gt;About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was &lt;strong&gt;DARK&lt;/strong&gt;. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was. While I was downstairs the power came back on and my daughter yelled out, &amp;ldquo;Thanks Daddy!&amp;rdquo; I&amp;rsquo;ll take credit, yes I will. This put me behind. I then found out that I hadn&amp;rsquo;t installed &lt;a href=&#34;https://zoom.us/&#34;&gt;Zoom&lt;/a&gt; and couldn&amp;rsquo;t get into the Study Group I was planning on attending. I had already decided to &amp;ldquo;take the night off&amp;rdquo; and just do the study group and work on my Tic-Tac-Toe AI some. Needless to say 30 minutes later I confirmed Zoom was working.&lt;/p&gt;
-
-&lt;p&gt;Tonight I realized it&amp;rsquo;s amazing what coming at a project fresh can do. I figured out why my random move in Tic-Tac-Toe wasn&amp;rsquo;t working in less than 3 minutes tonight. I had an &lt;code&gt;=&lt;/code&gt; instead of an &lt;code&gt;==&lt;/code&gt;. However, after that I couldn&amp;rsquo;t get into the groove. I wrote out a couple more methods to decide on the first and second move for the computer but then just left it as random moves after that. I did some TTT strategy ready and came up with the best first move is a corner and the best second move is the center. If the center is taken the best second move is a corner. So I built that logic into the game. From move 3 on the computer plays random. The computer never beat me, it did however, tie a few times with this little bit of knowledge. I have an idea though and want to see if I can pair with someone to implement it. Here&amp;rsquo;s my &lt;em&gt;final&lt;/em&gt; code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;module Players
-  class Computer &amp;lt; Player
-    def move(board)
-      if board.cells.count{|square| square != &amp;quot; &amp;quot; } == 0
-        &amp;quot;1&amp;quot;
-      elsif board.cells.count{|square| square != &amp;quot; &amp;quot; } == 1
-        board.cells.find_index(&amp;quot;X&amp;quot;) == 4 ? &amp;quot;1&amp;quot; : &amp;quot;5&amp;quot;
-      else
-        possible_moves = [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;]
-        valid_moves = []
-        possible_moves.each do |move|
-          valid_moves &amp;lt;&amp;lt; move if board.cells[move.to_i-1] == &amp;quot; &amp;quot;
-        end
-        valid_moves.sample
-      end
-    end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I started on the next project which is a scraping project. I don&amp;rsquo;t have much practice with Nokogiri but on my first attempt I was pulling the data I needed. I can see this project might go quicker than the last two. I&amp;rsquo;m going to hit it hard tomorrow night and get it done.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:33&lt;br /&gt;
-Time spent total: 101:24&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 284&lt;/p&gt;
 </description>
     </item>
