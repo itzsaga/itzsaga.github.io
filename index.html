@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-04T23:11:04-05:00"/>
+<meta property="og:updated_time" content="2017-04-05T23:15:15-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-038/"><p>Day 38</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-037/"><p>Day 37</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-036/"><p>Day 36</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-035/"><p>Day 35</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-037/">Day 37</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-038/">Day 38</a></h2>
         
         
-            <p>Sinatra is moving along. Params are definitely an important concept...</p>
+            <p>Sinatra, and models, and views, and controllers, and erb, OH MY!</p>
         
     </div>
     <div class="meta">
@@ -222,8 +222,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-04-04'>
-            April 4, 2017</time>
+            datetime='2017-04-05'>
+            April 5, 2017</time>
         <span class="author">Seth</span>
         
             <p>2 minute read</p>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f&text=Day%2037&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f&text=Day%2038&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f&title=Day%2037" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f&title=Day%2038" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,29 +278,34 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-037/" class="image featured">
-            <img src="../../images//fire.jpg" alt="fire and smoke" />
+        <a href="https://itzsaga.github.io/post/day-038/" class="image featured">
+            <img src="../../images//yield.jpg" alt="yield sign" />
         </a>
     
 
 
     <div id="content">
-        <p>Sinatra is moving along and clicking well. I have this fear after being somewhat cocky in last night&rsquo;s post that the spirits of those Senior Devs before me are going to jump into my learning and humble me some. If so, not today. It&rsquo;s all making sense the first time through. I think this is because there&rsquo;s very little new logic. It&rsquo;s just where to put that login in regards to models, views and controllers. Like, if I&rsquo;m going to use ruby in a webpage the page with be <code>index.erb</code> so it can be interpretted and I&rsquo;ll have to wrap code in <code>&lt;% %&gt;</code> or <code>&lt;%= %&gt;</code> depending on what I&rsquo;m going to do with it.</p>
+        <p>Sinatra, and models, and views, and controllers, and erb, OH MY! Tonight I kept building small things with Sinatra. I&rsquo;ve realized exactly how the MVC system works and what each piece does. The model is all the ruby classes I&rsquo;ve been writing. The view is a mixture of HTML and Ruby that the user sees in their browser. The controller takes the user input and returns the data that has been crunched by the models. Now that I&rsquo;m createing the route to a URL, creating the form on that page, sending the data that&rsquo;s input back to the controller, having it sent to a model, having the model return it to the controller, having the controller retrieve a new view and send it to the user, it all makes way more sense. <strong>LOL</strong>.</p>
 
-<p>The largest piece of info I learned outside of more of the Sinatra DSL is how <code>params</code> work.</p>
+<p>One thing I think will be a big piece but was only touched on for a moment was yielding.</p>
 
 <blockquote>
-<p>If you are unfamiliar with the <code>params</code> object and how it relates to form and inputs, that&rsquo;s totally fine. The TL;DR is that all the information the user submitted in the form is available to your code within a hash named <code>params</code>.</p>
+<p>Let&rsquo;s say we have a controller action:</p>
+
+<pre><code class="language-ruby">get '/' do
+ erb :index
+end
+</code></pre>
+
+<p>When the above controller action is triggered and the <code>erb</code> method is called, it looks to see if there is a view titled <code>layout.erb</code>. If that file exists, it loads that content around the desired erb file, in this case <code>index.erb</code>.</p>
 </blockquote>
 
-<p>So for form data for example, let&rsquo;s say we have <code>&lt;input name=&quot;username&quot; value=&quot;&quot; /&gt;</code> and the form has an input box and in that box is <code>withloudhands</code> (I don&rsquo;t know why the curriculum chose this as an example lol). <code>withloudhands</code> is now the &ldquo;current value&rdquo;. Let&rsquo;s say there&rsquo;s also an email input which I won&rsquo;t paint the picture of. The <code>params</code> hash after this is submitted would be <code>{username:&quot;withloudhands&quot;, email:&quot;yourcoolemail@gmizzle.com&quot;}</code> and this hash can be used just like any other hash. So <code>params[:username]</code> would return <code>&quot;withloudhands&quot;</code>. I did notice that the hash stores everything as strings so when performing math operations I had to utilize the <code>.to_i</code> method.</p>
+<p>The way the <code>layout.erb</code> will &ldquo;wrap&rdquo; the <code>index.erb</code> with it&rsquo;s code when a <code>&lt;%= yield %&gt;</code> is inserted seemed like something important. Yet, I have yet to use it and I&rsquo;m more than a few lessons past the reeeadme that showcased it. Oh well, that&rsquo;s one of the reasons I write about things here. So when I need to find it I know where to look.</p>
 
-<p>I also learned that controller actions never care about their return values. This came up when a student suggested using <code>#tap</code> in a lecture and Avi said that while it would work he didn&rsquo;t think it was the best option. I still haven&rsquo;t dove into what <code>#tap</code> actually does even though I&rsquo;ve discussed it with Mike in the past. I did come across a great, and quick read, blog post <a href="https://walwoodr.github.io/2017/03/24/block_yield_tap/">&ldquo;Block, yield, tap&rdquo;</a> by the more studious <a href="https://github.com/walwoodr">Rachel Walwood</a> who&rsquo;s also going through Flatiron right now. She goes through exactly what it is in a solid and concise manner.</p>
-
-<p>Time spent today: 2:19<br />
-Time spent total: 152:56<br />
-Lessons completed today: 7<br />
-Lessons completed total: 372</p>
+<p>Time spent today: 2:17<br />
+Time spent total: 155:13<br />
+Lessons completed today: 6<br />
+Lessons completed total: 378</p>
 
     </div>
 
@@ -334,8 +339,8 @@ Lessons completed total: 372</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-036/"
-                class="button big previous">Day 36</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-037/"
+                class="button big previous">Day 37</a></li>
     
 
     
@@ -348,9 +353,9 @@ Lessons completed total: 372</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-037\/';
-    var disqus_title = 'Day 37';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-037\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-038\/';
+    var disqus_title = 'Day 38';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-038\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -374,25 +379,25 @@ Lessons completed total: 372</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f&text=Day%2037&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f&text=Day%2038&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f&title=Day%2037" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f&title=Day%2038" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-037%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-038%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -512,6 +517,20 @@ Lessons completed total: 372</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-038/">Day 38</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-05'>
+                                    April 5, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-037/">Day 37</a></h3>
                                 
                                     
@@ -533,20 +552,6 @@ Lessons completed total: 372</p>
                                 <time class="published" datetime=
                                     '2017-04-03'>
                                     April 3, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-035/">Day 35</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-02'>
-                                    April 2, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -585,7 +590,7 @@ Lessons completed total: 372</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">36</span>
+                                <span style="float:right;">37</span>
                             </header>
                         </article>
                     </li>

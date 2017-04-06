@@ -9,6 +9,36 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Day 38</title>
+      <link>https://itzsaga.github.io/post/day-038/</link>
+      <pubDate>Wed, 05 Apr 2017 23:15:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-038/</guid>
+      <description>&lt;p&gt;Sinatra, and models, and views, and controllers, and erb, OH MY! Tonight I kept building small things with Sinatra. I&amp;rsquo;ve realized exactly how the MVC system works and what each piece does. The model is all the ruby classes I&amp;rsquo;ve been writing. The view is a mixture of HTML and Ruby that the user sees in their browser. The controller takes the user input and returns the data that has been crunched by the models. Now that I&amp;rsquo;m createing the route to a URL, creating the form on that page, sending the data that&amp;rsquo;s input back to the controller, having it sent to a model, having the model return it to the controller, having the controller retrieve a new view and send it to the user, it all makes way more sense. &lt;strong&gt;LOL&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;One thing I think will be a big piece but was only touched on for a moment was yielding.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s say we have a controller action:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;get &#39;/&#39; do
+ erb :index
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When the above controller action is triggered and the &lt;code&gt;erb&lt;/code&gt; method is called, it looks to see if there is a view titled &lt;code&gt;layout.erb&lt;/code&gt;. If that file exists, it loads that content around the desired erb file, in this case &lt;code&gt;index.erb&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The way the &lt;code&gt;layout.erb&lt;/code&gt; will &amp;ldquo;wrap&amp;rdquo; the &lt;code&gt;index.erb&lt;/code&gt; with it&amp;rsquo;s code when a &lt;code&gt;&amp;lt;%= yield %&amp;gt;&lt;/code&gt; is inserted seemed like something important. Yet, I have yet to use it and I&amp;rsquo;m more than a few lessons past the reeeadme that showcased it. Oh well, that&amp;rsquo;s one of the reasons I write about things here. So when I need to find it I know where to look.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:17&lt;br /&gt;
+Time spent total: 155:13&lt;br /&gt;
+Lessons completed today: 6&lt;br /&gt;
+Lessons completed total: 378&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 37</title>
       <link>https://itzsaga.github.io/post/day-037/</link>
       <pubDate>Tue, 04 Apr 2017 23:11:04 -0500</pubDate>
@@ -507,37 +537,6 @@ Lessons completed total: 285&lt;/p&gt;
 Time spent total: 106:07&lt;br /&gt;
 Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 23</title>
-      <link>https://itzsaga.github.io/post/day-023/</link>
-      <pubDate>Tue, 21 Mar 2017 23:15:17 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-023/</guid>
-      <description>&lt;p&gt;So working on my scraping project. It&amp;rsquo;s hurting my head. Scraping is no fun to figure out. What I&amp;rsquo;m stuck on right now is iterating. When I have some time tomorrow I&amp;rsquo;m going to work on completely understanding iterating when scraping. Here&amp;rsquo;s what I&amp;rsquo;m looking at currently:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;social-icon-container&amp;quot;&amp;gt;
-  &amp;lt;a href=&amp;quot;https://twitter.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/twitter-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-  &amp;lt;a href=&amp;quot;https://www.linkedin.com/in/ryan-johnson-321629ab&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/linkedin-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-  &amp;lt;a href=&amp;quot;https://github.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/github-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-  &amp;lt;a href=&amp;quot;https://www.youtube.com/watch?v=C22ufOqDyaE&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/rss-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then I&amp;rsquo;m doing (among other things above it):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;social = doc.css(&amp;quot;.social-icon-container a&amp;quot;)
-social.each do |link|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I&amp;rsquo;m struggling to understand what |link| is inside the loop. I&amp;rsquo;m thinking it&amp;rsquo;s each instance of &lt;code&gt;a&lt;/code&gt; because there are 4 of those and I&amp;rsquo;m setting &lt;code&gt;social&lt;/code&gt; equal to the &lt;code&gt;a&lt;/code&gt;. However, I&amp;rsquo;m not sure. I know when I call &lt;code&gt;doc.css(&amp;quot;.social-icon-container a&amp;quot;)&lt;/code&gt; in pry I end up with Nokogiri&amp;rsquo;s version of everything inside the div. I&amp;rsquo;m sure I&amp;rsquo;ll crush it tomorrow. I know my logic of looping over each &lt;code&gt;a&lt;/code&gt; and using an &lt;code&gt;if&lt;/code&gt; or even &lt;code&gt;case&lt;/code&gt; to check if the &lt;code&gt;img src=&lt;/code&gt; is &lt;code&gt;==&lt;/code&gt; to one of the social networks, then setting the &lt;code&gt;href&lt;/code&gt; value to equal a variable I&amp;rsquo;ll use later is the way to go and solid.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:08&lt;br /&gt;
-Time spent total: 103:32&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 284&lt;/p&gt;
 </description>
     </item>
     

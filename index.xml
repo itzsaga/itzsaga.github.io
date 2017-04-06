@@ -6,8 +6,38 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Apr 2017 23:11:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Apr 2017 23:15:15 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Day 38</title>
+      <link>https://itzsaga.github.io/post/day-038/</link>
+      <pubDate>Wed, 05 Apr 2017 23:15:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-038/</guid>
+      <description>&lt;p&gt;Sinatra, and models, and views, and controllers, and erb, OH MY! Tonight I kept building small things with Sinatra. I&amp;rsquo;ve realized exactly how the MVC system works and what each piece does. The model is all the ruby classes I&amp;rsquo;ve been writing. The view is a mixture of HTML and Ruby that the user sees in their browser. The controller takes the user input and returns the data that has been crunched by the models. Now that I&amp;rsquo;m createing the route to a URL, creating the form on that page, sending the data that&amp;rsquo;s input back to the controller, having it sent to a model, having the model return it to the controller, having the controller retrieve a new view and send it to the user, it all makes way more sense. &lt;strong&gt;LOL&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;One thing I think will be a big piece but was only touched on for a moment was yielding.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s say we have a controller action:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;get &#39;/&#39; do
+ erb :index
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When the above controller action is triggered and the &lt;code&gt;erb&lt;/code&gt; method is called, it looks to see if there is a view titled &lt;code&gt;layout.erb&lt;/code&gt;. If that file exists, it loads that content around the desired erb file, in this case &lt;code&gt;index.erb&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The way the &lt;code&gt;layout.erb&lt;/code&gt; will &amp;ldquo;wrap&amp;rdquo; the &lt;code&gt;index.erb&lt;/code&gt; with it&amp;rsquo;s code when a &lt;code&gt;&amp;lt;%= yield %&amp;gt;&lt;/code&gt; is inserted seemed like something important. Yet, I have yet to use it and I&amp;rsquo;m more than a few lessons past the reeeadme that showcased it. Oh well, that&amp;rsquo;s one of the reasons I write about things here. So when I need to find it I know where to look.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:17&lt;br /&gt;
+Time spent total: 155:13&lt;br /&gt;
+Lessons completed today: 6&lt;br /&gt;
+Lessons completed total: 378&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day 37</title>
@@ -509,25 +539,6 @@ Lessons completed total: 285&lt;/p&gt;
 &lt;p&gt;Time spent today: 2:29&lt;br /&gt;
 Time spent total: 108:35&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 285&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 24</title>
-      <link>https://itzsaga.github.io/post/day-024/</link>
-      <pubDate>Wed, 22 Mar 2017 23:01:17 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-024/</guid>
-      <description>&lt;p&gt;&lt;em&gt;yawn&lt;/em&gt; it&amp;rsquo;s been a long day. My 3 month old was up early today. Either way, I got my scraping project done tonight. Nokogiri can be quite particular about the things you use to select content. Turned out I was pretty much there and just needed to change how I was accessing the info I needed.&lt;/p&gt;
-
-&lt;p&gt;Attended a Study Group tonight which taught me something very important. When using &lt;code&gt;pry&lt;/code&gt; inside a loop when you enter &lt;code&gt;exit&lt;/code&gt; into the pry prompt it runs the next loop. This way you can see what is being passed in each time. I was struggling trying to see what was being passed in each time in my scraping project. So now I know and that key piece of info is what helped me finish my scraping project which can be found in full &lt;a href=&#34;https://github.com/itzsaga/oo-student-scraper-v-000&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m calling it a night. I start my first portfolio project tomorrow building a CLI Ruby Gem.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
-Time spent total: 106:07&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
 </description>
     </item>
