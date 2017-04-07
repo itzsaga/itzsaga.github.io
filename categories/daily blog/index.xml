@@ -9,6 +9,25 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Take it Easy Sometimes and Still Win</title>
+      <link>https://itzsaga.github.io/post/day-039/</link>
+      <pubDate>Thu, 06 Apr 2017 22:29:32 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-039/</guid>
+      <description>&lt;p&gt;I only got a little bit of coding done tonight by choice. I think I&amp;rsquo;m procrastinating on this nested hash forms lab because nested hashes can get confusing. I started it though and just got sidetracked. I need to stay focused. I worked on getting &lt;a href=&#34;https://www.jetbrains.com/ruby/&#34;&gt;RubyMine&lt;/a&gt; installed to see what it&amp;rsquo;s about and my computer froze. After that I just gave up on coding tonight. I guess I wasn&amp;rsquo;t very motivated if that&amp;rsquo;s all it took lol.&lt;/p&gt;
+
+&lt;p&gt;However, I went to a good Ruby meetup tonight and got home late and am just distracted. I went to the &lt;a href=&#34;https://www.meetup.com/nashrb/&#34;&gt;Nash.rb&lt;/a&gt; 2nd Quarter Social tonight and hung out with people that are in the Ruby community here in Nashville. It was laid back and I just spoke with a bunch of people. A guy named Sam who just moved to Nashville last month and has 3 years of Rails experience yet went to Law school. Chris who graduated from &lt;a href=&#34;https://www.theironyard.com/locations/nashville.html&#34;&gt;The Iron Yard&lt;/a&gt;&amp;rsquo;s Front End program in December and is just interested in Ruby. Pete who&amp;rsquo;s a VP at &lt;a href=&#34;https://takl.com/&#34;&gt;Takl&lt;/a&gt; who are looking for a Senior RoR&amp;rsquo;s dev. Jon and Jim who are both 10+ year devs who talked about their company but never named it. I was able to look at the Meetup RSVP list and then check LinkedIn to see they work for &lt;a href=&#34;http://groups360.com/&#34;&gt;Groups360&lt;/a&gt;. Their company interested me because they&amp;rsquo;re looking to provide a SaaS product to the hospitality industry. Ty who works for &lt;a href=&#34;https://www.kindful.com/&#34;&gt;Kindful&lt;/a&gt; and is somewhat jealous that he had to get a CS degree (75% of which was useless he said) because boot camps didn&amp;rsquo;t exist when he started. I don&amp;rsquo;t know if it&amp;rsquo;s the nootropics I&amp;rsquo;m taking or if I consciously made sure of it but I remembered every person&amp;rsquo;s name I met tonight and was able to say goodnight to them by name as well. This typically doesn&amp;rsquo;t happen.&lt;/p&gt;
+
+&lt;p&gt;I found this meetup to be much more interesting to me than the previous ones I have attended. I think it&amp;rsquo;s because we were interacting well and I was able to speak with all different levels of people. I&amp;rsquo;ve found there is &lt;strong&gt;A LOT&lt;/strong&gt; of JavaScript around, and for good reason, so it as nice to speak to people who knew the things I&amp;rsquo;m currently learning. I&amp;rsquo;m looking forward to the Nash.rb meetups in the future. I&amp;rsquo;m sure I&amp;rsquo;ll get back to enjoying JS meetups as well as soon as I get to the JS curriculum and get back to that.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 0:33&lt;br /&gt;
+Time spent total: 155:45&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 378&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 38</title>
       <link>https://itzsaga.github.io/post/day-038/</link>
       <pubDate>Wed, 05 Apr 2017 23:15:15 -0500</pubDate>
@@ -517,25 +536,6 @@ Lessons completed total: 285&lt;/p&gt;
 &lt;p&gt;Time spent today: 2:29&lt;br /&gt;
 Time spent total: 108:35&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 285&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 24</title>
-      <link>https://itzsaga.github.io/post/day-024/</link>
-      <pubDate>Wed, 22 Mar 2017 23:01:17 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-024/</guid>
-      <description>&lt;p&gt;&lt;em&gt;yawn&lt;/em&gt; it&amp;rsquo;s been a long day. My 3 month old was up early today. Either way, I got my scraping project done tonight. Nokogiri can be quite particular about the things you use to select content. Turned out I was pretty much there and just needed to change how I was accessing the info I needed.&lt;/p&gt;
-
-&lt;p&gt;Attended a Study Group tonight which taught me something very important. When using &lt;code&gt;pry&lt;/code&gt; inside a loop when you enter &lt;code&gt;exit&lt;/code&gt; into the pry prompt it runs the next loop. This way you can see what is being passed in each time. I was struggling trying to see what was being passed in each time in my scraping project. So now I know and that key piece of info is what helped me finish my scraping project which can be found in full &lt;a href=&#34;https://github.com/itzsaga/oo-student-scraper-v-000&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m calling it a night. I start my first portfolio project tomorrow building a CLI Ruby Gem.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:35&lt;br /&gt;
-Time spent total: 106:07&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
 </description>
     </item>
