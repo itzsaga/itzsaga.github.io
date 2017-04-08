@@ -9,6 +9,25 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>I don’t think all recruiters are bad. Do you?</title>
+      <link>https://itzsaga.github.io/post/day-040/</link>
+      <pubDate>Fri, 07 Apr 2017 23:02:25 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-040/</guid>
+      <description>&lt;p&gt;So nested forms aren&amp;rsquo;t as bad as I thought they would be. I guess it helps that I had some good teaching before I got into it. I think I had the longest video yet to watch tonight and that took up most of the time once I finished the lab I started last night. The lab I&amp;rsquo;m on seems to be more of the same just getting the concept to stick with a more in depth nested form. It has an option to persist the data &lt;strong&gt;AFTER&lt;/strong&gt; getting the tests to pass initially. I&amp;rsquo;m not sure if I&amp;rsquo;ll attempt it or not. I know I&amp;rsquo;ll need to know the skill but does it help me more to struggle now and be a little quicker later? Or just struggle later one time? I know doing it more is definitely better but there are concessions I make in the interest of time.&lt;/p&gt;
+
+&lt;p&gt;Learned a good workflow for building a MVC app that uses a databse. First start with the DB, then work on models, then controller routes, and finally the views. I had thought working in the other direction would make more sense but I&amp;rsquo;ll try what the lecture taught. My thinking is, I start with a view so I know what I&amp;rsquo;m trying to display, I&amp;rsquo;ll have my endpoint even if it doesn&amp;rsquo;t work. Then I&amp;rsquo;ll build the route that will fill in that view. Then I&amp;rsquo;ll build the model for the controller to use. Then build the database knowing the full amount of things I&amp;rsquo;ll need. This is how I thought I did the CLI Gem project where I started with the lowest level and worked my way out with stubbed data to get a final point where when I had real data it just worked. This might not be the best workflow when dealing with things like databases and controllers though. There might be things outside of my control that could end up creating a whole rewrite which would be very sad.&lt;/p&gt;
+
+&lt;p&gt;I put in a resume for a Jr. Dev (or was it Jr. Analyst?) role today and the recruiter called me back. To my surprise saying they work with a few companies that take bootcamp grads. The main thing I was told is to finish and get that official certification or diploma saying I finished then we could talk. It&amp;rsquo;s nice to already be connected with someone even if it turns out to be nothing. While I&amp;rsquo;ve worked with recruiters in the past and never received an offer through any assistance they&amp;rsquo;ve given I think any interview is a good one for me moving into a new field. The questions and format will be something completely different from what I&amp;rsquo;m used to. As much as we all wish interviews could be nailed by the best candidate every time they just aren&amp;rsquo;t and interviewing is a skill in and of itself. I&amp;rsquo;m interested if there are any others out there that have used recruiters to land Junior level positions and what they thought about the process in hindsight?&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:44&lt;br /&gt;
+Time spent total: 158:29&lt;br /&gt;
+Lessons completed today: 2&lt;br /&gt;
+Lessons completed total: 380&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Take it Easy Sometimes and Still Win</title>
       <link>https://itzsaga.github.io/post/day-039/</link>
       <pubDate>Thu, 06 Apr 2017 22:29:32 -0500</pubDate>
@@ -506,35 +525,6 @@ end
 
 &lt;p&gt;Time spent today: 2:22&lt;br /&gt;
 Time spent total: 110:57&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 285&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 25</title>
-      <link>https://itzsaga.github.io/post/day-025/</link>
-      <pubDate>Thu, 23 Mar 2017 23:11:22 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-025/</guid>
-      <description>&lt;p&gt;So tonight I started my CLI Gem project. This one is going to be in my portfolio and has &lt;strong&gt;A LOT&lt;/strong&gt; more to it. Okay, well maybe not a lot more but it&amp;rsquo;s the first time I&amp;rsquo;m starting from scratch to build something. Luckily, I&amp;rsquo;m not left out to dry and there is a how-to that&amp;rsquo;s over an hour long that Avi did. Of course it&amp;rsquo;s not exactly what I&amp;rsquo;ll need to do and I&amp;rsquo;ll run into problems along the way but it&amp;rsquo;s nice to have a good resource to start with. I&amp;rsquo;m sure I could find a nice video around but having one provided definitely saves some time.&lt;/p&gt;
-
-&lt;p&gt;I decided to build a CLI Gem that will return the meetups in a specified radius from a specific zip code for the current day from &lt;a href=&#34;https://www.meetup.com/&#34;&gt;Meetup.com&lt;/a&gt;. The first big time saver was &lt;code&gt;bundle gem new_gem_name&lt;/code&gt; which basically scaffolded a new gem with the name provided and even initialized it as a git repo. Avi provided a great set of steps to build a Gem:
-1. Plan your gem, imagine your interface.
-2. Start with the project structure - google.
-3. Start with the entry point - the file run.
-4. Force that to build the CLI interface.
-5. Stub out the interface.
-6. Start making things real.
-7. Discover objects.
-8. Program.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve completed 1-4 in a very basic way now. Next is to stub out my interface with fake data. That will allow me to ensure my flow is working correctly and then basically code to the exact info I need. This work flow is also allowing me to make progress quickly and see the iterations that I&amp;rsquo;m going through to get to the end result. Not much else to share as I didn&amp;rsquo;t do anything too &amp;ldquo;deep&amp;rdquo; today. Just getting started on this project. If you&amp;rsquo;re interested in building your own gem using bundler check out &lt;a href=&#34;http://railscasts.com/episodes/245-new-gem-with-bundler&#34;&gt;RailsCasts #245 New Gem With Bundler&lt;/a&gt;. If you want the walk through that Avi does you&amp;rsquo;ll have to join Flatiron. I&amp;rsquo;m hopefully going to be able to finish this project on Saturday. However, I have a meetup to attend and I have my son this weekend. This will be the first weekend I have my son since I&amp;rsquo;ve started the program. I only have my son one weekend a month so I&amp;rsquo;ll have to see how much time I truly can sacrifice when the kids are awake.&lt;/p&gt;
-
-&lt;p&gt;You can follow along with my progress on project on GitHub &lt;a href=&#34;https://github.com/itzsaga/meetups-around&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:29&lt;br /&gt;
-Time spent total: 108:35&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
 Lessons completed total: 285&lt;/p&gt;
 </description>
