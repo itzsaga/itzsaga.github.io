@@ -6,11 +6,89 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Apr 2017 23:02:25 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 08 Apr 2017 23:21:55 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>I don’t think all recruiters are bad. Do you?</title>
+      <title>I suddenly know how it all fits together better.</title>
+      <link>https://itzsaga.github.io/post/day-041/</link>
+      <pubDate>Sat, 08 Apr 2017 23:21:55 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-041/</guid>
+      <description>&lt;p&gt;I moved through a lot of curriculum today. However, I really want to hit the goal I set two weeks ago and I&amp;rsquo;m on the cusp of it! I had 21 lessons/labs to go for my goal when I checked early in the day. So I set a goal of 11 more today (I had laready finished 2) and finish tomorrow. I missed it by one only because it&amp;rsquo;s late and I hit an hour and a half review lecture. Since I&amp;rsquo;m working on ActiveRecord sessions and authentication I want to pay better attention to this lecture than I usually do. Maybe even take a note or two :-).&lt;/p&gt;
+
+&lt;p&gt;Ealy in the day I got stuck on a nested forms lab. I was getting an error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Failures:
+  1) App POST /teams submits the form
+     Failure/Error: click_button &#39;submit&#39;
+     TypeError:
+       expected Hash (got String) for param `name&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but I couldn&amp;rsquo;t figure out why. My code was:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;Create a Team and Heroes!&amp;lt;/h1&amp;gt;
+&amp;lt;form action=&amp;quot;/teams&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
+  &amp;lt;p&amp;gt;Team Name: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Team Motto: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[motto]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 1&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member1_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member1_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member1_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 2&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member2_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member2_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member2_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 3&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member3_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member3_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member3_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;button type=&amp;quot;submit&amp;quot; value=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I kept thinking, &amp;ldquo;How can form input be anything other than a String? Why is it expecting a hash?&amp;rdquo; I reached out to a Learn Expert (they&amp;rsquo;re like Teaching Assistants who are available almost &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt; to help) and it took almost an hour to resolve it. However, figured out that because my third line had &lt;code&gt;name=&amp;quot;team[name]&lt;/code&gt; whenever I called a nested hash that contained &lt;code&gt;team[name]&lt;/code&gt; it was returning the string I input instead of setting the params nested hash array to the proper thing. A quick change of my code to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;Create a Team and Heroes!&amp;lt;/h1&amp;gt;
+&amp;lt;form action=&amp;quot;/teams&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
+  &amp;lt;p&amp;gt;Team Name: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Team Motto: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[motto]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 1&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member1_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member1_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member1_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 2&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member2_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member2_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member2_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;h2&amp;gt;Hero 3&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member3_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member3_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member3_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;button type=&amp;quot;submit&amp;quot; value=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and my tests were all passing.&lt;/p&gt;
+
+&lt;p&gt;I also realized today that I&amp;rsquo;ve been achieving the end goal of clearing out hashes without using the method provided by ruby. When I read:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Luckily for us, there is already a Ruby method for emptying a hash: #clear.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I thought to myself, &amp;ldquo;Whoops!&amp;rdquo; because I&amp;rsquo;ve just been resetting hashes &amp;amp; arrays by doing &lt;code&gt;@session = {}&lt;/code&gt; or &lt;code&gt;@@all = []&lt;/code&gt; up until this point. I haven&amp;rsquo;t checked the docs yet to make sure this method applies to arrays as well but I feel like I&amp;rsquo;ve seen it used so I&amp;rsquo;m relatively confident in that. I guess I&amp;rsquo;ll find out the first time I use it.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 6:37&lt;br /&gt;
+Time spent total: 165:06&lt;br /&gt;
+Lessons completed today: 12&lt;br /&gt;
+Lessons completed total: 392&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Do recruiters make you mad? What&#39;s your advice?</title>
       <link>https://itzsaga.github.io/post/day-040/</link>
       <pubDate>Fri, 07 Apr 2017 23:02:25 -0500</pubDate>
       
@@ -447,29 +525,6 @@ Lessons completed total: 310&lt;/p&gt;
 Time spent total: 124:21&lt;br /&gt;
 Lessons completed today: 17&lt;br /&gt;
 Lessons completed total: 307&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 27</title>
-      <link>https://itzsaga.github.io/post/day-027/</link>
-      <pubDate>Sat, 25 Mar 2017 23:57:30 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-027/</guid>
-      <description>&lt;p&gt;So I went later than I wanted to tonight, but I was on a roll. I would have finished much earlier but I spent 2.5 hours today at a developer meetup. It was interesting as I&amp;rsquo;ve only been to one other so far. It was good to meet some people and start putting real people to the dev community in Nashville. I did find out that basically nobody is learning/using Ruby (at least at this meetup). The largest language according to the people today is .NET because of all the health care companies. I showed a lab to a guy who&amp;rsquo;s 4 months in at &lt;a href=&#34;http://nashvillesoftwareschool.com/&#34;&gt;Nashville Software School&lt;/a&gt; and he was impressed with the TDD and seeing how it worked. He said he never sees tests like that and doesn&amp;rsquo;t know anything about writing them. I assured him I didn&amp;rsquo;t know much a bout writing tests either but I did read them all day long.&lt;/p&gt;
-
-&lt;p&gt;The big announcement is &amp;hellip; &lt;strong&gt;I FINISHED MY CLI GEM PROJECT!&lt;/strong&gt; Now, I haven&amp;rsquo;t done my review with my instructor and &lt;em&gt;passed&lt;/em&gt; yet but it&amp;rsquo;s done. I&amp;rsquo;m currently working through my &lt;a href=&#34;https://travis-ci.org/itzsaga/meetups-around&#34;&gt;Travis CI&lt;/a&gt; tests and getting those to pass. I expect that to be passing soon and then I&amp;rsquo;ll update my gem. It&amp;rsquo;s already live on &lt;a href=&#34;https://rubygems.org/gems/meetups_around&#34;&gt;RubyGems.org&lt;/a&gt;! I&amp;rsquo;ll have a new version pushed up when I get my Travis passing.&lt;/p&gt;
-
-&lt;p&gt;So I had a few hang ups along the way but most of it had to do with scraping. I figured it out though by trial and error. From what I understand scraping is mostly trial and error so there isn&amp;rsquo;t much to pass along knowledge wise. I did run into the problem of trying to turn this: &lt;code&gt;&amp;quot;7\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;Paddlers\n&amp;quot; + &amp;quot;\n&amp;quot; + &amp;quot;going&amp;quot;&lt;/code&gt; into this: &lt;code&gt;&amp;quot;7 Paddlers going&amp;quot;&lt;/code&gt;. When I did &lt;code&gt;gsub(&amp;quot;\n&amp;quot;, &amp;quot;&amp;quot;)&lt;/code&gt; it returned &lt;code&gt;7Paddlersgoing&lt;/code&gt; and &lt;code&gt;gsub(&amp;quot;\n&amp;quot;, &amp;quot; &amp;quot;)&lt;/code&gt; returned &lt;code&gt;&amp;quot;7   Paddlers  going&amp;quot;&lt;/code&gt; with too many spaces. I was thinking I was going to have to split the string into an array, filter out the &lt;code&gt;\n&lt;/code&gt; and then join the array. Then I thought, &amp;ldquo;Why not Google turning multiple spaces into a single space.&amp;rdquo; That seems like a problem someone would have solved already. Guess what? They have. So I ended up with &lt;code&gt;row.css(&amp;quot;div.attendee-count&amp;quot;).text.strip.gsub(&amp;quot;\n&amp;quot;, &amp;quot; &amp;quot;).gsub(/\s+/, &#39; &#39;)&lt;/code&gt;. Called &lt;code&gt;gsub&lt;/code&gt; on a string that had already been changed.&lt;/p&gt;
-
-&lt;p&gt;I just realized that Travis is never going to pass because I don&amp;rsquo;t have any tests in my gem. Whoops! So I&amp;rsquo;ll remove that integration for now. It&amp;rsquo;ll be a nice future project to write tests for the gem.&lt;/p&gt;
-
-&lt;p&gt;To explain my project in brief, you run the program from the command line, it asks you to input a zip code to see meetups from, if you enter less or more than 5 digits or not 5 digits, say 5 letter, it tell you to input 5 numbers. Then it asks for a radius to search in, I limited the radius to &amp;lt;100 miles. Then it returns a list of all the meetups scheduled for today. If there are none it tells you such. It then asks you if you&amp;rsquo;d like to search again. I&amp;rsquo;m proud as well as ready to move on to SQL.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 7:24&lt;br /&gt;
-Time spent total: 118:21&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
-Lessons completed total: 286&lt;/p&gt;
 </description>
     </item>
     
