@@ -18,7 +18,13 @@
 
 &lt;p&gt;All this time having others review my code let me beat my brother in a game of chess :-). If you want to play me you can find me on &lt;a href=&#34;https://www.chess.com/&#34;&gt;Chess.com&lt;/a&gt; at my profile &lt;a href=&#34;https://www.chess.com/member/itzsaga&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m 2 labs and 2 lectures behind my goal :-(. New goal is to be done with these 4 things by Wednesday night. I think I can finish each lab in a 3 hour sitting so that&amp;rsquo;s Monday and Tuesday night then watch the lectures on Wednesday. I looked and I&amp;rsquo;m about 10 hours behind the amount of time I wanted to code this week and that&amp;rsquo;s basically what I missed it by. I need to reup on my strict adherance to my schedule. While I&amp;rsquo;m moving along I could be further along than I am and closer to being employed at this point in time. I&amp;rsquo;m dreading the feeling I&amp;rsquo;ll have if I make that one extra tuition payment when I know it could&amp;rsquo;ve been avoided.&lt;/p&gt;
+&lt;p&gt;I also learned more about databases and how I&amp;rsquo;ll utilize them with ActiveRecord in my Sinatra apps. Specifically I know that the JOIN table will come up again in the future. As this is one of the more confusing topics I made sure to save this overview:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A join table is a table that only has two columns. To keep up with the online store example, this table would contain a &lt;code&gt;user_id&lt;/code&gt; and &lt;code&gt;item_id&lt;/code&gt;. Each row in this table would contain a user&amp;rsquo;s ID and an item&amp;rsquo;s ID. We call this join table &lt;code&gt;user_items&lt;/code&gt;. The &lt;code&gt;has_many :through&lt;/code&gt; is always singular and in the first part of the join table name, and the &lt;code&gt;belongs_to&lt;/code&gt; portion of the relationship is pluralized in the second part of the table name.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&amp;rsquo;m 2 labs and 2 lectures behind my goal :-(. New goal is to be done with these 4 things by Wednesday night. I think I can finish each lab in a 3 hour sitting so that&amp;rsquo;s Monday and Tuesday night then watch the lectures on Wednesday. I looked and I&amp;rsquo;m about 10 hours behind the amount of time I wanted to code this week and that&amp;rsquo;s basically what I missed it by. I need to reup on my strict adherence to my schedule. While I&amp;rsquo;m moving along I could be further along than I am and closer to being employed at this point in time. I&amp;rsquo;m dreading the feeling I&amp;rsquo;ll have if I make that one extra tuition payment when I know it could&amp;rsquo;ve been avoided.&lt;/p&gt;
 
 &lt;p&gt;Time spent today: 6:47&lt;br /&gt;
 Time spent total: 171:53&lt;br /&gt;
