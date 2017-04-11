@@ -6,8 +6,33 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Apr 2017 23:22:15 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Apr 2017 23:29:20 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Improved Playlister with Quick Superior Code</title>
+      <link>https://itzsaga.github.io/post/day-043/</link>
+      <pubDate>Mon, 10 Apr 2017 23:29:20 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-043/</guid>
+      <description>&lt;p&gt;Got a large lab done tonight. Right on schedule. I was done 2 minutes after 11pm. I basically took the Music Library CLI app that I made earlier in the curriculum and turned it into a much more user friendly Sinatra MVC web app. The final code can be found &lt;a href=&#34;https://github.com/itzsaga/playlister-sinatra-v-000&#34;&gt;here&lt;/a&gt;. The biggest challenge I had was setting up my databases and models. Actually, just with the &lt;code&gt;JOIN&lt;/code&gt; table. However, I know the more I do this the easier it will get. It&amp;rsquo;s still &lt;strong&gt;very&lt;/strong&gt; new and a complex thing to grasp.&lt;/p&gt;
+
+&lt;p&gt;I also attended a study group this afternoon and saw another student&amp;rsquo;s Sinatra portfolio project he was working on. After quickly glancing at the project info, this line gave me an idea for my project:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The app should be a custom app that is created to track something important to you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since my family just moved into a new neighborhood in January I&amp;rsquo;ve been keeping track of who our neighbors are in an EverNote Doc. Pretty much, address, matriarch, patriarch and kids with ages. I figured I could have 3 tables in this app. One for the House with an address. Then the House &lt;code&gt;has_many&lt;/code&gt; Parents and &lt;code&gt;has_many&lt;/code&gt; Kids through Parents. Parents with Name and Phone Number values. Parents will &lt;code&gt;belongs_to&lt;/code&gt; a House and &lt;code&gt;has_many&lt;/code&gt; Kids. Kids will have name, age, and sex fields (for those unisex names). Kids will &lt;code&gt;has_many&lt;/code&gt; Parents and &lt;code&gt;belongs_to&lt;/code&gt; a House through Parents. I told my instructor this briefly during the study group and he said that was more than enough to fulfill the requirements of the project. All the project requires is a single &lt;code&gt;has_many&lt;/code&gt; relationship in terms of the database aspect.&lt;/p&gt;
+
+&lt;p&gt;I also asked about if there was a preference between &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html&#34;&gt;Active Record Validations&lt;/a&gt; or &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation&#34;&gt;HTML5 Form Validations&lt;/a&gt;. He said HTML5 form validations were further in the curriculum so most would not be using them at this point in time. However, it&amp;rsquo;s just use case choice. Of course, HTML5 form validations won&amp;rsquo;t hit the DB so there&amp;rsquo;s that as well he said. I didn&amp;rsquo;t realize how complex HTML5 form validation was until I looked it up (see the link at the beginning of this paragraph) and now I realize why it isn&amp;rsquo;t taught until later. I was thinking of simple input contraints like those found &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input&#34;&gt;here&lt;/a&gt;. Now there are some things that must hit the server to validate. For example, if you wanted to ensure an email address hadn&amp;rsquo;t been registered already there is only one way to check that. This is where something like Active Record&amp;rsquo;s &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html#uniqueness&#34;&gt;uniqueness helper&lt;/a&gt; comes into play. I&amp;rsquo;m not sure how far down this rabbit hole I&amp;rsquo;ll go building out my project. Maybe just a simple &lt;code&gt;&amp;lt;type=&amp;quot;tel&amp;quot;&amp;gt;&lt;/code&gt; in what I was thinking of above. Although, since this is a portfolio project I&amp;rsquo;ll make sure to keep a set of features I want to implement to improve the app. I&amp;rsquo;ll make sure to work on getting these things done when the job hunt starts. Currently the goal is to get to that point as quickly as possible so I&amp;rsquo;m completing projects with close to the bare minimum requirements.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:16&lt;br /&gt;
+Time spent total: 175:09&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 401&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Launching Through Roadblocks Quickly is Monumental Now</title>
@@ -485,33 +510,6 @@ end
 Time spent total: 130:22&lt;br /&gt;
 Lessons completed today: 8&lt;br /&gt;
 Lessons completed total: 318&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 29</title>
-      <link>https://itzsaga.github.io/post/day-029/</link>
-      <pubDate>Mon, 27 Mar 2017 23:14:44 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-029/</guid>
-      <description>&lt;p&gt;Polished off the SQL tonight and I have to say it was more in depth than I thought it would be. It&amp;rsquo;s one of those things that is hard to visualize being new to it. When the tables are laid out in a grid it all makes sense but just trying to do it all in your head is confusing, even for me. I&amp;rsquo;m sure if I was doing it every day it would be much more intuitive but right now I&amp;rsquo;m still a little fuzzy on keeping track of the data I&amp;rsquo;m looking for through multiple &lt;code&gt;JOINS&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I started on ORM (Object Relational Mapping) tonight but only got through the first lesson and lab before calling it. I&amp;rsquo;m seeing how it all connects though to store data persistently. The main thing being this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;An ORM is really just a concept. It is a design pattern, a conventional way for us to organize our programs when we want those programs to connect to a database. The convention is this:&lt;/p&gt;
-
-&lt;p&gt;When &amp;ldquo;mapping&amp;rdquo; our program to a database, we equate classes with database tables and instances of those classes with table rows.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This overview really makes it simple to think about the objects I&amp;rsquo;ve been working with and how they&amp;rsquo;ll be stored and retrieved.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve realized my 7 lessons/labs per day is pretty ambitious. Especially on these days when I work for ~3 hours. I think I can make up the rest on my LONG weekend coding sessions if I actually get 10+ hours in on Saturday and Sunday. We&amp;rsquo;ll see.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:20&lt;br /&gt;
-Time spent total: 127:41&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 310&lt;/p&gt;
 </description>
     </item>
     
