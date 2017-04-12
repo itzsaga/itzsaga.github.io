@@ -6,8 +6,145 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Apr 2017 23:29:20 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 11 Apr 2017 23:16:24 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Helper Methods Tested, How to Not Repeat Yourself</title>
+      <link>https://itzsaga.github.io/post/day-044/</link>
+      <pubDate>Tue, 11 Apr 2017 23:16:24 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-044/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m on a killer roll right now blowing through this NYC lab. Built my 3 tables and 1 &lt;code&gt;JOIN&lt;/code&gt; table migrations. Built out the associated models. Built out all the views and one controller. Have one controller and it&amp;rsquo;s views left now. If I didn&amp;rsquo;t have kids that were going to wake me up between 6:30am and 8:00am I&amp;rsquo;d finish it up. I think it&amp;rsquo;ll take me maybe 30 more mins (mostly because &lt;strong&gt;A LOT&lt;/strong&gt; of it is going to be similar to the controller &amp;amp; views I just built) but sleep is needed. I also need to finish doing my part of the household chores (dishes tonight) before bed so in the interest of rest I&amp;rsquo;ve stopped.&lt;/p&gt;
+
+&lt;p&gt;However, I&amp;rsquo;m pretty hype and think I&amp;rsquo;ll still be on schedule to finish the review videos tomorrow night. I also feel more confident about attacking the portfolio project. The only part I haven&amp;rsquo;t really dug into is the UI. I figure a basic bootstrap will do. Utilize the &lt;code&gt;layout.erb&lt;/code&gt; to have a consistent header and footer and I&amp;rsquo;ll be happy at this point in time (when that time comes).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m contemplating creating helper methods for my controllers. Currently the one controller I finished tonight (I&amp;rsquo;ll do the other and all it&amp;rsquo;s views tomorrow) is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class FiguresController &amp;lt; ApplicationController
+
+  get &#39;/figures&#39; do
+    @figures = Figure.all
+    erb :&#39;figures/index&#39;
+  end
+
+  get &#39;/figures/new&#39; do
+    @figures = Figure.all
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :&#39;figures/new&#39;
+  end
+
+  get &#39;/figures/:id&#39; do
+    @figure = Figure.find(params[:id])
+    erb :&#39;figures/show&#39;
+  end
+
+  post &#39;/figures/:id&#39; do
+    @figure = Figure.find(params[:id])
+    @figure.update(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
+  end
+
+  get &#39;/figures/:id/edit&#39; do
+    @figure = Figure.find(params[:id])
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :&#39;figures/edit&#39;
+  end
+
+  post &#39;/figures&#39; do
+    @figure = Figure.create(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The main parts thar violate DRY (don&amp;rsquo;t repeat yourself) should be readily evident in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Not only are these lines with a nested &lt;code&gt;if&lt;/code&gt; statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&amp;rsquo;ll probably have one of these &lt;code&gt;if&lt;/code&gt; blocks utilizing &lt;code&gt;figure_ids&lt;/code&gt; but other than that it&amp;rsquo;ll be pretty close. We&amp;rsquo;ll see and if that&amp;rsquo;s true I&amp;rsquo;ll definitely create 3 helper methods and just use those if I can. It&amp;rsquo;ll be good practice in building helper methods for the controller because I haven&amp;rsquo;t done that before. I&amp;rsquo;ve built a module for the models in my last lab.&lt;/p&gt;
+
+&lt;p&gt;A note I took that didn&amp;rsquo;t make sense at the time was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Define helper methods in the Application Controller&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After tonight I see exactly why. This is because the individual controllers (at least in my case) are inherting from the app controller. I was thinking initially I would have to create a &lt;code&gt;Helper&lt;/code&gt; class of some sort and then utilize them that way but I have this basically empty file that the controllers are already using so it makes sense to put helper methods right in there.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:09&lt;br /&gt;
+Time spent total: 177:17&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 401&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Improved Playlister with Quick Superior Code</title>
@@ -482,34 +619,6 @@ Lessons completed total: 325&lt;/p&gt;
 Time spent total: 132:32&lt;br /&gt;
 Lessons completed today: 4&lt;br /&gt;
 Lessons completed total: 322&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 30</title>
-      <link>https://itzsaga.github.io/post/day-030/</link>
-      <pubDate>Tue, 28 Mar 2017 23:15:53 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-030/</guid>
-      <description>&lt;p&gt;Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them. I&amp;rsquo;m on a lab entitled &amp;ldquo;Bringing It All Together&amp;rdquo; and it looks like there is a small section on Dynamic ORMs before I move into learning about ActiveRecord.&lt;/p&gt;
-
-&lt;p&gt;A spot where I got stuck for abit was instantiating a new object using a Hash. This is something I had not done before and was not easily found via &lt;a href=&#34;https://duckduckgo.com/&#34;&gt;DuckDuckGo&lt;/a&gt; (yes my default search engine &lt;strong&gt;&lt;em&gt;is not&lt;/em&gt;&lt;/strong&gt; Google). So I ended up throwing some code I found into my file and it passed the test! Here it is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def initialize(h)
-  h.each {|k,v| public_send(&amp;quot;#{k}=&amp;quot;,v)}
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I still had to make sure I had my &lt;code&gt;attr_accessor&lt;/code&gt;&amp;rsquo;s in place to pass my tests but that&amp;rsquo;s a pretty nifty piece of code I&amp;rsquo;ll be sure to save for later.&lt;/p&gt;
-
-&lt;p&gt;The same music library examples are being used and I&amp;rsquo;m having flashbacks to my Music Library CLI project that I completed with Mike. I can only imagine building that again utilizing a database. Hopefully by the end of this DB section I won&amp;rsquo;t feel as intimidated by such a task.&lt;/p&gt;
-
-&lt;p&gt;On a non-coding note. My youngest daughter hasn&amp;rsquo;t been getting up in the middle of the night to eat so now I&amp;rsquo;m being tasked with her first meal of the day because mommy is almost out the door at that time for work and doesn&amp;rsquo;t have time. This means I&amp;rsquo;m getting up at 6am pretty regularly right now. It&amp;rsquo;ll be nice if she starts sleeping until 7 or 8. If she keeps this up though I&amp;rsquo;m going to go back to a split coding day with some time in the morning and night.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
-Time spent total: 130:22&lt;br /&gt;
-Lessons completed today: 8&lt;br /&gt;
-Lessons completed total: 318&lt;/p&gt;
 </description>
     </item>
     

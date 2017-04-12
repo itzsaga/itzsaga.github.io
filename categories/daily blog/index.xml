@@ -9,6 +9,143 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Helper Methods Tested, How to Not Repeat Yourself</title>
+      <link>https://itzsaga.github.io/post/day-044/</link>
+      <pubDate>Tue, 11 Apr 2017 23:16:24 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-044/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m on a killer roll right now blowing through this NYC lab. Built my 3 tables and 1 &lt;code&gt;JOIN&lt;/code&gt; table migrations. Built out the associated models. Built out all the views and one controller. Have one controller and it&amp;rsquo;s views left now. If I didn&amp;rsquo;t have kids that were going to wake me up between 6:30am and 8:00am I&amp;rsquo;d finish it up. I think it&amp;rsquo;ll take me maybe 30 more mins (mostly because &lt;strong&gt;A LOT&lt;/strong&gt; of it is going to be similar to the controller &amp;amp; views I just built) but sleep is needed. I also need to finish doing my part of the household chores (dishes tonight) before bed so in the interest of rest I&amp;rsquo;ve stopped.&lt;/p&gt;
+
+&lt;p&gt;However, I&amp;rsquo;m pretty hype and think I&amp;rsquo;ll still be on schedule to finish the review videos tomorrow night. I also feel more confident about attacking the portfolio project. The only part I haven&amp;rsquo;t really dug into is the UI. I figure a basic bootstrap will do. Utilize the &lt;code&gt;layout.erb&lt;/code&gt; to have a consistent header and footer and I&amp;rsquo;ll be happy at this point in time (when that time comes).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m contemplating creating helper methods for my controllers. Currently the one controller I finished tonight (I&amp;rsquo;ll do the other and all it&amp;rsquo;s views tomorrow) is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class FiguresController &amp;lt; ApplicationController
+
+  get &#39;/figures&#39; do
+    @figures = Figure.all
+    erb :&#39;figures/index&#39;
+  end
+
+  get &#39;/figures/new&#39; do
+    @figures = Figure.all
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :&#39;figures/new&#39;
+  end
+
+  get &#39;/figures/:id&#39; do
+    @figure = Figure.find(params[:id])
+    erb :&#39;figures/show&#39;
+  end
+
+  post &#39;/figures/:id&#39; do
+    @figure = Figure.find(params[:id])
+    @figure.update(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
+  end
+
+  get &#39;/figures/:id/edit&#39; do
+    @figure = Figure.find(params[:id])
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :&#39;figures/edit&#39;
+  end
+
+  post &#39;/figures&#39; do
+    @figure = Figure.create(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The main parts thar violate DRY (don&amp;rsquo;t repeat yourself) should be readily evident in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Not only are these lines with a nested &lt;code&gt;if&lt;/code&gt; statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&amp;rsquo;ll probably have one of these &lt;code&gt;if&lt;/code&gt; blocks utilizing &lt;code&gt;figure_ids&lt;/code&gt; but other than that it&amp;rsquo;ll be pretty close. We&amp;rsquo;ll see and if that&amp;rsquo;s true I&amp;rsquo;ll definitely create 3 helper methods and just use those if I can. It&amp;rsquo;ll be good practice in building helper methods for the controller because I haven&amp;rsquo;t done that before. I&amp;rsquo;ve built a module for the models in my last lab.&lt;/p&gt;
+
+&lt;p&gt;A note I took that didn&amp;rsquo;t make sense at the time was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Define helper methods in the Application Controller&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After tonight I see exactly why. This is because the individual controllers (at least in my case) are inherting from the app controller. I was thinking initially I would have to create a &lt;code&gt;Helper&lt;/code&gt; class of some sort and then utilize them that way but I have this basically empty file that the controllers are already using so it makes sense to put helper methods right in there.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 2:09&lt;br /&gt;
+Time spent total: 177:17&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 401&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Improved Playlister with Quick Superior Code</title>
       <link>https://itzsaga.github.io/post/day-043/</link>
       <pubDate>Mon, 10 Apr 2017 23:29:20 -0500</pubDate>
@@ -488,33 +625,6 @@ end
 Time spent total: 130:22&lt;br /&gt;
 Lessons completed today: 8&lt;br /&gt;
 Lessons completed total: 318&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 29</title>
-      <link>https://itzsaga.github.io/post/day-029/</link>
-      <pubDate>Mon, 27 Mar 2017 23:14:44 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-029/</guid>
-      <description>&lt;p&gt;Polished off the SQL tonight and I have to say it was more in depth than I thought it would be. It&amp;rsquo;s one of those things that is hard to visualize being new to it. When the tables are laid out in a grid it all makes sense but just trying to do it all in your head is confusing, even for me. I&amp;rsquo;m sure if I was doing it every day it would be much more intuitive but right now I&amp;rsquo;m still a little fuzzy on keeping track of the data I&amp;rsquo;m looking for through multiple &lt;code&gt;JOINS&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I started on ORM (Object Relational Mapping) tonight but only got through the first lesson and lab before calling it. I&amp;rsquo;m seeing how it all connects though to store data persistently. The main thing being this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;An ORM is really just a concept. It is a design pattern, a conventional way for us to organize our programs when we want those programs to connect to a database. The convention is this:&lt;/p&gt;
-
-&lt;p&gt;When &amp;ldquo;mapping&amp;rdquo; our program to a database, we equate classes with database tables and instances of those classes with table rows.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This overview really makes it simple to think about the objects I&amp;rsquo;ve been working with and how they&amp;rsquo;ll be stored and retrieved.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve realized my 7 lessons/labs per day is pretty ambitious. Especially on these days when I work for ~3 hours. I think I can make up the rest on my LONG weekend coding sessions if I actually get 10+ hours in on Saturday and Sunday. We&amp;rsquo;ll see.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:20&lt;br /&gt;
-Time spent total: 127:41&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 310&lt;/p&gt;
 </description>
     </item>
     

@@ -4,7 +4,7 @@
     <head>
         
             
-                <title>Day 17</title>
+                <title>Helper Methods Tested, How to Not Repeat Yourself</title>
             
         
 
@@ -15,10 +15,10 @@
 
 
         
+            <meta name="author" content="Seth">
         
-            
-                <meta name="description" content="From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp.">
-            
+        
+            <meta name="description" content="Day 44 of Flatiron School">
         
 
         
@@ -27,20 +27,20 @@
 
 
 
-<meta name="twitter:text:title" content="Day 17"/>
-<meta name="twitter:title" content="Day 17"/>
-<meta name="twitter:description" content="Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize self on pretty much all instance variable references after they have been initialized (created)."/>
+<meta name="twitter:text:title" content="Helper Methods Tested, How to Not Repeat Yourself"/>
+<meta name="twitter:title" content="Helper Methods Tested, How to Not Repeat Yourself"/>
+<meta name="twitter:description" content="Day 44 of Flatiron School"/>
 <meta name="twitter:site" content="@itzsaga"/>
 
-        <meta property="og:title" content="Day 17" />
-<meta property="og:description" content="Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize self on pretty much all instance variable references after they have been initialized (created)." />
+        <meta property="og:title" content="Helper Methods Tested, How to Not Repeat Yourself" />
+<meta property="og:description" content="Day 44 of Flatiron School" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://itzsaga.github.io/post/day-017/" />
+<meta property="og:url" content="https://itzsaga.github.io/post/day-044/" />
 
 
 
-<meta property="article:published_time" content="2017-03-15T23:16:44-05:00"/>
-<meta property="article:modified_time" content="2017-03-15T23:16:44-05:00"/>
+<meta property="article:published_time" content="2017-04-11T23:16:24-05:00"/>
+<meta property="article:modified_time" content="2017-04-11T23:16:24-05:00"/>
 
 
 
@@ -53,12 +53,12 @@
 
 
         
-<meta itemprop="name" content="Day 17">
-<meta itemprop="description" content="Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize self on pretty much all instance variable references after they have been initialized (created).">
+<meta itemprop="name" content="Helper Methods Tested, How to Not Repeat Yourself">
+<meta itemprop="description" content="Day 44 of Flatiron School">
 
 
-<meta itemprop="dateModified" content="2017-03-15T23:16:44-05:00" />
-<meta itemprop="wordCount" content="356">
+<meta itemprop="dateModified" content="2017-04-11T23:16:24-05:00" />
+<meta itemprop="wordCount" content="618">
 
 
 
@@ -231,25 +231,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f&text=Day%2017&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f&text=Helper%20Methods%20Tested%2c%20How%20to%20Not%20Repeat%20Yourself&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f&title=Day%2017" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f&title=Helper%20Methods%20Tested%2c%20How%20to%20Not%20Repeat%20Yourself" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -266,9 +266,11 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h1><a href="https://itzsaga.github.io/post/day-017/">Day 17</a></h1>
+            <h1><a href="https://itzsaga.github.io/post/day-044/">Helper Methods Tested, How to Not Repeat Yourself</a></h1>
             
         
+        
+            <p>Day 44 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -277,11 +279,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-03-15'>
-            March 15, 2017</time>
-        <span class="author"></span>
+            datetime='2017-04-11'>
+            April 11, 2017</time>
+        <span class="author">Seth</span>
         
-            <p>2 minute read</p>
+            <p>3 minute read</p>
         
         
     </div>
@@ -293,25 +295,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f&text=Day%2017&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f&text=Helper%20Methods%20Tested%2c%20How%20to%20Not%20Repeat%20Yourself&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f&title=Day%2017" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f&title=Helper%20Methods%20Tested%2c%20How%20to%20Not%20Repeat%20Yourself" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by &body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-017%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-044%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -319,31 +321,155 @@ ga('send', 'pageview');
         </ul>
     </section>
     
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://itzsaga.github.io/post/day-044/" class="image featured">
+            <img src="../../images//african-lion.jpg" alt="lion" />
+        </a>
+    
+
 
     <div id="content">
-        <p>Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize <code>self</code> on pretty much all instance variable references after they have been initialized (created). This is because when we reference the instance variables directly we&rsquo;re cutting out using the macros that <code>attr_accessor</code> <code>attr_reader</code> <code>attr_writer</code> provide. It is true though that writing code that uses <code>@variable</code> instead of <code>self.variable</code> will still pass the tests I&rsquo;m working with. I know this because I&rsquo;ve been doing it haha.</p>
+        <p>I&rsquo;m on a killer roll right now blowing through this NYC lab. Built my 3 tables and 1 <code>JOIN</code> table migrations. Built out the associated models. Built out all the views and one controller. Have one controller and it&rsquo;s views left now. If I didn&rsquo;t have kids that were going to wake me up between 6:30am and 8:00am I&rsquo;d finish it up. I think it&rsquo;ll take me maybe 30 more mins (mostly because <strong>A LOT</strong> of it is going to be similar to the controller &amp; views I just built) but sleep is needed. I also need to finish doing my part of the household chores (dishes tonight) before bed so in the interest of rest I&rsquo;ve stopped.</p>
 
-<p>I got through some module lessons and labs once the study group was over. Something to always remember is:</p>
+<p>However, I&rsquo;m pretty hype and think I&rsquo;ll still be on schedule to finish the review videos tomorrow night. I also feel more confident about attacking the portfolio project. The only part I haven&rsquo;t really dug into is the UI. I figure a basic bootstrap will do. Utilize the <code>layout.erb</code> to have a consistent header and footer and I&rsquo;ll be happy at this point in time (when that time comes).</p>
+
+<p>I&rsquo;m contemplating creating helper methods for my controllers. Currently the one controller I finished tonight (I&rsquo;ll do the other and all it&rsquo;s views tomorrow) is:</p>
+
+<pre><code class="language-ruby">class FiguresController &lt; ApplicationController
+
+  get '/figures' do
+    @figures = Figure.all
+    erb :'figures/index'
+  end
+
+  get '/figures/new' do
+    @figures = Figure.all
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :'figures/new'
+  end
+
+  get '/figures/:id' do
+    @figure = Figure.find(params[:id])
+    erb :'figures/show'
+  end
+
+  post '/figures/:id' do
+    @figure = Figure.find(params[:id])
+    @figure.update(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &quot;/figures/#{@figure.id}&quot;
+  end
+
+  get '/figures/:id/edit' do
+    @figure = Figure.find(params[:id])
+    @landmarks = Landmark.all
+    @titles = Title.all
+    erb :'figures/edit'
+  end
+
+  post '/figures' do
+    @figure = Figure.create(params[:figure])
+
+    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+
+    @figure.save
+
+    redirect to &quot;/figures/#{@figure.id}&quot;
+  end
+end
+</code></pre>
+
+<p>The main parts thar violate DRY (don&rsquo;t repeat yourself) should be readily evident in:</p>
+
+<pre><code class="language-ruby">    if !params[:title][:name].empty?
+      if !!params[:figure][:title_ids]
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      else
+        params[:figure][:title_ids] = []
+        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+      end
+    end
+    @figure.title_ids = params[:figure][:title_ids]
+
+    if !params[:landmark][:name].empty?
+      if !!params[:figure][:landmark_ids]
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      else
+        params[:figure][:landmark_ids] = []
+        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+      end
+    end
+    @figure.landmark_ids = params[:figure][:landmark_ids]
+</code></pre>
+
+<p>Not only are these lines with a nested <code>if</code> statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&rsquo;ll probably have one of these <code>if</code> blocks utilizing <code>figure_ids</code> but other than that it&rsquo;ll be pretty close. We&rsquo;ll see and if that&rsquo;s true I&rsquo;ll definitely create 3 helper methods and just use those if I can. It&rsquo;ll be good practice in building helper methods for the controller because I haven&rsquo;t done that before. I&rsquo;ve built a module for the models in my last lab.</p>
+
+<p>A note I took that didn&rsquo;t make sense at the time was:</p>
 
 <blockquote>
-<p>If you have a module whose methods you would like to be used in another class as <strong>instance methods</strong>, then you must <strong>include</strong> the module.<br />
-If you want a module&rsquo;s methods to be used in another class as <strong>class methods</strong>, you must <strong>extend</strong> the module.</p>
+<p>Define helper methods in the Application Controller</p>
 </blockquote>
 
-<p>Modules are sweet and I&rsquo;m happy I&rsquo;m going to start using them. Things are getting simpler while they&rsquo;re getting more complex at the same time. There are so many things that have already been figured out in the world of development and slowly they&rsquo;re being introduced.</p>
+<p>After tonight I see exactly why. This is because the individual controllers (at least in my case) are inherting from the app controller. I was thinking initially I would have to create a <code>Helper</code> class of some sort and then utilize them that way but I have this basically empty file that the controllers are already using so it makes sense to put helper methods right in there.</p>
 
-<p>I also learned tonight that there is a term for the work flow that most people follow when they write code. The work flow being, you have tests that are failing, you write whatever code is needed to pass your tests, you break that ugly code and write cleaner code to pass your tests again.</p>
-
-<blockquote>
-<p>This is called the <strong>red, green, refactor</strong> pattern. First tests fail, then you write bad code to get them to pass, then you refactor that bad code into good code.</p>
-</blockquote>
-
-<p>I guess it makes sense that these things have been defined. I&rsquo;m not inventing web development. Just learning it.</p>
-
-<p>Time spent today: 2:37<br />
-Time spent total: 76:04<br />
-Lessons completed today: 4<br />
-Lessons completed total: 268</p>
+<p>Time spent today: 2:09<br />
+Time spent total: 177:17<br />
+Lessons completed today: 0<br />
+Lessons completed total: 401</p>
 
     </div>
 
@@ -377,13 +503,10 @@ Lessons completed total: 268</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-016/"
-                class="button big previous">Day 16</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-043/"
+                class="button big previous">Improved Playlister with Quick Superior Code</a></li>
     
 
-    
-        <li><a href="https://itzsaga.github.io/post/day-018/"
-                class="button big next">Day 18</a></li>
     
 </ul>
 
@@ -394,9 +517,9 @@ Lessons completed total: 268</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-017\/';
-    var disqus_title = 'Day 17';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-017\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-044\/';
+    var disqus_title = 'Helper Methods Tested, How to Not Repeat Yourself';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-044\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
