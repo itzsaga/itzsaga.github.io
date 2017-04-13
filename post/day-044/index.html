@@ -204,15 +204,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-045/"><p>Writing it Down Always Helps</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-044/"><p>Helper Methods Tested, How to Not Repeat Yourself</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-043/"><p>Improved Playlister with Quick Superior Code</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-042/"><p>Launching Through Roadblocks Quickly is Monumental Now</p></a>
                     </li>
                 
             </ul>
@@ -435,25 +435,25 @@ end
 
 <p>The main parts thar violate DRY (don&rsquo;t repeat yourself) should be readily evident in:</p>
 
-<pre><code class="language-ruby">    if !params[:title][:name].empty?
-      if !!params[:figure][:title_ids]
-        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
-      else
-        params[:figure][:title_ids] = []
-        params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
-      end
-    end
-    @figure.title_ids = params[:figure][:title_ids]
+<pre><code class="language-ruby">if !params[:title][:name].empty?
+  if !!params[:figure][:title_ids]
+    params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+  else
+    params[:figure][:title_ids] = []
+    params[:figure][:title_ids] &lt;&lt; Title.create(params[:title]).id
+  end
+end
+@figure.title_ids = params[:figure][:title_ids]
 
-    if !params[:landmark][:name].empty?
-      if !!params[:figure][:landmark_ids]
-        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
-      else
-        params[:figure][:landmark_ids] = []
-        params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
-      end
-    end
-    @figure.landmark_ids = params[:figure][:landmark_ids]
+if !params[:landmark][:name].empty?
+  if !!params[:figure][:landmark_ids]
+    params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+  else
+    params[:figure][:landmark_ids] = []
+    params[:figure][:landmark_ids] &lt;&lt; Landmark.create(params[:landmark]).id
+  end
+end
+@figure.landmark_ids = params[:figure][:landmark_ids]
 </code></pre>
 
 <p>Not only are these lines with a nested <code>if</code> statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&rsquo;ll probably have one of these <code>if</code> blocks utilizing <code>figure_ids</code> but other than that it&rsquo;ll be pretty close. We&rsquo;ll see and if that&rsquo;s true I&rsquo;ll definitely create 3 helper methods and just use those if I can. It&rsquo;ll be good practice in building helper methods for the controller because I haven&rsquo;t done that before. I&rsquo;ve built a module for the models in my last lab.</p>
@@ -507,6 +507,9 @@ Lessons completed total: 401</p>
                 class="button big previous">Improved Playlister with Quick Superior Code</a></li>
     
 
+    
+        <li><a href="https://itzsaga.github.io/post/day-045/"
+                class="button big next">Writing it Down Always Helps</a></li>
     
 </ul>
 
@@ -640,6 +643,20 @@ Lessons completed total: 401</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-045/">Writing it Down Always Helps</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-12'>
+                                    April 12, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-044/">Helper Methods Tested, How to Not Repeat Yourself</a></h3>
                                 
                                     
@@ -661,20 +678,6 @@ Lessons completed total: 401</p>
                                 <time class="published" datetime=
                                     '2017-04-10'>
                                     April 10, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-042/">Launching Through Roadblocks Quickly is Monumental Now</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-09'>
-                                    April 9, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -713,7 +716,7 @@ Lessons completed total: 401</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">43</span>
+                                <span style="float:right;">44</span>
                             </header>
                         </article>
                     </li>

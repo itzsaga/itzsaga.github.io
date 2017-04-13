@@ -6,8 +6,25 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2017 23:16:24 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 12 Apr 2017 23:10:02 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Writing it Down Always Helps</title>
+      <link>https://itzsaga.github.io/post/day-045/</link>
+      <pubDate>Wed, 12 Apr 2017 23:10:02 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-045/</guid>
+      <description>&lt;p&gt;Taking it easy tonight. I have to get some work done for &lt;a href=&#34;http://giftofadoption.org/&#34;&gt;Gift of Adoption Fund&lt;/a&gt;, the non-profit I volunteer on the board for here in TN. Shameless plug, &lt;a href=&#34;https://www.facebook.com/GiftofAdoptionTennessee/&#34;&gt;Like our Facebook Page&lt;/a&gt; please. I finished up the NYC lab in &amp;lt;30 minutes. The second controller and views were much more simple. I didn&amp;rsquo;t get a chance to refactor my code yet. However, I don&amp;rsquo;t think a helper methods are needed as I didn&amp;rsquo;t use that code anywhere in my other controller. Maybe though, maybe. I watched the two lecture videos and finished my DB migrations and building out the models on my first Sinatra project as well tonight. I still go back and forth with feeling like I&amp;rsquo;m getting enough accomplished each day but hitting milestones and goals (even if 3 days late) feels good. My wife is off Friday so hopefully that&amp;rsquo;ll allow me some good time to get work done since we have a birthday party Saturday and it&amp;rsquo;s Easter on Sunday.&lt;/p&gt;
+
+&lt;p&gt;On another note, I&amp;rsquo;m trying to figure out a notebook to buy. I&amp;rsquo;ve used Moleskine&amp;rsquo;s in the past. Nothing against them but not what I&amp;rsquo;m looking for right now. Field Notes seem expensive for what they are and you&amp;rsquo;re paying for the cool factor more than the notebook. So, I did some research. Deciding between the &lt;a href=&#34;http://castirondesign.com/work/eco-pocket-sized-notebook&#34;&gt;Cast Iron Design Eco Pocket-Sized Notebook&lt;/a&gt;, any of the &lt;a href=&#34;https://www.codeandquill.com/collections/notebooks&#34;&gt;Code &amp;amp; Quill&lt;/a&gt; books although at this price I&amp;rsquo;d go hardcover, &lt;a href=&#34;https://www.wordnotebooks.com/products/word-notebooks-dot-grid&#34;&gt;Word. Dot Grid&lt;/a&gt; because it&amp;rsquo;s Field Notes but not, or &lt;a href=&#34;http://www.muji.us/store/recycled-paper-bind-notebook-grid-30-sheets-a5-dark-gray4548076398349.html&#34;&gt;MUJI Recycled Paper Bing Notebook A5&lt;/a&gt; because they&amp;rsquo;re dirt cheap. Let me know what you think. I&amp;rsquo;m leaning towards Code &amp;amp; Quill most likely. I think the larger hardcover books will be benneficial to have segmented by language and framework. I can create personal reference libraries in them and add as time goes on. I can have a master Ruby book, a JS book, a Rails book, is the thought at least. Or maybe I start with smaller books and if a top turns in to two books it gets a C&amp;amp;Q book and I transcribe over what I already have which wouldn&amp;rsquo;t be much at that point.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 1:50&lt;br /&gt;
+Time spent total: 179:08&lt;br /&gt;
+Lessons completed today: 3&lt;br /&gt;
+Lessons completed total: 404&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Helper Methods Tested, How to Not Repeat Yourself</title>
@@ -108,25 +125,25 @@ end
 
 &lt;p&gt;The main parts thar violate DRY (don&amp;rsquo;t repeat yourself) should be readily evident in:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;    if !params[:title][:name].empty?
-      if !!params[:figure][:title_ids]
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      else
-        params[:figure][:title_ids] = []
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      end
-    end
-    @figure.title_ids = params[:figure][:title_ids]
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;if !params[:title][:name].empty?
+  if !!params[:figure][:title_ids]
+    params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+  else
+    params[:figure][:title_ids] = []
+    params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
+  end
+end
+@figure.title_ids = params[:figure][:title_ids]
 
-    if !params[:landmark][:name].empty?
-      if !!params[:figure][:landmark_ids]
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      else
-        params[:figure][:landmark_ids] = []
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      end
-    end
-    @figure.landmark_ids = params[:figure][:landmark_ids]
+if !params[:landmark][:name].empty?
+  if !!params[:figure][:landmark_ids]
+    params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+  else
+    params[:figure][:landmark_ids] = []
+    params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
+  end
+end
+@figure.landmark_ids = params[:figure][:landmark_ids]
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Not only are these lines with a nested &lt;code&gt;if&lt;/code&gt; statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&amp;rsquo;ll probably have one of these &lt;code&gt;if&lt;/code&gt; blocks utilizing &lt;code&gt;figure_ids&lt;/code&gt; but other than that it&amp;rsquo;ll be pretty close. We&amp;rsquo;ll see and if that&amp;rsquo;s true I&amp;rsquo;ll definitely create 3 helper methods and just use those if I can. It&amp;rsquo;ll be good practice in building helper methods for the controller because I haven&amp;rsquo;t done that before. I&amp;rsquo;ve built a module for the models in my last lab.&lt;/p&gt;
@@ -595,30 +612,6 @@ I completely forgot about how I listen to &lt;a href=&#34;https://www.brain.fm&#
 Time spent total: 135:13&lt;br /&gt;
 Lessons completed today: 3&lt;br /&gt;
 Lessons completed total: 325&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 31</title>
-      <link>https://itzsaga.github.io/post/day-031/</link>
-      <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-031/</guid>
-      <description>&lt;p&gt;Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&amp;rsquo;re not official tasks I set a couple new features I want to add to the gem.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Allow users to pick the date that they want meetups for instead of only returning current day meetups.&lt;/li&gt;
-&lt;li&gt;If a person sees a meetup they want more info on they can enter it&amp;rsquo;s number and open the page for that event in their default browser.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I think these are two useful and good additions. I&amp;rsquo;m not sure when I&amp;rsquo;ll find the time to get them done but I&amp;rsquo;ll get them done. Cernan who did my review also informed me that he has seen students get hired just from having a solid CLI Gem so I definitely want to make this portfolio project stronger than it currently is. I think adding those two features I will be able to call it v1.0.0 and release it into the wild.&lt;/p&gt;
-
-&lt;p&gt;I finished up ORM except for some review videos which I&amp;rsquo;ll watch tomorrow. I could have finished the first video but my wife took our eldest daughter to get ice cream and my infant decided she didn&amp;rsquo;t want to be happy unless she was being held. However, there are worse things than not being able to code because your daughter wants to be held. Eventually she&amp;rsquo;ll be too big to fit in my arms so I&amp;rsquo;ll enjoy it now. Hopefully I can put an extra hour in tomorrow and catch back up to where I want to be this week.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:10&lt;br /&gt;
-Time spent total: 132:32&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 322&lt;/p&gt;
 </description>
     </item>
     
