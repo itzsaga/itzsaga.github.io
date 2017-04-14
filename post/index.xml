@@ -6,8 +6,48 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Apr 2017 23:10:02 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Apr 2017 23:44:28 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Crushing Fwitter Tonight was Sweet</title>
+      <link>https://itzsaga.github.io/post/day-046/</link>
+      <pubDate>Thu, 13 Apr 2017 23:44:28 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-046/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s late so I&amp;rsquo;ll be brief. I crushed &lt;a href=&#34;https://github.com/itzsaga/sinatra-fwitter-group-project-v-000&#34;&gt;my project&lt;/a&gt; tonight and I&amp;rsquo;m ready to start my Sinatra portfolio project tomorrow. I think I can have an ugly version (desktown down design, raw forms, no nav bar or footer) done tomorrow at some point and then leave it alone until after my project review with an instructor. We&amp;rsquo;ll see how that goes. The requirements are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Build an MVC Sinatra Application.&lt;/li&gt;
+&lt;li&gt;Use ActiveRecord with Sinatra.&lt;/li&gt;
+&lt;li&gt;Use Multiple Models.&lt;/li&gt;
+&lt;li&gt;Use at least one &lt;code&gt;has_many&lt;/code&gt; relationship&lt;/li&gt;
+&lt;li&gt;Must have user accounts. The user that created a given piece of content should be the only person who can modify that content&lt;/li&gt;
+&lt;li&gt;You should validate user input to ensure that bad data isn&amp;rsquo;t created&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So it might be ambitious to think I can finish that in a day or two but I&amp;rsquo;m confident I can with what I have planned.&lt;/p&gt;
+
+&lt;p&gt;I was able to utilize Active Record Validations tonight. I also included HTML5 &lt;code&gt;required&lt;/code&gt; tags in my forms. However, the tests were sending raw params data to the post route so it was bypassing utilizing my forms to test. I guess this is good though because it creates a situation where if someone sends bad data to the server through a method other than the server it&amp;rsquo;ll reject it. However, I wouldn&amp;rsquo;t want the server hit every time a bad form is input. Maybe a combo of the two makes sense? That way data is validated in the browser and when being saved to the server. Here&amp;rsquo;s what an Active Record Validation looks like from &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html&#34;&gt;Rails Guides&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Person &amp;lt; ApplicationRecord
+  validates :name, presence: true
+end
+ 
+Person.create(name: &amp;quot;John Doe&amp;quot;).valid? # =&amp;gt; true
+Person.create(name: nil).valid? # =&amp;gt; false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also decided to buy the &lt;a href=&#34;http://castirondesign.com/work/eco-pocket-sized-notebook&#34;&gt;Cast Iron Design Eco Pocket-Sized Notebook&lt;/a&gt; pack of 3 to start. I realized that AMEX is offering a bonus if you redeem points towards purchases until the end of the month. While redemption values are almost always lowest when using AMEX points for bill credits with the 20% bump it&amp;rsquo;s worth using for a few small things. Considering we have 70k of them $12 won&amp;rsquo;t make a dent in that. I still plan to get a &lt;a href=&#34;https://www.codeandquill.com/collections/notebooks/products/origin&#34;&gt;Code &amp;amp; Quill Origin&lt;/a&gt; when they&amp;rsquo;re not sold out anymore. The fact that there are spacing markers that will make written code look good is sweet (not like you can&amp;rsquo;t do that on graph paper but still).&lt;/p&gt;
+
+&lt;p&gt;I think one of the biggest things I&amp;rsquo;ve been doing that has helped me not get bogged down as I&amp;rsquo;m moving through the curriculum and projects is to not get too fancy. I&amp;rsquo;m also not overthinking it. I&amp;rsquo;m being very straightforward in what I&amp;rsquo;m putting together and making things that work. Could pretty much everything be &lt;em&gt;better&lt;/em&gt;? Yes. However, I&amp;rsquo;m looking to have a body of work to present. I honestly feel that when it comes job hiring time the strength of the code will outweigh the shiny UI&amp;rsquo;s. I still plan on going back and polishing everything up and making it look nice (or at least nicer) than the project requirements require.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:13&lt;br /&gt;
+Time spent total: 182:20&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 405&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Writing it Down Always Helps</title>
@@ -586,32 +626,6 @@ Lessons completed total: 330&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;UPDATE 3/31/17&lt;/strong&gt;&lt;br /&gt;
 I completely forgot about how I listen to &lt;a href=&#34;https://www.brain.fm&#34;&gt;Brain.fm&lt;/a&gt; whenever I&amp;rsquo;m doing work. It really zones me in more than anything I&amp;rsquo;ve ever listened to. I used to use Spotify playlists but now this is the ONLY thing I&amp;rsquo;ll listen to when I need to concentrate.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 32</title>
-      <link>https://itzsaga.github.io/post/day-032/</link>
-      <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-032/</guid>
-      <description>&lt;p&gt;Almost 3 hours of review vidoes watched tonight. On thing that I think can be very useful to all. A double bang &lt;code&gt;!!&lt;/code&gt; converts an object to it&amp;rsquo;s truthy value. For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;seth@seth-u:~$ irb
-2.4.0 :001 &amp;gt; 1
- =&amp;gt; 1
-2.4.0 :002 &amp;gt; !1
- =&amp;gt; false
-2.4.0 :003 &amp;gt; !!1
- =&amp;gt; true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So the return value of &lt;code&gt;1&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt; we know &lt;code&gt;1&lt;/code&gt; has a boolean value of &lt;code&gt;true&lt;/code&gt;. So &lt;code&gt;!1&lt;/code&gt; is &lt;code&gt;false&lt;/code&gt; and thus &lt;code&gt;!!1&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;. This can be useful for obvious reasons.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
-Time spent total: 135:13&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 325&lt;/p&gt;
 </description>
     </item>
     

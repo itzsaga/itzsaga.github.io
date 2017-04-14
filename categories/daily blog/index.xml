@@ -9,6 +9,46 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Crushing Fwitter Tonight was Sweet</title>
+      <link>https://itzsaga.github.io/post/day-046/</link>
+      <pubDate>Thu, 13 Apr 2017 23:44:28 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-046/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s late so I&amp;rsquo;ll be brief. I crushed &lt;a href=&#34;https://github.com/itzsaga/sinatra-fwitter-group-project-v-000&#34;&gt;my project&lt;/a&gt; tonight and I&amp;rsquo;m ready to start my Sinatra portfolio project tomorrow. I think I can have an ugly version (desktown down design, raw forms, no nav bar or footer) done tomorrow at some point and then leave it alone until after my project review with an instructor. We&amp;rsquo;ll see how that goes. The requirements are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Build an MVC Sinatra Application.&lt;/li&gt;
+&lt;li&gt;Use ActiveRecord with Sinatra.&lt;/li&gt;
+&lt;li&gt;Use Multiple Models.&lt;/li&gt;
+&lt;li&gt;Use at least one &lt;code&gt;has_many&lt;/code&gt; relationship&lt;/li&gt;
+&lt;li&gt;Must have user accounts. The user that created a given piece of content should be the only person who can modify that content&lt;/li&gt;
+&lt;li&gt;You should validate user input to ensure that bad data isn&amp;rsquo;t created&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So it might be ambitious to think I can finish that in a day or two but I&amp;rsquo;m confident I can with what I have planned.&lt;/p&gt;
+
+&lt;p&gt;I was able to utilize Active Record Validations tonight. I also included HTML5 &lt;code&gt;required&lt;/code&gt; tags in my forms. However, the tests were sending raw params data to the post route so it was bypassing utilizing my forms to test. I guess this is good though because it creates a situation where if someone sends bad data to the server through a method other than the server it&amp;rsquo;ll reject it. However, I wouldn&amp;rsquo;t want the server hit every time a bad form is input. Maybe a combo of the two makes sense? That way data is validated in the browser and when being saved to the server. Here&amp;rsquo;s what an Active Record Validation looks like from &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html&#34;&gt;Rails Guides&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Person &amp;lt; ApplicationRecord
+  validates :name, presence: true
+end
+ 
+Person.create(name: &amp;quot;John Doe&amp;quot;).valid? # =&amp;gt; true
+Person.create(name: nil).valid? # =&amp;gt; false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also decided to buy the &lt;a href=&#34;http://castirondesign.com/work/eco-pocket-sized-notebook&#34;&gt;Cast Iron Design Eco Pocket-Sized Notebook&lt;/a&gt; pack of 3 to start. I realized that AMEX is offering a bonus if you redeem points towards purchases until the end of the month. While redemption values are almost always lowest when using AMEX points for bill credits with the 20% bump it&amp;rsquo;s worth using for a few small things. Considering we have 70k of them $12 won&amp;rsquo;t make a dent in that. I still plan to get a &lt;a href=&#34;https://www.codeandquill.com/collections/notebooks/products/origin&#34;&gt;Code &amp;amp; Quill Origin&lt;/a&gt; when they&amp;rsquo;re not sold out anymore. The fact that there are spacing markers that will make written code look good is sweet (not like you can&amp;rsquo;t do that on graph paper but still).&lt;/p&gt;
+
+&lt;p&gt;I think one of the biggest things I&amp;rsquo;ve been doing that has helped me not get bogged down as I&amp;rsquo;m moving through the curriculum and projects is to not get too fancy. I&amp;rsquo;m also not overthinking it. I&amp;rsquo;m being very straightforward in what I&amp;rsquo;m putting together and making things that work. Could pretty much everything be &lt;em&gt;better&lt;/em&gt;? Yes. However, I&amp;rsquo;m looking to have a body of work to present. I honestly feel that when it comes job hiring time the strength of the code will outweigh the shiny UI&amp;rsquo;s. I still plan on going back and polishing everything up and making it look nice (or at least nicer) than the project requirements require.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:13&lt;br /&gt;
+Time spent total: 182:20&lt;br /&gt;
+Lessons completed today: 1&lt;br /&gt;
+Lessons completed total: 405&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Writing it Down Always Helps</title>
       <link>https://itzsaga.github.io/post/day-045/</link>
       <pubDate>Wed, 12 Apr 2017 23:10:02 -0500</pubDate>
@@ -590,30 +630,6 @@ Lessons completed total: 330&lt;/p&gt;
 Time spent total: 135:13&lt;br /&gt;
 Lessons completed today: 3&lt;br /&gt;
 Lessons completed total: 325&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 31</title>
-      <link>https://itzsaga.github.io/post/day-031/</link>
-      <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-031/</guid>
-      <description>&lt;p&gt;Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&amp;rsquo;re not official tasks I set a couple new features I want to add to the gem.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Allow users to pick the date that they want meetups for instead of only returning current day meetups.&lt;/li&gt;
-&lt;li&gt;If a person sees a meetup they want more info on they can enter it&amp;rsquo;s number and open the page for that event in their default browser.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I think these are two useful and good additions. I&amp;rsquo;m not sure when I&amp;rsquo;ll find the time to get them done but I&amp;rsquo;ll get them done. Cernan who did my review also informed me that he has seen students get hired just from having a solid CLI Gem so I definitely want to make this portfolio project stronger than it currently is. I think adding those two features I will be able to call it v1.0.0 and release it into the wild.&lt;/p&gt;
-
-&lt;p&gt;I finished up ORM except for some review videos which I&amp;rsquo;ll watch tomorrow. I could have finished the first video but my wife took our eldest daughter to get ice cream and my infant decided she didn&amp;rsquo;t want to be happy unless she was being held. However, there are worse things than not being able to code because your daughter wants to be held. Eventually she&amp;rsquo;ll be too big to fit in my arms so I&amp;rsquo;ll enjoy it now. Hopefully I can put an extra hour in tomorrow and catch back up to where I want to be this week.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:10&lt;br /&gt;
-Time spent total: 132:32&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 322&lt;/p&gt;
 </description>
     </item>
     
