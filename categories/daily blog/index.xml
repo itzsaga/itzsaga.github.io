@@ -9,6 +9,23 @@
     <atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Make It Look nice</title>
+      <link>https://itzsaga.github.io/post/day-047/</link>
+      <pubDate>Fri, 14 Apr 2017 23:07:58 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-047/</guid>
+      <description>&lt;p&gt;So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well. However, I think I&amp;rsquo;m going to be more proud of this when I&amp;rsquo;m done. You can follow my progress on my project &lt;a href=&#34;https://github.com/itzsaga/neighbor_tracker&#34;&gt;here&lt;/a&gt;. Although, that link might break in the future as I&amp;rsquo;ll probably renanme my repo to something less stalkerish lol.&lt;/p&gt;
+
+&lt;p&gt;It took me a long time to get my naming correct for my &lt;code&gt;has_many&lt;/code&gt; to &lt;code&gt;has_many&lt;/code&gt; relationship. Between the models and the db it was a mistake in what needed to be plural that ultimately took some time to figure out. I&amp;rsquo;m happy that I don&amp;rsquo;t have to keep up with these associations in any complex manner. I don&amp;rsquo;t know why but I&amp;rsquo;m exhausted right now. I&amp;rsquo;m usually still humming along at 11:15pm but not tonight. I&amp;rsquo;m fighting to stay awake. I made some great progress today on my Sinatra project and I&amp;rsquo;m happy with where I&amp;rsquo;m at. I could&amp;rsquo;ve been closer to being done but I know that I&amp;rsquo;ll be more proud to show off my project because of how it looks.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 6:20&lt;br /&gt;
+Time spent total: 188:40&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 405&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Crushing Fwitter Tonight was Sweet</title>
       <link>https://itzsaga.github.io/post/day-046/</link>
       <pubDate>Thu, 13 Apr 2017 23:44:28 -0500</pubDate>
@@ -604,32 +621,6 @@ Lessons completed total: 339&lt;/p&gt;
 Time spent total: 137:55&lt;br /&gt;
 Lessons completed today: 5&lt;br /&gt;
 Lessons completed total: 330&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 32</title>
-      <link>https://itzsaga.github.io/post/day-032/</link>
-      <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-032/</guid>
-      <description>&lt;p&gt;Almost 3 hours of review vidoes watched tonight. On thing that I think can be very useful to all. A double bang &lt;code&gt;!!&lt;/code&gt; converts an object to it&amp;rsquo;s truthy value. For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;seth@seth-u:~$ irb
-2.4.0 :001 &amp;gt; 1
- =&amp;gt; 1
-2.4.0 :002 &amp;gt; !1
- =&amp;gt; false
-2.4.0 :003 &amp;gt; !!1
- =&amp;gt; true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So the return value of &lt;code&gt;1&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt; we know &lt;code&gt;1&lt;/code&gt; has a boolean value of &lt;code&gt;true&lt;/code&gt;. So &lt;code&gt;!1&lt;/code&gt; is &lt;code&gt;false&lt;/code&gt; and thus &lt;code&gt;!!1&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;. This can be useful for obvious reasons.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:41&lt;br /&gt;
-Time spent total: 135:13&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 325&lt;/p&gt;
 </description>
     </item>
     

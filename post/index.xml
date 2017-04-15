@@ -6,8 +6,25 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Apr 2017 23:44:28 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 14 Apr 2017 23:07:58 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Make It Look nice</title>
+      <link>https://itzsaga.github.io/post/day-047/</link>
+      <pubDate>Fri, 14 Apr 2017 23:07:58 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-047/</guid>
+      <description>&lt;p&gt;So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well. However, I think I&amp;rsquo;m going to be more proud of this when I&amp;rsquo;m done. You can follow my progress on my project &lt;a href=&#34;https://github.com/itzsaga/neighbor_tracker&#34;&gt;here&lt;/a&gt;. Although, that link might break in the future as I&amp;rsquo;ll probably renanme my repo to something less stalkerish lol.&lt;/p&gt;
+
+&lt;p&gt;It took me a long time to get my naming correct for my &lt;code&gt;has_many&lt;/code&gt; to &lt;code&gt;has_many&lt;/code&gt; relationship. Between the models and the db it was a mistake in what needed to be plural that ultimately took some time to figure out. I&amp;rsquo;m happy that I don&amp;rsquo;t have to keep up with these associations in any complex manner. I don&amp;rsquo;t know why but I&amp;rsquo;m exhausted right now. I&amp;rsquo;m usually still humming along at 11:15pm but not tonight. I&amp;rsquo;m fighting to stay awake. I made some great progress today on my Sinatra project and I&amp;rsquo;m happy with where I&amp;rsquo;m at. I could&amp;rsquo;ve been closer to being done but I know that I&amp;rsquo;ll be more proud to show off my project because of how it looks.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 6:20&lt;br /&gt;
+Time spent total: 188:40&lt;br /&gt;
+Lessons completed today: 0&lt;br /&gt;
+Lessons completed total: 405&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Crushing Fwitter Tonight was Sweet</title>
@@ -605,27 +622,6 @@ Lessons completed total: 339&lt;/p&gt;
 Time spent total: 137:55&lt;br /&gt;
 Lessons completed today: 5&lt;br /&gt;
 Lessons completed total: 330&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Learning Hacks</title>
-      <link>https://itzsaga.github.io/post/my-learning-hacks/</link>
-      <pubDate>Thu, 30 Mar 2017 23:28:06 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/my-learning-hacks/</guid>
-      <description>&lt;p&gt;So I wanted to share the hacks that I&amp;rsquo;m using to upgrade my life some and increase my mental aptitude to crushing this curriculum. There is a certain amount of mental stamina that has to be maintained on a day to day basis to keep up this pace. So&amp;hellip; here&amp;rsquo;s my brain upgrades/biohacks/etc&amp;hellip; that keep my moving tip top while doing this bootcamp full time and taking care of kids full time. All with links to the best place to buy them.&lt;/p&gt;
-
-&lt;p&gt;First thing is my coffee. I start my day off with my take on, Bulletproof Coffee. I currently use Central American Single Origin Organic whole bean coffee from Aldi. The most important thing for me is my coffee being light to medium roast. Nothing dark. I also like whole bean because coffee really does taste &lt;strong&gt;way&lt;/strong&gt; better if it&amp;rsquo;s fresh ground. I add to that 1 tbsp of &lt;a href=&#34;http://thrv.me/GWQK6N&#34;&gt;Thrive Market Ghee&lt;/a&gt; and 1 tbsp of whatever I have around to up ketones. I prefer &lt;a href=&#34;http://amzn.to/2nQOZoe&#34;&gt;Brain Octane Oil&lt;/a&gt; because it definitely is nicer on the insides but also use &lt;a href=&#34;http://thrv.me/pP3hDQ&#34;&gt;Now Foods MCT Oil&lt;/a&gt; or just &lt;a href=&#34;http://thrv.me/c4sQTU&#34;&gt;Coconut Oil&lt;/a&gt; if I have neither of the aforementioned. I blend this all up together. This gets me going and curbs hunger for hours. I also pop a couple &lt;a href=&#34;http://amzn.to/2ohk6dG&#34;&gt;BioScience Brain Boost&lt;/a&gt; and wash them down with my coffee.&lt;/p&gt;
-
-&lt;p&gt;I then hopefully do my &lt;a href=&#34;https://www.gymnasticbodies.com/&#34;&gt;Gymnastic Bodies&lt;/a&gt; Daily Limber routine to get the blood flowing some. I follow that up with some meditation utilizing &lt;a href=&#34;https://www.calm.com/&#34;&gt;Calm&lt;/a&gt;. I try (but usually fail) to write my daily journal entry utilizing &lt;a href=&#34;https://www.evernote.com/shard/s34/sh/d31e2f00-610a-4d05-8c6e-44b5e6fd5a75/ee032628c7bcb8547e2bfb7f4bdb681e&#34;&gt;this template&lt;/a&gt; I built in Evernote. I very rarely get all of these things done. However, I try to.&lt;/p&gt;
-
-&lt;p&gt;When I&amp;rsquo;m on long coding sessions I supplement in the middle of the day with &lt;a href=&#34;http://thrv.me/WBcGBK&#34;&gt;Four Sigmatic Lion&amp;rsquo;s Mane&lt;/a&gt; which I&amp;rsquo;ve found can really get me going. I have to ensure I&amp;rsquo;m stimulated enough mentally or I start getting distracted trying to keep my brain working hard enough. I also diffuse essential oils in my workspace. Specifically &lt;a href=&#34;http://thrv.me/7YEQ7F&#34;&gt;Lemon&lt;/a&gt;, &lt;a href=&#34;http://thrv.me/RwiYBf&#34;&gt;Rosemary&lt;/a&gt;, and &lt;a href=&#34;http://thrv.me/evMTdr&#34;&gt;Eucalyptus&lt;/a&gt;. All three of those are supposed to help with concentration and mental performance. I find the scents definitely keep me alert if not anything else. Something that I recently ran across is &lt;a href=&#34;https://nootrobox.com/sprint&#34;&gt;Nootrobox Sprint&lt;/a&gt; and I&amp;rsquo;m interested to try it out. I might just order the mini bottle for $15.&lt;/p&gt;
-
-&lt;p&gt;That should be it if I remember correctly. If I realize I missed something I&amp;rsquo;ll update this post.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE 3/31/17&lt;/strong&gt;&lt;br /&gt;
-I completely forgot about how I listen to &lt;a href=&#34;https://www.brain.fm&#34;&gt;Brain.fm&lt;/a&gt; whenever I&amp;rsquo;m doing work. It really zones me in more than anything I&amp;rsquo;ve ever listened to. I used to use Spotify playlists but now this is the ONLY thing I&amp;rsquo;ll listen to when I need to concentrate.&lt;/p&gt;
 </description>
     </item>
     
