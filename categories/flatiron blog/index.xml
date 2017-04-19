@@ -9,6 +9,90 @@
     <atom:link href="https://itzsaga.github.io/categories/flatiron-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>I Deployed My Sinatra App To Heroku</title>
+      <link>https://itzsaga.github.io/post/day-051/</link>
+      <pubDate>Tue, 18 Apr 2017 23:34:13 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-051/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MY SINATRA PORTFOLIO PROJECT IS DONE!!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can say I&amp;rsquo;m pretty stoked. This blog is part of the requirements though so get ready :-). Actually, I didn&amp;rsquo;t take enough notes to really get into the code in this blog. I did hit some solid stumbling blocks and there is some major refactoring of code needing to happen but I&amp;rsquo;m overall pretty happy. A large part of the time I spent was making the app look good utilizing &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Something that definitely needs to be refactored is one of my helper methods:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def current_user_parents
+  parents = []
+  current_user(session).houses.each do |house|
+    Parent.where(house_id: house.id).each do |parent|
+      parents &amp;lt;&amp;lt; parent
+    end
+  end
+  parents
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s sandwich code (starts with a variable set to an empty array, fills that array, returns that array) so I know I can most likely eliminate two lines from that or even three if I&amp;rsquo;m not pushing onto that &lt;code&gt;parents&lt;/code&gt; variable anymore. We&amp;rsquo;ll see. I&amp;rsquo;m interested to pick the brain of the instructor that goes over the project with me.&lt;/p&gt;
+
+&lt;p&gt;You can see what I&amp;rsquo;ll call v0.8 (I figure it&amp;rsquo;s close to v1.0 but not yet lol) at &lt;a href=&#34;https://your-neighbors.herokuapp.com/&#34;&gt;https://your-neighbors.herokuapp.com/&lt;/a&gt;. I feel like the code is solid but still some functionality and visual things that need to be resolved.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to add a static footer to the site.&lt;/li&gt;
+&lt;li&gt;If a house is deleted the parent and children remain in the database but can never be accessed again because of how I list them in relation to the house they&amp;rsquo;re in.&lt;/li&gt;
+&lt;li&gt;When there are no parents or children I need to add a link suggesting to create some.&lt;/li&gt;
+&lt;li&gt;When a user tries to access the info for something they didn&amp;rsquo;t create (ie. they created house 8 but try and go to the link for house 5) the error page tells them to login even though they are logged in. I need to create a different error page for logged in users trying to access stuff that isn&amp;rsquo;t there&amp;rsquo;s vs. the error page when a person isn&amp;rsquo;t logged in.&lt;/li&gt;
+&lt;li&gt;Add some color!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I could find more. Feel free to check out the app. Sign up, use it, and report issues to the GitHub link at the top right on every page of the application.&lt;/p&gt;
+
+&lt;p&gt;It was interesting deploying to Heroku as well. There isn&amp;rsquo;t a solid guide on deploying a Sinatra app with a DB to Heroku. Through Heroku&amp;rsquo;s docs and this &lt;a href=&#34;https://www.sitepoint.com/get-started-with-sinatra-on-heroku/&#34;&gt;Get Started with Sinatra on Heroku&lt;/a&gt; from 2013 I got it up and running though. The biggest thing was setting up Postgres and what to put in the &lt;code&gt;Procfile&lt;/code&gt;. Let me see if I can remember what exactly I did:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add &lt;code&gt;gem &#39;pg&#39;&lt;/code&gt; to your Gemfile. Also, define your version of ruby, ie. &lt;code&gt;ruby &#39;2.4.1&#39;&lt;/code&gt; in your Gemfile.&lt;/li&gt;
+&lt;li&gt;I changed the sqlite gem to development like this &lt;code&gt;gem &#39;sqlite3&#39;, :group =&amp;gt; :development&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;I added a &lt;code&gt;config/database.yml&lt;/code&gt; because the Heroku docs said to but I don&amp;rsquo;t know if it&amp;rsquo;s needed. I&amp;rsquo;ll probably delete it and see what happens in the near future. The Heroku docs have an example that I used and just changed the &lt;code&gt;database:&lt;/code&gt; names.&lt;/li&gt;
+&lt;li&gt;I &lt;em&gt;think&lt;/em&gt; &lt;code&gt;config/environment.rb&lt;/code&gt; is where the magic happened. I kept the &lt;code&gt;:development&lt;/code&gt; environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running &lt;code&gt;shotgun&lt;/code&gt; and on the Heroku server too. With the changes it now looks like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;bundler/setup&#39;
+Bundler.require
+
+configure :development do
+  ENV[&#39;SINATRA_ENV&#39;] ||= &amp;quot;development&amp;quot;
+
+  ActiveRecord::Base.establish_connection(
+    :adapter =&amp;gt; &amp;quot;sqlite3&amp;quot;,
+    :database =&amp;gt; &amp;quot;db/neighborhood#{ENV[&#39;SINATRA_ENV&#39;]}.sqlite&amp;quot;
+  )
+end
+
+configure :production do
+	db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
+
+	ActiveRecord::Base.establish_connection(
+		:adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
+		:host     =&amp;gt; db.host,
+		:username =&amp;gt; db.user,
+		:password =&amp;gt; db.password,
+		:database =&amp;gt; db.path[1..-1],
+		:encoding =&amp;gt; &#39;utf8&#39;
+	)
+end
+
+require_all &#39;app&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The &lt;code&gt;Procfile&lt;/code&gt; was something I couldn&amp;rsquo;t figure out. The &lt;a href=&#34;https://www.sitepoint.com/&#34;&gt;SitePoint&lt;/a&gt; article I linked above had this line for it and this is what made it all work &lt;code&gt;web: bundle exec rackup config.ru -p $PORT&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For the rest I followed the Ruby docs on Heroku &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction&#34;&gt;here&lt;/a&gt; and the SQLite doc &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you get db migration errors you can run rake tasks on Heroku. &lt;code&gt;heroku run rake db:migrate&lt;/code&gt; was one that I needed to do. More in dept docs about it &lt;a href=&#34;https://devcenter.heroku.com/articles/rake&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Hey, look at that. I remembered way more than I thought. Hopefully this was helpful to someone somewhere. Probably a student coming behind me who is going to pull their hair out trying to get their app to work on Heroku.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>One Way To Pair Program</title>
       <link>https://itzsaga.github.io/post/one-way-to-pair-program/</link>
       <pubDate>Sat, 18 Mar 2017 23:07:23 -0500</pubDate>

@@ -6,8 +6,92 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Apr 2017 23:19:40 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 18 Apr 2017 23:34:13 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I Deployed My Sinatra App To Heroku</title>
+      <link>https://itzsaga.github.io/post/day-051/</link>
+      <pubDate>Tue, 18 Apr 2017 23:34:13 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-051/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MY SINATRA PORTFOLIO PROJECT IS DONE!!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can say I&amp;rsquo;m pretty stoked. This blog is part of the requirements though so get ready :-). Actually, I didn&amp;rsquo;t take enough notes to really get into the code in this blog. I did hit some solid stumbling blocks and there is some major refactoring of code needing to happen but I&amp;rsquo;m overall pretty happy. A large part of the time I spent was making the app look good utilizing &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Something that definitely needs to be refactored is one of my helper methods:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def current_user_parents
+  parents = []
+  current_user(session).houses.each do |house|
+    Parent.where(house_id: house.id).each do |parent|
+      parents &amp;lt;&amp;lt; parent
+    end
+  end
+  parents
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s sandwich code (starts with a variable set to an empty array, fills that array, returns that array) so I know I can most likely eliminate two lines from that or even three if I&amp;rsquo;m not pushing onto that &lt;code&gt;parents&lt;/code&gt; variable anymore. We&amp;rsquo;ll see. I&amp;rsquo;m interested to pick the brain of the instructor that goes over the project with me.&lt;/p&gt;
+
+&lt;p&gt;You can see what I&amp;rsquo;ll call v0.8 (I figure it&amp;rsquo;s close to v1.0 but not yet lol) at &lt;a href=&#34;https://your-neighbors.herokuapp.com/&#34;&gt;https://your-neighbors.herokuapp.com/&lt;/a&gt;. I feel like the code is solid but still some functionality and visual things that need to be resolved.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to add a static footer to the site.&lt;/li&gt;
+&lt;li&gt;If a house is deleted the parent and children remain in the database but can never be accessed again because of how I list them in relation to the house they&amp;rsquo;re in.&lt;/li&gt;
+&lt;li&gt;When there are no parents or children I need to add a link suggesting to create some.&lt;/li&gt;
+&lt;li&gt;When a user tries to access the info for something they didn&amp;rsquo;t create (ie. they created house 8 but try and go to the link for house 5) the error page tells them to login even though they are logged in. I need to create a different error page for logged in users trying to access stuff that isn&amp;rsquo;t there&amp;rsquo;s vs. the error page when a person isn&amp;rsquo;t logged in.&lt;/li&gt;
+&lt;li&gt;Add some color!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I could find more. Feel free to check out the app. Sign up, use it, and report issues to the GitHub link at the top right on every page of the application.&lt;/p&gt;
+
+&lt;p&gt;It was interesting deploying to Heroku as well. There isn&amp;rsquo;t a solid guide on deploying a Sinatra app with a DB to Heroku. Through Heroku&amp;rsquo;s docs and this &lt;a href=&#34;https://www.sitepoint.com/get-started-with-sinatra-on-heroku/&#34;&gt;Get Started with Sinatra on Heroku&lt;/a&gt; from 2013 I got it up and running though. The biggest thing was setting up Postgres and what to put in the &lt;code&gt;Procfile&lt;/code&gt;. Let me see if I can remember what exactly I did:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add &lt;code&gt;gem &#39;pg&#39;&lt;/code&gt; to your Gemfile. Also, define your version of ruby, ie. &lt;code&gt;ruby &#39;2.4.1&#39;&lt;/code&gt; in your Gemfile.&lt;/li&gt;
+&lt;li&gt;I changed the sqlite gem to development like this &lt;code&gt;gem &#39;sqlite3&#39;, :group =&amp;gt; :development&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;I added a &lt;code&gt;config/database.yml&lt;/code&gt; because the Heroku docs said to but I don&amp;rsquo;t know if it&amp;rsquo;s needed. I&amp;rsquo;ll probably delete it and see what happens in the near future. The Heroku docs have an example that I used and just changed the &lt;code&gt;database:&lt;/code&gt; names.&lt;/li&gt;
+&lt;li&gt;I &lt;em&gt;think&lt;/em&gt; &lt;code&gt;config/environment.rb&lt;/code&gt; is where the magic happened. I kept the &lt;code&gt;:development&lt;/code&gt; environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running &lt;code&gt;shotgun&lt;/code&gt; and on the Heroku server too. With the changes it now looks like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;bundler/setup&#39;
+Bundler.require
+
+configure :development do
+  ENV[&#39;SINATRA_ENV&#39;] ||= &amp;quot;development&amp;quot;
+
+  ActiveRecord::Base.establish_connection(
+    :adapter =&amp;gt; &amp;quot;sqlite3&amp;quot;,
+    :database =&amp;gt; &amp;quot;db/neighborhood#{ENV[&#39;SINATRA_ENV&#39;]}.sqlite&amp;quot;
+  )
+end
+
+configure :production do
+	db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
+
+	ActiveRecord::Base.establish_connection(
+		:adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
+		:host     =&amp;gt; db.host,
+		:username =&amp;gt; db.user,
+		:password =&amp;gt; db.password,
+		:database =&amp;gt; db.path[1..-1],
+		:encoding =&amp;gt; &#39;utf8&#39;
+	)
+end
+
+require_all &#39;app&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The &lt;code&gt;Procfile&lt;/code&gt; was something I couldn&amp;rsquo;t figure out. The &lt;a href=&#34;https://www.sitepoint.com/&#34;&gt;SitePoint&lt;/a&gt; article I linked above had this line for it and this is what made it all work &lt;code&gt;web: bundle exec rackup config.ru -p $PORT&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For the rest I followed the Ruby docs on Heroku &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction&#34;&gt;here&lt;/a&gt; and the SQLite doc &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you get db migration errors you can run rake tasks on Heroku. &lt;code&gt;heroku run rake db:migrate&lt;/code&gt; was one that I needed to do. More in dept docs about it &lt;a href=&#34;https://devcenter.heroku.com/articles/rake&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Hey, look at that. I remembered way more than I thought. Hopefully this was helpful to someone somewhere. Probably a student coming behind me who is going to pull their hair out trying to get their app to work on Heroku.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Are you Gifted?</title>
@@ -547,50 +631,6 @@ Lessons completed total: 372&lt;/p&gt;
 Time spent total: 150:37&lt;br /&gt;
 Lessons completed today: 10&lt;br /&gt;
 Lessons completed total: 365&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 35</title>
-      <link>https://itzsaga.github.io/post/day-035/</link>
-      <pubDate>Sun, 02 Apr 2017 21:45:14 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-035/</guid>
-      <description>&lt;p&gt;Progress progress progress. I&amp;rsquo;m moving along. I watched the last ActiveRecord video then finished up the Rack section. Learning the lowest level of how Rails runs a webserver.  There is a granular procedure that&amp;rsquo;s happening and it was explained. First we learn basic Rack, then Sinatra abstracts a little bit more, then Rails abstracts even more. So when things do break, because they will, there is an understanding of what&amp;rsquo;s actually going on to fix it. This is the exact thing that I hear a lot of people complain about. They buy courses on Udemy or wherever and at the end of the course they have a working app that they can show off, &lt;strong&gt;BUT&lt;/strong&gt;, they can&amp;rsquo;t explain &lt;em&gt;why&lt;/em&gt; or &lt;em&gt;how&lt;/em&gt; it works. I&amp;rsquo;ve fallen into that category in the past. It makes a lot of sense too. If you want to market something you have your students make fast progress and put the impetuous on them to do deeper learning. Like, do people &lt;em&gt;really&lt;/em&gt; want to know how rack works? No. They just want it to work and use Rails because that&amp;rsquo;s easier. I guess that&amp;rsquo;s what seperates those who end up being successful and those who fall to the side self teaching.&lt;/p&gt;
-
-&lt;p&gt;I started this post before finishing my learning for the day. I think this sums it up well:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;WHY SINATRA BEFORE RAILS&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ve all heard of &amp;ldquo;Ruby on Rails&amp;rdquo; and how powerful it is. You can build impressive web applications in mere hours! How amazing. Most people, when they learn Rails for the first time, literally say &amp;ldquo;It&amp;rsquo;s like magic!&amp;rdquo;. But we&amp;rsquo;re developers, and we know that magic isn&amp;rsquo;t real and that other smart developers just built an impressive framework.&lt;/p&gt;
-
-&lt;p&gt;That means it&amp;rsquo;s important to understand the basic concepts of Rails before diving into Rails itself. &lt;strong&gt;Enter Sinatra.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sinatra is considered a &lt;em&gt;light weight&lt;/em&gt; framework where the responsibility of app structure and communication falls solely on the developer. Sinatra doesn&amp;rsquo;t give you a lot to get started with. There is no way to auto-generate files and directories, no way for the app to make assumptions about routes, or &amp;ldquo;Sinatra magic&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;Because of this, working with Sinatra allows you to dive in deep with the major concepts of MVC, a system for building web applications that governs 90% of the worlds&amp;rsquo; apps. You are required to manually set up routes and connect them to other pieces of your application. Without this manual setup, your application does not automatically know how to communicate with your database or what HTML files to load in the browser. And even more importantly, without a manual setup, you lose connection to the major components of a web application, and in particular, all the moving pieces of MVC.&lt;/p&gt;
-
-&lt;p&gt;So introduce yourself to Sinatra. Get to know it, and know it well. The better your foundation, the more you&amp;rsquo;ll be able to know (and like) Rails.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A few other things that I picked up today. First, is that there are a bunch of other lorem ipsum word blocks out there and they&amp;rsquo;re typically pretty funny. There are some good ones in this &lt;a href=&#34;https://www.sitepoint.com/10-lorem-ipsum-alternatives/&#34;&gt;SitePoint article&lt;/a&gt;. The one that Avi used is called &lt;a href=&#34;https://hipsum.co/&#34;&gt;Hipster Ipsum&lt;/a&gt; and made the people watching the lecture at the time ask about it.&lt;/p&gt;
-
-&lt;p&gt;Avi went on a tangent about how he thinks about how his life actually impacts others. How the web is this amazing thing that connects people and not just computers. How the time we&amp;rsquo;re in right now is crazy exciting because we are now as humans more connected and thus are able to do greater things as a species. I honestly don&amp;rsquo;t remember word for word but that&amp;rsquo;s the gist of it. A quote that stuck out to me:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The Web does not connect machines, it connects people.&lt;br /&gt;
-- &lt;a href=&#34;https://en.wikipedia.org/wiki/Tim_Berners-Lee&#34;&gt;Tim Berners-Lee&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;rsquo;s so true when we think about the impact that web apps have on real people. While my code might ultimately be interpreted by machines we don&amp;rsquo;t build things for machines to use. We are building things to connect and solve real problems for people. When I built the Meetup CLI Gem that has the potential to solve someones problem and connect them to other people at a meetup group. It may seem like technology on the surface but in the end it&amp;rsquo;s all about people.&lt;/p&gt;
-
-&lt;p&gt;Even doing minimal work today (time wise) due to a much needed haircut and the wedding shower I went to with my wife at &lt;a href=&#34;http://www.arringtonvineyards.com/&#34;&gt;Arrington Vineyards&lt;/a&gt;, I&amp;rsquo;m right on track with my pace and have finished 48 lessons/labs since last week. :-)&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:33&lt;br /&gt;
-Time spent total: 148:36&lt;br /&gt;
-Lessons completed today: 16&lt;br /&gt;
-Lessons completed total: 355&lt;/p&gt;
 </description>
     </item>
     
