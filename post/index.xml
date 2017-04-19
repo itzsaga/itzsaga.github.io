@@ -52,8 +52,8 @@ end
 &lt;li&gt;Add &lt;code&gt;gem &#39;pg&#39;&lt;/code&gt; to your Gemfile. Also, define your version of ruby, ie. &lt;code&gt;ruby &#39;2.4.1&#39;&lt;/code&gt; in your Gemfile.&lt;/li&gt;
 &lt;li&gt;I changed the sqlite gem to development like this &lt;code&gt;gem &#39;sqlite3&#39;, :group =&amp;gt; :development&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;I added a &lt;code&gt;config/database.yml&lt;/code&gt; because the Heroku docs said to but I don&amp;rsquo;t know if it&amp;rsquo;s needed. I&amp;rsquo;ll probably delete it and see what happens in the near future. The Heroku docs have an example that I used and just changed the &lt;code&gt;database:&lt;/code&gt; names.&lt;/li&gt;
-&lt;li&gt;I &lt;em&gt;think&lt;/em&gt; &lt;code&gt;config/environment.rb&lt;/code&gt; is where the magic happened. I kept the &lt;code&gt;:development&lt;/code&gt; environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running &lt;code&gt;shotgun&lt;/code&gt; and on the Heroku server too. With the changes it now looks like this:&lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;li&gt;&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; &lt;code&gt;config/environment.rb&lt;/code&gt; is where the magic happened. I kept the &lt;code&gt;:development&lt;/code&gt; environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running &lt;code&gt;shotgun&lt;/code&gt; and on the Heroku server too. With the changes it now looks like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;bundler/setup&#39;
 Bundler.require
@@ -68,25 +68,26 @@ configure :development do
 end
 
 configure :production do
-	db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
+  db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
 
-	ActiveRecord::Base.establish_connection(
-		:adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
-		:host     =&amp;gt; db.host,
-		:username =&amp;gt; db.user,
-		:password =&amp;gt; db.password,
-		:database =&amp;gt; db.path[1..-1],
-		:encoding =&amp;gt; &#39;utf8&#39;
-	)
+  ActiveRecord::Base.establish_connection(
+    :adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
+    :host     =&amp;gt; db.host,
+    :username =&amp;gt; db.user,
+    :password =&amp;gt; db.password,
+    :database =&amp;gt; db.path[1..-1],
+    :encoding =&amp;gt; &#39;utf8&#39;
+  )
 end
 
 require_all &#39;app&#39;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;The &lt;code&gt;Procfile&lt;/code&gt; was something I couldn&amp;rsquo;t figure out. The &lt;a href=&#34;https://www.sitepoint.com/&#34;&gt;SitePoint&lt;/a&gt; article I linked above had this line for it and this is what made it all work &lt;code&gt;web: bundle exec rackup config.ru -p $PORT&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;For the rest I followed the Ruby docs on Heroku &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction&#34;&gt;here&lt;/a&gt; and the SQLite doc &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If you get db migration errors you can run rake tasks on Heroku. &lt;code&gt;heroku run rake db:migrate&lt;/code&gt; was one that I needed to do. More in dept docs about it &lt;a href=&#34;https://devcenter.heroku.com/articles/rake&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The &lt;code&gt;Procfile&lt;/code&gt; was something I couldn&amp;rsquo;t figure out. The &lt;a href=&#34;https://www.sitepoint.com/&#34;&gt;SitePoint&lt;/a&gt; article I linked above had this line for it and this is what made it all work &lt;code&gt;web: bundle exec rackup config.ru -p $PORT&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For the rest I followed the Ruby docs on Heroku &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction&#34;&gt;here&lt;/a&gt; and the SQLite doc &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you get db migration errors you can run rake tasks on Heroku. &lt;code&gt;heroku run rake db:migrate&lt;/code&gt; was one that I needed to do. More in dept docs about it &lt;a href=&#34;https://devcenter.heroku.com/articles/rake&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Hey, look at that. I remembered way more than I thought. Hopefully this was helpful to someone somewhere. Probably a student coming behind me who is going to pull their hair out trying to get their app to work on Heroku.&lt;/p&gt;

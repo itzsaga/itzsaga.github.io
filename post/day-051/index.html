@@ -379,8 +379,8 @@ end
 <li>Add <code>gem 'pg'</code> to your Gemfile. Also, define your version of ruby, ie. <code>ruby '2.4.1'</code> in your Gemfile.</li>
 <li>I changed the sqlite gem to development like this <code>gem 'sqlite3', :group =&gt; :development</code>.</li>
 <li>I added a <code>config/database.yml</code> because the Heroku docs said to but I don&rsquo;t know if it&rsquo;s needed. I&rsquo;ll probably delete it and see what happens in the near future. The Heroku docs have an example that I used and just changed the <code>database:</code> names.</li>
-<li>I <em>think</em> <code>config/environment.rb</code> is where the magic happened. I kept the <code>:development</code> environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running <code>shotgun</code> and on the Heroku server too. With the changes it now looks like this:</li>
-</ol>
+
+<li><p>I <em>think</em> <code>config/environment.rb</code> is where the magic happened. I kept the <code>:development</code> environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running <code>shotgun</code> and on the Heroku server too. With the changes it now looks like this:</p>
 
 <pre><code class="language-ruby">require 'bundler/setup'
 Bundler.require
@@ -395,25 +395,26 @@ configure :development do
 end
 
 configure :production do
-	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
-	ActiveRecord::Base.establish_connection(
-		:adapter =&gt; db.scheme == 'postgres' ? 'postgresql' : db.scheme,
-		:host     =&gt; db.host,
-		:username =&gt; db.user,
-		:password =&gt; db.password,
-		:database =&gt; db.path[1..-1],
-		:encoding =&gt; 'utf8'
-	)
+  ActiveRecord::Base.establish_connection(
+    :adapter =&gt; db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+    :host     =&gt; db.host,
+    :username =&gt; db.user,
+    :password =&gt; db.password,
+    :database =&gt; db.path[1..-1],
+    :encoding =&gt; 'utf8'
+  )
 end
 
 require_all 'app'
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>The <code>Procfile</code> was something I couldn&rsquo;t figure out. The <a href="https://www.sitepoint.com/">SitePoint</a> article I linked above had this line for it and this is what made it all work <code>web: bundle exec rackup config.ru -p $PORT</code>.</li>
-<li>For the rest I followed the Ruby docs on Heroku <a href="https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction">here</a> and the SQLite doc <a href="https://devcenter.heroku.com/articles/sqlite3">here</a>.</li>
-<li>If you get db migration errors you can run rake tasks on Heroku. <code>heroku run rake db:migrate</code> was one that I needed to do. More in dept docs about it <a href="https://devcenter.heroku.com/articles/rake">here</a>.</li>
+<li><p>The <code>Procfile</code> was something I couldn&rsquo;t figure out. The <a href="https://www.sitepoint.com/">SitePoint</a> article I linked above had this line for it and this is what made it all work <code>web: bundle exec rackup config.ru -p $PORT</code>.</p></li>
+
+<li><p>For the rest I followed the Ruby docs on Heroku <a href="https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction">here</a> and the SQLite doc <a href="https://devcenter.heroku.com/articles/sqlite3">here</a>.</p></li>
+
+<li><p>If you get db migration errors you can run rake tasks on Heroku. <code>heroku run rake db:migrate</code> was one that I needed to do. More in dept docs about it <a href="https://devcenter.heroku.com/articles/rake">here</a>.</p></li>
 </ol>
 
 <p>Hey, look at that. I remembered way more than I thought. Hopefully this was helpful to someone somewhere. Probably a student coming behind me who is going to pull their hair out trying to get their app to work on Heroku.</p>
