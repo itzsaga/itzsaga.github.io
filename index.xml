@@ -6,8 +6,27 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Apr 2017 23:34:13 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 19 Apr 2017 23:22:17 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Yay! You&#39;re on Rails!</title>
+      <link>https://itzsaga.github.io/post/day-052/</link>
+      <pubDate>Wed, 19 Apr 2017 23:22:17 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-052/</guid>
+      <description>&lt;p&gt;Today I started &lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Rails&lt;/a&gt; in all it&amp;rsquo;s glory. This will be my first full on framework that I get to work with. From what I&amp;rsquo;ve seen though it&amp;rsquo;s one of those things that has so much the key will be to stay focused on what I&amp;rsquo;m trying to have Rails do instead of everything it can do. It&amp;rsquo;s crazy to think that after this large section Career Services will be reaching out to me to start that process while I finished up the JS part of the program. I have 104 lessons, labs, and lectures left before 3 projects. My goal is to be doing Rails projects by May 10th.&lt;/p&gt;
+
+&lt;p&gt;I started taking some more organized notes in my little notebook. We&amp;rsquo;ll see how that works out as we move forward. From looking over the curriculum authentication is the largest part of Rails so I&amp;rsquo;ll keep some good notes there. If I can keep myself from having to rewatch lecture videos I think the extra time writing things down will pay off.&lt;/p&gt;
+
+&lt;p&gt;On a software note. My favorite email client just had an upgrade and is available on Windows, Mac, and Linus now. Check out &lt;a href=&#34;https://nylas.com/nylas-mail/&#34;&gt;Nylas Mail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 3:00&lt;br /&gt;
+Time spent total: 201:13&lt;br /&gt;
+Lessons completed today: 6&lt;br /&gt;
+Lessons completed total: 412&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>I Deployed My Sinatra App To Heroku</title>
@@ -560,83 +579,6 @@ Lessons completed total: 378&lt;/p&gt;
 Time spent total: 152:56&lt;br /&gt;
 Lessons completed today: 7&lt;br /&gt;
 Lessons completed total: 372&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 36</title>
-      <link>https://itzsaga.github.io/post/day-036/</link>
-      <pubDate>Mon, 03 Apr 2017 22:59:43 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-036/</guid>
-      <description>&lt;p&gt;I got a late start tonight :-( so I didn&amp;rsquo;t spend as much time as I would&amp;rsquo;ve liked. However, I did learn that my wife &lt;strong&gt;did not&lt;/strong&gt; know that it was not a good idea to try and peel a cantaloupe with a chef&amp;rsquo;s knife. Yeah, so after helping her wrap a sliced finger in a paper towel cantaloupe slicing duty fell on me. Then I spilled my tea all over my desk because one of my children (I&amp;rsquo;m guessing the 2 year old) had wedged my chair under my desk. When I pulled it out it shook the desk and *splash* everything went. My scroll wheel on my mouse is just now starting to work properly again.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m working through &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt; now and nothing has been too confusing. It all seems pretty straight forward so far. Obviously the more complex a web app gets the more confusing things will be. I&amp;rsquo;m interested to see if we&amp;rsquo;ll be building anything that integrates a database or not. I&amp;rsquo;ll find out in time. I&amp;rsquo;m going to attempt to build out a table with the notes I took on the Model View Controller (MVC) architecture a lot of apps are built on.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Model&lt;/th&gt;
-&lt;th&gt;View&lt;/th&gt;
-&lt;th&gt;Controller&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Logic&lt;/td&gt;
-&lt;td&gt;Front-End&lt;/td&gt;
-&lt;td&gt;Middleman&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Brains&lt;/td&gt;
-&lt;td&gt;HTML&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;CSS&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Forms&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;ERB*&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Chef&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Guest&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Waiter&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;*ERB stands for Embedded Ruby&lt;/p&gt;
-
-&lt;p&gt;I think the thing that helped my grasping of the MVC the most was the restaurant analogy. The user interacts with the View which in turn interacts with the Controller which talks to the Model and returns back to the View with what the Model sends. So the Guest orders something and the Waiter takes that info to the Chef who then makes the food and sends the waiter back to the Guest with ti.&lt;/p&gt;
-
-&lt;p&gt;Two random things to mention:
-1. Check out &lt;a href=&#34;https://informeddelivery.usps.com/box/pages/intro/start.action&#34;&gt;Informed Delivery&lt;/a&gt; from the USPS. I thought it was super cool then I realized you couldn&amp;rsquo;t tell the USPS to not deliver junk so the service seems literally useless.
-2. Read &lt;a href=&#34;https://sivers.org/kimo&#34;&gt;There’s no speed limit. (The lessons that changed my life.)&lt;/a&gt; by Derek Sivers. If you have time listen to him on &lt;a href=&#34;http://tim.blog/2015/12/14/derek-sivers-on-developing-confidence-finding-happiness-and-saying-no-to-millions/&#34;&gt;The Tim Ferriss Show&lt;/a&gt; as well.&lt;/p&gt;
-
-&lt;p&gt;The line &lt;strong&gt;“the standard pace is for chumps”&lt;/strong&gt; (from the Sivers article) has always resonated. While I don&amp;rsquo;t think I&amp;rsquo;ve always worked hard enough to prove that true I know I&amp;rsquo;ve seen it. I think about my expectations going into this bootcamp and how long I want it to take. Oh 800+ hours you say? It&amp;rsquo;ll take months you say? Gimme 16 weeks from first day to hired. You obviously don&amp;rsquo;t know me or that I&amp;rsquo;ve already completed a Masters degree 100% online or that I have a near-genius IQ or that I have a bunch of biohacks I&amp;rsquo;m using to crush it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to be very interested to see how many hours I&amp;rsquo;ve put in when I complete Rails as that is approximately 75% of the way through the curriculum. Accordingly it should be about 600 hours of work done at that point.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:01&lt;br /&gt;
-Time spent total: 150:37&lt;br /&gt;
-Lessons completed today: 10&lt;br /&gt;
-Lessons completed total: 365&lt;/p&gt;
 </description>
     </item>
     
