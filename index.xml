@@ -6,8 +6,23 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Apr 2017 23:22:17 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 20 Apr 2017 22:44:52 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fog is in the Brain</title>
+      <link>https://itzsaga.github.io/post/day-053/</link>
+      <pubDate>Thu, 20 Apr 2017 22:44:52 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-053/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t know what it is tonight but I just can&amp;rsquo;t get into the groove. I&amp;rsquo;m steady distracted and not focused. And no it&amp;rsquo;s not because of the date, you know you were thinking it. Ugh. At least it&amp;rsquo;s on a &amp;ldquo;short&amp;rdquo; day and I did attend a meetup tonight so I did something beneficial to my coding journey that took a few hours of my evening. I am a few pages into one of my notebooks though so I can say that&amp;rsquo;s good. Maybe I&amp;rsquo;ll lookup the &lt;a href=&#34;https://www.w3.org/TR/cors/&#34;&gt;CORS&lt;/a&gt; spec instead of doing anymore Rails learning tonight. It&amp;rsquo;s a topic I heard about at the beginning of the month but still haven&amp;rsquo;t read up on at all (I had to look up that link just now).&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 1:11&lt;br /&gt;
+Time spent total: 202:24&lt;br /&gt;
+Lessons completed today: 4&lt;br /&gt;
+Lessons completed total: 416&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Yay! You&#39;re on Rails!</title>
@@ -554,31 +569,6 @@ end
 Time spent total: 155:13&lt;br /&gt;
 Lessons completed today: 6&lt;br /&gt;
 Lessons completed total: 378&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 37</title>
-      <link>https://itzsaga.github.io/post/day-037/</link>
-      <pubDate>Tue, 04 Apr 2017 23:11:04 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-037/</guid>
-      <description>&lt;p&gt;Sinatra is moving along and clicking well. I have this fear after being somewhat cocky in last night&amp;rsquo;s post that the spirits of those Senior Devs before me are going to jump into my learning and humble me some. If so, not today. It&amp;rsquo;s all making sense the first time through. I think this is because there&amp;rsquo;s very little new logic. It&amp;rsquo;s just where to put that login in regards to models, views and controllers. Like, if I&amp;rsquo;m going to use ruby in a webpage the page with be &lt;code&gt;index.erb&lt;/code&gt; so it can be interpretted and I&amp;rsquo;ll have to wrap code in &lt;code&gt;&amp;lt;% %&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;%= %&amp;gt;&lt;/code&gt; depending on what I&amp;rsquo;m going to do with it.&lt;/p&gt;
-
-&lt;p&gt;The largest piece of info I learned outside of more of the Sinatra DSL is how &lt;code&gt;params&lt;/code&gt; work.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;If you are unfamiliar with the &lt;code&gt;params&lt;/code&gt; object and how it relates to form and inputs, that&amp;rsquo;s totally fine. The TL;DR is that all the information the user submitted in the form is available to your code within a hash named &lt;code&gt;params&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So for form data for example, let&amp;rsquo;s say we have &lt;code&gt;&amp;lt;input name=&amp;quot;username&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;&lt;/code&gt; and the form has an input box and in that box is &lt;code&gt;withloudhands&lt;/code&gt; (I don&amp;rsquo;t know why the curriculum chose this as an example lol). &lt;code&gt;withloudhands&lt;/code&gt; is now the &amp;ldquo;current value&amp;rdquo;. Let&amp;rsquo;s say there&amp;rsquo;s also an email input which I won&amp;rsquo;t paint the picture of. The &lt;code&gt;params&lt;/code&gt; hash after this is submitted would be &lt;code&gt;{username:&amp;quot;withloudhands&amp;quot;, email:&amp;quot;yourcoolemail@gmizzle.com&amp;quot;}&lt;/code&gt; and this hash can be used just like any other hash. So &lt;code&gt;params[:username]&lt;/code&gt; would return &lt;code&gt;&amp;quot;withloudhands&amp;quot;&lt;/code&gt;. I did notice that the hash stores everything as strings so when performing math operations I had to utilize the &lt;code&gt;.to_i&lt;/code&gt; method.&lt;/p&gt;
-
-&lt;p&gt;I also learned that controller actions never care about their return values. This came up when a student suggested using &lt;code&gt;#tap&lt;/code&gt; in a lecture and Avi said that while it would work he didn&amp;rsquo;t think it was the best option. I still haven&amp;rsquo;t dove into what &lt;code&gt;#tap&lt;/code&gt; actually does even though I&amp;rsquo;ve discussed it with Mike in the past. I did come across a great, and quick read, blog post &lt;a href=&#34;https://walwoodr.github.io/2017/03/24/block_yield_tap/&#34;&gt;&amp;ldquo;Block, yield, tap&amp;rdquo;&lt;/a&gt; by the more studious &lt;a href=&#34;https://github.com/walwoodr&#34;&gt;Rachel Walwood&lt;/a&gt; who&amp;rsquo;s also going through Flatiron right now. She goes through exactly what it is in a solid and concise manner.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:19&lt;br /&gt;
-Time spent total: 152:56&lt;br /&gt;
-Lessons completed today: 7&lt;br /&gt;
-Lessons completed total: 372&lt;/p&gt;
 </description>
     </item>
     
