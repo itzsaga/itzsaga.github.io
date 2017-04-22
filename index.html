@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-20T22:44:52-05:00"/>
+<meta property="og:updated_time" content="2017-04-21T23:20:51-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-054/"><p>Rails Makes Life Easier but Difficult</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-053/"><p>Fog is in the Brain</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-052/"><p>Yay! You&#39;re on Rails!</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-051/"><p>I Deployed My Sinatra App To Heroku</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-053/">Fog is in the Brain</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-054/">Rails Makes Life Easier but Difficult</a></h2>
         
         
-            <p>Day 53 of Flatiron School</p>
+            <p>Day 54 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,11 +222,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-04-20'>
-            April 20, 2017</time>
+            datetime='2017-04-21'>
+            April 21, 2017</time>
         <span class="author">Seth</span>
         
-            <p>1 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f&text=Fog%20is%20in%20the%20Brain&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f&text=Rails%20Makes%20Life%20Easier%20but%20Difficult&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f&title=Fog%20is%20in%20the%20Brain" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f&title=Rails%20Makes%20Life%20Easier%20but%20Difficult" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,19 +278,38 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-053/" class="image featured">
-            <img src="../../images//fog.jpg" alt="tree in fog" />
+        <a href="https://itzsaga.github.io/post/day-054/" class="image featured">
+            <img src="../../images//rails_routes.png" alt="rails routes" />
         </a>
     
 
 
     <div id="content">
-        <p>I don&rsquo;t know what it is tonight but I just can&rsquo;t get into the groove. I&rsquo;m steady distracted and not focused. And no it&rsquo;s not because of the date, you know you were thinking it. Ugh. At least it&rsquo;s on a &ldquo;short&rdquo; day and I did attend a meetup tonight so I did something beneficial to my coding journey that took a few hours of my evening. I am a few pages into one of my notebooks though so I can say that&rsquo;s good. Maybe I&rsquo;ll lookup the <a href="https://www.w3.org/TR/cors/">CORS</a> spec instead of doing anymore Rails learning tonight. It&rsquo;s a topic I heard about at the beginning of the month but still haven&rsquo;t read up on at all (I had to look up that link just now).</p>
+        <p>Continuing with Rails. I now have 5 pages in my Cast Iron Design notebook. Something cool that I learned today:</p>
 
-<p>Time spent today: 1:11<br />
-Time spent total: 202:24<br />
+<pre><code class="language-erb">&lt;!-- How link_to works --&gt;
+&lt;% @posts.each do |post| %&gt;
+  &lt;div&gt;&lt;%= link_to post.title, post_path(post) %&gt;&lt;/div&gt;
+&lt;% end %&gt;
+
+&lt;!-- Creates the following HTML --&gt;
+&lt;div&gt;
+  &lt;a href=&quot;/posts/1&quot;&gt;My Title&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Which is pretty sweet considering how I was doing it in Sinatra. Something else that&rsquo;s pretty sweet is that when we code <code>post_path(post)</code> Rails is smart enough to know that it needs to use the id attribute of the <code>post</code> object we just passed in. No need to write <code>post.id</code>.</p>
+
+<p>Views in Rails also follow a convention of having a file extension of <code>.html.erb</code> whereas in Sinatra I was only using <code>.erb</code> for my views. Turns out Rails will render things right to left so first a file is having the embedded ruby rendered then it&rsquo;s turned into html. It also appears that any plaintext will just be considered html.</p>
+
+<p>I&rsquo;ve also been learning a ton about how routes are handles in Rails. It seemed a little counter intuitive compared to how I worked with Sinatra but as I keep learning and using it it is making much more sense.</p>
+
+<p>I&rsquo;m feeling stronger every day with in the future being able to pick up other frameworks based on the MVC structure. I&rsquo;m getting a very low level instruction and understanding of how things work and I know I&rsquo;ll be a better developer because of it. Even if it takes longer to learn.</p>
+
+<p>Time spent today: 2:20<br />
+Time spent total: 204:44<br />
 Lessons completed today: 4<br />
-Lessons completed total: 416</p>
+Lessons completed total: 420</p>
 
     </div>
 
@@ -324,8 +343,8 @@ Lessons completed total: 416</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-052/"
-                class="button big previous">Yay! You&#39;re on Rails!</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-053/"
+                class="button big previous">Fog is in the Brain</a></li>
     
 
     
@@ -338,9 +357,9 @@ Lessons completed total: 416</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-053\/';
-    var disqus_title = 'Fog is in the Brain';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-053\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-054\/';
+    var disqus_title = 'Rails Makes Life Easier but Difficult';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-054\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -364,25 +383,25 @@ Lessons completed total: 416</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f&text=Fog%20is%20in%20the%20Brain&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f&text=Rails%20Makes%20Life%20Easier%20but%20Difficult&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f&title=Fog%20is%20in%20the%20Brain" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f&title=Rails%20Makes%20Life%20Easier%20but%20Difficult" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-053%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-054%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -502,6 +521,20 @@ Lessons completed total: 416</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-054/">Rails Makes Life Easier but Difficult</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-21'>
+                                    April 21, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-053/">Fog is in the Brain</a></h3>
                                 
                                     
@@ -523,20 +556,6 @@ Lessons completed total: 416</p>
                                 <time class="published" datetime=
                                     '2017-04-19'>
                                     April 19, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-051/">I Deployed My Sinatra App To Heroku</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-18'>
-                                    April 18, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -575,7 +594,7 @@ Lessons completed total: 416</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">51</span>
+                                <span style="float:right;">52</span>
                             </header>
                         </article>
                     </li>
