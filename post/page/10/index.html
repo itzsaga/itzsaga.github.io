@@ -16,7 +16,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.16-DEV" />
+        <meta name="generator" content="Hugo 0.20.2" />
         
 
 
@@ -34,7 +34,9 @@
 <meta property="og:url" content="https://itzsaga.github.io/post/" />
 
 
+
 <meta property="og:updated_time" content="2017-03-09T22:12:10-06:00"/>
+
 
 
 
@@ -60,13 +62,13 @@
 
         
         
-
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
         
-            
-                
-                    <link rel="stylesheet" href="/css/main.min.css" />
-                
-            
+
         
 
         
@@ -77,7 +79,7 @@
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-96008952-1', 'auto');
 ga('send', 'pageview');
@@ -358,7 +360,8 @@ ga('send', 'pageview');
 
     
 
-    <p>Today was a slow day. The kids didn&rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&rsquo;s fine though. I didn&rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done. I did get in my night time session (minus a few minutes for good night kisses).</p>
+    <p>Today was a slow day. The kids didn&rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&rsquo;s fine though. I didn&rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.
+I did get in my night time session (minus a few minutes for good night kisses).</p>
 
     <footer>
         <ul class="actions">
@@ -419,7 +422,9 @@ ga('send', 'pageview');
 
     
 
-    <p>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy. Original code: def oxford_comma(array) if array.length == 1 return &quot;#{array[0]}&quot; elsif array.length == 2 return array.join(&quot; and &quot;) elsif array.length &gt;= 3 new_last_array_item = &quot;and #{array[-1]}&quot; array.pop array.push(new_last_array_item) return array.join(&quot;, &quot;) end end Refactored code: def oxford_comma(array) if array.length == 1 return &quot;#{array[0]}&quot; elsif array.length == 2 return array.join(&quot; and &quot;) elsif array.length &gt;= 3 array[-1] = &quot;and #{array[-1]}&quot; return array.join(&quot;, &quot;) end end Another refactoring win today while the kids were napping.</p>
+    <p>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy.
+Original code:
+def oxford_comma(array) if array.length == 1 return &quot;#{array[0]}&quot; elsif array.length == 2 return array.join(&quot; and &quot;) elsif array.</p>
 
     <footer>
         <ul class="actions">
@@ -480,7 +485,8 @@ ga('send', 'pageview');
 
     
 
-    <p>After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours: When it comes to Bootstrap as a framework the .col-xs class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap.</p>
+    <p>After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours:
+When it comes to Bootstrap as a framework the .col-xs class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap.</p>
 
     <footer>
         <ul class="actions">
@@ -842,13 +848,14 @@ ga('send', 'pageview');
 
         
         
-
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
         
-            
-                
-                    <script src="/js/main.min.js"></script>
-                
-            
+
         
 
             

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Apr 2017 23:24:12 -0500</lastBuildDate>
-    <atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Fixing Problems Makes You Stronger</title>
@@ -15,44 +17,7 @@
       <pubDate>Sat, 22 Apr 2017 23:24:12 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-055/</guid>
-      <description>&lt;p&gt;It was a &lt;strong&gt;LONG&lt;/strong&gt; day on my computer. Ubuntu decided to suggest I update to 16.10 and I did. Well that just started a string of issues that ended up in me reinstalling 16.04.2 LTS. I lost my entire morning and early afternoon to this process before I could get coding today. I&amp;rsquo;m sure I could&amp;rsquo;ve figured it out in time but time is something that is precious and I really had no need to upgrade. I&amp;rsquo;m on a LTS and things work which is all that I need.&lt;/p&gt;
-
-&lt;p&gt;In addition, Rails has presented some interesting problems that I&amp;rsquo;ve either figured out with Learn Expert help or on my own. Here are some examples, that I hope will help students behind me.&lt;/p&gt;
-
-&lt;p&gt;This error has persisted since before Rails but I never mentioned it (I don&amp;rsquo;t think):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;An error occurred while installing json (1.8.3), and Bundler cannot
-continue.
-Make sure that `gem install json -v &#39;1.8.3&#39;` succeeds before bundling.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Figured out the best way to fix this is to delete the Gemfile.lock &lt;code&gt;rm Gemfile.lock&lt;/code&gt; then bundle again &lt;code&gt;bundle install&lt;/code&gt; and that install json 1.8.6 at this moment in time.&lt;/p&gt;
-
-&lt;p&gt;Now when you get this error:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/home/seth/.rvm/gems/ruby-2.4.1/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/conversions.rb:124:in `block (2 levels) in &amp;lt;class:Numeric&amp;gt;&#39;: stack level too deep (SystemStackError)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It&amp;rsquo;s a Rails issue. The easiest fix is to change the version of Rails in the Gemfile. I simple do &lt;code&gt;gem &#39;rails&#39;, &#39;5.0.2&#39;&lt;/code&gt; then run &lt;code&gt;bundle update&lt;/code&gt; and this error is fixed. I&amp;rsquo;ve gotten really good at &lt;code&gt;nano Gemfile&lt;/code&gt;, do the edit quickly (rails is typically in the first 5 lines), then &lt;code&gt;CTRL + X&lt;/code&gt;, &lt;code&gt;Y&lt;/code&gt;, &lt;code&gt;Enter&lt;/code&gt;, &lt;code&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Another interesting error that has popped up on multiple occaisons is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NoMethodError: undefined method `last_comment&#39; for #&amp;lt; Rake::Application:0x007ff0cf37be38&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To fix this one another Gemfile edit must be done. Simply change, or add in, &lt;code&gt;gem &#39;rake&#39;, &#39;&amp;lt;11.0&#39;&lt;/code&gt;. This is just an issue with rake past version 11. I didn&amp;rsquo;t read up on what it is exactly I just found this answer quickly and it works.&lt;/p&gt;
-
-&lt;p&gt;I do these things pretty regularly these days. I wish the Gemfiles of some of these lessons were scaled back some. There is so much unneeded stuff in them (I think). Also, a lot of the versions could be updated to take advantage of more recent versions getting rid of a lot of errors. I get a ton of DEPRECATION WARNING messages and they&amp;rsquo;re a pain.&lt;/p&gt;
-
-&lt;p&gt;On a learning note, while I thought &lt;code&gt;form_tag&lt;/code&gt; was cool I had no idea about &lt;code&gt;form_for&lt;/code&gt; when it comes to ActionView. Mind is sufficiently blown with how much more efficient this makes things and how much less coding needs to be done for the mundane form building. Also learning how to block CSRF attempts was an interesting bit of info. Cross-Site Request Forgery that is. One site making a request to another site via a form is the general flow of a CSRF.&lt;/p&gt;
-
-&lt;p&gt;These labs are getting intense too. The lab I&amp;rsquo;m currently on is equally or more complex than my Sinatra Portfolio Project which is saying something. Granted, I have been introduced to Rails generators so I won&amp;rsquo;t have to write EVERYTHING from scratch so we&amp;rsquo;ll see how it goes.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 5:08&lt;br /&gt;
-Time spent total: 209:52&lt;br /&gt;
-Lessons completed today: 11&lt;br /&gt;
-Lessons completed total: 431&lt;/p&gt;
-</description>
+      <description>It was a LONG day on my computer. Ubuntu decided to suggest I update to 16.10 and I did. Well that just started a string of issues that ended up in me reinstalling 16.04.2 LTS. I lost my entire morning and early afternoon to this process before I could get coding today. I&amp;rsquo;m sure I could&amp;rsquo;ve figured it out in time but time is something that is precious and I really had no need to upgrade.</description>
     </item>
     
     <item>
@@ -61,32 +26,8 @@ Lessons completed total: 431&lt;/p&gt;
       <pubDate>Fri, 21 Apr 2017 23:20:51 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-054/</guid>
-      <description>&lt;p&gt;Continuing with Rails. I now have 5 pages in my Cast Iron Design notebook. Something cool that I learned today:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erb&#34;&gt;&amp;lt;!-- How link_to works --&amp;gt;
-&amp;lt;% @posts.each do |post| %&amp;gt;
-  &amp;lt;div&amp;gt;&amp;lt;%= link_to post.title, post_path(post) %&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;% end %&amp;gt;
-
-&amp;lt;!-- Creates the following HTML --&amp;gt;
-&amp;lt;div&amp;gt;
-  &amp;lt;a href=&amp;quot;/posts/1&amp;quot;&amp;gt;My Title&amp;lt;/a&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which is pretty sweet considering how I was doing it in Sinatra. Something else that&amp;rsquo;s pretty sweet is that when we code &lt;code&gt;post_path(post)&lt;/code&gt; Rails is smart enough to know that it needs to use the id attribute of the &lt;code&gt;post&lt;/code&gt; object we just passed in. No need to write &lt;code&gt;post.id&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Views in Rails also follow a convention of having a file extension of &lt;code&gt;.html.erb&lt;/code&gt; whereas in Sinatra I was only using &lt;code&gt;.erb&lt;/code&gt; for my views. Turns out Rails will render things right to left so first a file is having the embedded ruby rendered then it&amp;rsquo;s turned into html. It also appears that any plaintext will just be considered html.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also been learning a ton about how routes are handles in Rails. It seemed a little counter intuitive compared to how I worked with Sinatra but as I keep learning and using it it is making much more sense.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m feeling stronger every day with in the future being able to pick up other frameworks based on the MVC structure. I&amp;rsquo;m getting a very low level instruction and understanding of how things work and I know I&amp;rsquo;ll be a better developer because of it. Even if it takes longer to learn.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:20&lt;br /&gt;
-Time spent total: 204:44&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 420&lt;/p&gt;
-</description>
+      <description>Continuing with Rails. I now have 5 pages in my Cast Iron Design notebook. Something cool that I learned today:
+&amp;lt;!-- How link_to works --&amp;gt; &amp;lt;% @posts.each do |post| %&amp;gt; &amp;lt;div&amp;gt;&amp;lt;%= link_to post.title, post_path(post) %&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;% end %&amp;gt; &amp;lt;!-- Creates the following HTML --&amp;gt; &amp;lt;div&amp;gt; &amp;lt;a href=&amp;quot;/posts/1&amp;quot;&amp;gt;My Title&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;  Which is pretty sweet considering how I was doing it in Sinatra. Something else that&amp;rsquo;s pretty sweet is that when we code post_path(post) Rails is smart enough to know that it needs to use the id attribute of the post object we just passed in.</description>
     </item>
     
     <item>
@@ -95,13 +36,7 @@ Lessons completed total: 420&lt;/p&gt;
       <pubDate>Thu, 20 Apr 2017 22:44:52 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-053/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t know what it is tonight but I just can&amp;rsquo;t get into the groove. I&amp;rsquo;m steady distracted and not focused. And no it&amp;rsquo;s not because of the date, you know you were thinking it. Ugh. At least it&amp;rsquo;s on a &amp;ldquo;short&amp;rdquo; day and I did attend a meetup tonight so I did something beneficial to my coding journey that took a few hours of my evening. I am a few pages into one of my notebooks though so I can say that&amp;rsquo;s good. Maybe I&amp;rsquo;ll lookup the &lt;a href=&#34;https://www.w3.org/TR/cors/&#34;&gt;CORS&lt;/a&gt; spec instead of doing anymore Rails learning tonight. It&amp;rsquo;s a topic I heard about at the beginning of the month but still haven&amp;rsquo;t read up on at all (I had to look up that link just now).&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:11&lt;br /&gt;
-Time spent total: 202:24&lt;br /&gt;
-Lessons completed today: 4&lt;br /&gt;
-Lessons completed total: 416&lt;/p&gt;
-</description>
+      <description>I don&amp;rsquo;t know what it is tonight but I just can&amp;rsquo;t get into the groove. I&amp;rsquo;m steady distracted and not focused. And no it&amp;rsquo;s not because of the date, you know you were thinking it. Ugh. At least it&amp;rsquo;s on a &amp;ldquo;short&amp;rdquo; day and I did attend a meetup tonight so I did something beneficial to my coding journey that took a few hours of my evening. I am a few pages into one of my notebooks though so I can say that&amp;rsquo;s good.</description>
     </item>
     
     <item>
@@ -110,17 +45,7 @@ Lessons completed total: 416&lt;/p&gt;
       <pubDate>Wed, 19 Apr 2017 23:22:17 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-052/</guid>
-      <description>&lt;p&gt;Today I started &lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Rails&lt;/a&gt; in all it&amp;rsquo;s glory. This will be my first full on framework that I get to work with. From what I&amp;rsquo;ve seen though it&amp;rsquo;s one of those things that has so much the key will be to stay focused on what I&amp;rsquo;m trying to have Rails do instead of everything it can do. It&amp;rsquo;s crazy to think that after this large section Career Services will be reaching out to me to start that process while I finished up the JS part of the program. I have 104 lessons, labs, and lectures left before 3 projects. My goal is to be doing Rails projects by May 10th.&lt;/p&gt;
-
-&lt;p&gt;I started taking some more organized notes in my little notebook. We&amp;rsquo;ll see how that works out as we move forward. From looking over the curriculum authentication is the largest part of Rails so I&amp;rsquo;ll keep some good notes there. If I can keep myself from having to rewatch lecture videos I think the extra time writing things down will pay off.&lt;/p&gt;
-
-&lt;p&gt;On a software note. My favorite email client just had an upgrade and is available on Windows, Mac, and Linus now. Check out &lt;a href=&#34;https://nylas.com/nylas-mail/&#34;&gt;Nylas Mail&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:00&lt;br /&gt;
-Time spent total: 201:13&lt;br /&gt;
-Lessons completed today: 6&lt;br /&gt;
-Lessons completed total: 412&lt;/p&gt;
-</description>
+      <description>Today I started Rails in all it&amp;rsquo;s glory. This will be my first full on framework that I get to work with. From what I&amp;rsquo;ve seen though it&amp;rsquo;s one of those things that has so much the key will be to stay focused on what I&amp;rsquo;m trying to have Rails do instead of everything it can do. It&amp;rsquo;s crazy to think that after this large section Career Services will be reaching out to me to start that process while I finished up the JS part of the program.</description>
     </item>
     
     <item>
@@ -129,93 +54,8 @@ Lessons completed total: 412&lt;/p&gt;
       <pubDate>Tue, 18 Apr 2017 23:34:13 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-051/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;MY SINATRA PORTFOLIO PROJECT IS DONE!!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You can say I&amp;rsquo;m pretty stoked. This blog is part of the requirements though so get ready :-). Actually, I didn&amp;rsquo;t take enough notes to really get into the code in this blog. I did hit some solid stumbling blocks and there is some major refactoring of code needing to happen but I&amp;rsquo;m overall pretty happy. A large part of the time I spent was making the app look good utilizing &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Something that definitely needs to be refactored is one of my helper methods:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def current_user_parents
-  parents = []
-  current_user(session).houses.each do |house|
-    Parent.where(house_id: house.id).each do |parent|
-      parents &amp;lt;&amp;lt; parent
-    end
-  end
-  parents
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It&amp;rsquo;s sandwich code (starts with a variable set to an empty array, fills that array, returns that array) so I know I can most likely eliminate two lines from that or even three if I&amp;rsquo;m not pushing onto that &lt;code&gt;parents&lt;/code&gt; variable anymore. We&amp;rsquo;ll see. I&amp;rsquo;m interested to pick the brain of the instructor that goes over the project with me.&lt;/p&gt;
-
-&lt;p&gt;You can see what I&amp;rsquo;ll call v0.8 (I figure it&amp;rsquo;s close to v1.0 but not yet lol) at &lt;a href=&#34;https://your-neighbors.herokuapp.com/&#34;&gt;https://your-neighbors.herokuapp.com/&lt;/a&gt;. I feel like the code is solid but still some functionality and visual things that need to be resolved.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;d like to add a static footer to the site.&lt;/li&gt;
-&lt;li&gt;If a house is deleted the parent and children remain in the database but can never be accessed again because of how I list them in relation to the house they&amp;rsquo;re in.&lt;/li&gt;
-&lt;li&gt;When there are no parents or children I need to add a link suggesting to create some.&lt;/li&gt;
-&lt;li&gt;When a user tries to access the info for something they didn&amp;rsquo;t create (ie. they created house 8 but try and go to the link for house 5) the error page tells them to login even though they are logged in. I need to create a different error page for logged in users trying to access stuff that isn&amp;rsquo;t there&amp;rsquo;s vs. the error page when a person isn&amp;rsquo;t logged in.&lt;/li&gt;
-&lt;li&gt;Add some color!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;m sure I could find more. Feel free to check out the app. Sign up, use it, and report issues to the GitHub link at the top right on every page of the application.&lt;/p&gt;
-
-&lt;p&gt;It was interesting deploying to Heroku as well. There isn&amp;rsquo;t a solid guide on deploying a Sinatra app with a DB to Heroku. Through Heroku&amp;rsquo;s docs and this &lt;a href=&#34;https://www.sitepoint.com/get-started-with-sinatra-on-heroku/&#34;&gt;Get Started with Sinatra on Heroku&lt;/a&gt; from 2013 I got it up and running though. The biggest thing was setting up Postgres and what to put in the &lt;code&gt;Procfile&lt;/code&gt;. Let me see if I can remember what exactly I did:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Add &lt;code&gt;gem &#39;pg&#39;&lt;/code&gt; to your Gemfile. Also, define your version of ruby, ie. &lt;code&gt;ruby &#39;2.4.1&#39;&lt;/code&gt; in your Gemfile.&lt;/li&gt;
-&lt;li&gt;I changed the sqlite gem to development like this &lt;code&gt;gem &#39;sqlite3&#39;, :group =&amp;gt; :development&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;I added a &lt;code&gt;config/database.yml&lt;/code&gt; because the Heroku docs said to but I don&amp;rsquo;t know if it&amp;rsquo;s needed. I&amp;rsquo;ll probably delete it and see what happens in the near future. The Heroku docs have an example that I used and just changed the &lt;code&gt;database:&lt;/code&gt; names.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; &lt;code&gt;config/environment.rb&lt;/code&gt; is where the magic happened. I kept the &lt;code&gt;:development&lt;/code&gt; environment using sqlite3 because I read in some of the docs that you needed to know the host, username, password, port and something else to make it work locally. I figured if I could get it to work without figuring that out I would do that. I got this working locally running &lt;code&gt;shotgun&lt;/code&gt; and on the Heroku server too. With the changes it now looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;bundler/setup&#39;
-Bundler.require
-
-
-configure :development do
-  ENV[&#39;SINATRA_ENV&#39;] ||= &amp;quot;development&amp;quot;
-
-
-  ActiveRecord::Base.establish_connection(
-    :adapter =&amp;gt; &amp;quot;sqlite3&amp;quot;,
-    :database =&amp;gt; &amp;quot;db/neighborhood#{ENV[&#39;SINATRA_ENV&#39;]}.sqlite&amp;quot;
-  )
-end
-
-
-configure :production do
-  db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
-
-
-  ActiveRecord::Base.establish_connection(
-    :adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
-    :host     =&amp;gt; db.host,
-    :username =&amp;gt; db.user,
-    :password =&amp;gt; db.password,
-    :database =&amp;gt; db.path[1..-1],
-    :encoding =&amp;gt; &#39;utf8&#39;
-  )
-end
-
-
-require_all &#39;app&#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The &lt;code&gt;Procfile&lt;/code&gt; was something I couldn&amp;rsquo;t figure out. The &lt;a href=&#34;https://www.sitepoint.com/&#34;&gt;SitePoint&lt;/a&gt; article I linked above had this line for it and this is what made it all work &lt;code&gt;web: bundle exec rackup config.ru -p $PORT&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For the rest I followed the Ruby docs on Heroku &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction&#34;&gt;here&lt;/a&gt; and the SQLite doc &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you get db migration errors you can run rake tasks on Heroku. &lt;code&gt;heroku run rake db:migrate&lt;/code&gt; was one that I needed to do. More in dept docs about it &lt;a href=&#34;https://devcenter.heroku.com/articles/rake&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Hey, look at that. I remembered way more than I thought. Hopefully this was helpful to someone somewhere. Probably a student coming behind me who is going to pull their hair out trying to get their app to work on Heroku.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 8:32&lt;br /&gt;
-Time spent total: 198:13&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
-Lessons completed total: 406&lt;/p&gt;
-</description>
+      <description>MY SINATRA PORTFOLIO PROJECT IS DONE!!!
+You can say I&amp;rsquo;m pretty stoked. This blog is part of the requirements though so get ready :-). Actually, I didn&amp;rsquo;t take enough notes to really get into the code in this blog. I did hit some solid stumbling blocks and there is some major refactoring of code needing to happen but I&amp;rsquo;m overall pretty happy. A large part of the time I spent was making the app look good utilizing Bootstrap.</description>
     </item>
     
     <item>
@@ -224,15 +64,8 @@ Lessons completed total: 406&lt;/p&gt;
       <pubDate>Mon, 17 Apr 2017 23:19:40 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-050/</guid>
-      <description>&lt;p&gt;Not much to report today. I got some free passes from being a member of &lt;a href=&#34;https://www.us.mensa.org/&#34;&gt;American Mensa&lt;/a&gt; to see &lt;a href=&#34;http://www.foxsearchlight.com/gifted/&#34;&gt;Gifted&lt;/a&gt;. So the wife and I went to see that tonight. It&amp;rsquo;s a good movie and I recommend it.&lt;/p&gt;
-
-&lt;p&gt;I finished up the controller and views for one part of my Sinatra project. It&amp;rsquo;s coming along nicely. Now that I have this done I don&amp;rsquo;t think the next two controllers and associated views will take as long. It should be pretty close to the same thing just modifying some small amounts of code. I am still deciding between radio buttons and a dropdown for some of my &lt;code&gt;create&lt;/code&gt; and &lt;code&gt;update&lt;/code&gt; forms. Parents will only be allowed to be associated with one house so deciding how to visually represent that. I think the dropdown will work better only because this app could potentially have a lot of entries in it. I also need to code in that when a House is deleted so are the members of the house. However, I&amp;rsquo;ll work on that once I actually have associated members.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:00&lt;br /&gt;
-Time spent total: 189:40&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 405&lt;/p&gt;
-</description>
+      <description>Not much to report today. I got some free passes from being a member of American Mensa to see Gifted. So the wife and I went to see that tonight. It&amp;rsquo;s a good movie and I recommend it.
+I finished up the controller and views for one part of my Sinatra project. It&amp;rsquo;s coming along nicely. Now that I have this done I don&amp;rsquo;t think the next two controllers and associated views will take as long.</description>
     </item>
     
     <item>
@@ -241,13 +74,11 @@ Lessons completed total: 405&lt;/p&gt;
       <pubDate>Sun, 16 Apr 2017 22:05:47 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-049/</guid>
-      <description>&lt;p&gt;I decided to take the weekend off and enjoy the Easter holiday with the family. I had been going hard for almost 7 straight weeks. Back at it tomorrow. I also ordered my Code &amp;amp; Quill Origin this weekend. Looking forward to getting my notebooks just in time to take notes on Rails.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 0:00&lt;br /&gt;
-Time spent total: 188:40&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 405&lt;/p&gt;
-</description>
+      <description>I decided to take the weekend off and enjoy the Easter holiday with the family. I had been going hard for almost 7 straight weeks. Back at it tomorrow. I also ordered my Code &amp;amp; Quill Origin this weekend. Looking forward to getting my notebooks just in time to take notes on Rails.
+Time spent today: 0:00
+Time spent total: 188:40
+Lessons completed today: 0
+Lessons completed total: 405</description>
     </item>
     
     <item>
@@ -256,17 +87,7 @@ Lessons completed total: 405&lt;/p&gt;
       <pubDate>Fri, 14 Apr 2017 23:07:58 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-047/</guid>
-      <description>&lt;p&gt;So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well. However, I think I&amp;rsquo;m going to be more proud of this when I&amp;rsquo;m done. You can follow my progress on my project [here][2]. Although, that link might break in the future as I&amp;rsquo;ll probably renanme my repo to something less stalkerish lol.&lt;/p&gt;
-
-&lt;p&gt;It took me a long time to get my naming correct for my &lt;code&gt;has_many&lt;/code&gt; to &lt;code&gt;has_many&lt;/code&gt; relationship. Between the models and the db it was a mistake in what needed to be plural that ultimately took some time to figure out. I&amp;rsquo;m happy that I don&amp;rsquo;t have to keep up with these associations in any complex manner. I don&amp;rsquo;t know why but I&amp;rsquo;m exhausted right now. I&amp;rsquo;m usually still humming along at 11:15pm but not tonight. I&amp;rsquo;m fighting to stay awake. I made some great progress today on my Sinatra project and I&amp;rsquo;m happy with where I&amp;rsquo;m at. I could&amp;rsquo;ve been closer to being done but I know that I&amp;rsquo;ll be more proud to show off my project because of how it looks.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 6:20&lt;br /&gt;
-Time spent total: 188:40&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 405&lt;/p&gt;
-
-&lt;p&gt;[2]:&lt;a href=&#34;https://github.com/itzsaga/neighbor_tracker&#34;&gt;https://github.com/itzsaga/neighbor_tracker&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement Bootstrap in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well.</description>
     </item>
     
     <item>
@@ -275,38 +96,8 @@ Lessons completed total: 405&lt;/p&gt;
       <pubDate>Thu, 13 Apr 2017 23:44:28 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-046/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s late so I&amp;rsquo;ll be brief. I crushed &lt;a href=&#34;https://github.com/itzsaga/sinatra-fwitter-group-project-v-000&#34;&gt;my project&lt;/a&gt; tonight and I&amp;rsquo;m ready to start my Sinatra portfolio project tomorrow. I think I can have an ugly version (desktown down design, raw forms, no nav bar or footer) done tomorrow at some point and then leave it alone until after my project review with an instructor. We&amp;rsquo;ll see how that goes. The requirements are:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Build an MVC Sinatra Application.&lt;/li&gt;
-&lt;li&gt;Use ActiveRecord with Sinatra.&lt;/li&gt;
-&lt;li&gt;Use Multiple Models.&lt;/li&gt;
-&lt;li&gt;Use at least one &lt;code&gt;has_many&lt;/code&gt; relationship&lt;/li&gt;
-&lt;li&gt;Must have user accounts. The user that created a given piece of content should be the only person who can modify that content&lt;/li&gt;
-&lt;li&gt;You should validate user input to ensure that bad data isn&amp;rsquo;t created&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So it might be ambitious to think I can finish that in a day or two but I&amp;rsquo;m confident I can with what I have planned.&lt;/p&gt;
-
-&lt;p&gt;I was able to utilize Active Record Validations tonight. I also included HTML5 &lt;code&gt;required&lt;/code&gt; tags in my forms. However, the tests were sending raw params data to the post route so it was bypassing utilizing my forms to test. I guess this is good though because it creates a situation where if someone sends bad data to the server through a method other than the server it&amp;rsquo;ll reject it. However, I wouldn&amp;rsquo;t want the server hit every time a bad form is input. Maybe a combo of the two makes sense? That way data is validated in the browser and when being saved to the server. Here&amp;rsquo;s what an Active Record Validation looks like from &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html&#34;&gt;Rails Guides&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Person &amp;lt; ApplicationRecord
-  validates :name, presence: true
-end
- 
-Person.create(name: &amp;quot;John Doe&amp;quot;).valid? # =&amp;gt; true
-Person.create(name: nil).valid? # =&amp;gt; false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I also decided to buy the &lt;a href=&#34;http://castirondesign.com/work/eco-pocket-sized-notebook&#34;&gt;Cast Iron Design Eco Pocket-Sized Notebook&lt;/a&gt; pack of 3 to start. I realized that AMEX is offering a bonus if you redeem points towards purchases until the end of the month. While redemption values are almost always lowest when using AMEX points for bill credits with the 20% bump it&amp;rsquo;s worth using for a few small things. Considering we have 70k of them $12 won&amp;rsquo;t make a dent in that. I still plan to get a &lt;a href=&#34;https://www.codeandquill.com/collections/notebooks/products/origin&#34;&gt;Code &amp;amp; Quill Origin&lt;/a&gt; when they&amp;rsquo;re not sold out anymore. The fact that there are spacing markers that will make written code look good is sweet (not like you can&amp;rsquo;t do that on graph paper but still).&lt;/p&gt;
-
-&lt;p&gt;I think one of the biggest things I&amp;rsquo;ve been doing that has helped me not get bogged down as I&amp;rsquo;m moving through the curriculum and projects is to not get too fancy. I&amp;rsquo;m also not overthinking it. I&amp;rsquo;m being very straightforward in what I&amp;rsquo;m putting together and making things that work. Could pretty much everything be &lt;em&gt;better&lt;/em&gt;? Yes. However, I&amp;rsquo;m looking to have a body of work to present. I honestly feel that when it comes job hiring time the strength of the code will outweigh the shiny UI&amp;rsquo;s. I still plan on going back and polishing everything up and making it look nice (or at least nicer) than the project requirements require.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:13&lt;br /&gt;
-Time spent total: 182:20&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
-Lessons completed total: 405&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s late so I&amp;rsquo;ll be brief. I crushed my project tonight and I&amp;rsquo;m ready to start my Sinatra portfolio project tomorrow. I think I can have an ugly version (desktown down design, raw forms, no nav bar or footer) done tomorrow at some point and then leave it alone until after my project review with an instructor. We&amp;rsquo;ll see how that goes. The requirements are:
+ Build an MVC Sinatra Application.</description>
     </item>
     
     <item>
@@ -315,15 +106,7 @@ Lessons completed total: 405&lt;/p&gt;
       <pubDate>Wed, 12 Apr 2017 23:10:02 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-045/</guid>
-      <description>&lt;p&gt;Taking it easy tonight. I have to get some work done for &lt;a href=&#34;http://giftofadoption.org/&#34;&gt;Gift of Adoption Fund&lt;/a&gt;, the non-profit I volunteer on the board for here in TN. Shameless plug, &lt;a href=&#34;https://www.facebook.com/GiftofAdoptionTennessee/&#34;&gt;Like our Facebook Page&lt;/a&gt; please. I finished up the NYC lab in &amp;lt;30 minutes. The second controller and views were much more simple. I didn&amp;rsquo;t get a chance to refactor my code yet. However, I don&amp;rsquo;t think a helper methods are needed as I didn&amp;rsquo;t use that code anywhere in my other controller. Maybe though, maybe. I watched the two lecture videos and finished my DB migrations and building out the models on my first Sinatra project as well tonight. I still go back and forth with feeling like I&amp;rsquo;m getting enough accomplished each day but hitting milestones and goals (even if 3 days late) feels good. My wife is off Friday so hopefully that&amp;rsquo;ll allow me some good time to get work done since we have a birthday party Saturday and it&amp;rsquo;s Easter on Sunday.&lt;/p&gt;
-
-&lt;p&gt;On another note, I&amp;rsquo;m trying to figure out a notebook to buy. I&amp;rsquo;ve used Moleskine&amp;rsquo;s in the past. Nothing against them but not what I&amp;rsquo;m looking for right now. Field Notes seem expensive for what they are and you&amp;rsquo;re paying for the cool factor more than the notebook. So, I did some research. Deciding between the &lt;a href=&#34;http://castirondesign.com/work/eco-pocket-sized-notebook&#34;&gt;Cast Iron Design Eco Pocket-Sized Notebook&lt;/a&gt;, any of the &lt;a href=&#34;https://www.codeandquill.com/collections/notebooks&#34;&gt;Code &amp;amp; Quill&lt;/a&gt; books although at this price I&amp;rsquo;d go hardcover, &lt;a href=&#34;https://www.wordnotebooks.com/products/word-notebooks-dot-grid&#34;&gt;Word. Dot Grid&lt;/a&gt; because it&amp;rsquo;s Field Notes but not, or &lt;a href=&#34;http://www.muji.us/store/recycled-paper-bind-notebook-grid-30-sheets-a5-dark-gray4548076398349.html&#34;&gt;MUJI Recycled Paper Bing Notebook A5&lt;/a&gt; because they&amp;rsquo;re dirt cheap. Let me know what you think. I&amp;rsquo;m leaning towards Code &amp;amp; Quill most likely. I think the larger hardcover books will be benneficial to have segmented by language and framework. I can create personal reference libraries in them and add as time goes on. I can have a master Ruby book, a JS book, a Rails book, is the thought at least. Or maybe I start with smaller books and if a top turns in to two books it gets a C&amp;amp;Q book and I transcribe over what I already have which wouldn&amp;rsquo;t be much at that point.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 1:50&lt;br /&gt;
-Time spent total: 179:08&lt;br /&gt;
-Lessons completed today: 3&lt;br /&gt;
-Lessons completed total: 404&lt;/p&gt;
-</description>
+      <description>Taking it easy tonight. I have to get some work done for Gift of Adoption Fund, the non-profit I volunteer on the board for here in TN. Shameless plug, Like our Facebook Page please. I finished up the NYC lab in &amp;lt;30 minutes. The second controller and views were much more simple. I didn&amp;rsquo;t get a chance to refactor my code yet. However, I don&amp;rsquo;t think a helper methods are needed as I didn&amp;rsquo;t use that code anywhere in my other controller.</description>
     </item>
     
     <item>
@@ -332,135 +115,7 @@ Lessons completed total: 404&lt;/p&gt;
       <pubDate>Tue, 11 Apr 2017 23:16:24 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-044/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m on a killer roll right now blowing through this NYC lab. Built my 3 tables and 1 &lt;code&gt;JOIN&lt;/code&gt; table migrations. Built out the associated models. Built out all the views and one controller. Have one controller and it&amp;rsquo;s views left now. If I didn&amp;rsquo;t have kids that were going to wake me up between 6:30am and 8:00am I&amp;rsquo;d finish it up. I think it&amp;rsquo;ll take me maybe 30 more mins (mostly because &lt;strong&gt;A LOT&lt;/strong&gt; of it is going to be similar to the controller &amp;amp; views I just built) but sleep is needed. I also need to finish doing my part of the household chores (dishes tonight) before bed so in the interest of rest I&amp;rsquo;ve stopped.&lt;/p&gt;
-
-&lt;p&gt;However, I&amp;rsquo;m pretty hype and think I&amp;rsquo;ll still be on schedule to finish the review videos tomorrow night. I also feel more confident about attacking the portfolio project. The only part I haven&amp;rsquo;t really dug into is the UI. I figure a basic bootstrap will do. Utilize the &lt;code&gt;layout.erb&lt;/code&gt; to have a consistent header and footer and I&amp;rsquo;ll be happy at this point in time (when that time comes).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m contemplating creating helper methods for my controllers. Currently the one controller I finished tonight (I&amp;rsquo;ll do the other and all it&amp;rsquo;s views tomorrow) is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class FiguresController &amp;lt; ApplicationController
-
-  get &#39;/figures&#39; do
-    @figures = Figure.all
-    erb :&#39;figures/index&#39;
-  end
-
-  get &#39;/figures/new&#39; do
-    @figures = Figure.all
-    @landmarks = Landmark.all
-    @titles = Title.all
-    erb :&#39;figures/new&#39;
-  end
-
-  get &#39;/figures/:id&#39; do
-    @figure = Figure.find(params[:id])
-    erb :&#39;figures/show&#39;
-  end
-
-  post &#39;/figures/:id&#39; do
-    @figure = Figure.find(params[:id])
-    @figure.update(params[:figure])
-
-    if !params[:title][:name].empty?
-      if !!params[:figure][:title_ids]
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      else
-        params[:figure][:title_ids] = []
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      end
-    end
-    @figure.title_ids = params[:figure][:title_ids]
-
-    if !params[:landmark][:name].empty?
-      if !!params[:figure][:landmark_ids]
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      else
-        params[:figure][:landmark_ids] = []
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      end
-    end
-    @figure.landmark_ids = params[:figure][:landmark_ids]
-
-    @figure.save
-
-    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
-  end
-
-  get &#39;/figures/:id/edit&#39; do
-    @figure = Figure.find(params[:id])
-    @landmarks = Landmark.all
-    @titles = Title.all
-    erb :&#39;figures/edit&#39;
-  end
-
-  post &#39;/figures&#39; do
-    @figure = Figure.create(params[:figure])
-
-    if !params[:title][:name].empty?
-      if !!params[:figure][:title_ids]
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      else
-        params[:figure][:title_ids] = []
-        params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-      end
-    end
-    @figure.title_ids = params[:figure][:title_ids]
-
-    if !params[:landmark][:name].empty?
-      if !!params[:figure][:landmark_ids]
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      else
-        params[:figure][:landmark_ids] = []
-        params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-      end
-    end
-    @figure.landmark_ids = params[:figure][:landmark_ids]
-
-    @figure.save
-
-    redirect to &amp;quot;/figures/#{@figure.id}&amp;quot;
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The main parts thar violate DRY (don&amp;rsquo;t repeat yourself) should be readily evident in:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;if !params[:title][:name].empty?
-  if !!params[:figure][:title_ids]
-    params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-  else
-    params[:figure][:title_ids] = []
-    params[:figure][:title_ids] &amp;lt;&amp;lt; Title.create(params[:title]).id
-  end
-end
-@figure.title_ids = params[:figure][:title_ids]
-
-if !params[:landmark][:name].empty?
-  if !!params[:figure][:landmark_ids]
-    params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-  else
-    params[:figure][:landmark_ids] = []
-    params[:figure][:landmark_ids] &amp;lt;&amp;lt; Landmark.create(params[:landmark]).id
-  end
-end
-@figure.landmark_ids = params[:figure][:landmark_ids]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Not only are these lines with a nested &lt;code&gt;if&lt;/code&gt; statement not elegant but they are carbon copies of each other. In addition, I forsee using almost the same exact methods in my other controller. I&amp;rsquo;ll probably have one of these &lt;code&gt;if&lt;/code&gt; blocks utilizing &lt;code&gt;figure_ids&lt;/code&gt; but other than that it&amp;rsquo;ll be pretty close. We&amp;rsquo;ll see and if that&amp;rsquo;s true I&amp;rsquo;ll definitely create 3 helper methods and just use those if I can. It&amp;rsquo;ll be good practice in building helper methods for the controller because I haven&amp;rsquo;t done that before. I&amp;rsquo;ve built a module for the models in my last lab.&lt;/p&gt;
-
-&lt;p&gt;A note I took that didn&amp;rsquo;t make sense at the time was:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Define helper methods in the Application Controller&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;After tonight I see exactly why. This is because the individual controllers (at least in my case) are inherting from the app controller. I was thinking initially I would have to create a &lt;code&gt;Helper&lt;/code&gt; class of some sort and then utilize them that way but I have this basically empty file that the controllers are already using so it makes sense to put helper methods right in there.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:09&lt;br /&gt;
-Time spent total: 177:17&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 401&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m on a killer roll right now blowing through this NYC lab. Built my 3 tables and 1 JOIN table migrations. Built out the associated models. Built out all the views and one controller. Have one controller and it&amp;rsquo;s views left now. If I didn&amp;rsquo;t have kids that were going to wake me up between 6:30am and 8:00am I&amp;rsquo;d finish it up. I think it&amp;rsquo;ll take me maybe 30 more mins (mostly because A LOT of it is going to be similar to the controller &amp;amp; views I just built) but sleep is needed.</description>
     </item>
     
     <item>
@@ -469,23 +124,7 @@ Lessons completed total: 401&lt;/p&gt;
       <pubDate>Mon, 10 Apr 2017 23:29:20 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-043/</guid>
-      <description>&lt;p&gt;Got a large lab done tonight. Right on schedule. I was done 2 minutes after 11pm. I basically took the Music Library CLI app that I made earlier in the curriculum and turned it into a much more user friendly Sinatra MVC web app. The final code can be found &lt;a href=&#34;https://github.com/itzsaga/playlister-sinatra-v-000&#34;&gt;here&lt;/a&gt;. The biggest challenge I had was setting up my databases and models. Actually, just with the &lt;code&gt;JOIN&lt;/code&gt; table. However, I know the more I do this the easier it will get. It&amp;rsquo;s still &lt;strong&gt;very&lt;/strong&gt; new and a complex thing to grasp.&lt;/p&gt;
-
-&lt;p&gt;I also attended a study group this afternoon and saw another student&amp;rsquo;s Sinatra portfolio project he was working on. After quickly glancing at the project info, this line gave me an idea for my project:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The app should be a custom app that is created to track something important to you.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Since my family just moved into a new neighborhood in January I&amp;rsquo;ve been keeping track of who our neighbors are in an EverNote Doc. Pretty much, address, matriarch, patriarch and kids with ages. I figured I could have 3 tables in this app. One for the House with an address. Then the House &lt;code&gt;has_many&lt;/code&gt; Parents and &lt;code&gt;has_many&lt;/code&gt; Kids through Parents. Parents with Name and Phone Number values. Parents will &lt;code&gt;belongs_to&lt;/code&gt; a House and &lt;code&gt;has_many&lt;/code&gt; Kids. Kids will have name, age, and sex fields (for those unisex names). Kids will &lt;code&gt;has_many&lt;/code&gt; Parents and &lt;code&gt;belongs_to&lt;/code&gt; a House through Parents. I told my instructor this briefly during the study group and he said that was more than enough to fulfill the requirements of the project. All the project requires is a single &lt;code&gt;has_many&lt;/code&gt; relationship in terms of the database aspect.&lt;/p&gt;
-
-&lt;p&gt;I also asked about if there was a preference between &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html&#34;&gt;Active Record Validations&lt;/a&gt; or &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation&#34;&gt;HTML5 Form Validations&lt;/a&gt;. He said HTML5 form validations were further in the curriculum so most would not be using them at this point in time. However, it&amp;rsquo;s just use case choice. Of course, HTML5 form validations won&amp;rsquo;t hit the DB so there&amp;rsquo;s that as well he said. I didn&amp;rsquo;t realize how complex HTML5 form validation was until I looked it up (see the link at the beginning of this paragraph) and now I realize why it isn&amp;rsquo;t taught until later. I was thinking of simple input contraints like those found &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input&#34;&gt;here&lt;/a&gt;. Now there are some things that must hit the server to validate. For example, if you wanted to ensure an email address hadn&amp;rsquo;t been registered already there is only one way to check that. This is where something like Active Record&amp;rsquo;s &lt;a href=&#34;http://guides.rubyonrails.org/active_record_validations.html#uniqueness&#34;&gt;uniqueness helper&lt;/a&gt; comes into play. I&amp;rsquo;m not sure how far down this rabbit hole I&amp;rsquo;ll go building out my project. Maybe just a simple &lt;code&gt;&amp;lt;type=&amp;quot;tel&amp;quot;&amp;gt;&lt;/code&gt; in what I was thinking of above. Although, since this is a portfolio project I&amp;rsquo;ll make sure to keep a set of features I want to implement to improve the app. I&amp;rsquo;ll make sure to work on getting these things done when the job hunt starts. Currently the goal is to get to that point as quickly as possible so I&amp;rsquo;m completing projects with close to the bare minimum requirements.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 3:16&lt;br /&gt;
-Time spent total: 175:09&lt;br /&gt;
-Lessons completed today: 1&lt;br /&gt;
-Lessons completed total: 401&lt;/p&gt;
-</description>
+      <description>Got a large lab done tonight. Right on schedule. I was done 2 minutes after 11pm. I basically took the Music Library CLI app that I made earlier in the curriculum and turned it into a much more user friendly Sinatra MVC web app. The final code can be found here. The biggest challenge I had was setting up my databases and models. Actually, just with the JOIN table. However, I know the more I do this the easier it will get.</description>
     </item>
     
     <item>
@@ -494,23 +133,7 @@ Lessons completed total: 401&lt;/p&gt;
       <pubDate>Sun, 09 Apr 2017 23:22:15 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-042/</guid>
-      <description>&lt;p&gt;Today was the day of road blocks. I spent probably 3 hours working with Learn Experts on problems. For the most part these were dev environment issues or weird test issues and not working through my code and learning new things. I did learn some things about debugging though. I learned to check my Gemfile because if a gem is missing weird things happen. I&amp;rsquo;m not sure how I was able to run &lt;code&gt;shotgun&lt;/code&gt; without having the gem in the Gemfile but it worked and then I got odd errors in my browser. Easy fix once it was figured out but that took an hour. I also learned that when doing TDD work on each test as you go rather than the entire thing. I had two forms that were very similar so I copied and pasted the first into the code for the second. I made all the edits I thought I needed to and then ran the tests. I kept getting an odd error saying an element wasn&amp;rsquo;t there but I knew it was. Turns out code further down in my form was breaking my entire view and thus Capybara was unable to read the entire page. If it can&amp;rsquo;t read the page at all of course the element will be missing. So I commented out the rest of the code and worked test by test after that and had much more success. However, figuring this out took another hour tonight.&lt;/p&gt;
-
-&lt;p&gt;All this time having others review my code let me beat my brother in a game of chess :-). If you want to play me you can find me on &lt;a href=&#34;https://www.chess.com/&#34;&gt;Chess.com&lt;/a&gt; at my profile &lt;a href=&#34;https://www.chess.com/member/itzsaga&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also learned more about databases and how I&amp;rsquo;ll utilize them with ActiveRecord in my Sinatra apps. Specifically I know that the JOIN table will come up again in the future. As this is one of the more confusing topics I made sure to save this overview:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A join table is a table that only has two columns. To keep up with the online store example, this table would contain a &lt;code&gt;user_id&lt;/code&gt; and &lt;code&gt;item_id&lt;/code&gt;. Each row in this table would contain a user&amp;rsquo;s ID and an item&amp;rsquo;s ID. We call this join table &lt;code&gt;user_items&lt;/code&gt;. The &lt;code&gt;has_many :through&lt;/code&gt; is always singular and in the first part of the join table name, and the &lt;code&gt;belongs_to&lt;/code&gt; portion of the relationship is pluralized in the second part of the table name.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I&amp;rsquo;m 2 labs and 2 lectures behind my goal :-(. New goal is to be done with these 4 things by Wednesday night. I think I can finish each lab in a 3 hour sitting so that&amp;rsquo;s Monday and Tuesday night then watch the lectures on Wednesday. I looked and I&amp;rsquo;m about 10 hours behind the amount of time I wanted to code this week and that&amp;rsquo;s basically what I missed it by. I need to reup on my strict adherence to my schedule. While I&amp;rsquo;m moving along I could be further along than I am and closer to being employed at this point in time. I&amp;rsquo;m dreading the feeling I&amp;rsquo;ll have if I make that one extra tuition payment when I know it could&amp;rsquo;ve been avoided.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 6:47&lt;br /&gt;
-Time spent total: 171:53&lt;br /&gt;
-Lessons completed today: 8&lt;br /&gt;
-Lessons completed total: 400&lt;/p&gt;
-</description>
+      <description>Today was the day of road blocks. I spent probably 3 hours working with Learn Experts on problems. For the most part these were dev environment issues or weird test issues and not working through my code and learning new things. I did learn some things about debugging though. I learned to check my Gemfile because if a gem is missing weird things happen. I&amp;rsquo;m not sure how I was able to run shotgun without having the gem in the Gemfile but it worked and then I got odd errors in my browser.</description>
     </item>
     
     <item>
@@ -519,76 +142,7 @@ Lessons completed total: 400&lt;/p&gt;
       <pubDate>Sat, 08 Apr 2017 23:21:55 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-041/</guid>
-      <description>&lt;p&gt;I moved through a lot of curriculum today. However, I really want to hit the goal I set two weeks ago and I&amp;rsquo;m on the cusp of it! I had 21 lessons/labs to go for my goal when I checked early in the day. So I set a goal of 11 more today (I had laready finished 2) and finish tomorrow. I missed it by one only because it&amp;rsquo;s late and I hit an hour and a half review lecture. Since I&amp;rsquo;m working on ActiveRecord sessions and authentication I want to pay better attention to this lecture than I usually do. Maybe even take a note or two :-).&lt;/p&gt;
-
-&lt;p&gt;Ealy in the day I got stuck on a nested forms lab. I was getting an error:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Failures:
-  1) App POST /teams submits the form
-     Failure/Error: click_button &#39;submit&#39;
-     TypeError:
-       expected Hash (got String) for param `name&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;but I couldn&amp;rsquo;t figure out why. My code was:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;Create a Team and Heroes!&amp;lt;/h1&amp;gt;
-&amp;lt;form action=&amp;quot;/teams&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
-  &amp;lt;p&amp;gt;Team Name: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Team Motto: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[motto]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 1&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member1_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member1_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member1_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 2&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member2_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member2_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member2_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 3&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member3_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member3_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member3_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[name][hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;button type=&amp;quot;submit&amp;quot; value=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I kept thinking, &amp;ldquo;How can form input be anything other than a String? Why is it expecting a hash?&amp;rdquo; I reached out to a Learn Expert (they&amp;rsquo;re like Teaching Assistants who are available almost &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt; to help) and it took almost an hour to resolve it. However, figured out that because my third line had &lt;code&gt;name=&amp;quot;team[name]&lt;/code&gt; whenever I called a nested hash that contained &lt;code&gt;team[name]&lt;/code&gt; it was returning the string I input instead of setting the params nested hash array to the proper thing. A quick change of my code to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;Create a Team and Heroes!&amp;lt;/h1&amp;gt;
-&amp;lt;form action=&amp;quot;/teams&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
-  &amp;lt;p&amp;gt;Team Name: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Team Motto: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;team[motto]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 1&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member1_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member1_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member1_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 2&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member2_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member2_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member2_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;h2&amp;gt;Hero 3&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Name: &amp;lt;input id=&amp;quot;member3_name&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][name]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Power: &amp;lt;input id=&amp;quot;member3_power&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][power]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;p&amp;gt;Hero&#39;s Biography: &amp;lt;input id=&amp;quot;member3_bio&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;team[hero][][bio]&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-  &amp;lt;button type=&amp;quot;submit&amp;quot; value=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and my tests were all passing.&lt;/p&gt;
-
-&lt;p&gt;I also realized today that I&amp;rsquo;ve been achieving the end goal of clearing out hashes without using the method provided by ruby. When I read:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Luckily for us, there is already a Ruby method for emptying a hash: #clear.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I thought to myself, &amp;ldquo;Whoops!&amp;rdquo; because I&amp;rsquo;ve just been resetting hashes &amp;amp; arrays by doing &lt;code&gt;@session = {}&lt;/code&gt; or &lt;code&gt;@@all = []&lt;/code&gt; up until this point. I haven&amp;rsquo;t checked the docs yet to make sure this method applies to arrays as well but I feel like I&amp;rsquo;ve seen it used so I&amp;rsquo;m relatively confident in that. I guess I&amp;rsquo;ll find out the first time I use it.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 6:37&lt;br /&gt;
-Time spent total: 165:06&lt;br /&gt;
-Lessons completed today: 12&lt;br /&gt;
-Lessons completed total: 392&lt;/p&gt;
-</description>
+      <description>I moved through a lot of curriculum today. However, I really want to hit the goal I set two weeks ago and I&amp;rsquo;m on the cusp of it! I had 21 lessons/labs to go for my goal when I checked early in the day. So I set a goal of 11 more today (I had laready finished 2) and finish tomorrow. I missed it by one only because it&amp;rsquo;s late and I hit an hour and a half review lecture.</description>
     </item>
     
     <item>
@@ -597,17 +151,420 @@ Lessons completed total: 392&lt;/p&gt;
       <pubDate>Fri, 07 Apr 2017 23:02:25 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-040/</guid>
-      <description>&lt;p&gt;So nested forms aren&amp;rsquo;t as bad as I thought they would be. I guess it helps that I had some good teaching before I got into it. I think I had the longest video yet to watch tonight and that took up most of the time once I finished the lab I started last night. The lab I&amp;rsquo;m on seems to be more of the same just getting the concept to stick with a more in depth nested form. It has an option to persist the data &lt;strong&gt;AFTER&lt;/strong&gt; getting the tests to pass initially. I&amp;rsquo;m not sure if I&amp;rsquo;ll attempt it or not. I know I&amp;rsquo;ll need to know the skill but does it help me more to struggle now and be a little quicker later? Or just struggle later one time? I know doing it more is definitely better but there are concessions I make in the interest of time.&lt;/p&gt;
-
-&lt;p&gt;Learned a good workflow for building a MVC app that uses a databse. First start with the DB, then work on models, then controller routes, and finally the views. I had thought working in the other direction would make more sense but I&amp;rsquo;ll try what the lecture taught. My thinking is, I start with a view so I know what I&amp;rsquo;m trying to display, I&amp;rsquo;ll have my endpoint even if it doesn&amp;rsquo;t work. Then I&amp;rsquo;ll build the route that will fill in that view. Then I&amp;rsquo;ll build the model for the controller to use. Then build the database knowing the full amount of things I&amp;rsquo;ll need. This is how I thought I did the CLI Gem project where I started with the lowest level and worked my way out with stubbed data to get a final point where when I had real data it just worked. This might not be the best workflow when dealing with things like databases and controllers though. There might be things outside of my control that could end up creating a whole rewrite which would be very sad.&lt;/p&gt;
-
-&lt;p&gt;I put in a resume for a Jr. Dev (or was it Jr. Analyst?) role today and the recruiter called me back. To my surprise saying they work with a few companies that take bootcamp grads. The main thing I was told is to finish and get that official certification or diploma saying I finished then we could talk. It&amp;rsquo;s nice to already be connected with someone even if it turns out to be nothing. While I&amp;rsquo;ve worked with recruiters in the past and never received an offer through any assistance they&amp;rsquo;ve given I think any interview is a good one for me moving into a new field. The questions and format will be something completely different from what I&amp;rsquo;m used to. As much as we all wish interviews could be nailed by the best candidate every time they just aren&amp;rsquo;t and interviewing is a skill in and of itself. I&amp;rsquo;m interested if there are any others out there that have used recruiters to land Junior level positions and what they thought about the process in hindsight?&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 2:44&lt;br /&gt;
-Time spent total: 158:29&lt;br /&gt;
-Lessons completed today: 2&lt;br /&gt;
-Lessons completed total: 380&lt;/p&gt;
-</description>
+      <description>So nested forms aren&amp;rsquo;t as bad as I thought they would be. I guess it helps that I had some good teaching before I got into it. I think I had the longest video yet to watch tonight and that took up most of the time once I finished the lab I started last night. The lab I&amp;rsquo;m on seems to be more of the same just getting the concept to stick with a more in depth nested form.</description>
+    </item>
+    
+    <item>
+      <title>How to Take it Easy Sometimes and Still Win</title>
+      <link>https://itzsaga.github.io/post/day-039/</link>
+      <pubDate>Thu, 06 Apr 2017 22:29:32 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-039/</guid>
+      <description>I only got a little bit of coding done tonight by choice. I think I&amp;rsquo;m procrastinating on this nested hash forms lab because nested hashes can get confusing. I started it though and just got sidetracked. I need to stay focused. I worked on getting RubyMine installed to see what it&amp;rsquo;s about and my computer froze. After that I just gave up on coding tonight. I guess I wasn&amp;rsquo;t very motivated if that&amp;rsquo;s all it took lol.</description>
+    </item>
+    
+    <item>
+      <title>Day 38</title>
+      <link>https://itzsaga.github.io/post/day-038/</link>
+      <pubDate>Wed, 05 Apr 2017 23:15:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-038/</guid>
+      <description>Sinatra, and models, and views, and controllers, and erb, OH MY! Tonight I kept building small things with Sinatra. I&amp;rsquo;ve realized exactly how the MVC system works and what each piece does. The model is all the ruby classes I&amp;rsquo;ve been writing. The view is a mixture of HTML and Ruby that the user sees in their browser. The controller takes the user input and returns the data that has been crunched by the models.</description>
+    </item>
+    
+    <item>
+      <title>Day 37</title>
+      <link>https://itzsaga.github.io/post/day-037/</link>
+      <pubDate>Tue, 04 Apr 2017 23:11:04 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-037/</guid>
+      <description>Sinatra is moving along and clicking well. I have this fear after being somewhat cocky in last night&amp;rsquo;s post that the spirits of those Senior Devs before me are going to jump into my learning and humble me some. If so, not today. It&amp;rsquo;s all making sense the first time through. I think this is because there&amp;rsquo;s very little new logic. It&amp;rsquo;s just where to put that login in regards to models, views and controllers.</description>
+    </item>
+    
+    <item>
+      <title>Day 36</title>
+      <link>https://itzsaga.github.io/post/day-036/</link>
+      <pubDate>Mon, 03 Apr 2017 22:59:43 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-036/</guid>
+      <description>I got a late start tonight :-( so I didn&amp;rsquo;t spend as much time as I would&amp;rsquo;ve liked. However, I did learn that my wife did not know that it was not a good idea to try and peel a cantaloupe with a chef&amp;rsquo;s knife. Yeah, so after helping her wrap a sliced finger in a paper towel cantaloupe slicing duty fell on me. Then I spilled my tea all over my desk because one of my children (I&amp;rsquo;m guessing the 2 year old) had wedged my chair under my desk.</description>
+    </item>
+    
+    <item>
+      <title>Day 35</title>
+      <link>https://itzsaga.github.io/post/day-035/</link>
+      <pubDate>Sun, 02 Apr 2017 21:45:14 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-035/</guid>
+      <description>Progress progress progress. I&amp;rsquo;m moving along. I watched the last ActiveRecord video then finished up the Rack section. Learning the lowest level of how Rails runs a webserver. There is a granular procedure that&amp;rsquo;s happening and it was explained. First we learn basic Rack, then Sinatra abstracts a little bit more, then Rails abstracts even more. So when things do break, because they will, there is an understanding of what&amp;rsquo;s actually going on to fix it.</description>
+    </item>
+    
+    <item>
+      <title>Day 34</title>
+      <link>https://itzsaga.github.io/post/day-034/</link>
+      <pubDate>Sat, 01 Apr 2017 23:00:52 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-034/</guid>
+      <description>It was a good day in the coding world of Seth. I started out completing a decent size lab in the ActiveRecord section. Then headed off to the Free Code Camp Nashville meetup. It was a great meetup where Jason Gresalfi presented on how he had created a Chrome extension. The repo for his extentsion can be found here and you can find it in the Chrome webstore here. It&amp;rsquo;s amazing how &amp;ldquo;simple&amp;rdquo; chrome extensions can be.</description>
+    </item>
+    
+    <item>
+      <title>Day 33</title>
+      <link>https://itzsaga.github.io/post/day-033/</link>
+      <pubDate>Fri, 31 Mar 2017 23:26:51 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-033/</guid>
+      <description>I started Active Record tonight and I&amp;rsquo;m stoked. Mostly because a lot of the work has already been done and now I can just use the magic that is provided to me. I think I have always had the basic understanding that there are libraries that will be doing a lot of the things I have been learning for me. That is why when I get stuck on things but can still complete projects and labs I just push through.</description>
+    </item>
+    
+    <item>
+      <title>My Learning Hacks</title>
+      <link>https://itzsaga.github.io/post/my-learning-hacks/</link>
+      <pubDate>Thu, 30 Mar 2017 23:28:06 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/my-learning-hacks/</guid>
+      <description>So I wanted to share the hacks that I&amp;rsquo;m using to upgrade my life some and increase my mental aptitude to crushing this curriculum. There is a certain amount of mental stamina that has to be maintained on a day to day basis to keep up this pace. So&amp;hellip; here&amp;rsquo;s my brain upgrades/biohacks/etc&amp;hellip; that keep my moving tip top while doing this bootcamp full time and taking care of kids full time.</description>
+    </item>
+    
+    <item>
+      <title>Day 32</title>
+      <link>https://itzsaga.github.io/post/day-032/</link>
+      <pubDate>Thu, 30 Mar 2017 22:38:56 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-032/</guid>
+      <description>Almost 3 hours of review vidoes watched tonight. On thing that I think can be very useful to all. A double bang !! converts an object to it&amp;rsquo;s truthy value. For example:
+seth@seth-u:~$ irb 2.4.0 :001 &amp;gt; 1 =&amp;gt; 1 2.4.0 :002 &amp;gt; !1 =&amp;gt; false 2.4.0 :003 &amp;gt; !!1 =&amp;gt; true  So the return value of 1 is 1 we know 1 has a boolean value of true. So !</description>
+    </item>
+    
+    <item>
+      <title>Day 31</title>
+      <link>https://itzsaga.github.io/post/day-031/</link>
+      <pubDate>Wed, 29 Mar 2017 23:18:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-031/</guid>
+      <description>Tonight I had my CLI Gem Project review with one of the instructors. It was pretty cool. I talked through my project from start to almost finish (I realized after we finished we never went over the last method that takes user input to either start over or end). We added another class and refactored some code to make my gen more extensible and flexible in the future. While they&amp;rsquo;re not official tasks I set a couple new features I want to add to the gem.</description>
+    </item>
+    
+    <item>
+      <title>Day 30</title>
+      <link>https://itzsaga.github.io/post/day-030/</link>
+      <pubDate>Tue, 28 Mar 2017 23:15:53 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-030/</guid>
+      <description>Tonight I was able to get much deeper into the ORM section. The curriculum returned to the lesson then lab format that is more familiar. Learn how to build a few methods and why you build them that way. Then immediately do it locally. Then the next lesson builds on the last. This is much easier to make progress through and I feel much better about databases now. Well, I feel much better about how they integrate and how Ruby wraps them.</description>
+    </item>
+    
+    <item>
+      <title>Day 29</title>
+      <link>https://itzsaga.github.io/post/day-029/</link>
+      <pubDate>Mon, 27 Mar 2017 23:14:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-029/</guid>
+      <description>Polished off the SQL tonight and I have to say it was more in depth than I thought it would be. It&amp;rsquo;s one of those things that is hard to visualize being new to it. When the tables are laid out in a grid it all makes sense but just trying to do it all in your head is confusing, even for me. I&amp;rsquo;m sure if I was doing it every day it would be much more intuitive but right now I&amp;rsquo;m still a little fuzzy on keeping track of the data I&amp;rsquo;m looking for through multiple JOINS.</description>
+    </item>
+    
+    <item>
+      <title>Day 28</title>
+      <link>https://itzsaga.github.io/post/day-028/</link>
+      <pubDate>Sun, 26 Mar 2017 23:41:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-028/</guid>
+      <description>Today started with multiple review videos on the CLI Gem Project. I also was able to schedule my project review for Wednesday night. I&amp;rsquo;m looking forward to some one-on-one time with an instructor talking through my code. The project states:
+ BE PREPARED TO:
+1. Explain your code from execution point to exit point. We&amp;rsquo;re making sure you wrote it and understand how it works, nothing else. 10-20 minutes 2. Refactor code.</description>
+    </item>
+    
+    <item>
+      <title>Day 27</title>
+      <link>https://itzsaga.github.io/post/day-027/</link>
+      <pubDate>Sat, 25 Mar 2017 23:57:30 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-027/</guid>
+      <description>So I went later than I wanted to tonight, but I was on a roll. I would have finished much earlier but I spent 2.5 hours today at a developer meetup. It was interesting as I&amp;rsquo;ve only been to one other so far. It was good to meet some people and start putting real people to the dev community in Nashville. I did find out that basically nobody is learning/using Ruby (at least at this meetup).</description>
+    </item>
+    
+    <item>
+      <title>Day 26</title>
+      <link>https://itzsaga.github.io/post/day-026/</link>
+      <pubDate>Fri, 24 Mar 2017 22:46:48 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-026/</guid>
+      <description>Tonight I made some good progress on my CLI project. I finished watching Avi&amp;rsquo;s video on the project and it helped A LOT. It was long so I decided to just complete the basic stub of my project and leave it at that for tonight. I really like working with fake placeholder data for as long as possible. This way it&amp;rsquo;ll all hopefully just work when real data is passed in.</description>
+    </item>
+    
+    <item>
+      <title>Day 25</title>
+      <link>https://itzsaga.github.io/post/day-025/</link>
+      <pubDate>Thu, 23 Mar 2017 23:11:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-025/</guid>
+      <description>So tonight I started my CLI Gem project. This one is going to be in my portfolio and has A LOT more to it. Okay, well maybe not a lot more but it&amp;rsquo;s the first time I&amp;rsquo;m starting from scratch to build something. Luckily, I&amp;rsquo;m not left out to dry and there is a how-to that&amp;rsquo;s over an hour long that Avi did. Of course it&amp;rsquo;s not exactly what I&amp;rsquo;ll need to do and I&amp;rsquo;ll run into problems along the way but it&amp;rsquo;s nice to have a good resource to start with.</description>
+    </item>
+    
+    <item>
+      <title>Day 24</title>
+      <link>https://itzsaga.github.io/post/day-024/</link>
+      <pubDate>Wed, 22 Mar 2017 23:01:17 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-024/</guid>
+      <description>yawn it&amp;rsquo;s been a long day. My 3 month old was up early today. Either way, I got my scraping project done tonight. Nokogiri can be quite particular about the things you use to select content. Turned out I was pretty much there and just needed to change how I was accessing the info I needed.
+Attended a Study Group tonight which taught me something very important. When using pry inside a loop when you enter exit into the pry prompt it runs the next loop.</description>
+    </item>
+    
+    <item>
+      <title>Day 23</title>
+      <link>https://itzsaga.github.io/post/day-023/</link>
+      <pubDate>Tue, 21 Mar 2017 23:15:17 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-023/</guid>
+      <description>So working on my scraping project. It&amp;rsquo;s hurting my head. Scraping is no fun to figure out. What I&amp;rsquo;m stuck on right now is iterating. When I have some time tomorrow I&amp;rsquo;m going to work on completely understanding iterating when scraping. Here&amp;rsquo;s what I&amp;rsquo;m looking at currently:
+&amp;lt;div class=&amp;quot;social-icon-container&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://twitter.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/twitter-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://www.linkedin.com/in/ryan-johnson-321629ab&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/linkedin-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/empireofryan&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/github-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://www.youtube.com/watch?v=C22ufOqDyaE&amp;quot;&amp;gt;&amp;lt;img class=&amp;quot;social-icon&amp;quot; src=&amp;quot;../assets/img/rss-icon.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;  Then I&amp;rsquo;m doing (among other things above it):</description>
+    </item>
+    
+    <item>
+      <title>Day 22</title>
+      <link>https://itzsaga.github.io/post/day-022/</link>
+      <pubDate>Mon, 20 Mar 2017 22:51:58 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-022/</guid>
+      <description>About 10 minutes before I was suppose to get to my computer the power went out in my subdivision. I quickly realized that while I had setup flashlights in strategic locations in our apartment, when we moved into our house I never did the same. My wife and I both did not have our phones on us and it was DARK. Needless to say I closed the baby gate at the top of the stairs to keep the little ones safe and made my way to the kitchen where I knew a flashlight was.</description>
+    </item>
+    
+    <item>
+      <title>Day 21</title>
+      <link>https://itzsaga.github.io/post/day-021/</link>
+      <pubDate>Sun, 19 Mar 2017 22:32:36 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-021/</guid>
+      <description>Another productive project day means, not much to talk about! I got through all the tests that I needed to for my Tic-Tac-Toe with AI project. I started trying to build out my &amp;ldquo;AI&amp;rdquo; but didn&amp;rsquo;t get very far. I know I need to start simple so I decided to just attempt the computer making random moves. I tried to implement the following work flow: 1. Get the current board array (although this should be passed in by default).</description>
+    </item>
+    
+    <item>
+      <title>One Way To Pair Program</title>
+      <link>https://itzsaga.github.io/post/one-way-to-pair-program/</link>
+      <pubDate>Sat, 18 Mar 2017 23:07:23 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/one-way-to-pair-program/</guid>
+      <description>Tonight a couple people were wanting to know the best way to pair program together. They had both done the beginning parts of the Tic-Tac-Toe with AI project (the one I&amp;rsquo;m getting ready to start) and wanted to work on the AI part together. The exact question was:
+ Hey @*** and I are doing parallel pairing :slightly_smiling_face: what is the best way to go about this, to work on the same repo on separate branches or just copy on paste.</description>
+    </item>
+    
+    <item>
+      <title>Day 20</title>
+      <link>https://itzsaga.github.io/post/day-020/</link>
+      <pubDate>Sat, 18 Mar 2017 22:57:20 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-020/</guid>
+      <description>Sorry I didn&amp;rsquo;t get a blog in yesterday. I was struggling with setting up a dual boot of Ubuntu on my Windows 10 laptop. I ran into the problem of not having a large enough partition created and hit a snag. That said everything was installing fine once I got going. I had hoped to just run a persistent USB key and be able to take my dev environment wherever I want but I couldn&amp;rsquo;t figure that out.</description>
+    </item>
+    
+    <item>
+      <title>Day 18</title>
+      <link>https://itzsaga.github.io/post/day-018/</link>
+      <pubDate>Thu, 16 Mar 2017 23:21:28 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-018/</guid>
+      <description>Today saw a lot of new stuff. I feel like a ton of stuff was introduced and not gone over very deeply but deep enough for me to understand and implement it. In 11 lessons and labs I was exposed to super and how to use it, mass assignments, creating and implementing custom errors, gems, bundler, and basic scraping with Nokogiri. I can tell I was exposed to many things in preparation for the first projects, which can&amp;rsquo;t get here fast enough!</description>
+    </item>
+    
+    <item>
+      <title>Day 17</title>
+      <link>https://itzsaga.github.io/post/day-017/</link>
+      <pubDate>Wed, 15 Mar 2017 23:16:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-017/</guid>
+      <description>Tonight was good. I like having a dedicated 3 hour block at night instead of 1 hour in the morning and 2 hours at night. I feel like I can get into a better flow and get more done. I did a study group tonight on a banking lab that I had worked on recently. Took away from it to utilize self on pretty much all instance variable references after they have been initialized (created).</description>
+    </item>
+    
+    <item>
+      <title>Day 16</title>
+      <link>https://itzsaga.github.io/post/day-016/</link>
+      <pubDate>Tue, 14 Mar 2017 23:13:10 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-016/</guid>
+      <description>I completely missed my 6am wake up this morning. I realized I didn&amp;rsquo;t reset my alarm from Sunday night. Since I was up until 1am Sunday night I changed my alarm so I could get more sleep. However, thinking about it now having finished tonight at 11pm instead of 10pm I think I&amp;rsquo;ll keep it this way. No matter what I know after 8pm I can be productive. My wife is home and the kids are suppose to be in bed.</description>
+    </item>
+    
+    <item>
+      <title>Day 15</title>
+      <link>https://itzsaga.github.io/post/day-015/</link>
+      <pubDate>Mon, 13 Mar 2017 22:22:36 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-015/</guid>
+      <description>Day 15 and I&amp;rsquo;m still here. If you didn&amp;rsquo;t see it I wrote a rather long blog post today as one of my requirements for Flatiron. Since that took up over an hour and I had a 1:10.00+ video as a lesson I didn&amp;rsquo;t get much done. However, I DO have notes from the past couple of days that I never took the time to share.
+So on Saturday morning I did a study group with some people and learned a lot.</description>
+    </item>
+    
+    <item>
+      <title>Why Software Development?</title>
+      <link>https://itzsaga.github.io/post/why-software-development/</link>
+      <pubDate>Mon, 13 Mar 2017 19:40:42 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/why-software-development/</guid>
+      <description>So as part of my bootcamp experience Flatiron School requires me to write blog posts. This is a feature that I don&amp;rsquo;t think all bootcamps have but is smart. If I can write about coding then I show a deeper understanding about why I am a job ready developer. We all know that our online presence is part of our &amp;ldquo;resume&amp;rdquo; now as more and more hiring managers are looking at social profiles when making job decisions (even if it&amp;rsquo;s a [legal slippery slope&amp;hellip;][1]).</description>
+    </item>
+    
+    <item>
+      <title>Day 14</title>
+      <link>https://itzsaga.github.io/post/day-014/</link>
+      <pubDate>Mon, 13 Mar 2017 00:42:32 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-014/</guid>
+      <description>I promise a good blog post soon. It&amp;rsquo;s almost 1am after a LONG pair programming session, thanks Mike! We did however figure out a hard lab. I would&amp;rsquo;ve been struggling with it for sure. It&amp;rsquo;s not as ambiguous as it could be and we didn&amp;rsquo;t break down our methods as much as we could. However, we got all 15 tests passing and learned some new methods along the way. Specifically, the Dir class methods.</description>
+    </item>
+    
+    <item>
+      <title>Day 13</title>
+      <link>https://itzsaga.github.io/post/day-013/</link>
+      <pubDate>Sat, 11 Mar 2017 21:15:51 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-013/</guid>
+      <description>I&amp;rsquo;m keeping the update short and sweet tonight. I got A LOT done today. However, my amazing wife has let me code all day and into the night on her birthday. Anything important I took notes on today I&amp;rsquo;ll throw in tomorrow&amp;rsquo;s post. It&amp;rsquo;s time to spend some time with her.
+Time spent today: 9:15
+Time spent total: 56:35
+Lessons completed today: 13
+Lessons completed total: 247</description>
+    </item>
+    
+    <item>
+      <title>Day 12</title>
+      <link>https://itzsaga.github.io/post/day-012/</link>
+      <pubDate>Fri, 10 Mar 2017 21:43:53 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-012/</guid>
+      <description>Today didn&amp;rsquo;t see much coding. Mostly because the Intro to Object Oriented Ruby is a 1:10.00 video by of Avi teaching the basics of OO Ruby. Which was good. I found that him talking through concepts made them more clear as I worked on just a couple labs afterwards. It also meant that I took some notes on things that I thought were most important.
+Notes which of course I&amp;rsquo;ll share:</description>
+    </item>
+    
+    <item>
+      <title>Day 11</title>
+      <link>https://itzsaga.github.io/post/day-011/</link>
+      <pubDate>Thu, 09 Mar 2017 22:12:10 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-011/</guid>
+      <description>Today was strong work. I finished Procedural Ruby! Now I have Object Oriented Ruby which has final projects and I&amp;rsquo;m done with the Ruby section! I have to say it started to feel like I wasn&amp;rsquo;t making progress but the last two days have reinvigorated me. I know it gets more complex as I go and the projects get bigger and take longer but the groove is starting to fall in place.</description>
+    </item>
+    
+    <item>
+      <title>Day 10</title>
+      <link>https://itzsaga.github.io/post/day-010/</link>
+      <pubDate>Wed, 08 Mar 2017 07:31:22 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-010/</guid>
+      <description>I got a lot done this morning. Especially after the coffee kicked in. When I started I was definitely not 100% awake. I even did some extra credit on a lab which I typically do not do. I&amp;rsquo;ve never been the type to want to score 105 on a test because I aced it AND the extra credit. I did this one specifically because I knew it wouldn&amp;rsquo;t take much time as I was writing a generic method for a specific method I had just completed.</description>
+    </item>
+    
+    <item>
+      <title>Day 9</title>
+      <link>https://itzsaga.github.io/post/day-009/</link>
+      <pubDate>Tue, 07 Mar 2017 22:15:38 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-009/</guid>
+      <description>Today was a slow day. The kids didn&amp;rsquo;t cooperate this morning and I got zero coding done before all three children were awake. That&amp;rsquo;s fine though. I didn&amp;rsquo;t expect every day to go perfectly to plan. It was actually a nice refresher day not starting with coding but still getting the rest of my morning routine done.
+I did get in my night time session (minus a few minutes for good night kisses).</description>
+    </item>
+    
+    <item>
+      <title>Day 8</title>
+      <link>https://itzsaga.github.io/post/day-008/</link>
+      <pubDate>Mon, 06 Mar 2017 07:40:40 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-008/</guid>
+      <description>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy.
+Original code:
+def oxford_comma(array) if array.length == 1 return &amp;quot;#{array[0]}&amp;quot; elsif array.length == 2 return array.join(&amp;quot; and &amp;quot;) elsif array.</description>
+    </item>
+    
+    <item>
+      <title>Day 7</title>
+      <link>https://itzsaga.github.io/post/day-007/</link>
+      <pubDate>Sun, 05 Mar 2017 22:05:48 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-007/</guid>
+      <description>After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours:
+When it comes to Bootstrap as a framework the .col-xs class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap.</description>
+    </item>
+    
+    <item>
+      <title>Day 6</title>
+      <link>https://itzsaga.github.io/post/day-006/</link>
+      <pubDate>Sat, 04 Mar 2017 23:00:48 -0600</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-006/</guid>
+      <description>It was a LONG day of HTML &amp;amp; CSS and I&amp;rsquo;m still not done with this section. It&amp;rsquo;s okay though. While a lot of it has been review a lot of it has not as well. I&amp;rsquo;ve been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type.</description>
+    </item>
+    
+    <item>
+      <title>Day 5</title>
+      <link>https://itzsaga.github.io/post/day-005/</link>
+      <pubDate>Sat, 04 Mar 2017 04:57:01 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-005/</guid>
+      <description>Today had a rough start. We decided to start potty training today and my wife and I were not on the same page about what that would look like in terms of the amount of coding I would get done today. Thankfully we got things moving pretty smoothly about noon. I then proceeded to complete my first part of the Intro to Ruby curriculum! I now have a functioning CLI Tic Tac Toe game built in Ruby.</description>
+    </item>
+    
+    <item>
+      <title>Day 4</title>
+      <link>https://itzsaga.github.io/post/day-004/</link>
+      <pubDate>Fri, 03 Mar 2017 04:27:10 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-004/</guid>
+      <description>Today was no longer than the first few but definitely felt like it was. I learned the hard lesson that with this schedule I actually have to go to sleep when I schedule it. I stayed up late last night but still stuck to my 6 am wake-up call. Needless to say my last 30 minutes of coding tonight was not good and I couldn’t make progress like I know I can.</description>
+    </item>
+    
+    <item>
+      <title>Day 3</title>
+      <link>https://itzsaga.github.io/post/day-003/</link>
+      <pubDate>Wed, 01 Mar 2017 04:06:30 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-003/</guid>
+      <description>Don&amp;rsquo;t think I need to announce what day it is anymore, lol. I think I&amp;rsquo;ve got my morning routine down now. Alarms go off at 6 am and I&amp;rsquo;m out of bed by 6:15 am typically. Coffee is done brewing by the time I get downstairs. Feed the dog and make my coffee (ghee is my only additive right now but I&amp;rsquo;ll get back to Bulletproof Coffee at some point using Brain Octane™ Oil).</description>
+    </item>
+    
+    <item>
+      <title>Day 2</title>
+      <link>https://itzsaga.github.io/post/day-002/</link>
+      <pubDate>Wed, 01 Mar 2017 03:59:51 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-002/</guid>
+      <description>Another day, more code. However, now I have the full bootcamp track! This is what I was waiting for: I also started tracking my time using Toggl solely because I was interested in exactly how long this bootcamp is going to take. Well, that and yesterday my wife asked me how much time I got to spend on school so now I&amp;rsquo;ll know. Started on some Ruby this morning and also learned that career placement starts when 75% of the curriculum is done (after Rails is complete).</description>
+    </item>
+    
+    <item>
+      <title>Day 1</title>
+      <link>https://itzsaga.github.io/post/day-001/</link>
+      <pubDate>Tue, 28 Feb 2017 04:06:33 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-001/</guid>
+      <description>Day 1 is finally upon me! I&amp;rsquo;ve got my setup ready as of last night after making a road trip to IKEA in Memphis, TN. After the price of gas I probably could have gotten a desk, chair, and that plastic thing you put on the floor for the same price here in Nashville but why not go to IKEA? I also know people are crazy for IKEA stuff so if we end up getting rid of this stuff someone will buy it quick!</description>
+    </item>
+    
+    <item>
+      <title>Before I Start Flatiron</title>
+      <link>https://itzsaga.github.io/post/before-i-start-flatiron/</link>
+      <pubDate>Mon, 20 Feb 2017 22:07:04 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/before-i-start-flatiron/</guid>
+      <description>There were a few things I had to get out of the way before I started Flatiron.
+First, I needed a solid schedule I was going to follow. I didn&amp;rsquo;t want to take 8 months to finish the program. In fact, I couldn&amp;rsquo;t take 8 months to finish the program as my expenses were too much to stretch that long. I also wanted to minimize my family&amp;rsquo;s child care expenses so I came up with a solid schedule:</description>
+    </item>
+    
+    <item>
+      <title>Who am I? Why this blog?</title>
+      <link>https://itzsaga.github.io/about/</link>
+      <pubDate>Mon, 20 Feb 2017 22:06:57 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/about/</guid>
+      <description>I&amp;rsquo;m a former hospitality professional working on a career transition by attending Flatiron&amp;rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55+ hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly  Free Code Camp.</description>
+    </item>
+    
+    <item>
+      <title>home</title>
+      <link>https://itzsaga.github.io/home/</link>
+      <pubDate>Mon, 20 Feb 2017 22:06:47 +0000</pubDate>
+      
+      <guid>https://itzsaga.github.io/home/</guid>
+      <description>This is the home page&amp;hellip;</description>
     </item>
     
   </channel>

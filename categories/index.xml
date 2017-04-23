@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My Flatiron Journey</title>
+    <link>https://itzsaga.github.io/categories/</link>
+    <description>Recent content in Categories on My Flatiron Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://itzsaga.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Daily blog</title>
+      <link>https://itzsaga.github.io/categories/daily-blog/</link>
+      <pubDate>Sat, 22 Apr 2017 23:24:12 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/categories/daily-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flatiron blog</title>
+      <link>https://itzsaga.github.io/categories/flatiron-blog/</link>
+      <pubDate>Tue, 18 Apr 2017 23:34:13 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/categories/flatiron-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>https://itzsaga.github.io/categories/general/</link>
+      <pubDate>Thu, 30 Mar 2017 23:28:06 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/categories/general/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

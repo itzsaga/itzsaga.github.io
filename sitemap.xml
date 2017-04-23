@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://itzsaga.github.io/</loc>
-    <lastmod>2017-04-22T23:24:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://itzsaga.github.io/post/day-055/</loc>
     <lastmod>2017-04-22T23:24:12-05:00</lastmod>
   </url>
@@ -300,6 +294,46 @@
   <url>
     <loc>https://itzsaga.github.io/home/</loc>
     <lastmod>2017-02-20T22:06:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/categories/daily-blog/</loc>
+    <lastmod>2017-04-22T23:24:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/categories/flatiron-blog/</loc>
+    <lastmod>2017-04-18T23:34:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/categories/general/</loc>
+    <lastmod>2017-03-30T23:28:06-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/</loc>
+    <lastmod>2017-04-22T23:24:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/post/</loc>
+    <lastmod>2017-04-22T23:24:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://itzsaga.github.io/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
