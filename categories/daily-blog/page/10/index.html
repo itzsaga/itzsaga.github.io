@@ -1,0 +1,858 @@
+
+
+
+    
+        
+    
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            <title>Daily blog Posts - My Flatiron Journey</title>
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.16-DEV" />
+        
+
+
+        
+        
+            
+                <meta name="description" content="From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp.">
+            
+        
+
+        
+        <meta property="og:title" content="Daily blog" />
+<meta property="og:description" content="From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://itzsaga.github.io/categories/daily-blog/" />
+
+
+<meta property="og:updated_time" content="2017-03-06T07:40:40-06:00"/>
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Daily blog">
+<meta itemprop="description" content="From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp.">
+
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+
+        
+            
+                
+                    <link rel="stylesheet" href="/css/main.min.css" />
+                
+            
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-96008952-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+<header id="header">
+    
+        <h2><a href="/">Seth&#39;s Journey</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about">
+                        
+                            <i class="fa fa-user">&nbsp;</i>About
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            <h3>
+                                
+                                    <i class="fa fa-user">&nbsp;</i>
+                                
+                                About
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-055/"><p>Fixing Problems Makes You Stronger</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-054/"><p>Rails Makes Life Easier but Difficult</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-053/"><p>Fog is in the Brain</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        <h1>Daily blog</h1>
+        
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-008/">Day 8</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-06'>
+            March 6, 2017</time>
+        <span class="author"></span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>Started the day off with a win before 8 am. I was working on a lab to take an array and return a string with Oxford commas inserted. I finished the lab and had it passing tests then refactored and chopped two lines of code out of it. This made me happy. Original code: def oxford_comma(array) if array.length == 1 return &quot;#{array[0]}&quot; elsif array.length == 2 return array.join(&quot; and &quot;) elsif array.length &gt;= 3 new_last_array_item = &quot;and #{array[-1]}&quot; array.pop array.push(new_last_array_item) return array.join(&quot;, &quot;) end end Refactored code: def oxford_comma(array) if array.length == 1 return &quot;#{array[0]}&quot; elsif array.length == 2 return array.join(&quot; and &quot;) elsif array.length &gt;= 3 array[-1] = &quot;and #{array[-1]}&quot; return array.join(&quot;, &quot;) end end Another refactoring win today while the kids were napping.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-008/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-007/">Day 7</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-05'>
+            March 5, 2017</time>
+        <span class="author"></span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>After 3 hours today I finished up the HTML and CSS section. I took one real note today in that 3 hours: When it comes to Bootstrap as a framework the .col-xs class never stacks vertically no matter how small the width of the screen gets. Figured that was something I might need to know later. I also learned a lot about how powerful and easy it is to make a site responsive using Bootstrap.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-007/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-006/">Day 6</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-04'>
+            March 4, 2017</time>
+        <span class="author"></span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>It was a LONG day of HTML &amp; CSS and I&rsquo;m still not done with this section. It&rsquo;s okay though. While a lot of it has been review a lot of it has not as well. I&rsquo;ve been learning a ton about responsive web design. Especially Mobile Up (Mobile First) design and how to utilize @media queries in CSS to set break points. As well as some best practices doing design of this type.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-006/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-005/">Day 5</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-04'>
+            March 4, 2017</time>
+        <span class="author"></span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>Today had a rough start. We decided to start potty training today and my wife and I were not on the same page about what that would look like in terms of the amount of coding I would get done today. Thankfully we got things moving pretty smoothly about noon. I then proceeded to complete my first part of the Intro to Ruby curriculum! I now have a functioning CLI Tic Tac Toe game built in Ruby.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-005/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-004/">Day 4</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-03-03'>
+            March 3, 2017</time>
+        <span class="author"></span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>Today was no longer than the first few but definitely felt like it was. I learned the hard lesson that with this schedule I actually have to go to sleep when I schedule it. I stayed up late last night but still stuck to my 6 am wake-up call. Needless to say my last 30 minutes of coding tonight was not good and I couldn’t make progress like I know I can.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-004/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+
+        
+<ul class="actions pagination">
+    
+        <li><a href="/categories/daily-blog/page/9/"
+                class="button big previous">Previous Page</a></li>
+    
+
+    
+        <li><a href="/categories/daily-blog/page/11/"
+                class="button big next">Next Page</a></li>
+    
+</ul>
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="https://res.cloudinary.com/sethalexander/image/upload/v1487653136/seth_iign80.jpg" alt="Seth" /></a>
+                
+            
+            
+                <header>
+                    <h2>My Flatiron Journey</h2>
+                    <p>How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp</p>
+                </header>
+            
+            <ul class="icons">
+                
+                    <li><a href="https://itzsaga.github.io/categories/daily-blog/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-055/">Fixing Problems Makes You Stronger</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-22'>
+                                    April 22, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-054/">Rails Makes Life Easier but Difficult</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-21'>
+                                    April 21, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-053/">Fog is in the Brain</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-20'>
+                                    April 20, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                "/post/"
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/daily-blog/">daily blog</a>
+                                <span style="float:right;">53</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/flatiron-blog/">flatiron blog</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/general/">general</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>I&#39;m a family man that works hard and is looking to get ahead. I&#39;m smart and love tech. That&#39;s all there is to it.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                    <li><a href="https://itzsaga.github.io/categories/daily-blog/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; My Flatiron Journey. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+
+        
+            
+                
+                    <script src="/js/main.min.js"></script>
+                
+            
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+

@@ -2,12 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Flatiron Journey</title>
-    <link>https://itzsaga.github.io/post/index.xml</link>
+    <link>https://itzsaga.github.io/post/</link>
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2017 23:20:51 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 22 Apr 2017 23:24:12 -0500</lastBuildDate>
     <atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fixing Problems Makes You Stronger</title>
+      <link>https://itzsaga.github.io/post/day-055/</link>
+      <pubDate>Sat, 22 Apr 2017 23:24:12 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-055/</guid>
+      <description>&lt;p&gt;It was a &lt;strong&gt;LONG&lt;/strong&gt; day on my computer. Ubuntu decided to suggest I update to 16.10 and I did. Well that just started a string of issues that ended up in me reinstalling 16.04.2 LTS. I lost my entire morning and early afternoon to this process before I could get coding today. I&amp;rsquo;m sure I could&amp;rsquo;ve figured it out in time but time is something that is precious and I really had no need to upgrade. I&amp;rsquo;m on a LTS and things work which is all that I need.&lt;/p&gt;
+
+&lt;p&gt;In addition, Rails has presented some interesting problems that I&amp;rsquo;ve either figured out with Learn Expert help or on my own. Here are some examples, that I hope will help students behind me.&lt;/p&gt;
+
+&lt;p&gt;This error has persisted since before Rails but I never mentioned it (I don&amp;rsquo;t think):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;An error occurred while installing json (1.8.3), and Bundler cannot
+continue.
+Make sure that `gem install json -v &#39;1.8.3&#39;` succeeds before bundling.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Figured out the best way to fix this is to delete the Gemfile.lock &lt;code&gt;rm Gemfile.lock&lt;/code&gt; then bundle again &lt;code&gt;bundle install&lt;/code&gt; and that install json 1.8.6 at this moment in time.&lt;/p&gt;
+
+&lt;p&gt;Now when you get this error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/home/seth/.rvm/gems/ruby-2.4.1/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/conversions.rb:124:in `block (2 levels) in &amp;lt;class:Numeric&amp;gt;&#39;: stack level too deep (SystemStackError)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s a Rails issue. The easiest fix is to change the version of Rails in the Gemfile. I simple do &lt;code&gt;gem &#39;rails&#39;, &#39;5.0.2&#39;&lt;/code&gt; then run &lt;code&gt;bundle update&lt;/code&gt; and this error is fixed. I&amp;rsquo;ve gotten really good at &lt;code&gt;nano Gemfile&lt;/code&gt;, do the edit quickly (rails is typically in the first 5 lines), then &lt;code&gt;CTRL + X&lt;/code&gt;, &lt;code&gt;Y&lt;/code&gt;, &lt;code&gt;Enter&lt;/code&gt;, &lt;code&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another interesting error that has popped up on multiple occaisons is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NoMethodError: undefined method `last_comment&#39; for #&amp;lt; Rake::Application:0x007ff0cf37be38&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To fix this one another Gemfile edit must be done. Simply change, or add in, &lt;code&gt;gem &#39;rake&#39;, &#39;&amp;lt;11.0&#39;&lt;/code&gt;. This is just an issue with rake past version 11. I didn&amp;rsquo;t read up on what it is exactly I just found this answer quickly and it works.&lt;/p&gt;
+
+&lt;p&gt;I do these things pretty regularly these days. I wish the Gemfiles of some of these lessons were scaled back some. There is so much unneeded stuff in them (I think). Also, a lot of the versions could be updated to take advantage of more recent versions getting rid of a lot of errors. I get a ton of DEPRECATION WARNING messages and they&amp;rsquo;re a pain.&lt;/p&gt;
+
+&lt;p&gt;On a learning note, while I thought &lt;code&gt;form_tag&lt;/code&gt; was cool I had no idea about &lt;code&gt;form_for&lt;/code&gt; when it comes to ActionView. Mind is sufficiently blown with how much more efficient this makes things and how much less coding needs to be done for the mundane form building. Also learning how to block CSRF attempts was an interesting bit of info. Cross-Site Request Forgery that is. One site making a request to another site via a form is the general flow of a CSRF.&lt;/p&gt;
+
+&lt;p&gt;These labs are getting intense too. The lab I&amp;rsquo;m currently on is equally or more complex than my Sinatra Portfolio Project which is saying something. Granted, I have been introduced to Rails generators so I won&amp;rsquo;t have to write EVERYTHING from scratch so we&amp;rsquo;ll see how it goes.&lt;/p&gt;
+
+&lt;p&gt;Time spent today: 5:08&lt;br /&gt;
+Time spent total: 209:52&lt;br /&gt;
+Lessons completed today: 11&lt;br /&gt;
+Lessons completed total: 431&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Rails Makes Life Easier but Difficult</title>
@@ -126,8 +172,10 @@ end
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;bundler/setup&#39;
 Bundler.require
 
+
 configure :development do
   ENV[&#39;SINATRA_ENV&#39;] ||= &amp;quot;development&amp;quot;
+
 
   ActiveRecord::Base.establish_connection(
     :adapter =&amp;gt; &amp;quot;sqlite3&amp;quot;,
@@ -135,8 +183,10 @@ configure :development do
   )
 end
 
+
 configure :production do
   db = URI.parse(ENV[&#39;DATABASE_URL&#39;] || &#39;postgres://localhost/mydb&#39;)
+
 
   ActiveRecord::Base.establish_connection(
     :adapter =&amp;gt; db.scheme == &#39;postgres&#39; ? &#39;postgresql&#39; : db.scheme,
@@ -147,6 +197,7 @@ configure :production do
     :encoding =&amp;gt; &#39;utf8&#39;
   )
 end
+
 
 require_all &#39;app&#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
@@ -205,7 +256,7 @@ Lessons completed total: 405&lt;/p&gt;
       <pubDate>Fri, 14 Apr 2017 23:07:58 -0500</pubDate>
       
       <guid>https://itzsaga.github.io/post/day-047/</guid>
-      <description>&lt;p&gt;So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well. However, I think I&amp;rsquo;m going to be more proud of this when I&amp;rsquo;m done. You can follow my progress on my project &lt;a href=&#34;https://github.com/itzsaga/neighbor_tracker&#34;&gt;here&lt;/a&gt;. Although, that link might break in the future as I&amp;rsquo;ll probably renanme my repo to something less stalkerish lol.&lt;/p&gt;
+      <description>&lt;p&gt;So about that not being fancy that I talked about last night. I took a good chunk of time today and figured out how to implement &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; in my portfolio project. I figured this was my first web app and should probably look somewhat nice. I have a navbar that changes if you&amp;rsquo;re logged in or not and then I&amp;rsquo;m using the form and typography stylings. It&amp;rsquo;s definitely taking me longer to write my forms out and I&amp;rsquo;m making sure my app actually will look good so that is taking more time as well. However, I think I&amp;rsquo;m going to be more proud of this when I&amp;rsquo;m done. You can follow my progress on my project [here][2]. Although, that link might break in the future as I&amp;rsquo;ll probably renanme my repo to something less stalkerish lol.&lt;/p&gt;
 
 &lt;p&gt;It took me a long time to get my naming correct for my &lt;code&gt;has_many&lt;/code&gt; to &lt;code&gt;has_many&lt;/code&gt; relationship. Between the models and the db it was a mistake in what needed to be plural that ultimately took some time to figure out. I&amp;rsquo;m happy that I don&amp;rsquo;t have to keep up with these associations in any complex manner. I don&amp;rsquo;t know why but I&amp;rsquo;m exhausted right now. I&amp;rsquo;m usually still humming along at 11:15pm but not tonight. I&amp;rsquo;m fighting to stay awake. I made some great progress today on my Sinatra project and I&amp;rsquo;m happy with where I&amp;rsquo;m at. I could&amp;rsquo;ve been closer to being done but I know that I&amp;rsquo;ll be more proud to show off my project because of how it looks.&lt;/p&gt;
 
@@ -213,6 +264,8 @@ Lessons completed total: 405&lt;/p&gt;
 Time spent total: 188:40&lt;br /&gt;
 Lessons completed today: 0&lt;br /&gt;
 Lessons completed total: 405&lt;/p&gt;
+
+&lt;p&gt;[2]:&lt;a href=&#34;https://github.com/itzsaga/neighbor_tracker&#34;&gt;https://github.com/itzsaga/neighbor_tracker&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -554,25 +607,6 @@ Lessons completed total: 392&lt;/p&gt;
 Time spent total: 158:29&lt;br /&gt;
 Lessons completed today: 2&lt;br /&gt;
 Lessons completed total: 380&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Take it Easy Sometimes and Still Win</title>
-      <link>https://itzsaga.github.io/post/day-039/</link>
-      <pubDate>Thu, 06 Apr 2017 22:29:32 -0500</pubDate>
-      
-      <guid>https://itzsaga.github.io/post/day-039/</guid>
-      <description>&lt;p&gt;I only got a little bit of coding done tonight by choice. I think I&amp;rsquo;m procrastinating on this nested hash forms lab because nested hashes can get confusing. I started it though and just got sidetracked. I need to stay focused. I worked on getting &lt;a href=&#34;https://www.jetbrains.com/ruby/&#34;&gt;RubyMine&lt;/a&gt; installed to see what it&amp;rsquo;s about and my computer froze. After that I just gave up on coding tonight. I guess I wasn&amp;rsquo;t very motivated if that&amp;rsquo;s all it took lol.&lt;/p&gt;
-
-&lt;p&gt;However, I went to a good Ruby meetup tonight and got home late and am just distracted. I went to the &lt;a href=&#34;https://www.meetup.com/nashrb/&#34;&gt;Nash.rb&lt;/a&gt; 2nd Quarter Social tonight and hung out with people that are in the Ruby community here in Nashville. It was laid back and I just spoke with a bunch of people. A guy named Sam who just moved to Nashville last month and has 3 years of Rails experience yet went to Law school. Chris who graduated from &lt;a href=&#34;https://www.theironyard.com/locations/nashville.html&#34;&gt;The Iron Yard&lt;/a&gt;&amp;rsquo;s Front End program in December and is just interested in Ruby. Pete who&amp;rsquo;s a VP at &lt;a href=&#34;https://takl.com/&#34;&gt;Takl&lt;/a&gt; who are looking for a Senior RoR&amp;rsquo;s dev. Jon and Jim who are both 10+ year devs who talked about their company but never named it. I was able to look at the Meetup RSVP list and then check LinkedIn to see they work for &lt;a href=&#34;http://groups360.com/&#34;&gt;Groups360&lt;/a&gt;. Their company interested me because they&amp;rsquo;re looking to provide a SaaS product to the hospitality industry. Ty who works for &lt;a href=&#34;https://www.kindful.com/&#34;&gt;Kindful&lt;/a&gt; and is somewhat jealous that he had to get a CS degree (75% of which was useless he said) because boot camps didn&amp;rsquo;t exist when he started. I don&amp;rsquo;t know if it&amp;rsquo;s the nootropics I&amp;rsquo;m taking or if I consciously made sure of it but I remembered every person&amp;rsquo;s name I met tonight and was able to say goodnight to them by name as well. This typically doesn&amp;rsquo;t happen.&lt;/p&gt;
-
-&lt;p&gt;I found this meetup to be much more interesting to me than the previous ones I have attended. I think it&amp;rsquo;s because we were interacting well and I was able to speak with all different levels of people. I&amp;rsquo;ve found there is &lt;strong&gt;A LOT&lt;/strong&gt; of JavaScript around, and for good reason, so it as nice to speak to people who knew the things I&amp;rsquo;m currently learning. I&amp;rsquo;m looking forward to the Nash.rb meetups in the future. I&amp;rsquo;m sure I&amp;rsquo;ll get back to enjoying JS meetups as well as soon as I get to the JS curriculum and get back to that.&lt;/p&gt;
-
-&lt;p&gt;Time spent today: 0:33&lt;br /&gt;
-Time spent total: 155:45&lt;br /&gt;
-Lessons completed today: 0&lt;br /&gt;
-Lessons completed total: 378&lt;/p&gt;
 </description>
     </item>
     
