@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-22T23:24:12-05:00"/>
+<meta property="og:updated_time" content="2017-04-23T22:31:38-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-056/"><p>Life Is Short. Code Hard.</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-055/"><p>Fixing Problems Makes You Stronger</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-054/"><p>Rails Makes Life Easier but Difficult</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-053/"><p>Fog is in the Brain</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-055/">Fixing Problems Makes You Stronger</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-056/">Life Is Short. Code Hard.</a></h2>
         
         
-            <p>Day 55 of Flatiron School</p>
+            <p>Day 56 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,11 +222,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-04-22'>
-            April 22, 2017</time>
+            datetime='2017-04-23'>
+            April 23, 2017</time>
         <span class="author">Seth</span>
         
-            <p>3 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f&text=Fixing%20Problems%20Makes%20You%20Stronger&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&text=Life%20Is%20Short.%20Code%20Hard.&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f&title=Fixing%20Problems%20Makes%20You%20Stronger" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&title=Life%20Is%20Short.%20Code%20Hard." target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,50 +278,45 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-055/" class="image featured">
-            <img src="../../images//problem.jpg" alt="technical difficulties" />
+        <a href="https://itzsaga.github.io/post/day-056/" class="image featured">
+            <img src="../../images//ctrlz.png" alt="life has no ctrl&#43;z" />
         </a>
     
 
 
     <div id="content">
-        <p>It was a <strong>LONG</strong> day on my computer. Ubuntu decided to suggest I update to 16.10 and I did. Well that just started a string of issues that ended up in me reinstalling 16.04.2 LTS. I lost my entire morning and early afternoon to this process before I could get coding today. I&rsquo;m sure I could&rsquo;ve figured it out in time but time is something that is precious and I really had no need to upgrade. I&rsquo;m on a LTS and things work which is all that I need.</p>
+        <p>So that intense lab I was talking about yesterday&hellip; it took no time at all because of Rails. It was <strong>AWESOME</strong>. One of the things I learned today that is going to make life easier and ensure DRY.</p>
 
-<p>In addition, Rails has presented some interesting problems that I&rsquo;ve either figured out with Learn Expert help or on my own. Here are some examples, that I hope will help students behind me.</p>
+<pre><code class="language-ruby"># example_controller.rb
 
-<p>This error has persisted since before Rails but I never mentioned it (I don&rsquo;t think):</p>
+# Insert at top of controller
+before_action :set_example, only: [:show, :edit, :update, :destroy]
 
-<pre><code>An error occurred while installing json (1.8.3), and Bundler cannot
-continue.
-Make sure that `gem install json -v '1.8.3'` succeeds before bundling.
+# Insert at end of controller
+private
+
+def set_example
+  @example = Example.find(params[:id])
+end
 </code></pre>
 
-<p>Figured out the best way to fix this is to delete the Gemfile.lock <code>rm Gemfile.lock</code> then bundle again <code>bundle install</code> and that install json 1.8.6 at this moment in time.</p>
+<p>So up until now to access a db object as an instance variable I&rsquo;ve used the ID passed in from the URL or form and then done a lookup to set the instance variable. That means my code was exactly the same and in four different methods. I always thought this was clunky but didn&rsquo;t look too hard into how to change it. Now I have a way. So <code>before_action</code> is telling the controller before the action (method) happens do this. However, <code>only:</code> for these <code>[:show, :edit, :update, :destroy]</code> actions. What do we need to do? That&rsquo;s right, the <code>:set_example</code> action which is then accessible to the listed actions. So the instance variable is available for each of those views. Check out <a href="http://guides.rubyonrails.org/action_controller_overview.html#filters">Filter</a> on <a href="http://guides.rubyonrails.org/index.html">Rails Guides</a>.</p>
 
-<p>Now when you get this error:</p>
+<p>I also learned the difference between <code>PATCH</code> and <code>PUT</code>:</p>
 
-<pre><code>/home/seth/.rvm/gems/ruby-2.4.1/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/conversions.rb:124:in `block (2 levels) in &lt;class:Numeric&gt;': stack level too deep (SystemStackError)
-</code></pre>
+<ul>
+<li><code>PUT</code> has the ability to update the entire object.</li>
+<li><code>PATCH</code> updates only the elements that were changed. Therefore this is the preferred method because of lower overhead.</li>
+</ul>
 
-<p>It&rsquo;s a Rails issue. The easiest fix is to change the version of Rails in the Gemfile. I simple do <code>gem 'rails', '5.0.2'</code> then run <code>bundle update</code> and this error is fixed. I&rsquo;ve gotten really good at <code>nano Gemfile</code>, do the edit quickly (rails is typically in the first 5 lines), then <code>CTRL + X</code>, <code>Y</code>, <code>Enter</code>, <code>bundle install</code>.</p>
+<p>I realize it has only been 4 days since I started Rails but I like taking a snapshot of where I am and where I want to be on Sunday nights. According to my dashboard I&rsquo;m 32% ( 37 / 113 ) done with Rails. I must&rsquo;ve counted wrong or things have been added because I counted 104 total plus 3 projects. Either way, I think I&rsquo;m well on my way to hitting the projects starting May 10th which would take a &lt;5 lessons/day pace.</p>
 
-<p>Another interesting error that has popped up on multiple occaisons is:</p>
+<p>Okay, I have my Sinatra Project review at 7:15am so I&rsquo;m off to bed.</p>
 
-<pre><code>NoMethodError: undefined method `last_comment' for #&lt; Rake::Application:0x007ff0cf37be38&gt;
-</code></pre>
-
-<p>To fix this one another Gemfile edit must be done. Simply change, or add in, <code>gem 'rake', '&lt;11.0'</code>. This is just an issue with rake past version 11. I didn&rsquo;t read up on what it is exactly I just found this answer quickly and it works.</p>
-
-<p>I do these things pretty regularly these days. I wish the Gemfiles of some of these lessons were scaled back some. There is so much unneeded stuff in them (I think). Also, a lot of the versions could be updated to take advantage of more recent versions getting rid of a lot of errors. I get a ton of DEPRECATION WARNING messages and they&rsquo;re a pain.</p>
-
-<p>On a learning note, while I thought <code>form_tag</code> was cool I had no idea about <code>form_for</code> when it comes to ActionView. Mind is sufficiently blown with how much more efficient this makes things and how much less coding needs to be done for the mundane form building. Also learning how to block CSRF attempts was an interesting bit of info. Cross-Site Request Forgery that is. One site making a request to another site via a form is the general flow of a CSRF.</p>
-
-<p>These labs are getting intense too. The lab I&rsquo;m currently on is equally or more complex than my Sinatra Portfolio Project which is saying something. Granted, I have been introduced to Rails generators so I won&rsquo;t have to write EVERYTHING from scratch so we&rsquo;ll see how it goes.</p>
-
-<p>Time spent today: 5:08<br />
-Time spent total: 209:52<br />
-Lessons completed today: 11<br />
-Lessons completed total: 431</p>
+<p>Time spent today: 3:52<br />
+Time spent total: 213.43<br />
+Lessons completed today: 12<br />
+Lessons completed total: 443</p>
 
     </div>
 
@@ -355,8 +350,8 @@ Lessons completed total: 431</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-054/"
-                class="button big previous">Rails Makes Life Easier but Difficult</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-055/"
+                class="button big previous">Fixing Problems Makes You Stronger</a></li>
     
 
     
@@ -369,9 +364,9 @@ Lessons completed total: 431</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-055\/';
-    var disqus_title = 'Fixing Problems Makes You Stronger';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-055\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-056\/';
+    var disqus_title = 'Life Is Short. Code Hard.';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-056\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -395,25 +390,25 @@ Lessons completed total: 431</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f&text=Fixing%20Problems%20Makes%20You%20Stronger&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&text=Life%20Is%20Short.%20Code%20Hard.&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f&title=Fixing%20Problems%20Makes%20You%20Stronger" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&title=Life%20Is%20Short.%20Code%20Hard." target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-055%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -533,6 +528,20 @@ Lessons completed total: 431</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-056/">Life Is Short. Code Hard.</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-23'>
+                                    April 23, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-055/">Fixing Problems Makes You Stronger</a></h3>
                                 
                                     
@@ -554,20 +563,6 @@ Lessons completed total: 431</p>
                                 <time class="published" datetime=
                                     '2017-04-21'>
                                     April 21, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-053/">Fog is in the Brain</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-20'>
-                                    April 20, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -606,7 +601,7 @@ Lessons completed total: 431</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">53</span>
+                                <span style="float:right;">54</span>
                             </header>
                         </article>
                     </li>
