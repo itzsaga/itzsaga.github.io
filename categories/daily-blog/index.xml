@@ -6,10 +6,21 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Apr 2017 22:31:38 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2017 23:02:15 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Speaker-Listener Technique</title>
+      <link>https://itzsaga.github.io/post/day-057/</link>
+      <pubDate>Mon, 24 Apr 2017 23:02:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-057/</guid>
+      <description>I can happily say that I got zero, yes 0 coding done today. Well I guess I got a little in during my 45 minutes Sinatra Project review this morning. Which was a great review btw.
+ Hi Seth,
+Awesome job on your Sinatra Project!! You did a great job, and I really appreciate your work on the Active Record relationships and your clean and concise code. As you move forward these practices will help you a lot.</description>
+    </item>
     
     <item>
       <title>Life Is Short. Code Hard.</title>

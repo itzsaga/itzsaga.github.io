@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-23T22:31:38-05:00"/>
+<meta property="og:updated_time" content="2017-04-24T23:02:15-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-057/"><p>The Speaker-Listener Technique</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-056/"><p>Life Is Short. Code Hard.</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-055/"><p>Fixing Problems Makes You Stronger</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-054/"><p>Rails Makes Life Easier but Difficult</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-056/">Life Is Short. Code Hard.</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-057/">The Speaker-Listener Technique</a></h2>
         
         
-            <p>Day 56 of Flatiron School</p>
+            <p>Day 57 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,8 +222,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-04-23'>
-            April 23, 2017</time>
+            datetime='2017-04-24'>
+            April 24, 2017</time>
         <span class="author">Seth</span>
         
             <p>2 minute read</p>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&text=Life%20Is%20Short.%20Code%20Hard.&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f&text=The%20Speaker-Listener%20Technique&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&title=Life%20Is%20Short.%20Code%20Hard." target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f&title=The%20Speaker-Listener%20Technique" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,43 +278,52 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-056/" class="image featured">
-            <img src="../../images//ctrlz.png" alt="life has no ctrl&#43;z" />
+        <a href="https://itzsaga.github.io/post/day-057/" class="image featured">
+            <img src="../../images//minions.jpg" alt="minions talking" />
         </a>
     
 
 
     <div id="content">
-        <p>So that intense lab I was talking about yesterday&hellip; it took no time at all because of Rails. It was <strong>AWESOME</strong>. One of the things I learned today that is going to make life easier and ensure DRY.</p>
+        <p>I can happily say that I got zero, yes 0 coding done today. Well I guess I got a little in during my 45 minutes Sinatra Project review this morning. Which was a great review btw.</p>
 
-<pre><code class="language-ruby"># example_controller.rb
+<blockquote>
+<p>Hi Seth,</p>
 
-# Insert at top of controller
-before_action :set_example, only: [:show, :edit, :update, :destroy]
+<p>Awesome job on your Sinatra Project!! You did a great job, and I really appreciate your work on the Active Record relationships and your clean and concise code. As you move forward these practices will help you a lot.</p>
 
-# Insert at end of controller
-private
+<p>Please reach out if you have any questions or concerns as you move through Rails.</p>
 
-def set_example
-  @example = Example.find(params[:id])
-end
-</code></pre>
+<p>Regards,</p>
+</blockquote>
 
-<p>So up until now to access a db object as an instance variable I&rsquo;ve used the ID passed in from the URL or form and then done a lookup to set the instance variable. That means my code was exactly the same and in four different methods. I always thought this was clunky but didn&rsquo;t look too hard into how to change it. Now I have a way. So <code>before_action</code> is telling the controller before the action (method) happens do this. However, <code>only:</code> for these <code>[:show, :edit, :update, :destroy]</code> actions. What do we need to do? That&rsquo;s right, the <code>:set_example</code> action which is then accessible to the listed actions. So the instance variable is available for each of those views. Check out <a href="http://guides.rubyonrails.org/action_controller_overview.html#filters">Filter</a> on <a href="http://guides.rubyonrails.org/index.html">Rails Guides</a>.</p>
+<p>A couple things that I shored up/added this morning were Active Record validations for uniqueness on username and email when someone signs up as well as displaying error messages on the sign up page.</p>
 
-<p>I also learned the difference between <code>PATCH</code> and <code>PUT</code>:</p>
+<p>Why am I happy about this? Well on Sunday night my wife and I attended a brief marriage seminar. Just something to provide us with tools to communicate better (something most marriages probably need). Tonight we utilized the take home (a fridge magnet) and had a good conversation. So what does this fridge magnet say? It&rsquo;s the &ldquo;Speaker-Listener Technique&rdquo;.</p>
 
-<ul>
-<li><code>PUT</code> has the ability to update the entire object.</li>
-<li><code>PATCH</code> updates only the elements that were changed. Therefore this is the preferred method because of lower overhead.</li>
-</ul>
+<blockquote>
+<p><strong>The Floor</strong><br />
+Speaker-Listener Technique</p>
 
-<p>I realize it has only been 4 days since I started Rails but I like taking a snapshot of where I am and where I want to be on Sunday nights. According to my dashboard I&rsquo;m 32% ( 37 / 113 ) done with Rails. I must&rsquo;ve counted wrong or things have been added because I counted 104 total plus 3 projects. Either way, I think I&rsquo;m well on my way to hitting the projects starting May 10th which would take a &lt;5 lessons/day pace.</p>
+<p><strong>Rules for the Speaker:</strong>
+1. Speak for yourself. Don&rsquo;t mind read!
+2. Keep statements brief. Don&rsquo;t go on and on.
+3. Stop to let the Listener paraphrase.</p>
 
-<p>Okay, I have my Sinatra Project review at 7:15am so I&rsquo;m off to bed.</p>
+<p><strong>Rules for the Listener:</strong>
+1. Paraphrase what you hear.
+2. Focus on the Speaker&rsquo;s message. Don&rsquo;t rebut.</p>
+
+<p><strong>Rules for Both:</strong>
+1. The Speaker has the floor.
+2. Speaker keeps the floor while Listener paraphrases.
+3. Share the floor.</p>
+</blockquote>
+
+<p>Needless to say this concept worked very well tonight for my wife and I. It&rsquo;s designed for times of conflict but we just used it for a normal conversation. Because of this, I&rsquo;m happy I missed out on coding. While I miss it I know what&rsquo;s truly important during this short life and a few hours of Rails is not #1.</p>
 
 <p>Time spent today: 3:52<br />
-Time spent total: 213.43<br />
+Time spent total: 213:43<br />
 Lessons completed today: 12<br />
 Lessons completed total: 443</p>
 
@@ -350,8 +359,8 @@ Lessons completed total: 443</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-055/"
-                class="button big previous">Fixing Problems Makes You Stronger</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-056/"
+                class="button big previous">Life Is Short. Code Hard.</a></li>
     
 
     
@@ -364,9 +373,9 @@ Lessons completed total: 443</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-056\/';
-    var disqus_title = 'Life Is Short. Code Hard.';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-056\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-057\/';
+    var disqus_title = 'The Speaker-Listener Technique';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-057\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -390,25 +399,25 @@ Lessons completed total: 443</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&text=Life%20Is%20Short.%20Code%20Hard.&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f&text=The%20Speaker-Listener%20Technique&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f&title=Life%20Is%20Short.%20Code%20Hard." target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f&title=The%20Speaker-Listener%20Technique" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-056%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-057%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -528,6 +537,20 @@ Lessons completed total: 443</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-057/">The Speaker-Listener Technique</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-24'>
+                                    April 24, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-056/">Life Is Short. Code Hard.</a></h3>
                                 
                                     
@@ -549,20 +572,6 @@ Lessons completed total: 443</p>
                                 <time class="published" datetime=
                                     '2017-04-22'>
                                     April 22, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-054/">Rails Makes Life Easier but Difficult</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-21'>
-                                    April 21, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -601,7 +610,7 @@ Lessons completed total: 443</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">54</span>
+                                <span style="float:right;">55</span>
                             </header>
                         </article>
                     </li>
