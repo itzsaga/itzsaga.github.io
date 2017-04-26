@@ -6,10 +6,21 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 23:02:15 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 25 Apr 2017 23:35:37 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Strong Params Can Change</title>
+      <link>https://itzsaga.github.io/post/day-058/</link>
+      <pubDate>Tue, 25 Apr 2017 23:35:37 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-058/</guid>
+      <description>Not much going on but completing a couple larger labs tonight. One significant things that halted me for a while was an issue in my strong params. I had:
+def song_params params.permit(:title, :released, :release_year, :artist_name, :genre) end  Which looks really nice but doesn&amp;rsquo;t take into account that I&amp;rsquo;m using form_for and thus my submitted data is actually a nested hash. A quick change to:
+def song_params params.require(:song).permit(:title, :released, :release_year, :artist_name, :genre) end  Had me moving along again.</description>
+    </item>
     
     <item>
       <title>The Speaker-Listener Technique</title>
