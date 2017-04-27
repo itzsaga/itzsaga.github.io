@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2017 23:35:37 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 26 Apr 2017 23:07:41 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Don&#39;t Forget to Check the Password</title>
+      <link>https://itzsaga.github.io/post/day-059/</link>
+      <pubDate>Wed, 26 Apr 2017 23:07:41 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-059/</guid>
+      <description>Watching Avi build out the TodoMVC is an interesting thing and I&amp;rsquo;m happy I get to do it as part of my curriculum and showing what Rails does. That was the bulk of the new work I did tonight. Something that I ran into during my Sinatra project was getting all my associations to work properly. I had issues because of what I now know is called the Active Record Inflector.</description>
+    </item>
     
     <item>
       <title>Strong Params Can Change</title>
