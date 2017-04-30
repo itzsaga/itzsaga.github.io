@@ -6,10 +6,20 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Apr 2017 22:59:49 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 29 Apr 2017 22:57:26 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get in Flow and Go</title>
+      <link>https://itzsaga.github.io/post/day-062/</link>
+      <pubDate>Sat, 29 Apr 2017 22:57:26 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-062/</guid>
+      <description>It felt so good to spend almost the entire day coding. I missed it. My progress was VERY SLOW at times (or so it felt). Things like the :source option in Active Record were foreign and not really taught but needed to solve a large lab I was working on starting first thing this morning. Luckily I have access to some awesome help. Here&amp;rsquo;s one conversation I had today:
+ Seth Alexander 34 MINUTES AGO</description>
+    </item>
     
     <item>
       <title>Coding While Sleeping. Is That Possible?</title>
