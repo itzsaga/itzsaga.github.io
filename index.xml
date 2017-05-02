@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Apr 2017 22:01:27 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 22:51:38 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I Partially Understand Partials</title>
+      <link>https://itzsaga.github.io/post/day-064/</link>
+      <pubDate>Mon, 01 May 2017 22:51:38 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-064/</guid>
+      <description>I don&amp;rsquo;t know why I thought Rails layouts and templates would be somewhat easy. While in a sense it&amp;rsquo;s taking snippets and putting them in other files to reuse of course there has to be some logic in there to ensure that the proper data is being shown. So rendering partials with locals is starting to make sense.
+For my example &amp;lt;%= render partial: &amp;quot;authors/author&amp;quot;, locals: {author: @author} %&amp;gt; - The first key-value pair partial: &amp;quot;authors/author&amp;quot; tells Rails the name of the partial to render.</description>
+    </item>
     
     <item>
       <title>The Pieces Are Coming Together</title>

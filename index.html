@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-30T22:01:27-05:00"/>
+<meta property="og:updated_time" content="2017-05-01T22:51:38-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-064/"><p>I Partially Understand Partials</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-063/"><p>The Pieces Are Coming Together</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-062/"><p>Get in Flow and Go</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-061/"><p>Coding While Sleeping. Is That Possible?</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-063/">The Pieces Are Coming Together</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-064/">I Partially Understand Partials</a></h2>
         
         
-            <p>Day 63 of Flatiron School</p>
+            <p>Day 64 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,11 +222,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-04-30'>
-            April 30, 2017</time>
+            datetime='2017-05-01'>
+            May 1, 2017</time>
         <span class="author">Seth</span>
         
-            <p>3 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f&text=The%20Pieces%20Are%20Coming%20Together&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f&text=I%20Partially%20Understand%20Partials&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f&title=The%20Pieces%20Are%20Coming%20Together" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f&title=I%20Partially%20Understand%20Partials" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,65 +278,27 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-063/" class="image featured">
-            <img src="../../images//cubes.jpg" alt="building blocks" />
+        <a href="https://itzsaga.github.io/post/day-064/" class="image featured">
+            <img src="../../images//partial-solar-eclipse.jpg" alt="partial solar eclipse" />
         </a>
     
 
 
     <div id="content">
-        <p>Feeling great about today. The things that a struggled with the most I ended up cementing (it&rsquo;s not dry yet) into my brain. The Learn community is <strong>awesome</strong> I must say. After 2 hours with a Learn Expert (basically a TA) we were both sufficiently stumped. I dropped a note into the students Slack channel and &lt;20 minutes it was figured out by the group. So you&rsquo;re probably wondering what it was&hellip;</p>
+        <p>I don&rsquo;t know why I thought Rails layouts and templates would be somewhat easy. While in a sense it&rsquo;s taking snippets and putting them in other files to reuse of course there has to be some logic in there to ensure that the proper data is being shown. So rendering partials with locals is starting to make sense.</p>
 
-<pre><code class="language-ruby">&lt;h1&gt;&lt;%= @post.title %&gt;&lt;/h1&gt;
-&lt;p&gt;
-  &lt;%= @post.content %&gt;
-&lt;/p&gt;
-&lt;% @post.categories.each do |c| %&gt;
-  &lt;h3&gt;&lt;%= c.name %&gt;&lt;/h3&gt;
-&lt;% end %&gt;
-&lt;% @post.comments.each do |c| %&gt;
-  &lt;p&gt;&lt;%= c.user.username %&gt; says: &lt;%= c.content %&gt;&lt;/p&gt;
-&lt;% end %&gt;
-&lt;% @post.users.uniq.each do |u| %&gt;
-  &lt;%= link_to u.username, user_path(u) %&gt;
-&lt;% end %&gt;
-&lt;%= form_for @comment do |f| %&gt;
-  &lt;%= f.label :content %&gt;&lt;br /&gt;
-  &lt;%= f.text_area :content %&gt;&lt;br /&gt;
-  &lt;%= f.collection_select :user_id, User.all, :id, :username, include_blank: true %&gt;&lt;br /&gt;
-  &lt;%= fields_for :comment_user_attributes, User.new do |u_fields| %&gt;
-    &lt;%= u_fields.text_field :username %&gt;
-  &lt;% end %&gt;&lt;br /&gt;
-  &lt;%= hidden_field_tag 'comment[post_id]', @post.id %&gt;
-&lt;%= f.submit %&gt;
-&lt;% end %&gt;
-</code></pre>
+<p>For my example <code>&lt;%= render partial: &quot;authors/author&quot;, locals: {author: @author} %&gt;</code>
+- The first key-value pair <code>partial: &quot;authors/author&quot;</code> tells Rails the name of the partial to render. Nothing too complex here.
+- In the second key-value pair <code>locals: {author: @author}</code> the nested hash <code>{author: @author}</code> key is the name of the variable and it&rsquo;s value is the value you&rsquo;d like it to have in the partial.</p>
 
-<p>Yeah, it&rsquo;s in that code&hellip; can you find it??? Well I wrote it and I couldn&rsquo;t find it so if you can&rsquo;t all good. If you&rsquo;re still trying don&rsquo;t scroll down lol. Here&rsquo;s the fix with just the line of code that had the error:</p>
+<p>I pretty much understand this except for the nested hash&rsquo;s key. It&rsquo;ll click I&rsquo;m sure. I need to get into the Rails console and play some. I have figured out that to effectively have a partial inside a loop I need the argument I pass to the block (the piece in between the |pipes|) the same as the nested hash value. In this case <code>@author</code>.</p>
 
-<pre><code class="language-ruby">&lt;%= f.fields_for :user_attributes, User.new do |u_fields| %&gt;
-</code></pre>
+<p>I&rsquo;m thinking about presenting a general overview of MVC to my <a href="https://www.meetup.com/freeCodeCamp-Nashville/">Free Code Camp meetup</a> this weekend. Since I&rsquo;m basically not thinking about JS at all right now I want to contribute in a meaningful way somehow. Depending on how long that presentation is I might add REST to it. Both MVC &amp; REST are language agnostic so it&rsquo;ll be useful. Maybe even add CRUD for a 30,000 feet overview of some of the big acronyms in web development.</p>
 
-<p>Yeah, I was missing the <code>f.</code> before <code>fields_for</code> which makes a <strong>BIG</strong> difference. I can confidently say that I&rsquo;ll most likely never make that mistake again. I also started taking screen shots during lecture videos of things I wanted to remember and write down. Figured this would be more effective than writing down the time in the video things happen. Although, I did write down a couple larger concepts if I ever need to go back and look.</p>
-
-<p>Something I was struggling with early was <code>collection_select(:post, :author_id, Author.all, :id, :name_with_initial, prompt: true)</code> and reading the <a href="https://apidock.com/rails/ActionView/Helpers/FormOptionsHelper/collection_select">APIdock</a> didn&rsquo;t help. To the Slack channel for people doing Rails I went. Got some solid info. Then later in a lecture video Avi goes through an almost identical line of code and what it means. Here&rsquo;s what I got (saved as a screen shot that I&rsquo;ll write out by hand in my notebook later):</p>
-
-<blockquote>
-<p>For context higher up in the code: <code>&lt;%= form_for @post do |f| %&gt;</code><br />
-<code>&lt;%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) %&gt;</code><br />
-Will generate a checkbox named post[category_ids][] for each category in Category and it will use the :id as the value for the checkbox and it will ust the :name method as the label for the checkbox.</p>
-</blockquote>
-
-<p>Exactly what I was looking for was right around the corner when I finished the lab. This isn&rsquo;t the first time I&rsquo;ve experienced this. There have been many a lecture where after I struggled through something it all became clearer. Specific topics that I had questions about were explained in a way that answered my questions.</p>
-
-<p>Side note, I&rsquo;ve realized I need something to rest my wrists on. Especially my right hand that uses the mouse. This Microsoft Natural Kayboard has a nice soft wrist rest. However, these 10 hour coding days + this time writing the blog takes a toll.</p>
-
-<p>It&rsquo;s time for my Sunday night look into where I&rsquo;m at. I&rsquo;m 53% done with Rails according to my dashboard and 50 lessons from my Rails projects. I&rsquo;m still on pace to start my projects on May 10th at a 5 lesson/lab/lecture per day pace. Mon, Thurs &amp; Fri of this past week I spent &lt;1:30 working so if I can get that back up over 2 on weekdays (closer to 3 ideally) and keep this solid 10 on the weekends I&rsquo;ll be happy.</p>
-
-<p>Time spent today: 10:11<br />
-Time spent total: 242:14<br />
-Lessons completed today: 9<br />
-Lessons completed total: 466</p>
+<p>Time spent today: 2:12<br />
+Time spent total: 244:26<br />
+Lessons completed today: 4<br />
+Lessons completed total: 470</p>
 
     </div>
 
@@ -370,8 +332,8 @@ Lessons completed total: 466</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-062/"
-                class="button big previous">Get in Flow and Go</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-063/"
+                class="button big previous">The Pieces Are Coming Together</a></li>
     
 
     
@@ -384,9 +346,9 @@ Lessons completed total: 466</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-063\/';
-    var disqus_title = 'The Pieces Are Coming Together';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-063\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-064\/';
+    var disqus_title = 'I Partially Understand Partials';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-064\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -410,25 +372,25 @@ Lessons completed total: 466</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f&text=The%20Pieces%20Are%20Coming%20Together&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f&text=I%20Partially%20Understand%20Partials&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f&title=The%20Pieces%20Are%20Coming%20Together" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f&title=I%20Partially%20Understand%20Partials" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-063%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-064%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -548,6 +510,20 @@ Lessons completed total: 466</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-064/">I Partially Understand Partials</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-01'>
+                                    May 1, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-063/">The Pieces Are Coming Together</a></h3>
                                 
                                     
@@ -569,20 +545,6 @@ Lessons completed total: 466</p>
                                 <time class="published" datetime=
                                     '2017-04-29'>
                                     April 29, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-061/">Coding While Sleeping. Is That Possible?</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-04-28'>
-                                    April 28, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -621,7 +583,7 @@ Lessons completed total: 466</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">61</span>
+                                <span style="float:right;">62</span>
                             </header>
                         </article>
                     </li>
