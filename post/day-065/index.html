@@ -1,0 +1,872 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Partials of Collections? They&#39;re Awesome.</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.20.2" />
+        
+
+
+        
+            <meta name="author" content="Seth">
+        
+        
+            <meta name="description" content="Day 65 of Flatiron School">
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Partials of Collections? They&#39;re Awesome."/>
+<meta name="twitter:title" content="Partials of Collections? They&#39;re Awesome."/>
+<meta name="twitter:description" content="Day 65 of Flatiron School"/>
+<meta name="twitter:site" content="@itzsaga"/>
+
+        <meta property="og:title" content="Partials of Collections? They&#39;re Awesome." />
+<meta property="og:description" content="Day 65 of Flatiron School" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://itzsaga.github.io/post/day-065/" />
+
+
+
+<meta property="article:published_time" content="2017-05-02T22:54:15-05:00"/>
+<meta property="article:modified_time" content="2017-05-02T22:54:15-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Partials of Collections? They&#39;re Awesome.">
+<meta itemprop="description" content="Day 65 of Flatiron School">
+
+
+<meta itemprop="dateModified" content="2017-05-02T22:54:15-05:00" />
+<meta itemprop="wordCount" content="860">
+
+
+
+<meta itemprop="keywords" content="daily blog,flatiron blog,general," />
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-96008952-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+        <h2><a href="/">Seth&#39;s Journey</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about">
+                        
+                            <i class="fa fa-user">&nbsp;</i>About
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:https://itzsaga.github.io/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            <h3>
+                                
+                                    <i class="fa fa-user">&nbsp;</i>
+                                
+                                About
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-065/"><p>Partials of Collections? They&#39;re Awesome.</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-064/"><p>I Partially Understand Partials</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://itzsaga.github.io/post/day-063/"><p>The Pieces Are Coming Together</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f&text=Partials%20of%20Collections%3f%20They%27re%20Awesome.&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f&title=Partials%20of%20Collections%3f%20They%27re%20Awesome." target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="https://itzsaga.github.io/post/day-065/">Partials of Collections? They&#39;re Awesome.</a></h1>
+            
+        
+        
+            <p>Day 65 of Flatiron School</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-05-02'>
+            May 2, 2017</time>
+        <span class="author">Seth</span>
+        
+            <p>5 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f&text=Partials%20of%20Collections%3f%20They%27re%20Awesome.&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f&title=Partials%20of%20Collections%3f%20They%27re%20Awesome." target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-065%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://itzsaga.github.io/post/day-065/" class="image featured">
+            <img src="../../images//collection.jpg" alt="book collection" />
+        </a>
+    
+
+
+    <div id="content">
+        <p>Partials are coming together more and I have to say they&rsquo;re pretty sweet. Rails does some automagical stuff that I can&rsquo;t completely wrap my head around just yet. However, I probably won&rsquo;t be able to for a while as the people who created it are <strong>WAY</strong> smarter than me. However, as an example there&rsquo;s this sequence of things that Rails does:</p>
+
+<pre><code class="language-html">&lt;% @posts.each do |post| %&gt;
+  &lt;%= render :partial =&gt; &quot;post&quot;, {:locals =&gt; {:post =&gt; post}} %&gt;
+&lt;% end %&gt;
+
+&lt;!-- OR --&gt;
+
+&lt;%= render :partial =&gt; &quot;post&quot;, :collection =&gt; @posts %&gt;
+
+&lt;!-- OR --&gt;
+
+&lt;%= render @posts %&gt;
+
+&lt;!-- Rendering an empty Collection --&gt;
+
+&lt;%= render(@posts) || &quot;There are no blog posts!&quot; %&gt;
+</code></pre>
+
+<p>The craziest part to me is this little bit that I was taught about <code>&lt;%= render @posts %&gt;</code> which I have bolded for emphasis:</p>
+
+<blockquote>
+<p>This approach is a bit more abstract. Under the hood Rails uses the convention that you will have a partial with the name of the models in the collection. <strong>Rails will even render a collection of heterogeneous models ([customer, order, customer]) calling the correct partial for each one.</strong></p>
+</blockquote>
+
+<p>*Mind Blown*</p>
+
+<p>I also took part in a virtual stand up yesterday morning. The instructor who led it asked me if I felt I was retaining the information with the pace I&rsquo;ve been going (~5 lessons/labs/lectures per day). At the time I said yes because I felt my short days balanced my long days. However, as I worked through some stuff tonight I think my notes are really helping. Pages like this:</p>
+
+<p><img src="../../images/IMG_20170502_221624.jpg" alt="notebook page" /></p>
+
+<p>are awesome for me to cement more abstract things as well as provide a quick reference to go back and look at when I need. As I work through the curriculum I&rsquo;m going to see which notes are truly valuable and get them migrated over to my Code &amp; Quill book for long term reference.</p>
+
+<p>I &lt;3 the community at Flatiron. Here&rsquo;s a recent chat thread:</p>
+
+<blockquote>
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a> [08:56]
+Has anyone been able to roll out Facebook and/or Google OAuth (via Devise) with &gt; an app they’ve deployed to heroku?</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [08:58]
+I&rsquo;ve done github oath</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [08:58]
+Make sure you change the app&rsquo;s URL with Facebook/Google</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+<a href="https://github.com/achasveachas">yechielk</a>: hey! Do you have any documentation, I’ve been searching on heroku but its either beyond me or not what I’m looking for…I’m not sure where to even place my app_ids/secrets</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [13 hours ago]
+Oh, that&hellip;</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a> [13 hours ago]
+sigh…yea</p>
+
+<p><a href="https://github.com/zacscodingclub">zac-baston</a> [13 hours ago]
+<a href="https://devcenter.heroku.com/articles/config-vars">https://devcenter.heroku.com/articles/config-vars</a> (edited)</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [13 hours ago]
+I used a gem called figaro</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [13 hours ago]
+<a href="https://github.com/laserlemon/figaro">https://github.com/laserlemon/figaro</a>
+GitHub
+laserlemon/figaro
+figaro - Simple Rails app configuration</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [13 hours ago]
+It&rsquo;s for storing env variables but it has great heroku integration built in</p>
+
+<p><a href="https://github.com/zacscodingclub">zac-baston</a> [13 hours ago]
+figaro is a good option.  also could check out dotenv gem (<a href="https://github.com/bkeepers/dotenv">https://github.com/bkeepers/dotenv</a>) (edited)</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+thanks @<a href="https://github.com/zacscodingclub">zac-baston</a> Ill check it out. @<a href="https://github.com/achasveachas">yechielk</a> I could never figure out figaro, I used dotenv</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+I get using dotenv but arent those files not supposed to be pushed up anywhere?</p>
+
+<p><a href="https://github.com/smithWEBtek">smithwebtek</a> [13 hours ago]
+Yes 2nd the reminder about URL pointing back to Heroku (production). <a href="http://diet-planner-v8.herokuapp.com/users/sign_in">http://diet-planner-v8.herokuapp.com/users/sign_in</a></p>
+
+<p><a href="https://github.com/zacscodingclub">zac-baston</a> [13 hours ago]
+you certainly shouldn&rsquo;t commit them to version control.  looking at the documentation in that Readme from the repo, it has a section on production in which it recommends the <code>heroku config</code> methods</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a> [13 hours ago]
+thanks guys, I’ll read the doc and shout again if I break everything</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [13 hours ago]
+In your Heroku dashboard go to settings and click on Reveal Config Vars.  Those keys and values should reflect your .env file.</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+@<a href="https://github.com/snsavage">snsavage</a> thanks, I think thats what the doc @<a href="https://github.com/zacscodingclub">zac-baston</a> linked was pointing me towards…so theoretically just set them there then do whatever I need to do for the callbacks?</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [13 hours ago]
+So if you’re using something like dotenv you just need to set the values in the dashboard.  Just keep the keys the same as your dotenv file.</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+do I need to do anything regarding the redirect on FB and Google?</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [13 hours ago]
+For my Rails app I have the Facebook site url set to <a href="https://carbtracker.herokuapp.com/">https://carbtracker.herokuapp.com/</a>.</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [13 hours ago]
+And then the callback path is handled by OAuth and <code>route.rb</code> as <code>devise_for :users, controllers: { omniauth_callbacks: ‘users/omniauth_callbacks’ }</code></p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+it works! at least for Google.  I didnt do FB yet</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [13 hours ago]
+Great!</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [13 hours ago]
+thanks @<a href="https://github.com/snsavage">snsavage</a> @<a href="https://github.com/zacscodingclub">zac-baston</a> @<a href="https://github.com/achasveachas">yechielk</a> @<a href="https://github.com/smithWEBtek">smithwebtek</a> !!</p>
+
+<p><a href="https://github.com/achasveachas">yechielk</a> [13 hours ago]
+:thumbsup:</p>
+
+<p><a href="https://github.com/zacscodingclub">zac-baston</a> [13 hours ago]
+pretty cool stuff about the web interface.  I didn&rsquo;t know that was there.</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [12 hours ago]
+I think its new</p>
+
+<p><a href="https://github.com/jilustrisimo">jilustrisimo</a>  [12 hours ago]
+fairly new</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [12 hours ago]
+It’s been there since at least 2015.</p>
+
+<p><a href="https://github.com/snsavage">snsavage</a> [12 hours ago]
+It’s hard to find if you don’t know where to look.</p>
+
+<p><a href="https://github.com/itzsaga">sethalexander</a> [3 minutes ago]
+I need to save this entire thread for later&hellip;</p>
+</blockquote>
+
+<p>Well I guess I now saved the entire thread for later&hellip;</p>
+
+<p>Time spent today: 2:17<br />
+Time spent total: 246:43<br />
+Lessons completed today: 4<br />
+Lessons completed total: 474</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="https://itzsaga.github.io/post/day-064/"
+                class="button big previous">I Partially Understand Partials</a></li>
+    
+
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'my-flatiron-journey';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-065\/';
+    var disqus_title = 'Partials of Collections? They\x27re Awesome.';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-065\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="https://res.cloudinary.com/sethalexander/image/upload/v1487653136/seth_iign80.jpg" alt="Seth" /></a>
+                
+            
+            
+                <header>
+                    <h2>My Flatiron Journey</h2>
+                    <p>How I went from a restaurant manager to a web developer via the Flatiron Online Web Developer Boot Camp</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-065/">Partials of Collections? They&#39;re Awesome.</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-02'>
+                                    May 2, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-064/">I Partially Understand Partials</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-01'>
+                                    May 1, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-063/">The Pieces Are Coming Together</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-04-30'>
+                                    April 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                "/post/"
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/daily-blog/">daily blog</a>
+                                <span style="float:right;">63</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/flatiron-blog/">flatiron blog</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/general/">general</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>I&#39;m a family man that works hard and is looking to get ahead. I&#39;m smart and love tech. That&#39;s all there is to it.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/itzsaga" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/sethaalexander" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@sethalexander" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/sethalexander" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/itzsaga" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="mailto:sethalexander@protonmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; My Flatiron Journey. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+

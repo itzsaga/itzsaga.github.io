@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 May 2017 22:51:38 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 02 May 2017 22:54:15 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Partials of Collections? They&#39;re Awesome.</title>
+      <link>https://itzsaga.github.io/post/day-065/</link>
+      <pubDate>Tue, 02 May 2017 22:54:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-065/</guid>
+      <description>Partials are coming together more and I have to say they&amp;rsquo;re pretty sweet. Rails does some automagical stuff that I can&amp;rsquo;t completely wrap my head around just yet. However, I probably won&amp;rsquo;t be able to for a while as the people who created it are WAY smarter than me. However, as an example there&amp;rsquo;s this sequence of things that Rails does:
+&amp;lt;% @posts.each do |post| %&amp;gt; &amp;lt;%= render :partial =&amp;gt; &amp;quot;post&amp;quot;, {:locals =&amp;gt; {:post =&amp;gt; post}} %&amp;gt; &amp;lt;% end %&amp;gt; &amp;lt;!</description>
+    </item>
     
     <item>
       <title>I Partially Understand Partials</title>
