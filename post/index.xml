@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 May 2017 22:38:06 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 05 May 2017 23:12:18 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rubocop Saves The Day</title>
+      <link>https://itzsaga.github.io/post/day-068/</link>
+      <pubDate>Fri, 05 May 2017 23:12:18 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-068/</guid>
+      <description>I missed writing yesterday. However, I chose to skip the writing while I enjoyed a very productive study group. Not really. We chatted about everything except code mostly because nobody really showed up at the proper time for it. After 3 hours of talking it was late and I decided to not write a blog post.
+I also went to a Ruby meetup last night. It was underwhelming this month with only 3 of us in attendance.</description>
+    </item>
     
     <item>
       <title>Render Partial New Mouse, What?</title>
