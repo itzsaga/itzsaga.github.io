@@ -58,7 +58,7 @@
 
 
 <meta itemprop="dateModified" content="2017-05-06T17:26:22-05:00" />
-<meta itemprop="wordCount" content="335">
+<meta itemprop="wordCount" content="381">
 
 
 
@@ -353,6 +353,21 @@ ga('send', 'pageview');
 <p>Other resources that were mentioned were: <a href="https://www.youtube.com/user/elithecomputerguy">Eli the Computer Guy</a> and <a href="https://www.youtube.com/user/shiffman">The Coding Train</a> on YouTube. An algorithms course on Coursera was mentioned but not the specific one. We were talking about Stanford though so I think <a href="https://www.coursera.org/specializations/algorithms">this</a> is the right one.</p>
 
 <p>We also worked through the freeCodeCamp <a href="https://www.freecodecamp.com/challenges/truncate-a-string">Truncate a string</a> challenge together. I didn&rsquo;t think to save it at the time but we used Dave&rsquo;s computer so hopefully he has the solution locally on his machine still. If so I&rsquo;ll update with it.</p>
+
+<p><em>UPDATE</em> here&rsquo;s the code:</p>
+
+<pre><code class="language-js">function truncateString(str, num) {
+  if (str.length &lt;= num) {
+    return str;
+  } else if (num &lt;=3) {
+    return str.slice(0, num) + &quot;...&quot;;
+  } else {
+    return str.slice(0, num - 3) + &quot;...&quot;;
+  }
+}
+
+truncateString(&quot;A-tisket a-tasket A green and yellow basket&quot;, 11);
+</code></pre>
 
 <p>We had a good time and there were a few extended conversations after the we officially ended which I liked. I&rsquo;m not a Sr. Dev and can&rsquo;t mentor people too much, <em>yet</em>. However, I really do enjoy seeing people connect with each other and the community we&rsquo;re slowly building around the central theme of people new to coding utilizing freeCodeCamp to learn.</p>
 
