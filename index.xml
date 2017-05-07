@@ -6,10 +6,28 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 May 2017 23:12:18 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 06 May 2017 23:27:05 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rails is Moving Along</title>
+      <link>https://itzsaga.github.io/post/day-069/</link>
+      <pubDate>Sat, 06 May 2017 23:27:05 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-069/</guid>
+      <description>Not as much time spent on my curriculum as a typical Saturday but that&amp;rsquo;s alright. It&amp;rsquo;s because of the freeCodeCamp meetup that I Co-Organize (see previous post from earlier today). I still feel accomplished. I&amp;rsquo;m at a point in the Rails section where I have 4 videos then I&amp;rsquo;m on the last section before the projects. Tomorrow will be telling as to if I&amp;rsquo;ll hit my goal of starting my Rails projects on the 10th or not.</description>
+    </item>
+    
+    <item>
+      <title>freeCodeCamp Nashville May Meetup Recap</title>
+      <link>https://itzsaga.github.io/post/fccnashville-may-meetup-recap/</link>
+      <pubDate>Sat, 06 May 2017 17:26:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/fccnashville-may-meetup-recap/</guid>
+      <description>So today Dave Harned and I hosted the monthly freeCodeCamp Nashville Meetup. There were 8 of us there and it was good to see new and &amp;ldquo;old&amp;rdquo; faces. I think we&amp;rsquo;re starting to build more of a core group that will consistently attend the meetup. With that we&amp;rsquo;ve started exploring some other options for larger meetup locations. The library is nice but the wifi is awfully slow and that&amp;rsquo;s a pretty big downside considering what we&amp;rsquo;re meeting for.</description>
+    </item>
     
     <item>
       <title>Rubocop Saves The Day</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FreeCodeCamp Nashville on My Flatiron Journey</title>
+    <link>https://itzsaga.github.io/categories/freecodecamp-nashville/</link>
+    <description>Recent content in FreeCodeCamp Nashville on My Flatiron Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 May 2017 17:26:22 -0500</lastBuildDate>
+    
+	<atom:link href="https://itzsaga.github.io/categories/freecodecamp-nashville/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>freeCodeCamp Nashville May Meetup Recap</title>
+      <link>https://itzsaga.github.io/post/fccnashville-may-meetup-recap/</link>
+      <pubDate>Sat, 06 May 2017 17:26:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/fccnashville-may-meetup-recap/</guid>
+      <description>So today Dave Harned and I hosted the monthly freeCodeCamp Nashville Meetup. There were 8 of us there and it was good to see new and &amp;ldquo;old&amp;rdquo; faces. I think we&amp;rsquo;re starting to build more of a core group that will consistently attend the meetup. With that we&amp;rsquo;ve started exploring some other options for larger meetup locations. The library is nice but the wifi is awfully slow and that&amp;rsquo;s a pretty big downside considering what we&amp;rsquo;re meeting for.</description>
+    </item>
+    
+  </channel>
+</rss>
