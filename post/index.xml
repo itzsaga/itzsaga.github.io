@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 May 2017 23:27:05 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 07 May 2017 23:04:50 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Let&#39;s Keep It Safe With Authentication</title>
+      <link>https://itzsaga.github.io/post/day-070/</link>
+      <pubDate>Sun, 07 May 2017 23:04:50 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-070/</guid>
+      <description>It was a strong day and I moved into Authentication. Authentication is going to be a beast I can tell. However, it looks like because it&amp;rsquo;s such an important topic there are a lot of best practices and good documentation out there. I still haven&amp;rsquo;t wrapped my head around the Sessions Controller 100% but knowing that it was almost identical in 3 separate labs tells me it&amp;rsquo;s a relatively static and consistent concept for what I&amp;rsquo;ll be doing.</description>
+    </item>
     
     <item>
       <title>Rails is Moving Along</title>
