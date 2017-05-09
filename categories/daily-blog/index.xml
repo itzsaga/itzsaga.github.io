@@ -6,10 +6,19 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2017 23:04:50 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 08 May 2017 23:10:46 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OAuth Just Makes Sense, Now</title>
+      <link>https://itzsaga.github.io/post/day-071/</link>
+      <pubDate>Mon, 08 May 2017 23:10:46 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-071/</guid>
+      <description>I&amp;rsquo;m progressing through Rails Authentication and am happy that I completed the Omniauth section today. It was my goal and I hit it. Tomorrow I start tackling Devise. Something about OAuth that makes a lot more sense to me now is letting someone else worry about the user and their data (to an extent). I can locally store a password or I can let someone else worry about the security and I can just use that third party to verify a person is who they say they are.</description>
+    </item>
     
     <item>
       <title>Let&#39;s Keep It Safe With Authentication</title>
