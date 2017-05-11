@@ -35,7 +35,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-04-24T23:02:15-05:00"/>
+<meta property="og:updated_time" content="2017-04-25T23:35:37-05:00"/>
 
 
 
@@ -186,15 +186,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-073/"><p>CanCanCan? I Thought It Was Can Can?</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-072/"><p>Devise Is A Beast</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-071/"><p>OAuth Just Makes Sense, Now</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-070/"><p>Let&#39;s Keep It Safe With Authentication</p></a>
                     </li>
                 
             </ul>
@@ -210,6 +210,90 @@ ga('send', 'pageview');
         
             
         
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://itzsaga.github.io/post/day-058/">Strong Params Can Change</a></h2>
+        
+        
+            <p>Day 58 of Flatiron School</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-04-25'>
+            April 25, 2017</time>
+        <span class="author">Seth</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://itzsaga.github.io/post/day-058/" class="image featured">
+            <img src="../../images//tired.jpg" alt="sleepy" />
+        </a>
+    
+
+
+    <p>Not much going on but completing a couple larger labs tonight. One significant things that halted me for a while was an issue in my strong params. I had:
+def song_params params.permit(:title, :released, :release_year, :artist_name, :genre) end  Which looks really nice but doesn&rsquo;t take into account that I&rsquo;m using form_for and thus my submitted data is actually a nested hash. A quick change to:
+def song_params params.require(:song).permit(:title, :released, :release_year, :artist_name, :genre) end  Had me moving along again.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://itzsaga.github.io/post/day-058/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
 
         
             <article class="post">
@@ -546,88 +630,6 @@ Awesome job on your Sinatra Project!! You did a great job, and I really apprecia
 </article>
 
         
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://itzsaga.github.io/post/day-053/">Fog is in the Brain</a></h2>
-        
-        
-            <p>Day 53 of Flatiron School</p>
-        
-    </div>
-    <div class="meta">
-        
-            
-        
-
-        <time class="published"
-            datetime='2017-04-20'>
-            April 20, 2017</time>
-        <span class="author">Seth</span>
-        
-            <p>1 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-    
-
-
-        
-
-        <a href="https://itzsaga.github.io/post/day-053/" class="image featured">
-            <img src="../../images//fog.jpg" alt="tree in fog" />
-        </a>
-    
-
-
-    <p>I don&rsquo;t know what it is tonight but I just can&rsquo;t get into the groove. I&rsquo;m steady distracted and not focused. And no it&rsquo;s not because of the date, you know you were thinking it. Ugh. At least it&rsquo;s on a &ldquo;short&rdquo; day and I did attend a meetup tonight so I did something beneficial to my coding journey that took a few hours of my evening. I am a few pages into one of my notebooks though so I can say that&rsquo;s good.</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://itzsaga.github.io/post/day-053/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-                        Category
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/daily-blog'>daily blog</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
 
         
 <ul class="actions pagination">
@@ -752,6 +754,20 @@ Awesome job on your Sinatra Project!! You did a great job, and I really apprecia
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-073/">CanCanCan? I Thought It Was Can Can?</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-10'>
+                                    May 10, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-072/">Devise Is A Beast</a></h3>
                                 
                                     
@@ -773,20 +789,6 @@ Awesome job on your Sinatra Project!! You did a great job, and I really apprecia
                                 <time class="published" datetime=
                                     '2017-05-08'>
                                     May 8, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-070/">Let&#39;s Keep It Safe With Authentication</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-05-07'>
-                                    May 7, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -825,7 +827,7 @@ Awesome job on your Sinatra Project!! You did a great job, and I really apprecia
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">69</span>
+                                <span style="float:right;">70</span>
                             </header>
                         </article>
                     </li>

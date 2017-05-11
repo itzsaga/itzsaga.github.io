@@ -6,10 +6,20 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 May 2017 23:12:07 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 10 May 2017 23:06:13 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CanCanCan? I Thought It Was Can Can?</title>
+      <link>https://itzsaga.github.io/post/day-073/</link>
+      <pubDate>Wed, 10 May 2017 23:06:13 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-073/</guid>
+      <description>I spent a lot of time yesterday and today psyching myself out about this Devise lab. Turns out it was very straightforward. All the extra &amp;ldquo;research&amp;rdquo; I was doing was actually taking away from me getting it done. When I reset myself and approached the lab like all the others I got through it quickly.
+ Follow ReadMe. Run tests. Look at spec for first test. Get first test to pass.</description>
+    </item>
     
     <item>
       <title>Devise Is A Beast</title>
