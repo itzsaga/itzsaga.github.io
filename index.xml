@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 May 2017 23:17:07 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 13 May 2017 23:30:44 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rails Projects &amp; RubyMine</title>
+      <link>https://itzsaga.github.io/post/day-076/</link>
+      <pubDate>Sat, 13 May 2017 23:30:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-076/</guid>
+      <description>Today was long but good. I started off by hosting my first study group. Turns some people really do get some coding done on the weekends even if Slack is much quieter. We had a good talk and it was an easy way to start the day.
+I got through the Pundit lab which took way longer than I thought it would but that was fine. I didn&amp;rsquo;t feel like I was beating my head against a well.</description>
+    </item>
     
     <item>
       <title>Useful or Not?</title>
