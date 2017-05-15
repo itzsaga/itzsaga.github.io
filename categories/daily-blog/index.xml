@@ -6,10 +6,20 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2017 23:30:44 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2017 23:50:58 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rails Project Here I Come</title>
+      <link>https://itzsaga.github.io/post/day-077/</link>
+      <pubDate>Sun, 14 May 2017 23:50:58 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-077/</guid>
+      <description>I&amp;rsquo;m officially ready to start my Rails Portfolio Project! Woot woot! I still don&amp;rsquo;t know what I&amp;rsquo;m going to do for it so I&amp;rsquo;m going to read the requirements tonight and brainstorm through the day tomorrow so I can start tomorrow night. I&amp;rsquo;ll also bring this up in the weekly stand up tomorrow morning and see if I can get some ideas.
+I had a couple unique problems today, at least unique to me.</description>
+    </item>
     
     <item>
       <title>Rails Projects &amp; RubyMine</title>
