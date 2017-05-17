@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2017 23:50:58 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 16 May 2017 23:27:13 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rails Project is Underway</title>
+      <link>https://itzsaga.github.io/post/day-079/</link>
+      <pubDate>Tue, 16 May 2017 23:27:13 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-079/</guid>
+      <description>I didn&amp;rsquo;t get much done yesterday so I ended up not writing. I did figure out an app to build for my project. However, I wasn&amp;rsquo;t able to get much done in the way of getting started. I won&amp;rsquo;t get into it, but, I was frustrated with last night.
+Tonight has been better. I&amp;rsquo;m making progress setting the base of the app up. It took a little bit to figure out how to setup PostgreSQL.</description>
+    </item>
     
     <item>
       <title>Rails Project Here I Come</title>
