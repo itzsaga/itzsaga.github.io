@@ -6,10 +6,19 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 May 2017 23:27:13 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 23:30:38 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I Think I Can, I Think I Can...</title>
+      <link>https://itzsaga.github.io/post/day-080/</link>
+      <pubDate>Wed, 17 May 2017 23:30:38 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-080/</guid>
+      <description>Man, it&amp;rsquo;s hard keeping track of all the tools I&amp;rsquo;m using as I&amp;rsquo;m building out this app. I&amp;rsquo;m finding the biggest thing I&amp;rsquo;m focusing on right now is getting Devise to look nice by customizing the views and implementing Bootstrap 4. One thing I had to work on was updating the strong params in Devise so my User could register with name. That wasn&amp;rsquo;t too tricky although I&amp;rsquo;m implementing it &amp;ldquo;the lazy way™&amp;rdquo; which I&amp;rsquo;m okay with for now.</description>
+    </item>
     
     <item>
       <title>Rails Project is Underway</title>
