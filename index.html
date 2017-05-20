@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-05-18T23:09:50-05:00"/>
+<meta property="og:updated_time" content="2017-05-19T23:40:06-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-082/"><p>Hitting A Wall &amp; Making A Plan</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-081/"><p>Rails &amp; Bootstrap &amp; Font Awesome</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-080/"><p>I Think I Can, I Think I Can...</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-079/"><p>Rails Project is Underway</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-081/">Rails &amp; Bootstrap &amp; Font Awesome</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-082/">Hitting A Wall &amp; Making A Plan</a></h2>
         
         
-            <p>Day 81 of Flatiron School</p>
+            <p>Day 82 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,8 +222,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-05-18'>
-            May 18, 2017</time>
+            datetime='2017-05-19'>
+            May 19, 2017</time>
         <span class="author">Seth</span>
         
             <p>3 minute read</p>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f&text=Rails%20%26%20Bootstrap%20%26%20Font%20Awesome&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f&text=Hitting%20A%20Wall%20%26%20Making%20A%20Plan&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f&title=Rails%20%26%20Bootstrap%20%26%20Font%20Awesome" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f&title=Hitting%20A%20Wall%20%26%20Making%20A%20Plan" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,47 +278,56 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-081/" class="image featured">
-            <img src="../../images/hanami.jpg" alt="fountain" />
+        <a href="https://itzsaga.github.io/post/day-082/" class="image featured">
+            <img src="../../images//wall.jpg" alt="wall" />
         </a>
     
 
 
     <div id="content">
-        <p>Today was productive. I was able to create a more in depth TODO file during the day while I was watching my kiddos. This allowed me to think more about how my app was going to function and what I needed/wanted to build into it. It provided me with a better workflow for the evening. I knew exactly what I would be working on tonight. Even if I did get sidetracked a couple times while working it was still always productive. Granted a lot is going into making the app look better than a default Bootstrap install. I got Omniauth through Devise up and running tonight smoothly by following the docs. Only snag I hit for a quick minute was in my using of <a href="https://github.com/bkeepers/dotenv"><code>dotenv</code></a>.</p>
+        <p>I&rsquo;m stuck. It&rsquo;s no fun. I still have things to try but I&rsquo;ve hit a wall. It&rsquo;s to be expected and the nested form I&rsquo;m working on is by no means a simple thing. However, this is basically the <strong>BIG</strong> problem in this project. In my opinion at least this is the hardest part of this project.</p>
 
-<pre><code class="language-ruby"># First try
-config.omniauth :facebook, FB_APP_ID, FB_APP_SECRET
+<blockquote>
+<p>Include a nested form writing to an associated model using a custom attribute writer (form URL, model name e.g. /recipe/new, Item)</p>
+</blockquote>
 
-# Second try
-config.omniauth :facebook, 'FB_APP_ID', 'FB_APP_SECRET'
+<p>This requirement is the big one IMO. Actually, why not show off the spec and see what others think. Is this a strong project?</p>
 
-# Third and correct try
-config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_APP_SECRET']
-</code></pre>
+<blockquote>
+<p>### Specifications for the Rails Assessment</p>
 
-<p>This was pretty easy to troubleshoot. The first try threw an error. The second try had <code>FB_APP_ID</code> in my Oauth URL telling me that the string was being passed (makes sense). Then one more reading of the docs and I got the correct implementation.</p>
+<p>Specs:<br />
+ - [x] Using Ruby on Rails for the project<br />
+ - [x] Include at least one has_many relationship (x has_many y e.g. User has_many Recipes)<br />
+ - [x] Include at least one belongs_to relationship (x belongs_to y e.g. Post belongs_to User)<br />
+ - [x] Include at least one has_many through relationship (x has_many y through z e.g. Recipe has_many Items through Ingredients)<br />
+ - [x] The &ldquo;through&rdquo; part of the has_many through includes at least one user submittable attribute (attribute_name e.g. ingredients.quantity)<br />
+ - [x] Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)<br />
+ - [ ] Include a class level ActiveRecord scope method (model object &amp; class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)<br />
+ - [ ] Include a nested form writing to an associated model using a custom attribute writer (form URL, model name e.g. /recipe/new, Item)<br />
+ - [x] Include signup (how e.g. Devise)<br />
+ - [x] Include login (how e.g. Devise)<br />
+ - [x] Include logout (how e.g. Devise)<br />
+ - [x] Include third party signup/login (how e.g. Devise/OmniAuth)<br />
+ - [ ] Include nested resource show or index (URL e.g. users/2/recipes)<br />
+ - [ ] Include nested resource &ldquo;new&rdquo; form (URL e.g. recipes/1/ingredients)<br />
+ - [ ] Include form display of validation errors (form URL e.g. /recipes/new)</p>
 
-<p>I also had to figure out how to render a proper looking Bootstrap button as a link using Rails helpers. Okay, I didn&rsquo;t <em>have</em> to but I wanted to. After playing around for a bit I decided on this code:<br />
-<code>&lt;%= button_to 'Add Your First Place', new_place_path, class: 'btn btn-primary', method: :get %&gt;</code><br />
-Which isn&rsquo;t the prettiest but is getting the job done correctly. I want to add a <a href="http://fontawesome.io">Font Awesome</a> icon inside the button and I think to do that I&rsquo;ll have to pass a block in. I&rsquo;m going to work on that tomorrow though. It&rsquo;ll be a useful thing to figure out so I can stylize the Oauth login buttons better. The one I have right now is currently just a text link. We all know that&rsquo;s no fun.</p>
+<p>Confirm:<br />
+ - [ ] The application is pretty DRY<br />
+ - [ ] Limited logic in controllers<br />
+ - [ ] Views use helper methods if appropriate<br />
+ - [ ] Views use partials if appropriate</p>
+</blockquote>
 
-<p>I also went to a meetup tonight where the presenter talked about <a href="http://elm-lang.org">Elm</a>. It&rsquo;s a functional language which is definitely different. However, the presenter said that he felt Elm was a great starter to learn a functional language. I&rsquo;ll probably look into this when I finally have some free time after I&rsquo;m donw with Flatiron. Elixir is of interest but it might be too big of a jump to start. We&rsquo;ll see. I could possibly also keep building things in the languages I&rsquo;m learning to show more mastery of those until I land my first gig then start branching off. Another one out there is <a href="http://hanamirb.org">Hanami</a> built on Ruby which I&rsquo;ve heard is pretty cool and built more like other frameworks and libraries than Rails. That might be the next logical step. <strong>There&rsquo;s just so much</strong> knowing what to do next is a research project in its own right. I look forward to it though.</p>
+<p>That&rsquo;s what I have checked off as well so far. I&rsquo;m pretty far along and once I nail this nested form part I think the rest will be easier. If memory serves me correctly the nested show/index/new is accomplished through my routes so that isn&rsquo;t even too complex. I already have an idea for my class level scope method. Then form errors being displayed. Hopefully I can solve this nested form early tomorrow afternoon and be past it. The interesting thing is my associated model is writing just fine and it&rsquo;s the &ldquo;parent&rdquo; that isn&rsquo;t creating. I might just go back and comment out the nested part and just get the basic form to work correctly first. Actually, that&rsquo;s exactly what I&rsquo;m going to do. Not sure why I didn&rsquo;t to begin with. I&rsquo;m just trying to get too much accomplished at once.</p>
 
-<p>My newest obsession which I learned at the meetup tonight is leading commas:</p>
+<p>Okay, now I have my plan of action for tomorrow which makes me happy.</p>
 
-<pre><code class="language-ruby">new_person = { name: &quot;Seth&quot;
-  , age: 32
-  , height: 74
-  , weight: 155
-  , alive: true
-}
-</code></pre>
+<p>I also plan to completely redo my personal site and install Ghos on it. I discovered today that I can install Ghost via cPanel on my webhost. BTW, I absolutely love my webhost and you should check them out&hellip; <a href="https://account.geekghost.net/aff.php?aff=45">GeekGhost</a>. I switched to them because they support <a href="https://letsencrypt.org">Let&rsquo;s Encrypt</a> and a lot of the large hosts do not because they want you to buy SSL certs from them. Might move my GitHub Pages site over to that as well. Create a unified site for myself since I currently have stuff all over the place. We&rsquo;ll see.</p>
 
-<p>I&rsquo;ll just leave that there.</p>
-
-<p>Time spent today: 2:19<br />
-Time spent total: 306:57<br />
+<p>Time spent today: 1:45<br />
+Time spent total: 308:41<br />
 Lessons completed today: 0<br />
 Lessons completed total: 518</p>
 
@@ -354,8 +363,8 @@ Lessons completed total: 518</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-080/"
-                class="button big previous">I Think I Can, I Think I Can...</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-081/"
+                class="button big previous">Rails &amp; Bootstrap &amp; Font Awesome</a></li>
     
 
     
@@ -368,9 +377,9 @@ Lessons completed total: 518</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-081\/';
-    var disqus_title = 'Rails \x26 Bootstrap \x26 Font Awesome';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-081\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-082\/';
+    var disqus_title = 'Hitting A Wall \x26 Making A Plan';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-082\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -394,25 +403,25 @@ Lessons completed total: 518</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f&text=Rails%20%26%20Bootstrap%20%26%20Font%20Awesome&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f&text=Hitting%20A%20Wall%20%26%20Making%20A%20Plan&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f&title=Rails%20%26%20Bootstrap%20%26%20Font%20Awesome" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f&title=Hitting%20A%20Wall%20%26%20Making%20A%20Plan" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-081%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-082%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -532,6 +541,20 @@ Lessons completed total: 518</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-082/">Hitting A Wall &amp; Making A Plan</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-19'>
+                                    May 19, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-081/">Rails &amp; Bootstrap &amp; Font Awesome</a></h3>
                                 
                                     
@@ -553,20 +576,6 @@ Lessons completed total: 518</p>
                                 <time class="published" datetime=
                                     '2017-05-17'>
                                     May 17, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-079/">Rails Project is Underway</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-05-16'>
-                                    May 16, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -605,7 +614,7 @@ Lessons completed total: 518</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">76</span>
+                                <span style="float:right;">77</span>
                             </header>
                         </article>
                     </li>

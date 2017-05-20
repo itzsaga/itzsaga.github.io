@@ -6,10 +6,20 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 May 2017 23:09:50 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 19 May 2017 23:40:06 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hitting A Wall &amp; Making A Plan</title>
+      <link>https://itzsaga.github.io/post/day-082/</link>
+      <pubDate>Fri, 19 May 2017 23:40:06 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-082/</guid>
+      <description>I&amp;rsquo;m stuck. It&amp;rsquo;s no fun. I still have things to try but I&amp;rsquo;ve hit a wall. It&amp;rsquo;s to be expected and the nested form I&amp;rsquo;m working on is by no means a simple thing. However, this is basically the BIG problem in this project. In my opinion at least this is the hardest part of this project.
+ Include a nested form writing to an associated model using a custom attribute writer (form URL, model name e.</description>
+    </item>
     
     <item>
       <title>Rails &amp; Bootstrap &amp; Font Awesome</title>
