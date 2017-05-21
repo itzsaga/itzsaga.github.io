@@ -6,10 +6,19 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 May 2017 23:40:06 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 20 May 2017 18:45:30 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Did I Really Finish Rails?</title>
+      <link>https://itzsaga.github.io/post/did-i-really-finish-rails/</link>
+      <pubDate>Sat, 20 May 2017 18:45:30 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/did-i-really-finish-rails/</guid>
+      <description>My Rails project is officially done! Well, it officially fulfills all the requirements that Flatiron School has for it. I definitely have more to do with it. However, considering that I&amp;rsquo;m done almost a day and a half before my self set deadline I&amp;rsquo;m happy. Some minor things in my views (like showing just a user&amp;rsquo;s items instead of all items), building out a more robust navbar, filling out my readme, and I should be good.</description>
+    </item>
     
     <item>
       <title>Hitting A Wall &amp; Making A Plan</title>
