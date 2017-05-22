@@ -6,10 +6,19 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 May 2017 23:40:06 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 21 May 2017 22:44:15 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docs and Testing and Coverage</title>
+      <link>https://itzsaga.github.io/post/day-084/</link>
+      <pubDate>Sun, 21 May 2017 22:44:15 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-084/</guid>
+      <description>I tidied up my app today. I decided to scrub the DB and run a new set of seeds then test everything as best I could. This is where I see automated testing is very useful. I really want to get better acquainted with writing tests. However, I also want to finish this curriculum so I can stop paying tuition. I&amp;rsquo;m slowly building out my testing resources to take a deeper dive into that once I&amp;rsquo;m done with Flatiron.</description>
+    </item>
     
     <item>
       <title>Hitting A Wall &amp; Making A Plan</title>
