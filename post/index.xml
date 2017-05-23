@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 May 2017 22:44:15 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 22 May 2017 23:06:22 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Back to JavaScript</title>
+      <link>https://itzsaga.github.io/post/day-085/</link>
+      <pubDate>Mon, 22 May 2017 23:06:22 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-085/</guid>
+      <description>So I&amp;rsquo;m back in JavaScript world again. Since I had done a lot of the intro stuff during my Bootcamp Prep work I spent tonight mostly skimming over everything I already had done to remind my mind how to think JS. I have to say, it didn&amp;rsquo;t come back quickly when I was reading it. The first lab I worked on, well the only lab I worked on, was slow. However, the functions and syntax came quickly.</description>
+    </item>
     
     <item>
       <title>Docs and Testing and Coverage</title>
