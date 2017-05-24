@@ -6,10 +6,19 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 May 2017 23:06:22 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 23 May 2017 23:06:44 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ruby = [], ruby &lt;&lt; javascript</title>
+      <link>https://itzsaga.github.io/post/day-086/</link>
+      <pubDate>Tue, 23 May 2017 23:06:44 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-086/</guid>
+      <description>JavaScript is coming back to me more and more as I&amp;rsquo;m getting back into it. I have to say it&amp;rsquo;s a bit frustrating at times but that&amp;rsquo;s fine. I look back at how Ruby was frustrating when I started and how I enjoy it so much now (most of the time). Okay. I&amp;rsquo;m beat. It was a long day. I don&amp;rsquo;t think I&amp;rsquo;ll even publish this tonight because it&amp;rsquo;s not even a full paragraph.</description>
+    </item>
     
     <item>
       <title>Back to JavaScript</title>
