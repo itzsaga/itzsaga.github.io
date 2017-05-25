@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2017 23:06:44 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 24 May 2017 23:02:14 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://itzsaga.github.io/post/day-087/</link>
+      <pubDate>Wed, 24 May 2017 23:02:14 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-087/</guid>
+      <description>Today I spent 30 mins pairing with one of the Learn instructors trying to work through some issues my Rails portfolio project has. Something I found out is that the project requirement to use a custom attribute writer instead of has_nested_attributes actually removes some functionality from the final app. Because of this lack of Rails magic one of my problems is harder to fix than expected. The other one is just a more simple if.</description>
+    </item>
     
     <item>
       <title>ruby = [], ruby &lt;&lt; javascript</title>
