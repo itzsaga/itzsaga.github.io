@@ -1,17 +1,11 @@
-
-
-
-    
-
-
-
-
 <!DOCTYPE HTML>
 
 <html>
     <head>
         
-            <title>Who am I? Why this blog? - My Flatiron Journey</title>
+            
+                <title>The DOM &amp; Oh My Zsh!</title>
+            
         
 
         <meta charset="utf-8" />
@@ -21,10 +15,10 @@
 
 
         
+            <meta name="author" content="Seth">
         
-            
-                <meta name="description" content="From day 1 my journey to becoming a web developer via the Flatiron Online Web Developer boot camp.">
-            
+        
+            <meta name="description" content="Day 88 of Flatiron School">
         
 
         
@@ -33,20 +27,20 @@
 
 
 
-<meta name="twitter:text:title" content="Who am I? Why this blog?"/>
-<meta name="twitter:title" content="Who am I? Why this blog?"/>
-<meta name="twitter:description" content="I&rsquo;m a former hospitality professional working on a career transition by attending Flatiron&rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55&#43; hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly  Free Code Camp."/>
+<meta name="twitter:text:title" content="The DOM &amp; Oh My Zsh!"/>
+<meta name="twitter:title" content="The DOM &amp; Oh My Zsh!"/>
+<meta name="twitter:description" content="Day 88 of Flatiron School"/>
 <meta name="twitter:site" content="@itzsaga"/>
 
-        <meta property="og:title" content="Who am I? Why this blog?" />
-<meta property="og:description" content="I&rsquo;m a former hospitality professional working on a career transition by attending Flatiron&rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55&#43; hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly  Free Code Camp." />
+        <meta property="og:title" content="The DOM &amp; Oh My Zsh!" />
+<meta property="og:description" content="Day 88 of Flatiron School" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://itzsaga.github.io/about/" />
+<meta property="og:url" content="https://itzsaga.github.io/post/day-088/" />
 
 
 
-<meta property="article:published_time" content="2017-02-20T22:06:57&#43;00:00"/>
-<meta property="article:modified_time" content="2017-02-20T22:06:57&#43;00:00"/>
+<meta property="article:published_time" content="2017-05-25T23:13:56-05:00"/>
+<meta property="article:modified_time" content="2017-05-25T23:13:56-05:00"/>
 
 
 
@@ -59,12 +53,12 @@
 
 
         
-<meta itemprop="name" content="Who am I? Why this blog?">
-<meta itemprop="description" content="I&rsquo;m a former hospitality professional working on a career transition by attending Flatiron&rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55&#43; hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly  Free Code Camp.">
+<meta itemprop="name" content="The DOM &amp; Oh My Zsh!">
+<meta itemprop="description" content="Day 88 of Flatiron School">
 
 
-<meta itemprop="dateModified" content="2017-02-20T22:06:57&#43;00:00" />
-<meta itemprop="wordCount" content="148">
+<meta itemprop="dateModified" content="2017-05-25T23:13:56-05:00" />
+<meta itemprop="wordCount" content="482">
 
 
 
@@ -112,6 +106,7 @@ ga('send', 'pageview');
         <div id="wrapper">
 
     
+    
 <header id="header">
     
         <h2><a href="/">Seth&#39;s Journey</i></a></h2>
@@ -138,6 +133,10 @@ ga('send', 'pageview');
     </nav>
     <nav class="main">
         <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
             
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -223,29 +222,212 @@ ga('send', 'pageview');
         
 </section>
 
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&text=The%20DOM%20%26%20Oh%20My%20Zsh%21&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&title=The%20DOM%20%26%20Oh%20My%20Zsh%21" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
     
     <div id="main">
+        
+        
         <article class="post">
-            
-            <header>
+    <header>
     <div class="title">
         
-            <h1><a href="https://itzsaga.github.io/about/">Who am I? Why this blog?</a></h1>
+            <h1><a href="https://itzsaga.github.io/post/day-088/">The DOM &amp; Oh My Zsh!</a></h1>
             
+        
+        
+            <p>Day 88 of Flatiron School</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2017-05-25'>
+            May 25, 2017</time>
+        <span class="author">Seth</span>
+        
+            <p>3 minute read</p>
         
         
     </div>
 </header>
 
-            <div id="content">
-                <p><img style="float: left;" src="https://res.cloudinary.com/sethalexander/v1487650912/mfrywmsjpeoa8gaf2bkc" width="160" height="160"/> I&rsquo;m a former hospitality professional working on a career transition by attending Flatiron&rsquo;s online web development boot camp. I got tired of the required nights/weekends/holidays and 55+ hour work week as a salaried manager. I got tired of not seeing my children and making less than I felt my hard work was worth. So I decided to make a change. Web development had come easily to me and I had been teaching myself through free sources, mainly <a href="https://freecodecamp.com"><i class="fa fa-free-code-camp" aria-hidden="true"></i> Free Code Camp</a>.</p>
 
-<p>Follow along with my journey on this blog. Ask questions and interact. If you find something you like please share. I&rsquo;ll be writing every day that I code, and probably on days I don&rsquo;t as well. In the end, I want to have a true picture of what it will take someone to get through approximately 800 hours of curriculum.</p>
+    <section id="social-share">
+        <ul class="icons">
+            
 
-<p>Thanks for coming on this ride with me.</p>
 
-            </div>
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&text=The%20DOM%20%26%20Oh%20My%20Zsh%21&via=itzsaga" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&title=The%20DOM%20%26%20Oh%20My%20Zsh%21" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://itzsaga.github.io/post/day-088/" class="image featured">
+            <img src="../../images//zshterm.jpg" alt="terminal screen shot" />
+        </a>
+    
+
+
+    <div id="content">
+        <p>The DOM. Forgot to throw in the main info about the DOM I learned yesterday in last night&rsquo;s blog:</p>
+
+<blockquote>
+<ul>
+<li>The Document Object Model is a representation of the <em>current view</em> of the browser, and can be manipulated without reloading a page.</li>
+<li>The HTML is the text in a file first used to display the page.</li>
+</ul>
+
+<p>With Javascript we can (1) view a current representation of our Document Object Model. With Javascript we can also (2) select specific portions of the DOM, and manipulate them, which changes what shows up in a browser window.</p>
+</blockquote>
+
+<p>This small portion of text cleared up what the DOM is after a long time of not truly knowing.</p>
+
+<p>I didn&rsquo;t get as much done tonight as I had wanted. I started late and didn&rsquo;t stay focused so it&rsquo;s all my fault. I spent too much time messing with how my terminal/editor looks. I decided on using <a href="http://www.zsh.org">zsh</a> with <a href="http://ohmyz.sh">Oh My Zsh</a> and a <a href="https://github.com/bhilburn/powerlevel9k">Powerlevel9k</a> theme. It&rsquo;s pretty sweet. All sourced from <a href="https://www.reddit.com/r/unixporn/comments/6d25i9/zsh_gnome_my_arch_linux_desktop/">this</a> post I saw on Reddit. Now that I have a solid config at some point I&rsquo;m sure I&rsquo;ll mess with it more to make it more custom to me. However, I&rsquo;ve already done a few minor things like change the ArchLinux logo and text to Ubuntu. It&rsquo;s pretty cool though. I can see what branch I&rsquo;m working on, if there are uncommitted files, if there are committed files waiting to be pushed, the time, the battery left on my laptop. I can extend these features more too, which I&rsquo;m sure I&rsquo;ll do someday.</p>
+
+<p>I also spent a bunch of time implementing &ldquo;proper&rdquo; linting for JavaScript. There are <strong>so</strong> many style guides out there I struggled figuring out what to setup and use. I ended up deciding on an <a href="http://eslint.org">ESLint</a> implementation using <a href="https://standardjs.com">JavaScript Standard Style</a>. Turns out WebStorm <a href="https://blog.jetbrains.com/webstorm/2017/01/webstorm-2017-1-eap-171-2272/">supports Standard by default</a> these days so it was easy to setup. However, I had to get it installed which was easy. The hard part was finding where the <code>node_modules</code> folder for global installs was on my computer. I ended up running across it as a comment on a Stack Overflow post.</p>
+
+<p>I also got my invite to <a href="https://www.cypress.io">Cypress</a> today. I have it installed but haven&rsquo;t done any work with it yet. I think I&rsquo;ll use it to setup tests for my Rails Portfolio Project. Check it out. It&rsquo;s definitely slick. I also started reading <a href="https://github.com/getify/You-Dont-Know-JS">You Don&rsquo;t Know JS</a> as I&rsquo;ve been looking for something to do outside of my computer screen to continue my knowledge expansion. Knowing that I&rsquo;ll encounter JavaScript no matter what language I end up working in makes me feel like diving deeper into my knowledge of it will help no matter what. I really do enjoy Ruby but I might end up not working in it so yeah.</p>
+
+<p>Time spent today: 1:59<br />
+Time spent total: 331:00<br />
+Lessons completed today: 3<br />
+Lessons completed total: 532</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/daily-blog'>daily blog</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="https://itzsaga.github.io/post/day-087/"
+                class="button big previous">Let&#39;s Be Strict</a></li>
+    
+
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'my-flatiron-journey';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-088\/';
+    var disqus_title = 'The DOM \x26 Oh My Zsh!';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-088\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </article>
+    
+
+
     </div>
     
 <section id="sidebar">

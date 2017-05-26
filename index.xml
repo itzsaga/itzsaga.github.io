@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 May 2017 23:02:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 25 May 2017 23:13:56 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The DOM &amp; Oh My Zsh!</title>
+      <link>https://itzsaga.github.io/post/day-088/</link>
+      <pubDate>Thu, 25 May 2017 23:13:56 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-088/</guid>
+      <description>The DOM. Forgot to throw in the main info about the DOM I learned yesterday in last night&amp;rsquo;s blog:
+  The Document Object Model is a representation of the current view of the browser, and can be manipulated without reloading a page. The HTML is the text in a file first used to display the page.  With Javascript we can (1) view a current representation of our Document Object Model.</description>
+    </item>
     
     <item>
       <title>Let&#39;s Be Strict</title>

@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-05-24T23:02:14-05:00"/>
+<meta property="og:updated_time" content="2017-05-25T23:13:56-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-088/"><p>The DOM &amp; Oh My Zsh!</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-087/"><p>Let&#39;s Be Strict</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-086/"><p>ruby = [], ruby &lt;&lt; javascript</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-085/"><p>Back to JavaScript</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-087/">Let&#39;s Be Strict</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-088/">The DOM &amp; Oh My Zsh!</a></h2>
         
         
-            <p>Day 87 of Flatiron School</p>
+            <p>Day 88 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,8 +222,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-05-24'>
-            May 24, 2017</time>
+            datetime='2017-05-25'>
+            May 25, 2017</time>
         <span class="author">Seth</span>
         
             <p>3 minute read</p>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f&text=Let%27s%20Be%20Strict&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&text=The%20DOM%20%26%20Oh%20My%20Zsh%21&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f&title=Let%27s%20Be%20Strict" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&title=The%20DOM%20%26%20Oh%20My%20Zsh%21" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,40 +278,36 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-087/" class="image featured">
-            <img src="../../images//warning.jpg" alt="strict lady" />
+        <a href="https://itzsaga.github.io/post/day-088/" class="image featured">
+            <img src="../../images//zshterm.jpg" alt="terminal screen shot" />
         </a>
     
 
 
     <div id="content">
-        
-
-<p>Today I spent 30 mins pairing with one of the Learn instructors trying to work through some issues my Rails portfolio project has. Something I found out is that the project requirement to use a custom attribute writer instead of <code>has_nested_attributes</code> actually removes some functionality from the final app. Because of this lack of Rails magic one of my problems is harder to fix than expected. The other one is just a more simple <code>if...else</code> statement.</p>
-
-<p>JavaScript is coming along and I&rsquo;m happy it&rsquo;s clicking more and more each day. It was definitely frustrating to have a rather solid grasp on a workflow, resources, and a knowledge base and then go back to almost nothing. I haven&rsquo;t dove back in to the <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> (MDN for short) docs but I know it&rsquo;s coming soon.</p>
-
-<p>Something that I ran across today in my IDE was a linting error from <a href="http://www.jslint.com">JSLint</a> stating <code>Missing &quot;use strict&quot; pragma</code> on one of my functions. So, like a good dev I Googled this (well DuckDuckGo&rsquo;ed this). I came to a great post and discussion about this on <a href="https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it">Stack Overflow</a>. My takeaways were that using <code>'use strict';</code> enforces things that JavaScript allows to happen or will throw silent errors for. So, it basically forces a person to write their code correctly. However, this can be dangerous in legacy code. A great answer contained this gem IMO:</p>
+        <p>The DOM. Forgot to throw in the main info about the DOM I learned yesterday in last night&rsquo;s blog:</p>
 
 <blockquote>
-<h3 id="where-should-i-use-use-strict">Where should I use &lsquo;use strict&rsquo;;?</h3>
-
 <ul>
-<li>In my <em>new</em> JavaScript application: <strong>Absolutely!</strong> Strict mode can be used as a whistleblower when you are doing something stupid with your code.</li>
-<li>In my <em>existing</em> JavaScript code: <strong>Probably not!</strong> If your existing JavaScript code has statements that are prohibited in strict-mode, the application will simply break. If you want strict mode, you should be prepared to debug and correct your existing code. This is why <em>using</em> <code>'use strict';</code> <em>does not suddenly make your code better</em>.</li>
+<li>The Document Object Model is a representation of the <em>current view</em> of the browser, and can be manipulated without reloading a page.</li>
+<li>The HTML is the text in a file first used to display the page.</li>
 </ul>
+
+<p>With Javascript we can (1) view a current representation of our Document Object Model. With Javascript we can also (2) select specific portions of the DOM, and manipulate them, which changes what shows up in a browser window.</p>
 </blockquote>
 
-<p>I plan to add <code>'use strict';</code> to the top of every new JavaScript file I work on. I see no reason not to at this point in time and it&rsquo;ll only enforce me writing better code in the end.</p>
+<p>This small portion of text cleared up what the DOM is after a long time of not truly knowing.</p>
 
-<p>What do <em>you</em> think about <code>'use strict';</code>? Leave it in the comments for me.</p>
+<p>I didn&rsquo;t get as much done tonight as I had wanted. I started late and didn&rsquo;t stay focused so it&rsquo;s all my fault. I spent too much time messing with how my terminal/editor looks. I decided on using <a href="http://www.zsh.org">zsh</a> with <a href="http://ohmyz.sh">Oh My Zsh</a> and a <a href="https://github.com/bhilburn/powerlevel9k">Powerlevel9k</a> theme. It&rsquo;s pretty sweet. All sourced from <a href="https://www.reddit.com/r/unixporn/comments/6d25i9/zsh_gnome_my_arch_linux_desktop/">this</a> post I saw on Reddit. Now that I have a solid config at some point I&rsquo;m sure I&rsquo;ll mess with it more to make it more custom to me. However, I&rsquo;ve already done a few minor things like change the ArchLinux logo and text to Ubuntu. It&rsquo;s pretty cool though. I can see what branch I&rsquo;m working on, if there are uncommitted files, if there are committed files waiting to be pushed, the time, the battery left on my laptop. I can extend these features more too, which I&rsquo;m sure I&rsquo;ll do someday.</p>
 
-<p>I also found out tonight from my Free Code Camp Nashville Co-Organizer <a href="https://github.com/davi3blu3">Dave</a> that he scored us a table at <a href="https://www.musiccitycode.com">Music City Code 2017</a> which is pretty sweet. Not sure what we&rsquo;re going to do with our table just yet so if you have ideas please let me know!</p>
+<p>I also spent a bunch of time implementing &ldquo;proper&rdquo; linting for JavaScript. There are <strong>so</strong> many style guides out there I struggled figuring out what to setup and use. I ended up deciding on an <a href="http://eslint.org">ESLint</a> implementation using <a href="https://standardjs.com">JavaScript Standard Style</a>. Turns out WebStorm <a href="https://blog.jetbrains.com/webstorm/2017/01/webstorm-2017-1-eap-171-2272/">supports Standard by default</a> these days so it was easy to setup. However, I had to get it installed which was easy. The hard part was finding where the <code>node_modules</code> folder for global installs was on my computer. I ended up running across it as a comment on a Stack Overflow post.</p>
 
-<p>Time spent today: 3:07<br />
-Time spent total: 325:55<br />
-Lessons completed today: 5<br />
-Lessons completed total: 529</p>
+<p>I also got my invite to <a href="https://www.cypress.io">Cypress</a> today. I have it installed but haven&rsquo;t done any work with it yet. I think I&rsquo;ll use it to setup tests for my Rails Portfolio Project. Check it out. It&rsquo;s definitely slick. I also started reading <a href="https://github.com/getify/You-Dont-Know-JS">You Don&rsquo;t Know JS</a> as I&rsquo;ve been looking for something to do outside of my computer screen to continue my knowledge expansion. Knowing that I&rsquo;ll encounter JavaScript no matter what language I end up working in makes me feel like diving deeper into my knowledge of it will help no matter what. I really do enjoy Ruby but I might end up not working in it so yeah.</p>
+
+<p>Time spent today: 1:59<br />
+Time spent total: 331:00<br />
+Lessons completed today: 3<br />
+Lessons completed total: 532</p>
 
     </div>
 
@@ -345,8 +341,8 @@ Lessons completed total: 529</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-086/"
-                class="button big previous">ruby = [], ruby &lt;&lt; javascript</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-087/"
+                class="button big previous">Let&#39;s Be Strict</a></li>
     
 
     
@@ -359,9 +355,9 @@ Lessons completed total: 529</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-087\/';
-    var disqus_title = 'Let\x27s Be Strict';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-087\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-088\/';
+    var disqus_title = 'The DOM \x26 Oh My Zsh!';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-088\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -385,25 +381,25 @@ Lessons completed total: 529</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f&text=Let%27s%20Be%20Strict&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&text=The%20DOM%20%26%20Oh%20My%20Zsh%21&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f&title=Let%27s%20Be%20Strict" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f&title=The%20DOM%20%26%20Oh%20My%20Zsh%21" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-087%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-088%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -523,6 +519,20 @@ Lessons completed total: 529</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-088/">The DOM &amp; Oh My Zsh!</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-05-25'>
+                                    May 25, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-087/">Let&#39;s Be Strict</a></h3>
                                 
                                     
@@ -544,20 +554,6 @@ Lessons completed total: 529</p>
                                 <time class="published" datetime=
                                     '2017-05-23'>
                                     May 23, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-085/">Back to JavaScript</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-05-22'>
-                                    May 22, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -596,7 +592,7 @@ Lessons completed total: 529</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">81</span>
+                                <span style="float:right;">82</span>
                             </header>
                         </article>
                     </li>
