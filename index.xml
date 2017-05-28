@@ -6,10 +6,19 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2017 23:13:56 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 27 May 2017 22:55:54 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>90 Days Goes Fast in the Dev World</title>
+      <link>https://itzsaga.github.io/post/day-090/</link>
+      <pubDate>Sat, 27 May 2017 22:55:54 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-090/</guid>
+      <description>Zero lessons or labs done yesterday. Had an impromptu dinner at the in-laws and when my wife and I got home we decided to spend some time with the neighbors talking. That turned into a great evening or wine, scotch, and conversation until 4am. I did however, read You Don&amp;rsquo;t Know JS in the car on the way to and from dinner so I did some learning. I got through the first book, Up &amp;amp; Going, and was able to start the second book, Scope &amp;amp; Closures.</description>
+    </item>
     
     <item>
       <title>The DOM &amp; Oh My Zsh!</title>
