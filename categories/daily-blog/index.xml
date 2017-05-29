@@ -6,10 +6,21 @@
     <description>Recent content in Daily blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 May 2017 22:55:54 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 28 May 2017 22:52:29 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/daily-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I Mustache You A Question</title>
+      <link>https://itzsaga.github.io/post/day-091/</link>
+      <pubDate>Sun, 28 May 2017 22:52:29 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-091/</guid>
+      <description>Yes I just made that joke. However, I&amp;rsquo;m in the middle of a Handlebars.js lab so I think it&amp;rsquo;s fitting.
+ Handlebars uses the curly brace as a delimiter because if you turn it sideways it looks like a mustache, and Handlebars.js is an extension of the Mustache template language.
+ Today was a lot of HTML, CSS, and Templating so no new notes on anything. I find that HTML &amp;amp; CSS stick pretty well and until I&amp;rsquo;m actually using a templating language in a project I won&amp;rsquo;t take notes just yet.</description>
+    </item>
     
     <item>
       <title>90 Days Goes Fast in the Dev World</title>
