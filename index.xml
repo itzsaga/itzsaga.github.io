@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 May 2017 22:52:29 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 29 May 2017 23:13:50 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Graduation Sprint Time</title>
+      <link>https://itzsaga.github.io/post/day-092/</link>
+      <pubDate>Mon, 29 May 2017 23:13:50 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-092/</guid>
+      <description>So I had a bunch of stuff to say, okay not really, and then I checked my Dashboard on Learn and saw the beautiful sight that my Graduation Dashboard has appeared! That means I&amp;rsquo;m past 75% done and in the final stretch. Being 75% done in &amp;lt;3 months has me on track to be done before the end of June! I&amp;rsquo;m stoked.
+So something that I had been struggling with is how Ruby is a class-based object-oriented language and JavaScript is a prototype based object-oriented language.</description>
+    </item>
     
     <item>
       <title>I Mustache You A Question</title>
