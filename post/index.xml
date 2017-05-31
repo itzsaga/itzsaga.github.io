@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 May 2017 23:13:50 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 31 May 2017 00:13:07 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mocha, Chai, or Just Some Jasmine?</title>
+      <link>https://itzsaga.github.io/post/day-093/</link>
+      <pubDate>Wed, 31 May 2017 00:13:07 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-093/</guid>
+      <description>I just spent way too much time looking into Mocha, Chai, Jasmine, and I can&amp;rsquo;t remember what other test libraries. Trying to solve this testing problem we have over in Javscripting that I help maintain. I like the fact that there&amp;rsquo;s this problem that needs to be solved and it&amp;rsquo;s something I can learn from. Now I&amp;rsquo;m trying to figure out how to test against a file that has no functions in it.</description>
+    </item>
     
     <item>
       <title>Graduation Sprint Time</title>
