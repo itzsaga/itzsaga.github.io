@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2017 00:13:07 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 31 May 2017 23:03:31 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Another Assessment In The Books!</title>
+      <link>https://itzsaga.github.io/post/day-094/</link>
+      <pubDate>Wed, 31 May 2017 23:03:31 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-094/</guid>
+      <description>I passed my Rails Assessment today! It went well and there was only one thing I needed to follow up with after it was over. Now I&amp;rsquo;m just looking for the check mark on it to turn green!
+The next few days are going to be LONG. However, they should be very productive and great networking. They&amp;rsquo;ll be long because they start EARLY (like be there at 7am early) and I still plan on coding at night once the kiddos go to bed.</description>
+    </item>
     
     <item>
       <title>Mocha, Chai, or Just Some Jasmine?</title>
