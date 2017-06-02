@@ -6,10 +6,19 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2017 23:03:31 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jun 2017 22:29:52 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Opening Day of Music City Code</title>
+      <link>https://itzsaga.github.io/post/day-095/</link>
+      <pubDate>Thu, 01 Jun 2017 22:29:52 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-095/</guid>
+      <description>This morning came way too soon after last night. However, today was good. Got to see Jest in action. Saw a simple Hapi.js server. Learned about Wallaby.js. Got to do some planning for our table tomorrow and Saturday. Got 3 lessons/labs done in Flatiron and finished the Advanced JS section. It was good. I&amp;rsquo;m looking forward to tomorrow. However, I will not get sidetracked like I did last night and actually get to bet before 11pm tonight.</description>
+    </item>
     
     <item>
       <title>Another Assessment In The Books!</title>
