@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2017 22:29:52 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jun 2017 20:15:07 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>freeCodeCamp Nashville June Meetup Recap</title>
+      <link>https://itzsaga.github.io/post/fccnashville-june-meetup-recap/</link>
+      <pubDate>Sat, 03 Jun 2017 20:15:07 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/fccnashville-june-meetup-recap/</guid>
+      <description>We had our June meetup today and it was good. A small group but we solved some problems together and we talked shop some. Specifically, Leland brought up the scope of the projects. How it&amp;rsquo;s easy to go off on tangents and hours later be so far away from what you initially started working on. We shared some tips on how to stay focused and keep within the scope of the project.</description>
+    </item>
     
     <item>
       <title>Opening Day of Music City Code</title>
