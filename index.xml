@@ -6,10 +6,19 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2017 20:15:07 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jun 2017 23:23:19 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Asset Pipeline Is Flowing</title>
+      <link>https://itzsaga.github.io/post/day-098/</link>
+      <pubDate>Sun, 04 Jun 2017 23:23:19 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-098/</guid>
+      <description>I finally got back into the swing of Flatiron. I did &amp;lt;30 mins of school yesterday so I just chose to blog about FCC. A lot of reading going on as of late. The Rails asset pipeline and how to use it. I actually figured out some of this since I implemented Bootstrap in my Rails Portfolio Project. It felt good to plow through some labs tonight. I&amp;rsquo;m so close. Now is the time to crank up the intensity and really go at it to the finish line.</description>
+    </item>
     
     <item>
       <title>freeCodeCamp Nashville June Meetup Recap</title>
