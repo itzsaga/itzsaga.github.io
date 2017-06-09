@@ -6,10 +6,20 @@
     <description>Recent content on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jun 2017 23:06:43 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jun 2017 23:28:20 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Break Time to Concentrate</title>
+      <link>https://itzsaga.github.io/post/day-102/</link>
+      <pubDate>Thu, 08 Jun 2017 23:28:20 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/day-102/</guid>
+      <description>So I&amp;rsquo;m pulling back from my daily blog unless I have code to write about. I can concentrate on school and extra 30 mins to an hour per day if I don&amp;rsquo;t write. Here&amp;rsquo;s something interesting I&amp;rsquo;m pondering and haven&amp;rsquo;t tested yet. I&amp;rsquo;m not really sure why I haven&amp;rsquo;t tested it but&amp;hellip;
+// To ensure JS is loaded after the page loads $(document).ready(function () { }) // Better way to do the same $(function () { }) // Does this work?</description>
+    </item>
     
     <item>
       <title>100 Days of Flatiron School Bootcamp</title>
