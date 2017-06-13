@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-06-08T23:28:20-05:00"/>
+<meta property="og:updated_time" content="2017-06-12T22:40:53-05:00"/>
 
 
 
@@ -185,15 +185,15 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://itzsaga.github.io/post/day-106/"><p>International jQuery Tic-Tac-Toe</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://itzsaga.github.io/post/day-102/"><p>Break Time to Concentrate</p></a>
                     </li>
                 
                     <li>
                         <a href="https://itzsaga.github.io/post/day-100/"><p>100 Days of Flatiron School Bootcamp</p></a>
-                    </li>
-                
-                    <li>
-                        <a href="https://itzsaga.github.io/post/day-099/"><p>Popular Gems Are All The Rage</p></a>
                     </li>
                 
             </ul>
@@ -210,10 +210,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://itzsaga.github.io/post/day-102/">Break Time to Concentrate</a></h2>
+            <h2><a href="https://itzsaga.github.io/post/day-106/">International jQuery Tic-Tac-Toe</a></h2>
         
         
-            <p>Day 102 of Flatiron School</p>
+            <p>Day 106 of Flatiron School</p>
         
     </div>
     <div class="meta">
@@ -222,11 +222,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-06-08'>
-            June 8, 2017</time>
+            datetime='2017-06-12'>
+            June 12, 2017</time>
         <span class="author">Seth</span>
         
-            <p>1 minute read</p>
+            <p>4 minute read</p>
         
         
     </div>
@@ -238,25 +238,25 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f&text=Break%20Time%20to%20Concentrate&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f&text=International%20jQuery%20Tic-Tac-Toe&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f&title=Break%20Time%20to%20Concentrate" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f&title=International%20jQuery%20Tic-Tac-Toe" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -278,35 +278,58 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://itzsaga.github.io/post/day-102/" class="image featured">
-            <img src="../../images//pause-button.png" alt="pause button" />
+        <a href="https://itzsaga.github.io/post/day-106/" class="image featured">
+            <img src="../../images//ttt.jpg" alt="tic tac toe" />
         </a>
     
 
 
     <div id="content">
-        <p>So I&rsquo;m pulling back from my daily blog unless I have code to write about. I can concentrate on school and extra 30 mins to an hour per day if I don&rsquo;t write. Here&rsquo;s something interesting I&rsquo;m pondering and haven&rsquo;t tested yet. I&rsquo;m not really sure why I haven&rsquo;t tested it but&hellip;</p>
+        <p>I&rsquo;ve been moving along as of late. Today I was able to knock out my <a href="https://github.com/itzsaga/js-tictactoe-rails-api-v-000">Tic-Tac-Toe in jQuery</a> project. Well, it&rsquo;ll be done <em>VERY</em> soon. I paired with another student <a href="https://github.com/bortch89">Henno</a> who&rsquo;s in a time zone 7 hours ahead of mine. I had just started and he was looking for a partner so while he read upon the project and had a bit I got the first three controller tests to pass. I did hit an issue though where my <code>active_model_serialiers</code> gem was the most up to date version and that was causing an issue with what the test wanted returned. I was missing the root key of the JSON. With some help, I decided to roll back the gem version and got the test passing. Then we paired for a solid 5 hours before he needed to get some rest. We had 9 tests still failing. Decided that I&rsquo;d do 4 or 5 of the last 9 and he&rsquo;d finish it up. So that&rsquo;s where the project is right now but I know he&rsquo;ll get it done tomorrow. There isn&rsquo;t much left.</p>
 
-<pre><code class="language-javascript">// To ensure JS is loaded after the page loads
-$(document).ready(function () {
+<p>It was a good exercise on pairing. We setup a GitHub repo and added a collaborator then discussed what our next test was and how to approach it. Sometimes one of us would just go for it and code it. Sometimes we&rsquo;d both go at it and whomever got it first would push it up. Henno was using <code>git stash</code> to get rid of any WIP he had an clone down fresh updated code. I used that a couple times as well. I had heard of stashing but never done it. I know the code is still around <em>somewhere</em>.</p>
 
+<p>I started work on my Rails App with a jQuery Front End tonight. I actually got a good ways into it. I&rsquo;m getting more comfortable with jQuery and that&rsquo;s helping a lot. I&rsquo;m also learning some better patterns in respect to the DOM and how to work with and manipulate it. My jQuery project is a refactor of my Rails Portfolio Project. For example, I&rsquo;m taking a show view that lists the items rated at a specific place and rendering those items via jQuery from a JSON call to the back end. The serializer makes creating the JSON objects so easy. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">ES6 Template Literals</a> make writing multi-line HTML strings with embedded place holders a lot easier than using concatenation or newline slashes.</p>
+
+<pre><code class="language-javascript">// With ES6 Template Literals
+data.items.forEach(function (item) {
+  itemList = itemList.add(`&lt;li&gt;&lt;strong&gt;&lt;a href='/items/${item['id']}'&gt;${item['name']}&lt;/a&gt;&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Rating: ${item['rating']}&lt;/li&gt;
+      &lt;li&gt;Notes: ${item['notes']}&lt;/li&gt;
+    &lt;/ul&gt;`
+  )
 })
 
-// Better way to do the same
-$(function () {
-
+// With newline slashes
+data.items.forEach(function (item) {
+  itemList = itemList.add('&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;/items/' + item['id'] + '&quot;&gt;' + item['name'] + '&lt;/a&gt;&lt;/strong&gt; \
+    &lt;ul&gt; \
+      &lt;li&gt;Rating: ' + item['rating'] + '&lt;/li&gt; \
+      &lt;li&gt;Notes: ' + item['notes'] + '&lt;/li&gt; \
+    &lt;/ul&gt;'
+  )
 })
 
-// Does this work?
-$(() =&gt; {
-
+// Concatenation
+data.items.forEach(function (item) {
+  itemList = itemList.add('&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;/items/' + item['id'] + '&quot;&gt;' + item['name'] + '&lt;/a&gt;&lt;/strong&gt;' +
+    '&lt;ul&gt;' +
+      '&lt;li&gt;Rating: ' + item['rating'] + '&lt;/li&gt;' +
+      '&lt;li&gt;Notes: ' + item['notes'] + '&lt;/li&gt;' +
+    '&lt;/ul&gt;'
+  )
 })
 </code></pre>
 
-<p>Time spent today: 1:54<br />
-Time spent total: 374:10<br />
-Lessons completed today: 5<br />
-Lessons completed total: 629</p>
+<p>So yeah, I&rsquo;m happy about Template Literals. I&rsquo;m also happy that since I&rsquo;m only writing Front End for the most part I think this project will go relatively quickly. I spent 90 minutes on it tonight and knocked out a couple of the specs. A decent amount of time was spent setting the project up then getting rid of the <code>turbolinks</code> gem when it broke my app. I decided to get rid of it completely rather than just figure out a work around because my app isn&rsquo;t robust enough to truly benefit from all that <code>turbolinks</code> does in my humble opinion. I also remembered other students further along saying the first thing they did after a certain point was remove turbolinks when they were working on projects. It&rsquo;s looking like I&rsquo;ll be starting to learn React this weekend and be even that much closer to graduation!</p>
+
+<p>Henno and I committed to putting in some serious work and getting done before the end of the month and both of our next tuition payments come out. We&rsquo;ll see how well we do and if we help keep each other accountable.</p>
+
+<p>Time spent today: 9:15<br />
+Time spent total: 391:22<br />
+Lessons completed today: 1<br />
+Lessons completed total: 642</p>
 
     </div>
 
@@ -340,8 +363,8 @@ Lessons completed total: 629</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://itzsaga.github.io/post/day-100/"
-                class="button big previous">100 Days of Flatiron School Bootcamp</a></li>
+        <li><a href="https://itzsaga.github.io/post/day-102/"
+                class="button big previous">Break Time to Concentrate</a></li>
     
 
     
@@ -354,9 +377,9 @@ Lessons completed total: 629</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'my-flatiron-journey';
-    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-102\/';
-    var disqus_title = 'Break Time to Concentrate';
-    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-102\/';
+    var disqus_identifier = 'https:\/\/itzsaga.github.io\/post\/day-106\/';
+    var disqus_title = 'International jQuery Tic-Tac-Toe';
+    var disqus_url = 'https:\/\/itzsaga.github.io\/post\/day-106\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -380,25 +403,25 @@ Lessons completed total: 629</p>
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f&text=Break%20Time%20to%20Concentrate&via=itzsaga" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f&text=International%20jQuery%20Tic-Tac-Toe&via=itzsaga" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f&title=Break%20Time%20to%20Concentrate" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f&title=International%20jQuery%20Tic-Tac-Toe" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-102%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Seth&body=https%3a%2f%2fitzsaga.github.io%2fpost%2fday-106%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -518,6 +541,20 @@ Lessons completed total: 629</p>
                     <li>
                         <article>
                             <header>
+                                <h3><a href="https://itzsaga.github.io/post/day-106/">International jQuery Tic-Tac-Toe</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-06-12'>
+                                    June 12, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
                                 <h3><a href="https://itzsaga.github.io/post/day-102/">Break Time to Concentrate</a></h3>
                                 
                                     
@@ -539,20 +576,6 @@ Lessons completed total: 629</p>
                                 <time class="published" datetime=
                                     '2017-06-06'>
                                     June 6, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://itzsaga.github.io/post/day-099/">Popular Gems Are All The Rage</a></h3>
-                                
-                                    
-                                
-                                <time class="published" datetime=
-                                    '2017-06-05'>
-                                    June 5, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -591,7 +614,7 @@ Lessons completed total: 629</p>
                         <article>
                             <header>
                                 <a href="/categories/daily-blog/">daily blog</a>
-                                <span style="float:right;">92</span>
+                                <span style="float:right;">93</span>
                             </header>
                         </article>
                     </li>
