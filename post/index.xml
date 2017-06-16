@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Jun 2017 22:40:53 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jun 2017 23:01:31 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sometimes The Logic Is Flawed</title>
+      <link>https://itzsaga.github.io/post/sometimes-the-logic-is-flawed/</link>
+      <pubDate>Thu, 15 Jun 2017 23:01:31 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/sometimes-the-logic-is-flawed/</guid>
+      <description>So I&amp;rsquo;m banging away at my jQuery project. I got hung up on some code tonight but got it working right before I stopped for the night! I was stoked! So what was I stuck on? In my app a user can create as many places as they want. Each place can have as many items as they want. A user can look at a specific item and see the name of it, the rating they gave it, any notes they wrote about it and where the item is available (the places they&amp;rsquo;ve added it to).</description>
+    </item>
     
     <item>
       <title>International jQuery Tic-Tac-Toe</title>
