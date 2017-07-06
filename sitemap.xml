@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://itzsaga.github.io/post/so-close-to-the-end/</loc>
+    <lastmod>2017-07-05T15:22:54-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://itzsaga.github.io/placeholder/</loc>
     <lastmod>2017-06-26T21:45:54-05:00</lastmod>
   </url>
@@ -534,7 +539,7 @@
   
   <url>
     <loc>https://itzsaga.github.io/categories/flatiron-blog/</loc>
-    <lastmod>2017-06-15T23:01:31-05:00</lastmod>
+    <lastmod>2017-07-05T15:22:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -552,13 +557,13 @@
   
   <url>
     <loc>https://itzsaga.github.io/</loc>
-    <lastmod>2017-06-26T21:45:54-05:00</lastmod>
+    <lastmod>2017-07-05T15:22:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://itzsaga.github.io/post/</loc>
-    <lastmod>2017-06-15T23:01:31-05:00</lastmod>
+    <lastmod>2017-07-05T15:22:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   

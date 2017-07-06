@@ -6,10 +6,19 @@
     <description>Recent content in Flatiron blog on My Flatiron Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2017 23:01:31 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jul 2017 15:22:54 -0500</lastBuildDate>
     
 	<atom:link href="https://itzsaga.github.io/categories/flatiron-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Final Project Complete...</title>
+      <link>https://itzsaga.github.io/post/so-close-to-the-end/</link>
+      <pubDate>Wed, 05 Jul 2017 15:22:54 -0500</pubDate>
+      
+      <guid>https://itzsaga.github.io/post/so-close-to-the-end/</guid>
+      <description>It&amp;rsquo;s been about 3 weeks since I last blogged. I put my head down and sprinted towards the finish line. I can&amp;rsquo;t say that I&amp;rsquo;m 100% done, yet, but I will be soon. I have completed my final portfolio project and have my assessment for it tomorrow. I must say, Redux threw me for one while working on this project. I hit many stumbling blocks building this project. I think my sprint was alittle ambitious and I ended up not knowing the Redux stuff as in depth as I wanted to.</description>
+    </item>
     
     <item>
       <title>Sometimes The Logic Is Flawed</title>
